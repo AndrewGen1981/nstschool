@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>New Sound Trucking School | Contact Form</title>
+
+    <meta name="title" content="Contact form, Student wait list, Stay connected form">
+    <meta name="description" content="NSTS offers fast and convenient get in touch method, you can send your offers, proposals and recommendations">
+    <meta name="keywords" content="contact form, student wait list, stay connected form, part payment, tuition down payment">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="NSTS Team">
+
+    <link rel="shortcut icon" href="/img/thumb/ico.png">
+
+    <link rel="stylesheet" href="/__nav_header.css">
+    <link rel="stylesheet" href="/_footer.css">
+    <link rel="stylesheet" href="/contact/contactme.css">
+
+</head>
+<body>
+
+    <div class="pageContainer">
+
+        <nav class="pageHeader header-shadow">
+            <a class="header-item home-item" href="/">NSTS</a>
+
+            <div class="header-left">
+                <!-- Blog item -->
+                <a class="header-item blog-item" href="/blog">
+                    <svg class="header-svg" viewBox="0 0 100 100">
+                        <path class="st0" d="M0.2,0v27.2H100V0H0.2z M0.2,63.5H100V36.3H0.2V63.5z M0.2,99.8H100V72.6H0.2V99.8z"/>
+                    </svg>
+                    Blog
+                </a>
+
+                <!-- Enroll item -->
+                <a class="header-item enroll-item" href="/shop?id=0">
+                    <svg class="header-svg" viewBox="0 0 100 100">
+                        <polygon class="st0" points="100,36.3 63.7,36.3 63.7,0 36.5,0 36.5,36.3 0.2,36.3 0.2,63.5 36.5,63.5 36.5,99.8 63.7,99.8 63.7,63.5 100,63.5"/>
+                    </svg>
+                    Enroll
+                </a>
+            </div>    <!-- header-left -->
+        </nav>    <!-- pageHeader -->
+
+        <section class="pageBox">
+
+            <section class="top-intro-box">
+                <img src="/contact/contact-envelope.jpg" alt="Picture of envelope, contact types" class="top-intro-envelope">
+                <h1 class="top-intro-title">Contact</h1>
+            </section>      <!-- top-intro-box -->
+
+            <section class="inner-box">
+                <h3 class="inner-box-title">Submit a question or comment</h3>
+                <p class="inner-box-text">Many common questions are answered on our Blog and FAQ pages</p>
+
+                <form action="post" class="contact-form">
+
+                    <div class="form-left-side">
+
+                        <label class="form-item-label" for="fn">First Name</label>
+                        <input type="text" class="form-item" id="fn" required>
+                        
+                        <label class="form-item-label" for="ln">Last Name</label>
+                        <input type="text" class="form-item" id="ln" required>
+                        
+                        <label class="form-item-label" for="age">Age</label>
+                        <input type="number" class="form-item" id="age" min="16" max="75">
+                        
+                        <label class="form-item-label" for="phone">Phone Number</label>
+                        <input type="tel" class="form-item" id="phone" required>
+
+                        <label class="form-item-label" for="email">Email</label>
+                        <input type="email" class="form-item" id="email" required>
+
+                        <label class="form-item-label" for="state">State</label> 
+                        <input type="text" class="form-item" id="state">
+    
+                        <label class="form-item-label" for="zip">Zip Code</label>
+                        <input class="form-item" id="zip" type="text" inputmode="numeric" pattern="[0-9]*">
+
+                    </div>      <!-- form-left-side -->
+
+                    <div class="form-right-side">
+
+                        <label class="form-item-label -bg" for="wait-list">Should we include you to the student's wait-list?</label>
+                        <select class="form-item -sm" id="wait-list" name="wait-list">
+                            <option value="to-wait-list">Yes</option>
+                            <option value="other">No</option>
+                        </select>
+    
+                        <label class="form-item-label -bg" for="pref">Contact Preference</label>
+                        <select class="form-item -sm" id="pref" name="pref">
+                            <option value="phone">Phone</option>
+                            <option value="email">Email</option>
+                        </select>
+
+                        <label class="form-item-label -bg" for="cdl">Current Driver’s License</label>
+                        <select class="form-item -sm" id="cdl" name="cdl">
+                            <option value="have-cdl">Yes</option>
+                            <option value="no-cdl">No</option>
+                        </select>
+    
+                        <label class="form-item-label -bg" for="clp">Do You have a Commercial Learner’s Permit?</label>
+                        <select class="form-item -sm" id="clp" name="clp">
+                            <option value="have-clp">Yes</option>
+                            <option value="no-clp">No</option>
+                        </select>
+
+                        <label class="form-item-label -empty"></label>
+                        <label class="form-item-label -empty"></label>
+                        <label class="form-item-label -empty"></label>
+
+                    </div>      <!-- form-right-side -->
+
+
+                    <div class="question-box">
+                        <label class="form-item-label -qsm" for="comment">Question or Comment</label>
+                        <textarea class="form-item-area -qbg" id="comment" required></textarea>
+                    </div>
+
+                    <section class="ouline-box">
+                        <h3 class="inner-box-title stay-connected-title">Stay Connected</h3>
+                        <h4 class="inner-box-text stay-connected-subtitle">Be the first to receive the latest NSTS news, events and program updates</h4>
+                        <p class="inner-box-text stay-connected-text">Select Interests</p>
+                        
+                        <div class="stay-connected-box">
+
+                            <check class="form-check-box -even" id="cdl-A-Manual" value="1">CDL Class A (Manual)</check>
+                            <check class="form-check-box -even" id="cdl-A-Automatic" value="2">CDL Class A (Automatic)</check>
+
+                            <check class="form-check-box -even" id="cdl-B" value="3">CDL Class B</check>
+                            <check class="form-check-box -even" id="endorsements" value="4">Endorsements</check>
+                            
+                            <check class="form-check-box -even" id="upgrade-B-A" value="5">Upgrade CDL Class B to Class A</check>
+                            <check class="form-check-box -even" id="upgrade-C-A" value="6">Upgrade CDL Class C to Class A</check>
+                    
+                        </div>      <!-- stay-connected-box -->
+                    </section>      <!-- ouline-box -->
+
+                    <p class="inner-box-text small">By clicking "Submit" I agree to be contacted at the number provided with more information about NSTS programs. This consent is not a condition of purchase.</p>
+
+                    <div class="controll-box">
+                        <button class="form-item -btn -gr135" type="submit" >Submit</button>
+                        <button class="form-item -btn -gr225" type="reset" >Reset</button>
+                    </div>
+
+                </form>         <!-- contact-form -->
+
+            </section>      <!-- inner-box -->
+
+            <footer class="_footer"></footer>
+            
+        </section>      <!-- pageBox -->
+    
+    </section>      <!-- pageContainer -->
+
+    
+    <script defer src="/contact/contactme.js"></script>
+
+</body>
+</html>

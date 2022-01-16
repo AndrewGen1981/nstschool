@@ -1,0 +1,562 @@
+[
+    {
+        "question":"¿Qué debes hacer si tu camión o autobús posee el sistema de frenos neumáticos doble y la advertencia de baja presión de aire se enciende sólo para un sistema?",
+        "answers":[
+            "Reducir la velocidad y dirigirte hacia el garaje de reparaciones más cercano",
+            "Reducir la velocidad y poner a prueba el sistema restante durante el camino",
+            "Detenerte inmediatamente y aparcar el vehículo de manera segura. Seguir caminando sólo después de que el sistema sea reparado(TRUE)"
+        ]
+    },
+    {
+        "question":"En las condiciones habituales para accionar los frenos de estacionamiento el conductor:",
+        "answers":[
+            "Apaga el motor",
+            "Deja que el aire sale del sistema de frenos neumáticos(TRUE)",
+            "Se asegura que el sistema de frenos neumáticos está presurizado completamente"
+        ]
+    },
+    {
+        "question":"El manómetro de presión aplicable indica cuánto aire comprimido tu:",
+        "answers":[
+            "Tienes en los frenos neumáticos",
+            "Utilizas para frenar(TRUE)",
+            "Tienes en la válvula reguladora de modulación"
+        ]
+    },
+    {
+        "question":"Durante la conducción normal los frenos de resorte se suelen detenerse por:",
+        "answers":[
+            "Pernos o bridas",
+            "Presión del aire(TRUE)",
+            "Presión de resorte"
+        ]
+    },
+    {
+        "question":"Se acepta que el exceso del calor causado por el uso de los frenos con demasiada frecuencia también causa:",
+        "answers":[
+            "Desgaste de la válvula de modulación",
+            "Separación de anuncios de frenos",
+            "Fallo o parada de frenos(TRUE)"
+        ]
+    },
+    {
+        "question":"La presión y liberación repetida y parcial del pedal de frenos puede causar:",
+        "answers":[
+            "La pérdida de presión del aire de frenos(TRUE)",
+            "El aumento de la presión del aire de frenos",
+            "Ningún cambio de la presión del aire de frenos"
+        ]
+    },
+    {
+        "question":"El pedal de freno del sistema de frenos neumáticos:",
+        "answers":[
+            "Controla la velocidad del compresor de aire",
+            "Controla el compresor de aire aplicado para accionar los frenos(TRUE)",
+            "Está conectado con el mecanismo de regulación del juego mediante la serie de vías y enlaces"
+        ]
+    },
+    {
+        "question":"El uso excesivo de los frenos de servicio puede llevar al recalentamiento que puede causar:",
+        "answers":[
+            "El ajuste apropiado de la leva de freno",
+            "El aumento del contacto entre el tambor de freno y los forros",
+            "La expansión del tambor de freno(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Con qué valor de psi el compresor de aire termina de bombear el aire?",
+        "answers":[
+            "100",
+            "125(TRUE)",
+            "150"
+        ]
+    },
+    {
+        "question":"El conductor debe estar capaz de ver la advertencia de presión baja que se enchufa antes de que la presión de los tanques de aire de servicio se baje hasta __ psi",
+        "answers":[
+            "40",
+            "60(TRUE)",
+            "80"
+        ]
+    },
+    {
+        "question":"Los frenos de estacionamiento o de emergencia de los camiones o de autobuses pueden ser sostenidas por la presión de __",
+        "answers":[
+            "Resorte(TRUE)",
+            "Aire",
+            "Flujo"
+        ]
+    },
+    {
+        "question":"El sistema de freno aplicada y liberada cuando el conductor utiliza el pedal de freno es el sistema de frenos de___",
+        "answers":[
+            "Emergencia",
+            "Servicio(TRUE)",
+            "Estacionamiento"
+        ]
+    },
+    {
+        "question":"¿Cuál es el tipo más común de fundaciones encontradas en los camiones pesados?",
+        "answers":[
+            "Freno de tambor",
+            "Tambor de leva de freno(TRUE)",
+            "Disco"
+        ]
+    },
+    {
+        "question":"¿Por qué debes drenar el agua del tanque de aire comprimido?",
+        "answers":[
+            "El punto bajo de ebullición de agua reduce la potencia de frenos",
+            "El agua puede congelarse durante el tiempo frío y causar el fallo de los frenos(TRUE)",
+            "El agua resfría el compresor demasiado"
+        ]
+    },
+    {
+        "question":"La leva de freno:",
+        "answers":[
+            "Controla el flujo de aire hasta cada de las cámaras de freno",
+            "Tira las zapatas de freno fuera del tambor y permita a las ruedas rodarse libremente",
+            "Pone las zapatas de freno contra la parte interior del tambor de freno(TRUE)"
+        ]
+    },
+    {
+        "question":"Si te ves obligado a realizar la parada de emergencia, tienes que frenar de modo que:",
+        "answers":[
+            "Puedas utilizar el freno de mano antes del pedal de freno",
+            "Puedas dirigir con el volante para que tu vehículo se queda en la línea recta(TRUE)",
+            "Puedas utilizar la potencia completa de los frenos para bloquearlos."
+        ]
+    },
+    {
+        "question":"¿Qué pasa si tu camión tiene el sistema de frenos neumáticos doble y uno de los sistemas pierda su presión?",
+        "answers":[
+            "Los tambores de frenos no están presurizados por completo",
+            "Los mecanismos manuales de regulación del juego de la leva no serán establecidos de manera adecuada",
+            "Decremento de la parte delantera o trasera no será operable por completo(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer diariamente durante el tiempo frío si tu vehículo posee un evaporador de alcohol?",
+        "answers":[
+            "Chequear y rellenar el nivel de alcohol(TRUE)",
+            "Cambiar el alcohol de nueva botella",
+            "Chequear el contenido de alcohol en el aceite"
+        ]
+    },
+    {
+        "question":"¿Con qué tasa de psi el sistema de frenos neumáticos está cargada por completo?",
+        "answers":[
+            "75",
+            "100",
+            "125(TRUE)"
+        ]
+    },
+    {
+        "question":"Algunos sistemas de frenos neumáticos tienen un evaporador de alcohol. ¿Qué puede suceder si tu no mantienes el nivel de alcohol adecuado?",
+        "answers":[
+            "La leva de freno puede no regresar al soltar el pedal de freno",
+            "En el tanque de aire puede formarse el hielo que va a causar fallo de frenos(TRUE)",
+            "En los tambores de freno puede formarse el hielo que los desgaste"
+        ]
+    },
+    {
+        "question":"La distancia de demora de frenos con la velocidad de 55 mph en el pavimento seco se aumenta en ___ pies aproximadamente.",
+        "answers":[
+            "12 pies",
+            "32 pies(TRUE)",
+            "52 pies"
+        ]
+    },
+    {
+        "question":"Tu camión o autobús tiene el sistema de frenos neumáticos doble. ¿Qué debes hacer si la señal de advertencia se enciende sólo para un sistema?",
+        "answers":[
+            "Detenerte inmediatamente y aparcar el vehículo de manera segura. Seguir caminando sólo después de que el sistema sea reparado.(TRUE)",
+            "Reducir la velocidad y poner a prueba el sistema restante durante el camino",
+            "Reducir la velocidad y dirigirte hacia el garaje de reparaciones más cercano"
+        ]
+    },
+    {
+        "question":"¿Qué tienen todos los vehículos equipados del sistema neumático?",
+        "answers":[
+            "Manómetro del suministro de presión(TRUE)",
+            "Manómetro de uso de aire",
+            "Sistema hidráulico de reserva"
+        ]
+    },
+    {
+        "question":"La distancia total de parada para los frenos neumáticos es más grande que para los frenos hidráulicos durante la distancia de __",
+        "answers":[
+            "Demora de frenos(TRUE)",
+            "Reacción",
+            "Frenado eficaz"
+        ]
+    },
+    {
+        "question":"La válvula de seguridad se acciona automáticamente con la presión de:",
+        "answers":[
+            "50",
+            "100",
+            "150(TRUE)"
+        ]
+    },
+    {
+        "question":"La tasa de pérdida de aire para un camión sencillo o autobús con el motor apagado y los frenos accionados no debe ser más de:",
+        "answers":[
+            "1 psi en 30 segundos",
+            "2 psi en 45 segundos",
+            "3 psi en 1 minuto(TRUE)"
+        ]
+    },
+    {
+        "question":"El conductor debe estar capaz de ver la advertencia de presión baja que se enchufa antes de que la presión de los tanques de aire de servicio se baje hasta __ psi",
+        "answers":[
+            "50",
+            "60(TRUE)",
+            "80"
+        ]
+    },
+    {
+        "question":"El sistema de frenos neumáticos de un camión sencillo o autobús no debe filtrar más de __psi por minuto con el motor parado y frenos liberados.",
+        "answers":[
+            "1",
+            "2(TRUE)",
+            "3"
+        ]
+    },
+    {
+        "question":"Los frenos de resorte utilizados en las cámaras del camión sencillo te hacen parar cuando la presión de aire se baja menos de ___ psi.",
+        "answers":[
+            "20(TRUE)",
+            "60",
+            "100"
+        ]
+    },
+    {
+        "question":"En los camiones con el sistema de frenos neumáticos el freno de estacionamiento debe ser usado:",
+        "answers":[
+            "Cada vez que salgas del vehículo(TRUE)",
+            "Tan poco como sea posible",
+            "Sólo durante la inspección antes y después del viaje"
+        ]
+    },
+    {
+        "question":"La potencia de frenado de los frenos de resorte:",
+        "answers":[
+            "No se afecta por las condiciones de los frenos de servicio",
+            "Depende de los frenos de servicio ajustados(TRUE)",
+            "Se aumenta cuando los frenos de servicio están calientes"
+        ]
+    },
+    {
+        "question":"¿Cómo debes verificar el funcionamiento adecuado de tus frenos de servicio?",
+        "answers":[
+            "Parar el vehículo con el grado leve, drenar toda la presión, accionar el freno de estacionamiento y verificar si se mueve",
+            "Parar el vehículo en el terreno llano, bloquear las ruedas, accionar el freno de estacionamiento cuando tienes la cantidad correcta de presión de aire para hacerlo y apagar el motor",
+            "Parar el vehículo en el terreno llano, esperar hasta que se obtiene la presión del aire normal, liberar el freno de estacionamiento e ir adelante muy lento con la velocidad de 5 mph. Luego aplicar los frenos con fuerza(TRUE)"
+        ]
+    },
+    {
+        "question":"Si tu camión está equipado del sistema de frenos neumáticos que funciona adecuadamente y los tanques de aire del tamaño mínimo, ¿en cuántos segundos la presión de aire se acumula de 85 a 100 psi?",
+        "answers":[
+            "30",
+            "60",
+            "45(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuántas pulgadas debe tener la regulación del juego para ser ajustada si tu lo presiones con fuerza?",
+        "answers":[
+            "1/4 pulgadas",
+            "1/2 pulgadas",
+            "1 pulgada(TRUE)"
+        ]
+    },
+    {
+        "question":"Si tu camión o autobús tiene válvulas de control de estacionamiento dobles, puedes utilizar la presión de un tanque separado para:",
+        "answers":[
+            "Mantener el equilibrio de los frenos de estacionamiento cuando estás parado",
+            "Permanecer estacionado el doble de tiempo sin necesidad de utilizar la presión de aire de servicio",
+            "Soltar los frenos de resorte de emergencia/ de estacionamiento para viajar en las distancias cortas(TRUE)"
+        ]
+    },
+    {
+        "question":"El manómetro del suministro de presión indica qué cantidad de presión:",
+        "answers":[
+            "Se encuentra en el tanque del aire(TRUE)",
+            "Líneas de frenos del tractor",
+            "Líneas de frenos del remolque"
+        ]
+    },
+    {
+        "question":"Para comprobar los frenos neumáticos de servicio tu debes:",
+        "answers":[
+            "Parar el vehículo, frenar en la marha baja, presionar los frenos de servicio y luego trate de avanzar lentamente",
+            "Frenar con fuerza mientras mueves lentamente hacia adelante(TRUE)",
+            "Frenar con fuerza mientras mueves lentamente hacia atrás"
+        ]
+    },
+    {
+        "question":"El interruptor de luz de freno:",
+        "answers":[
+            "Indica la presión baja del sistema de frenos neumáticos",
+            "Indica cuando debes usar tus frenos de emergencia",
+            "Enciende tu luz de frenos para advertir a los conductores detrás de tí.(TRUE)"
+        ]
+    },
+    {
+        "question":"Si los frenos de resorte están accionadas, ¿cuándo debes presionar el pedal de frenado?",
+        "answers":[
+            "Solo cuando marchas en pendientes",
+            "Solo en la carretera resbaladiza",
+            "Nunca(TRUE)"
+        ]
+    },
+    {
+        "question":"¿A qué psi la válvula de seguridad reduce la presión?",
+        "answers":[
+            "50",
+            "100",
+            "150(TRUE)"
+        ]
+    },
+    {
+        "question":"El sobrecalentamiento causado por el uso muy frecuente de tus frenos también puede causar:",
+        "answers":[
+            "Desgaste de la válvula de modulación",
+            "Separación de anuncios de frenos",
+            "Fallo o parada de frenos(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Por qué debes drenar el agua del tanque del aire comprimido?",
+        "answers":[
+            "El punto de ebullición bajo reduce la potencia del frenado",
+            "El agua puede congelarse durante el tiempo frío y causar el fallo de los frenos(TRUE)",
+            "Para evitar la obstrucción del aceite del compresor de aire"
+        ]
+    },
+    {
+        "question":"¿Cuántas pulgadas debe tener la regulación del juego para ser ajustada si tu lo presiones con fuerza?",
+        "answers":[
+            "1/4 pulgadas",
+            "1/2 pulgadas",
+            "1 pulgada(TRUE)"
+        ]
+    },
+    {
+        "question":"No está seguro conducir un vehículo que tiene los tambores de freno con grietas que son más grandes que __ de la ahchura del área de fricción.",
+        "answers":[
+            "1/2(TRUE)",
+            "1/4",
+            "1/8"
+        ]
+    },
+    {
+        "question":"¿Cuándo está OK para dejar tu camión desatendida sin aplicar los frenos de estacionamiento y el bloque de las ruedas?",
+        "answers":[
+            "Nunca(TRUE)",
+            "Si tu estás ausente solo unos minutos",
+            "Si estás llevando a cabo una inspección previa al viaje"
+        ]
+    },
+    {
+        "question":"Manómetro de suministro de presión indica cuanta presión:",
+        "answers":[
+            "Se encuentra en el tanque de aire(TRUE)",
+            "Usaste durante tu viaje",
+            "Va hacia la cámara de freno"
+        ]
+    },
+    {
+        "question":"¿Con qué presión la válvula de seguridad se descarga automáticamente?",
+        "answers":[
+            "50",
+            "100",
+            "150(TRUE)"
+        ]
+    },
+    {
+        "question":"El regulador de compresor controla:",
+        "answers":[
+            "La velocidad del compresor de aire",
+            "Pa presión del aire aplicada a los frenos",
+            "El bombeado del aire al tanque(TRUE)"
+        ]
+    },
+    {
+        "question":"Para verificar el juego libre del mecanismo de regulación del juego de la leva de freno, debes estacionar tu vehículo en:",
+        "answers":[
+            "El terreno llano, bloquear las ruedas y liberar los frenos de estacionamiento(TRUE)",
+            "El terreno llano y aplicar los frenos de estacionamiento, luego aplicar los frenos de servicio",
+            "El terreno llano y drenar la presión del aire antes de comprobar los ajustes"
+        ]
+    },
+    {
+        "question":"Hace falta usar los frenos de estacionamiento para los vehículos con frenos neumáticos:",
+        "answers":[
+            "Tan poco como sea posible",
+            "En cada momento al estacionar el vehículo(TRUE)",
+            "Para mantener la velocidad durante la bajada"
+        ]
+    },
+    {
+        "question":"Los frenos se debilitan cuando:",
+        "answers":[
+            "Te ves obligado a empujar el pedal de freno con fuerza para controlar tu velocidad durante la bajada(TRUE)",
+            "Se necesita menor presión al pedal de frenado para cada parada",
+            "El pedal de freno se sienta blando cuando lo presionas"
+        ]
+    },
+    {
+        "question":"¿Si tu no tienes el drenaje automático del tanque, con qué frecuencia debes drenar el aceite y agua de la parte inferior del tanque de aire comprimido?",
+        "answers":[
+            "Cada cuatro horas después del servicio",
+            "Al final de cada cuatro días de conducción(TRUE)",
+            "Una vez a la semana"
+        ]
+    },
+    {
+        "question":"La cosa más importante que debe ser realizada cuando se enciende la advertencia de la presión baja del aire es:",
+        "answers":[
+            "Cambio a una marcha superior",
+            "Cambio a una marcha inferior",
+            "Parar el vehículo y estacionarlo de manera segura lo más pronto posible(TRUE)"
+        ]
+    },
+    {
+        "question":"Si la presión de aire no se aumenta dentro del tiempo correcto, entonces:",
+        "answers":[
+            "Debes estar preparado a uasr los frenos de estacionamiento para realizar una parada",
+            "El depósito de alcohol puede ser vacío",
+            "Tu presión del aire puede reducirse hasta el punto bajo durante la conducción, que va a requerir la parada de emergencia(TRUE)"
+        ]
+    },
+    {
+        "question":"Si tu vehículo tiene el evaporador de alcohol, éste está diseñado para:",
+        "answers":[
+            "Eliminar la necesidad diaria de drenar el tanque",
+            "Potenciar la presión del tanque del mismo modo como turbocompresor impulsa el motor",
+            "Reducir el riesgo de congelación en la válvula de freno neumático en tiempo frío(TRUE)"
+        ]
+    },
+    {
+        "question":"El sistema de frenos neumáticos de un camión sencillo o autobús no debe filtrar más de __psi por minuto con el motor parado y frenos liberados.",
+        "answers":[
+            "1",
+            "3",
+            "2(TRUE)"
+        ]
+    },
+    {
+        "question":"Cuando se aplican los frenos las zapatas se alinean para presionar:",
+        "answers":[
+            "El disco o tambor de freno(TRUE)",
+            "El mecanismo de regulación del juego",
+            "La leva de freno"
+        ]
+    },
+    {
+        "question":"El sistema de frenos neumático moderno combina tres sistemas deferentes. Consiste de frenos de servicio, de estacionamiento y de___.",
+        "answers":[
+            "Emergencia(TRUE)",
+            "Zapata",
+            "Tambor"
+        ]
+    },
+    {
+        "question":"El uso de los frenos en las bajadas largas y pronunciadas es sólo un complemento para el efecto de:",
+        "answers":[
+            "El uso del freno de resorte",
+            "El uso de la válvula limitadora de presión del freno delantero",
+            "Frenado de motor(TRUE)"
+        ]
+    },
+    {
+        "question":"Algunos sistemas de frenos neumáticos tienen un evaporador de alcohol. ¿Qué puede suceder si tu no mantienes el nivel de alcohol adecuado?",
+        "answers":[
+            "La leva de freno puede no regresar al soltar el pedal de freno",
+            "En el tanque de aire puede formarse el hielo que va a causar fallo de frenos(TRUE)",
+            "El los tambores de freno puede formarse el hielo que los desgaste"
+        ]
+    },
+    {
+        "question":"En las condiciones ideales un camión o autobús con los frenos neumáticos que viene con la velocidad de 55 mph, necesita la distancia de parada de:",
+        "answers":[
+            "Menos de 100 pies",
+            "Más de 300 pies(TRUE)",
+            "De 100 a 300 pies"
+        ]
+    },
+    {
+        "question":"El manómetro del suministro de presión indica qué cantidad de presión tu:",
+        "answers":[
+            "Tienes en los frenos neumáticos",
+            "Aplicas a los frenos(TRUE)",
+            "Tienes en la válvula reguladora de modulación"
+        ]
+    },
+    {
+        "question":"Si tu bajas por una pendiente pronunciada y has alcanzado la velocidad de 40 mph, aplicarías el freno de servicio hasta que tu velocidad se reduzca a menos de __ mph.",
+        "answers":[
+            "25",
+            "30",
+            "35(TRUE)"
+        ]
+    },
+    {
+        "question":"El frenado neumático necesita más tiempo que el hidráulico porque neumático:",
+        "answers":[
+            "Frenos neumáticos usan diferentes tambores",
+            "Necesita más tiempo para fluir a través de líneas que hidráulico(TRUE)",
+            "Frenado requiere los resortes del retorno más pesados"
+        ]
+    },
+    {
+        "question":"La potencia del frenado de los frenos de resorte:",
+        "answers":[
+            "Depende del ajuste de los frenos de servicio(TRUE)",
+            "No se afecta por las condiciones de los frenos de servicio.",
+            "Puede ser comprobada solo por las personas de servicio calificadas"
+        ]
+    },
+    {
+        "question":"El frenado a golpes de emergencia es cuando:",
+        "answers":[
+            "Presionas con fuerza el pedal de freno y aplicas la válvula manual",
+            "Tu usas la presión ligera constante al pedal de freno",
+            "Presionas el pedal de freno con mayor fuerza posible, liberas los frenos cuando las ruedas están bloqueadas, accionas el freno de nuevo cuando las ruedas empiezan a girarse(TRUE)"
+        ]
+    },
+    {
+        "question":"El freno de estacionamiento o de emergencia del vehículo pesado puede ser mantenido solo en la posición desde la cual no puede ser el escape de:",
+        "answers":[
+            "Presión de resorte(TRUE)",
+            "Presión de aire",
+            "Presión hidráulica"
+        ]
+    },
+    {
+        "question":"¿Qué tiempo no es apropiada para aplicar los frenos de estacionamiento?",
+        "answers":[
+            "Para frenar el vehículo con fuerza, en otras palabras durante una bajada por la pendiente(TRUE)",
+            "Para usar los frenos de estacionamiento durante una parada menos de 1 hora",
+            "Si tu vas a usar los frenos de estacionamiento debes asegurarte que ellos van a mantener tu vehículo"
+        ]
+    },
+    {
+        "question":"Si te ves obligado a realizar la parada de emergencia, tienes que frenar de modo que:",
+        "answers":[
+            "Puedas utilizar el freno de mano antes del pedal de freno",
+            "Puedas dirigir con el volante para que tu vehículo se queda en la línea recta(TRUE)",
+            "Puedas utilizar la potencia completa de los frenos para bloquearlos."
+        ]
+    },
+    {
+        "question":"Cuando se aplican los frenos las zapatas se alinean para presionar:",
+        "answers":[
+            "El disco o tambor de freno(TRUE)",
+            "El mecanismo de regulación del juego",
+            "La leva de freno"
+        ]
+    }
+]

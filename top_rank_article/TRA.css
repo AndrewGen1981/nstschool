@@ -1,0 +1,276 @@
+/* FONTS */
+@font-face {
+    font-family: "Gotham Medium";
+    src: url("../font/Gotham Medium.otf");
+}
+@font-face {
+    font-family: "Gotham Light";
+    src: url("../font/Gotham Light.otf");
+}
+
+@font-face {
+    font-family: "Gotham Extra Light";
+    src: url("../font/Gotham Extra Light.otf");
+}
+
+@font-face {
+    font-family: "Gotham Book";
+    src: url("../font/Gotham Book Regular.otf");
+}
+
+@font-face {
+    font-family: "NSTS";
+    src: url("../font/NSTS.ttf");
+}
+
+*{
+    font-family: "Gotham Medium", -apple-system, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/***   PAGE Styles   ***/
+
+.pageContainer {
+    width: 100%;
+
+    position: relative;
+    
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.pageHeader {
+    position: sticky;
+
+    top: 0;
+
+    width:100%;
+    height:54px;
+
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: hsla(0, 0%, 100%, .97);
+
+    border-bottom: 1px solid #e2e2e2;
+
+    z-index: 1000;
+}
+.header-item {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    height:min-content;
+    margin: auto 0;
+
+    cursor: pointer;
+}
+.home-item {
+    padding: 0 30px;
+
+    font-family: 'NSTS';
+    font-size: 16px;
+    letter-spacing: 16px;
+    
+    color: hsla(218, 7%, 24%, .9);
+    font-weight: 600;
+}
+
+.header-left {
+    height: 100%;
+    display: inline-flex;
+}
+
+.header-svg {
+    width: 11px;
+    height: 11px;
+
+    margin: auto;
+    padding-left: 5px;
+
+    fill: #0b0b0b;
+    opacity: .85;
+}
+.blog-item, .enroll-item {
+    justify-self: flex-end;
+
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-align: center;
+
+    margin-right: 30px;
+
+    color: #a6a6a6;
+}
+
+.header-shadow {
+    -webkit-box-shadow: 0px 5px 15px 5px hsla(0, 0%, 65%, 25%);
+    -moz-box-shadow: 0px 5px 15px 5px hsla(0, 0%, 65%, 25%);
+    box-shadow: 0px 5px 15px 5px hsla(0, 0%, 65%, 25%);
+}
+
+
+/* TOP-Article */
+.top-article-header {
+    width: 95%;
+    max-width: 722px;
+
+    margin: 65px auto 35px auto;
+    
+    font-family: "Montserrat";
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 50px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #0b0b0b;
+}
+.top-article-auth, .top-article-date {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+
+    text-align: center;
+    
+    color: #9f9f9f;   
+}
+.top-article-date {
+    margin-left: 5px;
+}
+
+.top-article-img {
+    width: 100%;
+    object-fit: contain;
+}
+.top-article-paragraph {
+    width: 85%;
+    max-width: 980px;
+    
+    font-family: "Gotham Book";
+    font-size: 15px;
+    line-height: 1.467em;
+
+    margin: 1em auto;
+   
+    color: #2b2b2b;
+
+    text-align: justify;
+}
+.top-article-paragraph:last-of-type{
+    margin-bottom: 65px;
+}
+
+/* LIST Items */
+.top-article-list-item {
+    display: inline-flex;
+    padding: 1.667em 0 2em 0;
+    margin-bottom: 0.5em;
+}
+.top-article-list-item:nth-child(odd) {
+    background-color:  #04a9e0;
+}
+.top-article-list-item:nth-child(even) {
+    background-color:  #e78951;
+}
+
+.list-num, .list-gap {
+    width: calc((100vw - 980px)/2);
+    margin-top: -0.5rem;
+    
+    font-family: "Gotham Light";
+    font-size: 4em;
+   
+    color: white;
+
+    text-align: center;
+}
+.list-text {
+    max-width: 980px;
+
+    font-family: "Gotham Book";
+    font-size: 15px;
+    line-height: 1.467em;
+   
+    color: white;
+
+    text-align: justify;
+}
+
+
+/* MEDIA */
+@media (max-width: 1153px) {
+    .list-text {
+        width: 85%;
+        max-width: none;
+    }
+    .list-num, .list-gap {
+        width: 7.5%;
+    }
+}
+@media (max-width: 650px) {
+    .top-article-header {
+        font-size: 35px;
+        line-height: 43px;
+    }
+    *, .top-article-paragraph, .list-text {
+        font-size: 14px;
+    }
+}
+@media (max-width: 510px) {
+    .top-article-header {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    *, .top-article-paragraph, .list-text {
+        font-size: 12px;
+    }
+}
+@media (max-width: 410px) {
+    .home-item {
+        padding: 0 15px;
+    }
+    .blog-item, .enroll-item {
+        margin-right: 10px;
+    }
+    .top-article-header {
+        font-size: 23px;
+        line-height: 29px;
+    }
+    *, .top-article-paragraph, .list-text {
+        font-size: 11px;
+    }
+}
+@media (max-width: 340px) {
+    .home-item {
+        padding: 0 10px;
+    }
+    .blog-item, .enroll-item {
+        margin-right: 7px;
+    }
+    .top-article-header {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .top-article-list-item {
+        display: block;
+    }
+    .list-text {
+        margin: 0 auto;
+    }
+    .list-num {
+        padding-left: 3%;
+    }
+}

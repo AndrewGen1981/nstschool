@@ -1,0 +1,315 @@
+/* TITLE BOX */
+.titlesBox {
+    width: 60%;
+    max-width: 725px;
+    margin: 45px auto 35px auto;
+}
+
+.title-text {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ordinary {
+    font-size: 35px;
+    line-height: 1.143em;
+    color: #0b0b0b;
+    font-weight: 700;
+}
+.macbook {
+    font-size: 40px;
+    line-height: 1.375em;
+    color: #e12e2e;
+    font-weight: 900;
+}
+
+/* MAC BOX */
+.macBox {
+    width: 95%;
+    max-width: 925px;
+
+    margin: 0 auto;
+}
+
+/* COUNT DOWN */
+.give-timerBox {
+    width: 65%;
+    max-width: 630px;
+
+    margin: 0 auto 45px auto;
+    position: relative;
+}
+
+.give-Img {
+    width: 100%;
+    object-fit: contain;
+}
+.count-down {
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 100;
+    
+    display: inline-flex;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    padding: 0 12.9%;
+}
+
+.count-days,
+.count-hours,
+.count-minutes,
+.count-column {
+    font-size: 60px;
+    color: #0b0b0b;
+    font-weight: 900;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+
+@keyframes blink {
+    0% {opacity: 0.3}
+    50% {opacity: 0.9}
+    100% {opacity: 0.2}
+}
+.count-column {
+    animation: blink 1s ease-in-out infinite;
+}
+
+
+/* TEXT BOX */
+.give-textBox {
+    width: 95%;
+    max-width: 980px;
+
+    margin: 0 auto;
+}
+.small-title {
+    font-family: "Gotham Medium";
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #2b2b2b;
+
+    margin: 10px 0 50px 0;
+}
+.give-text, .give-terms-item {
+    padding: 25px 0;
+
+    font-family: "Gotham Book", sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+    text-align: justify;
+    
+    color: #2b2b2b;
+}
+.give-terms-item {
+    line-height: 2em;
+}
+.give-list-pic-box {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.give-terms-list {
+    flex-basis: 80%;
+    list-style-position: inside;
+}
+.give-terms-item {
+    line-height: 2em;
+    padding: 0;
+}
+
+.terms-pic {
+    flex-basis: 20%;
+    width: 185px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* LIST of WINNERS */
+.list-of-winners {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto 45px auto;
+
+    position: relative;
+}
+.winners-pic {
+    width: 100%;
+    object-fit: cover;
+}
+.winners-box {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50%;
+
+    transform: translateY(-50%);
+
+    margin-right: 10%;
+
+    display: block;
+
+    z-index: 100;
+}
+
+.winner-item {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.winner-item:not(:last-of-type) {
+    border-bottom: 0.5px solid rgba(43, 43, 43, 0.2);
+}
+
+.winner-item-month,
+.winner-item-name {
+    margin: 0 -3px;
+    font-family: "Gotham Book";
+    font-size: 15px;
+    line-height: 40px;
+    
+    color: #2b2b2b;
+}
+.winner-item-name {
+    font-family: "Gotham Medium";
+    font-weight: bold;
+}
+
+
+
+/* MEDIA */
+@media (max-width: 860px) {
+    .ordinary {
+        font-size: 30px;
+    }
+    .count-down {
+        padding: 0 11.5%;
+    }
+}
+@media (max-width: 740px) {
+    .titlesBox {
+        width: 90%;
+        max-width: none;
+    }
+    .give-timerBox {
+        width: 75%;
+        max-width: none;
+    }
+    .count-down {
+        padding: 0 10%;
+    }
+    .give-text, .give-terms-item {
+        font-size: 14px;
+    }
+    .winner-item-month, .winner-item-name {
+        font-size: 14px;
+    }
+}
+@media (max-width: 560px) {
+    .titlesBox {
+        width: 95%;
+    }
+    .ordinary {
+        font-size: 25px;
+    }
+    .macbook {
+        font-size: 35px;
+    }
+    .macBox {
+        width: 100%;
+    }
+    .give-timerBox {
+        width: 90%;
+        margin-bottom: 0;
+    }
+    .count-days, .count-hours, .count-minutes, .count-column {
+        font-size: 55px;
+        font-weight: 700;
+    }
+    .count-down {
+        padding: 0 7%;
+    }
+    .small-title {
+        margin-bottom: 20px;
+    }
+    .give-list-pic-box {
+        display: block;
+    }
+    .terms-pic {
+        margin: 0 auto;
+        width: 150px;
+    }
+    .give-text, .give-terms-item {
+        font-size: 13px;
+    }
+    .winner-item-month, .winner-item-name {
+        font-size: 13px;
+        letter-spacing: -0.6px;
+    }
+}
+@media (max-width: 420px) {
+    .ordinary {
+        font-size: 20px;
+    }
+    .macbook {
+        font-size: 25px;
+    }
+    .count-days, .count-hours, .count-minutes, .count-column {
+        font-size: 40px;
+    }
+    .count-down {
+        padding: 0 11%;
+    }
+    .terms-pic {
+        width: 100px;
+    }
+    .winners-box {
+        width: 60%;
+        margin-right: 5%;
+    }
+    .winner-item-month, .winner-item-name {
+        font-size: 12px;
+    }
+}
+@media (max-width: 340px) {
+    .titlesBox {
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .ordinary {
+        font-size: 18px;
+    }
+    .macbook {
+        font-size: 24px;
+    }
+    .give-timerBox {
+        width: 95%;
+    }
+    .count-days, .count-hours, .count-minutes, .count-column {
+        font-size: 33px;
+    }
+    .give-text, .give-terms-item {
+        font-size: 12px;
+    }
+    .winners-box {
+        width: 90%;     
+    }
+    .winner-item-month, .winner-item-name {
+        line-height: 1.6em;
+    }
+}

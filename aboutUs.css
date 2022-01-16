@@ -1,0 +1,875 @@
+/* FONTS */
+@font-face {
+    font-family: "Gotham Medium";
+    src: url("font/Gotham Medium.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham Book";
+    src: url("font/Gotham Book Regular.otf");
+    font-display: swap;
+}
+
+
+
+/* GLOBAL */
+:root {
+    --advTextGradientLine: 42px;
+    --advFontSize: calc(var(--advTextGradientLine) * 0.667);
+
+    /* for modal */
+    --normWidth: 980px;
+}
+
+.no-scroll_body {
+    overflow: hidden;
+}
+
+.my-sprite {
+    display:none;
+}
+
+/* STYLES */
+.innerBox {
+    position: relative;
+    display: block;
+}
+.headerContainer {
+    position: sticky;
+    top: 0;
+
+    height:58px;
+    width:100%;
+    
+    display: flex;
+    background-color: #ededed;
+    z-index: 10;
+}
+.headerItem {
+    font-family: "NSTS";
+    font-size: 16px;
+    letter-spacing: 16px;
+
+    height:min-content;
+    margin: auto 0;
+    padding: 0 30px;
+    
+    color: hsl(228, 3%, 38%);
+    cursor: pointer;
+}
+
+.titleContainer {
+    width: 100%;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+.titleText {
+    font-family: "Gotham Medium", Verdana;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 48px;
+    
+    color: #151515;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.subTitleContainer {
+    max-width: 457px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 35px;
+}
+.subTitleText {
+    font-family: "Gotham Book", Verdana;
+    font-size: 16px;
+    line-height: 22px;
+    color: #222222;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.videoContainerBox {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 980px;
+    max-height: 550px;
+    background-color: #6e6e6e;
+    background-image: url("/img/adv/about.jpg");
+    background-size: cover;
+}
+.videoPlaceHolder {
+    width: 980px;
+    height: 550px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+.vPlay {
+    fill: #fff;
+    height: 105px;
+    width: 105px;
+    margin: auto 0;
+    mix-blend-mode:difference;
+}
+.vPlay:hover {
+    fill: #222222;
+    transition: ease-in-out 0.5s;
+}
+
+.aboutNSTSvideo, .aboutMACvideo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+}
+.aboutNSTSvideo {
+    display: none;
+}
+.aboutNSTSvideoDesc {
+    font-family: "Gotham Book", Verdana;
+    font-size: 16px;
+    line-height: 22px;
+    color: #afafaf;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 28px 0 60px 0;
+}
+
+.advContainer {
+    width: 100%;
+    height: 198px;
+    max-width: 980px;
+    
+    margin: 0 auto;
+    margin-bottom: 60px;
+    
+    border-radius: 15px;
+    border: 2px dashed #dfdfdf;
+
+    overflow: hidden;
+
+    position: relative;
+    cursor: pointer;
+
+    z-index: 1;
+}
+.advContainerInner {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    z-index: 2;
+}
+
+.advText {
+    width: 70%;
+    display: block;
+    
+    z-index: 1;
+}
+.advTextGradient {
+    
+    --gradStart: #faa455;
+    --gradEnd: #f2162f;
+
+    background: linear-gradient(to right, var(--gradStart), var(--gradEnd));
+    
+    font-family: "Gotham Medium", Verdana;
+    font-size: var(--advFontSize);
+    font-weight: bold;
+    letter-spacing: 1.75px;
+    line-height: var(--advTextGradientLine);
+    
+    max-width: fit-content;
+    margin: 0 auto;
+    margin-top: 58px;
+    padding: 0 0 0 10px;
+    
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    
+    position: relative;
+
+    z-index: 10;
+}
+.advTextGradient::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: var(--advTextGradientLine) solid var(--gradEnd);
+    border-right: calc(var(--advTextGradientLine)/3) solid transparent;
+    position: absolute;
+
+    z-index: 5;
+}
+.advTextOrdinary {
+    font-family: "Gotham Medium", Verdana;
+    font-size: var(--advFontSize);
+    font-weight: bold;
+    letter-spacing: 1.75px;
+    line-height: calc(var(--advTextGradientLine) + 6px);
+    
+    margin-right: 35px;
+    
+    color: black;
+    text-align: right;
+    text-transform: uppercase;
+
+    z-index: 10;
+}
+
+@keyframes blink {
+    0% {color: #faa455}
+    50% {color: #f2162f}
+    75% {color: #1079ba}
+    100% {color: #faa455}
+}
+._arrows {
+    font-family: "Gotham Book", Verdana;
+    font-size: var(--advFontSize);
+
+    animation: blink ease-in 2.5s infinite;
+    
+    z-index: 10;
+}
+
+.advPicBox {
+    width: 30%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    z-index: 1;
+}
+.advPic {
+    width: 100%;
+    height: auto;
+    
+    z-index: 10;
+}
+._click {
+    width: 100%;
+
+    font-size: calc(var(--advFontSize) - 3px);
+    font-family: "Gotham Book", Verdana;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+
+    position: absolute;
+    transform: translateY(-65%);
+
+    z-index: 11;
+}
+._afterLine {
+    width: 50%;
+    height: 1em;
+    
+    background: radial-gradient(#dfdfdf, #fff);
+    border-radius: 100%;
+    transform: translateY(-125%);
+    align-self: flex-end;
+    position: absolute;
+    z-index: 5;
+}
+
+
+/* CREW */
+.crew {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 980px;
+    display: block;
+}
+.crewInfo {
+    width: 457px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    font-family: "Gotham Book", Verdana;
+    font-size: 16px;
+    line-height: 22px;
+    color: #222222;
+    
+    text-align: justify;
+    text-align-last: center;
+}
+._owners, ._office, ._instuctors {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    
+    border-bottom: 2px solid #ededed;
+}
+._instuctors {
+    flex-wrap: wrap;
+    border: none;
+}
+.ownerCard, .empCard, .instCard {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.instCard {
+    box-sizing: border-box;
+    padding: 15px 10px 30px 10px;
+}
+.instCard:nth-child(odd):last-child {
+    /* last odd element */
+    flex-basis: 100%
+}
+
+._itemsLeft {
+    align-items: flex-start;
+    margin-left: 45px;
+}
+._itemsRight {
+    align-items: flex-end;
+    margin-right: 45px;
+}
+._socialLeft {
+    justify-content: flex-start;
+}
+._socialRight {
+    justify-content: flex-end;
+}
+._itemsCenter, ._socialCenter {
+    justify-content: center;
+    align-items: center;
+}
+.ownerInfo, .empInfo {
+    width: 100%;
+    display: flex;
+    margin-bottom: 5px;
+}
+.empInfo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ownerPhoto {
+    width: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #656565;
+}
+.empPhoto, .instPhoto {
+    width: 100%;
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    background-color: #777777;
+
+    margin-bottom: 30px;
+    
+}
+.instPhoto {
+    display: none;
+}
+.positionInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ownerName, .empName, .instName {
+    width: min-content;
+    
+    font-family: "Gotham Medium", Verdana;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    color: #161616;
+
+    margin-bottom: 9px;
+}
+.empName, .instName {
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: -0.7px;
+}
+
+._textLeft {
+    text-align: left;
+}
+._textRight {
+    text-align: right;
+}
+._textCenter {
+    text-align: center;
+}
+.ownerPosition, .empPosition, .instPosition {
+    font-family: "Gotham Book", Verdana;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #222222;
+}
+.instLang {
+    font-family: "Gotham Medium", Verdana;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+
+    letter-spacing: -0.7px;
+   
+    margin-bottom: 10px;
+
+    color: #222222;
+}
+.instQual-title {
+    font-family: "Gotham Book", Verdana;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    
+    color: #777777;
+}
+.instQual-info {
+    font-family: "Gotham Medium", Verdana;
+    font-size: 14px;
+    line-height: 20px;
+    /* text-transform: capitalize; */
+    text-align: center;
+
+    color: #222222;
+}
+.instQual-info + .social {
+    margin-top: 10px;
+}
+
+
+
+/*     Social     */
+.social {
+    width: 100%;
+    display: flex;
+}
+.social_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 5px;
+
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    transition: background .1s linear;
+    
+    border-radius: 10px;
+    border: 1px solid rgb(226, 227, 227);
+    transition: border .2s linear;
+}
+.social_item:hover {
+    background-color: rgb(92, 94, 98, 0.5);
+    border-radius: 10px;
+}
+.social_item:hover .social_icon {
+    fill: black;
+    transition: fill .2s linear;
+}
+.social_item:last-child {
+    margin-right: 0;
+}
+.social_icon {
+    display: block;
+    height: 18px;
+    
+    fill: rgb(92, 94, 98, 0.5);
+    transition: fill .1s linear;
+}
+
+
+
+
+/* MODAL */
+
+.modal_mask {
+    display: none;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 33, 33, 0.93);
+
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.show_modal {
+    display: flex;
+}
+
+.modalContainer {
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    transform: translateX(53px);
+}
+
+@keyframes showing {
+    0% { 
+        -webkit-transform : rotate(90deg) scale(0.1); /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform     : rotate(90deg) scale(0.1); /* IE 9 */
+        transform         : rotate(90deg) scale(0.1); /* Firefox 16+, IE 10+, Opera */
+    }
+    100% { 
+        -webkit-transform : rotate(0deg) scale(1); /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform     : rotate(0deg) scale(1); /* IE 9 */
+        transform         : rotate(0deg) scale(1); /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+.modal_window {
+    width: 95%;
+    max-width: var(--normWidth);
+    max-height: calc(var(--normWidth)*0.5622449);
+    overflow: hidden;
+
+    padding: 1px;
+
+    background-color: rgb(226, 227, 227);
+    cursor: pointer;
+
+    animation: showing 0.7s ease-in-out normal
+}
+
+.modalClose {
+    font-family: "Gotham Book", Verdana;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: -0.6px;
+
+    width: 106px;
+
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+._footer {
+    width: 100%;
+    height: 105px;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ededed;
+}
+.footerContainer {
+    width: 66.667%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.addrBox {
+    flex-basis: 32%;
+
+    display: flex;
+    flex-direction: column;
+}
+.callUsBox {
+    flex-basis: 36%;
+
+    font-family: "Gotham Medium", Verdana;
+    font-size: 77px;
+
+    color: #ffffff;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: -0.05em;
+
+    filter: drop-shadow(0px 2px 5px rgba(156,156,156,0.24));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-y: hidden;
+}
+
+.locationPhone {
+    flex-basis: 100%;
+
+    font-family: "Gotham Medium", Verdana;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+
+    color: #161616;
+}
+.locationAddr, ._email {
+    flex-basis: 100%;
+
+    font-family: "Gotham Book", Verdana;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 22px;
+    letter-spacing: -0.8px;
+
+    color: #2f2f2f;
+
+    text-transform: uppercase;
+
+    margin: 0;
+    padding: 0;
+}
+.locationAddr:hover, ._email:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: none;
+}
+
+
+/* EMAIL */
+.emailContainer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+._email {
+    width: 100%;
+    font-family: "Gotham Book", Verdana;
+    font-size: 16px;
+    color: #2f2f2f;
+    
+    text-align: center;
+}
+
+
+
+
+
+
+/* MEDIA */
+
+/* 1220 */
+@media (max-width: 1220px) {
+    .modalContainer {
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(0);
+    }
+    .modalClose {
+        width: 95%;
+        max-width: var(--normWidth);
+        
+        text-align: right;
+
+        padding-top: 1em;
+    }
+}
+
+/* 1024 */
+@media (max-width: 1024px) {
+    :root {
+        --vW: calc(100vw * 0.95);
+        --advTextGradientLine: 36px;
+    }
+    .titleText {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .videoContainerBox {
+        width: fit-content;
+    }
+    .videoPlaceHolder {
+        width: var(--vW);
+        height: calc(550 * var(--vW) / 980);
+    }
+    .advContainer {
+        width: var(--vW);
+        height: fit-content;
+    }
+    .advTextGradient {
+        margin-top: 3em; 
+    }
+    ._owners, ._office {
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .ownerName, .empName {
+        font-size: 26px;
+    }
+    .ownerPosition, .empPosition {
+        font-size: 14px;
+    }
+    .instCard {
+        flex-basis: 100%
+    }
+    .locationPhone {
+        font-size: 24px;
+    }
+    .footerContainer {
+        flex-basis: 80%;
+    }
+    .callUsBox {
+        font-size: 58px;
+    }
+    .locationAddr {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+/* 820 */
+@media (max-width: 820px) {
+    :root {
+        --advTextGradientLine: 26px;
+    }
+    ._owners, ._office {
+        display: block;
+        padding: 15px 50px;
+    }
+    .ownerCard, .empCard {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .empCard::after {
+        content: "";
+        width: 50%;
+        height: 1px;
+        
+        background: #FFFFFF;
+        background: -moz-radial-gradient(center, #FFFFFF 10%, #777777 100%);
+        background: -webkit-radial-gradient(center, #FFFFFF 10%, #777777 100%);
+        background: radial-gradient(ellipse at center, #FFFFFF 10%, #777777 100%);
+        
+        align-self: center;
+        margin-top: 18px;
+    }
+    ._footer {
+        height: fit-content;
+    }
+    .footerContainer {
+        flex-direction: column;
+    }
+    .locationPhone + ._textLeft,
+    .locationPhone + ._textRight {
+        text-align: center;
+    }
+}
+
+/* 612 */
+@media (max-width: 612px) {
+    :root {
+        --advTextGradientLine: calc(100vw * 22 / 612);
+    }
+    .titleText {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .subTitleText {
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .aboutNSTSvideoDesc {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 16px 0 20px 0;
+    }
+    ._afterLine {
+        transform: translateY(-.6em);
+    }
+    .crewInfo {
+        width: 90%;
+        box-sizing: border-box;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    ._owners, ._office {
+        display: block;
+        padding: 10px 25px;
+    }
+    ._itemsLeft {
+        margin-left: 7px;
+    }
+    ._itemsRight {
+        margin-right: 7px;
+    }
+    .advTextGradient {
+        letter-spacing: -0.1px;
+    }
+}
+
+/* 410 */
+@media (max-width: 410px) {
+    .ownerInfo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    ._itemsLeft, ._itemsRight,
+    ._textLeft, ._textRight,
+    ._socialLeft, ._socialRight {
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .ownerCard::after, .empCard::after {
+        content: "";
+        width: 50%;
+        height: 1px;
+        
+        background: #FFFFFF;
+        background: -moz-radial-gradient(center, #FFFFFF 10%, #777777 100%);
+        background: -webkit-radial-gradient(center, #FFFFFF 10%, #777777 100%);
+        background: radial-gradient(ellipse at center, #FFFFFF 10%, #777777 100%);
+        
+        align-self: center;
+        margin-top: 18px;
+    }
+}
+

@@ -1,0 +1,127 @@
+{
+    "officeStuff": [
+        {
+            "photo": "img/emp/emp1.jpg",
+            "name": "Val Karcha",
+            "owner": true,
+            "title": "President",
+            "facebook": "#",
+            "twitter": "#",
+            "linkedIn": "#",
+            "insta": "#"
+        },
+        {
+            "photo": "img/emp/emp2.jpg",
+            "name": "Michael Svoboda",
+            "owner": true,
+            "title": "Program Director",
+            "facebook": "https://www.facebook.com/just.micheal",
+            "twitter": "https://twitter.com/mklsvoboda",
+            "linkedIn": "https://www.linkedin.com/in/michael-svoboda-9214a418b",
+            "insta": "https://www.instagram.com/mklsvoboda"
+        },
+        {
+            "photo": "img/emp/emp3.jpg",
+            "name": "Ivan Tobilko",
+            "owner": false,
+            "title": "Manager",
+            "facebook": "#",
+            "twitter": "#",
+            "linkedIn": "#",
+            "insta": "#"
+        },
+	{
+            "photo": "img/emp/emp5.jpg",
+            "name": "Agnessa Svoboda",
+            "owner": false,
+            "title": "School Administrator",
+            "facebook": "#",
+            "twitter": "#",
+            "linkedIn": "#",
+            "insta": "#"
+        },
+        {
+            "photo": "img/emp/emp4.jpg",
+            "name": "Selena Valencia",
+            "owner": false,
+            "title": "Manager",
+            "facebook": "#",
+            "twitter": "#",
+            "linkedIn": "#",
+            "insta": "#"
+        }
+        
+    ],
+    "instStuff": [
+        {
+            "photo": "",
+            "name": "Mathew Williams",
+            "title": "Certified Commercial Truck Driving Instructor",
+            "qualifications": [
+                "Over 10 years of combined training and transport experience.",
+                "WA Commercial Driver License with Tanker Passenger Endorsements."
+            ],
+            "language": "original English",
+            "facebook": "#",
+            "twitter": "#",
+            "linkedIn": "#",
+            "insta": "#"
+        },
+        {
+            "photo": "",
+            "name": "Hardeep Grewal",
+            "title": "Certified Commercial Truck Driving Instructor",
+            "qualifications": [
+                "Over 10 years of combined training and transport experience.",
+                "WA Commercial Driver License with Tanker Passenger Endorsements."
+            ],
+            "language": "English, Punjabi & Hindi",
+            "facebook": "#",
+            "twitter": "#",
+            "linkedIn": "#",
+            "insta": "#"
+        },
+        {
+            "photo": "",
+            "name": "Luis Amescua",
+            "title": "Certified Commercial Truck Driving Instructor",
+            "qualifications": [
+                "Over 30 years of combined training and transport experience.",
+                "WA Commercial Driver License with Tanker Passenger Endorsements."
+            ],
+            "language": "English",
+            "facebook": "#",
+            "twitter": "#",
+            "linkedIn": "#",
+            "insta": "#"
+        },
+        {
+            "photo": "",
+            "name": "Garry Rystrom",
+            "title": "Certified Commercial Truck Driving Instructor",
+            "qualifications": [
+                "Over 30 years of combined training and transport experience.",
+                "WA Commercial Driver License with Tanker Passenger Endorsements."
+            ],
+            "language": "original English",
+            "facebook": "#",
+            "twitter": "#",
+            "linkedIn": "#",
+            "insta": "#"
+        },
+        {
+            "photo": "",
+            "name": "Dadie Danchi",
+            "title": "Commercial Truck Driving Instructor",
+            "qualifications": [
+                "Over 2 years of combined training and transport experience.",
+                "WA Commercial Driver License."
+            ],
+            "language": "English",
+            "facebook": "#",
+            "twitter": "#",
+            "linkedIn": "#",
+            "insta": "#"
+        }
+    ]
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./blog.css">
+    <link rel="stylesheet" href="./qr.css">
+
+    <link rel="shortcut icon" href="/img/thumb/ico.png"/>
+
+    <title>QR Clocks</title>
+</head>
+<body>
+
+    <section class="inner">
+        <section class="geoBlock" id=main></section>
+        <section class="studentInfo">
+            
+            <svg class="studentSvg movingSvg" id="waitInfo" viewBox="0 0 512 512">
+                <path d="m340.653 128.736v-10.907c0-6.989-4.789-12.981-11.644-14.571-2.79-.647-5.633-1.094-8.451-1.328-20.04-1.652-37.102 6.246-53.6 13.889-15.475 7.169-30.093 13.941-46.291 12.554-10.951-.938-23.103-4.082-35.143-9.09-3.168-1.318-6.767-.97-9.622.935-2.853 1.903-4.556 5.087-4.556 8.518 0 46.677 37.975 84.652 84.653 84.652 46.679 0 84.654-37.975 84.654-84.652zm-84.653 69.652c-36.013 0-65.731-27.471-69.294-62.56 11.176 4.036 22.351 6.604 32.682 7.489 20.17 1.724 37.306-6.212 53.876-13.889 15.408-7.139 29.966-13.887 46.057-12.55 2.095.173 4.214.506 6.333.95v10.907c-.001 38.407-31.248 69.653-69.654 69.653z"/><path d="m293.342 238.556c47.032-15.986 78.631-60.119 78.631-109.82v-72.7c19.173-1.004 34.464-16.917 34.464-36.336v-1.732c0-9.907-8.061-17.968-17.968-17.968h-224.36c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h224.36c1.637 0 2.968 1.331 2.968 2.968v1.732c0 11.794-9.595 21.388-21.388 21.388h-228.098c-11.794 0-21.388-9.594-21.388-21.388v-1.732c0-1.637 1.332-2.968 2.968-2.968h10.577c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-10.577c-9.908 0-17.968 8.061-17.968 17.968v1.732c0 19.419 15.291 35.332 34.464 36.336v72.699c0 49.701 31.599 93.834 78.631 109.82 7.497 2.548 12.534 9.559 12.534 17.445s-5.037 14.896-12.534 17.444c-47.032 15.986-78.631 60.119-78.631 109.82v72.699c-19.173 1.004-34.464 16.917-34.464 36.336v1.732c0 9.908 8.061 17.968 17.968 17.968h110.64c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-110.64c-1.637 0-2.968-1.332-2.968-2.968v-1.731c0-11.793 9.595-21.388 21.388-21.388h228.097c11.794 0 21.388 9.594 21.388 21.388v1.732c0 1.636-1.332 2.968-2.968 2.968h-124.297c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h124.297c9.908 0 17.968-8.06 17.968-17.968v-1.732c0-19.419-15.291-35.332-34.464-36.336v-72.699c0-49.701-31.599-93.834-78.631-109.82-7.497-2.548-12.534-9.559-12.534-17.445.001-7.886 5.038-14.896 12.535-17.444zm-37.342 158.576c17.402 0 34.061 6.452 46.908 18.167 11.77 10.733 19.436 25.035 21.88 40.614h-137.571c2.422-15.45 9.97-29.64 21.595-40.357 12.888-11.881 29.646-18.424 47.188-18.424zm32.515-109.485c40.947 13.918 68.458 52.344 68.458 95.618v72.648h-17.042c-2.549-19.844-12.032-38.125-26.916-51.697-13.759-12.547-31.115-20.12-49.515-21.745v-22.657c0-4.142-3.358-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v22.657c-18.561 1.637-36.038 9.318-49.855 22.056-14.708 13.559-24.06 31.697-26.588 51.386h-17.03v-72.648c0-43.275 27.511-81.7 68.458-95.618 13.581-4.617 22.706-17.335 22.706-31.647s-9.125-27.03-22.706-31.646c-40.947-13.917-68.458-52.343-68.458-95.618v-72.648h201.946v72.648c0 43.274-27.511 81.7-68.458 95.618-13.581 4.617-22.706 17.335-22.706 31.647-.001 14.312 9.124 27.029 22.706 31.646z"/><path d="m256 296.914c-4.142 0-7.5 3.358-7.5 7.5v19.096c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-19.096c0-4.142-3.358-7.5-7.5-7.5z"/>
+            </svg>
+            <svg class="studentSvg" id="male" viewBox="0 0 511 511" style="display:none">
+                <path d="m431.5 472c-4.142 0-7.5 3.358-7.5 7.5v24c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-24c0-4.142-3.358-7.5-7.5-7.5z"/><path d="m400.057 317.812-89.057-27.826v-30.793c15.654-12.823 26.853-31.046 30.634-52.227.592-3.324.997-6.733 1.203-10.133.008-.135.013-.286.014-.424 0 0 0 0 0-.001 0-.003 0-.007 0-.01 0-.001 0-.001 0-.001 0-.003 0-.007 0-.01 0-.001 0-.002 0-.003 0-.003 0-.007 0-.01 0-.001 0-.001 0-.002 0-.003 0-.007 0-.011s0-.008 0-.012c0-.072-.001-.145-.003-.216-.01-.411-.024-.814-.035-1.223l22.735-30.971c.945-1.287 1.454-2.841 1.454-4.438v-102.652l49.971-9.994c3.504-.701 6.027-3.78 6.027-7.355s-2.523-6.653-6.029-7.354l-160-32c-.971-.194-1.971-.194-2.941 0l-31.655 6.331c-4.062.813-6.696 4.764-5.884 8.825.813 4.062 4.765 6.696 8.825 5.884l30.185-6.037 121.756 24.351-19.244 3.849c-.015.003-.03.006-.045.009l-102.468 20.494-81.757-16.352h81.757c4.418 0 8-3.582 8-8s-3.582-8-8-8h-81.756l15.953-3.19c4.062-.813 6.696-4.764 5.884-8.825-.813-4.062-4.762-6.694-8.825-5.884l-89.499 17.899h-1.757c-4.418 0-8 3.582-8 8v66.509c-4.504 2.407-7.82 6.792-8.713 12.149l-6.685 40.109c-.362 2.175.25 4.398 1.675 6.081 1.426 1.682 3.519 2.652 5.723 2.652h32c2.205 0 4.297-.97 5.723-2.652 1.425-1.682 2.038-3.906 1.675-6.081l-6.685-40.109c-.893-5.358-4.209-9.742-8.713-12.149v-57.26l40.5 8.1v102.651c0 1.597.509 3.151 1.454 4.438l22.735 30.971c-.011.422-.026.837-.036 1.262-.001.063-.002.146-.002.209v.013.003.011.002c0 .166.007.331.018.494.207 3.377.61 6.762 1.199 10.064 3.78 21.18 14.979 39.402 30.633 52.225v30.793l-89.06 27.827c-23.292 7.288-38.941 28.578-38.941 52.978v132.71c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-132.71c0-17.807 11.421-33.344 28.417-38.661l6.435-2.011 62.148 24.86v92.522c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-86.522l49 19.6v122.922c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-122.922l49-19.6v86.522c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-92.522l62.148-24.859 6.432 2.01c16.999 5.318 28.42 20.855 28.42 38.661v72.71c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-72.71c0-24.4-15.649-45.69-38.943-52.978zm-58.37-146.719c-.24-3.457-.508-6.82-.809-10.055-1.287-13.874-3.098-25.261-5.404-34.037h16.526v30.043zm-253.333-19.093 5.229-31.375c.156-.942.963-1.625 1.917-1.625s1.761.683 1.917 1.624l5.23 31.376zm165.675-73.145c.486.097.978.145 1.471.145s.985-.048 1.471-.146l95.029-19.005v52.151h-193v-52.151zm-95.029 78.188v-30.043h16.526c-2.306 8.776-4.117 20.162-5.404 34.035-.301 3.236-.568 6.6-.809 10.058zm25.134 47.291c-.473-2.655-.802-5.378-.979-8.099.316-12.271.956-23.646 1.902-33.812 1.418-15.276 3.498-27.357 6.074-35.423h128.737c2.576 8.066 4.656 20.148 6.074 35.425.946 10.164 1.586 21.538 1.902 33.81-.176 2.721-.505 5.444-.978 8.097-3.289 18.431-13.357 34.166-27.37 44.843-.299.189-.585.397-.853.625-12.126 8.964-27.092 14.2-43.144 14.2-16.051 0-31.017-5.236-43.143-14.199-.269-.229-.555-.437-.855-.627-14.011-10.677-24.078-26.41-27.367-44.84zm25.603 98.325c3.131-.979 5.263-3.878 5.263-7.159v-26.393c12.168 6.342 25.968 9.893 40.5 9.893s28.332-3.552 40.5-9.894v26.394c0 3.28 2.132 6.18 5.263 7.159l20.005 6.25-65.768 18.791-65.768-18.791zm45.763 64.764-110.972-44.389 19.124-5.975 89.788 25.654c1.34.383 2.781.383 4.121 0l89.788-25.654 19.124 5.975z"/><path d="m295.5 176c4.142 0 7.5-3.358 7.5-7.5v-8c0-4.142-3.358-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v8c0 4.142 3.358 7.5 7.5 7.5z"/><path d="m215.5 176c4.142 0 7.5-3.358 7.5-7.5v-8c0-4.142-3.358-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v8c0 4.142 3.358 7.5 7.5 7.5z"/><path d="m243.98 215.485c-3.312-2.467-8-1.791-10.479 1.516-2.485 3.313-1.813 8.015 1.5 10.5 1.023.768 10.294 7.5 20.5 7.5s19.477-6.732 20.5-7.5c3.305-2.479 3.971-7.153 1.505-10.467-2.465-3.314-7.158-4.003-10.482-1.55-1.588 1.172-7.115 4.517-11.523 4.517-4.407-.001-9.93-3.343-11.521-4.516z"/>
+            </svg>
+            <svg class="studentSvg" id="female" viewBox="0 0 511 511" style="display:none">
+                <path d="m400.057 317.812-89.057-27.826v-16.658c7.552 3.732 15.858 5.672 24.5 5.672 30.603 0 55.5-24.897 55.5-55.5 0-23.507-14.518-43.871-35.743-51.886 6.082-8.578 11.743-19.003 11.743-28.114v-86.651l49.971-9.994c3.506-.701 6.029-3.78 6.029-7.355s-2.523-6.653-6.029-7.354l-160-32c-.971-.194-1.971-.194-2.941 0l-156.773 31.354h-1.757c-4.418 0-8 3.582-8 8v66.509c-4.504 2.407-7.82 6.792-8.713 12.149l-6.685 40.109c-.362 2.175.25 4.398 1.675 6.081 1.426 1.682 3.519 2.652 5.723 2.652h32c2.205 0 4.297-.97 5.723-2.652 1.425-1.682 2.038-3.906 1.675-6.081l-6.685-40.109c-.893-5.358-4.209-9.742-8.713-12.149v-57.26l40.5 8.1v86.651c0 9.11 5.661 19.535 11.743 28.114-21.225 8.015-35.743 28.379-35.743 51.886 0 30.603 24.897 55.5 55.5 55.5 8.577 0 16.942-1.975 24.5-5.695v16.681l-89.06 27.827c-23.291 7.287-38.94 28.577-38.94 52.977v132.71c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-132.71c0-17.807 11.421-33.344 28.417-38.661l6.435-2.011 14.148 5.66v55.722c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-49.722l28.075 11.23 4.925 1.97v148.522c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-142.522l32.068 12.827c-10.169 3.653-20.486 9.337-24.325 17.921-1.973 4.413-3.138 11.453 2.517 19.935 5.008 7.513 10.821 9.32 15.253 9.32.526 0 1.032-.025 1.516-.07 8.598-.789 17.17-8.315 26.206-23.009 1.168-1.9 2.26-3.785 3.266-5.595 1.006 1.811 2.097 3.696 3.266 5.595 9.036 14.693 17.608 22.22 26.206 23.009.483.044.99.07 1.516.07 4.432 0 10.245-1.808 15.253-9.32 5.654-8.481 4.489-15.522 2.517-19.935-3.838-8.584-14.156-14.267-24.325-17.921l32.066-12.827v142.522c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-148.522l4.925-1.97 28.075-11.23v161.722c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-167.722l14.148-5.659 6.432 2.01c16.999 5.318 28.42 20.855 28.42 38.662v132.709c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-132.71c0-24.4-15.649-45.69-38.943-52.978zm-144.557 49.611-110.972-44.389 19.124-5.975 89.788 25.654c1.34.383 2.781.383 4.121 0l89.788-25.654 19.124 5.975zm120.5-143.923c0 22.332-18.168 40.5-40.5 40.5-8.044 0-15.686-2.301-22.295-6.682 14.496-12.697 24.829-30.18 28.429-50.349.906-5.078 1.366-10.282 1.366-15.469v-4.972c.632-.672 1.359-1.459 2.17-2.361 18.031 4.384 30.83 20.472 30.83 39.333zm-37.045-55.165c-3.46-11.344-9.013-27.884-15.574-41.334h28.619v16.5c0 6.445-6.343 16.462-13.045 24.834zm-83.455-153.186 121.757 24.351-19.244 3.849c-.015.003-.03.006-.045.009l-102.468 20.494-81.757-16.352h81.757c4.418 0 8-3.582 8-8s-3.582-8-8-8h-81.758zm-167.146 136.851 5.229-31.375c.156-.942.963-1.625 1.917-1.625s1.761.683 1.917 1.624l5.23 31.376zm165.675-73.145c.486.097.978.145 1.471.145s.985-.048 1.471-.146l95.029-19.005v52.151h-64.5c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h18.925c10.73 18.391 19.98 51.591 21.575 57.486v7.014c0 4.305-.381 8.622-1.133 12.832-3.289 18.431-13.357 34.166-27.37 44.843-.299.189-.585.397-.853.625-12.126 8.964-27.092 14.2-43.144 14.2s-31.018-5.236-43.144-14.2c-.268-.228-.553-.435-.852-.624-14.013-10.678-24.081-26.412-27.37-44.844-.752-4.209-1.133-8.526-1.133-12.831v-7.015c1.594-5.896 10.834-39.08 21.575-57.485h48.403c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-93.979v-52.152zm-95.029 48.145h28.62c-6.561 13.45-12.114 29.99-15.574 41.334-6.703-8.371-13.046-18.388-13.046-24.834zm-24 96.5c0-18.861 12.799-34.949 30.83-39.333.811.902 1.538 1.688 2.17 2.361v4.972c0 5.187.46 10.391 1.367 15.468 3.599 20.167 13.929 37.647 28.421 50.344-6.577 4.34-14.305 6.688-22.288 6.688-22.331 0-40.5-18.168-40.5-40.5zm74.737 79.159c3.131-.979 5.263-3.878 5.263-7.159v-26.393c12.168 6.342 25.968 9.893 40.5 9.893s28.332-3.552 40.5-9.893v26.393c0 3.281 2.132 6.18 5.263 7.159l20.005 6.25-65.768 18.791-65.768-18.791zm14.92 103.315c-.803.084-2.035-1.312-2.917-2.634-2.249-3.374-1.587-4.856-1.304-5.489 2.074-4.648 11.504-8.832 21.331-11.678-6.074 10.574-13.063 19.429-17.11 19.801zm65.907-8.123c.283.633.945 2.116-1.304 5.489-.881 1.322-2.111 2.71-2.916 2.634-1.958-.179-7.261-3.707-14.717-15.793-.828-1.343-1.618-2.686-2.363-3.999 9.815 2.846 19.228 7.026 21.3 11.669z"/><path d="m295.5 176c4.142 0 7.5-3.358 7.5-7.5v-8c0-4.142-3.358-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v8c0 4.142 3.358 7.5 7.5 7.5z"/><path d="m215.5 153c-4.142 0-7.5 3.358-7.5 7.5v8c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-8c0-4.142-3.358-7.5-7.5-7.5z"/><path d="m243.98 211.485c-3.312-2.467-8-1.791-10.479 1.516-2.485 3.313-1.813 8.015 1.5 10.5 1.023.768 10.294 7.5 20.5 7.5s19.477-6.732 20.5-7.5c3.305-2.479 3.971-7.153 1.505-10.467-2.465-3.314-7.159-4.003-10.482-1.55-1.588 1.172-7.115 4.517-11.523 4.517-4.407-.001-9.93-3.343-11.521-4.516z"/><path d="m143.5 420.066c-4.142 0-7.5 3.358-7.5 7.5v75.934c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-75.935c0-4.141-3.358-7.499-7.5-7.499z"/><path d="m255.5 424c-4.142 0-7.5 3.358-7.5 7.5v72c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-72c0-4.142-3.358-7.5-7.5-7.5z"/>
+            </svg>
+
+            <section class="info">
+                <section class="studentAttr">Full Name: <span id="fullName"></span></section>
+                <section class="studentAttr">ID: <span id="id"></span></section>
+                <section class="studentAttr">Course: <span id="courseorProgram"></span></section>
+                <section class="studentAttr">Full/Part Time: <span id="fullTimePartTime"></span></section>
+                <section class="studentAttr">TTT: <span id="totalHours"></span></section>
+                <section class="studentAttr">Transmission Type: <span id="transmissionType"></span></section>
+                <section class="studentAttr">Tuition Start Date: <span id="tuitionStartDate"></span></section>
+                <section class="studentAttr">Enrollment Status: <span id="programEnrollmentStatus"></span></section>
+                <section class="studentAttr">Payment Status: <span id="statusAR"></span></section>
+            </section>
+            
+            
+                
+
+        </section>      <!-- <section class="studentInfo"> -->
+
+        <section class="studentInfo">
+
+            <section class="equalBlock borders">
+                <section class="studentAttr">preTrip inCab TEST: <span id="inCabBrakeTEST"></span></section>
+                <section class="studentAttr">preTrip outSide TEST: <span id="outsideTEST"></span></section>
+                <section class="studentAttr">Parallel Parking TEST: <span id="parallelParkingTEST"></span></section>
+                <section class="studentAttr">90Degree Parking TEST: <span id="degrParkingTEST"></span></section>
+                <section class="studentAttr">City Driving TEST: <span id="cityDrivingTEST"></span></section>
+            </section>      <!-- <section class="equalBlock"> -->
+            <section class="equalBlock">
+                <section class="studentAttr">Can Drive at City? <span id="canDriveatCity"></span></section>
+                <section class="studentAttr">DOL/TPE Stage? <span id="availableatSkillsScheduling"></span></section>
+                <section class="studentAttr">Finished Tuition? <span id="passFail"></span></section>
+            </section>      <!-- <section class="equalBlock"> -->
+        </section>      <!-- <section class="studentInfo"> -->
+        
+        <section class="studentInfo" id="clocksBox">
+            <section class="equalBlock">
+                List of Today's Clocks:
+                <section id="clocksList"></section>
+            </section>      <!-- <section class="equalBlock"> -->
+            <section class="equalBlock borders">
+                <section class="studentAttr">Clock Status <section id="clockHandling"></section></section>
+            </section>      <!-- <section class="equalBlock"> -->
+        </section>      <!-- <section class="studentInfo"> -->
+
+        <section class="clockBlock"></section>
+
+    </section>
+    
+
+
+    <script>
+
+        const main = document.getElementById("main")
+
+        function showError(error) {
+
+            main.classList.remove("success")
+            main.classList.add("fail")
+
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                main.innerText = "You denied the request for Geolocation. Clocks are forbiden"
+                break;
+                case error.POSITION_UNAVAILABLE:
+                main.innerText = "Location information is unavailable. Clocks are forbiden"
+                break;
+                case error.TIMEOUT:
+                main.innerText = "The request to get user location timed out. Clocks are forbiden"
+                break;
+                case error.UNKNOWN_ERROR:
+                main.innerText = "An unknown error occurred. Clocks are forbiden"
+                break;
+            }
+        }
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition((position) => {
+                lat = position.coords.latitude
+                lon = position.coords.longitude
+                main.innerText = "geo enabled. Clocks can be performed"
+                
+                main.classList.remove("fail")
+                main.classList.add("success")
+
+                let URI = `<%= url %>&lat=${lat}&lon=${lon}`
+
+                fetch(URI)
+                .then(res => res.json())
+                .then(res => {
+
+                    document.getElementById("id").textContent = '<%= key %>'
+                    
+                    const clockHandling = document.getElementById("clockHandling")
+
+                    if (res.fullName == undefined) {
+                        clockHandling.textContent = "Wrong student ID..."
+                    } else {
+
+                        document.getElementById("waitInfo").style.display = "none"
+                        if (res.sex == "Female") {    
+                            document.getElementById("female").style.display = "flex"
+                        } else {
+                            document.getElementById("male").style.display = "flex"
+                        }
+                        document.getElementById("fullName").textContent = res.fullName.toUpperCase()
+                        document.getElementById("courseorProgram").textContent = res.courseorProgram
+                        document.getElementById("fullTimePartTime").textContent = res.fullTimePartTime
+
+                        const time1 = new Date(res.totalHours)
+                        const time2 = new Date("1899-12-30T08:00:00.000Z")
+                        const hours_between_clocks = Math.abs(time2 - time1) / (3600000)
+                        const h = Math.floor(hours_between_clocks)
+                        const m = Math.round((hours_between_clocks - h)*60)
+
+                        document.getElementById("totalHours").textContent = `${h}h:${m}m`
+                        document.getElementById("transmissionType").textContent = res.transmissionType
+                        document.getElementById("tuitionStartDate").textContent = new Date(res.tuitionStartDate).toLocaleDateString('en-US', { timeZone: 'America/Los_Angeles' })
+                        document.getElementById("programEnrollmentStatus").textContent = res.programEnrollmentStatus
+                        
+                        
+                        if (res.statusAR === "paid") {
+                            document.getElementById("statusAR").textContent = res.statusAR
+                            document.getElementById("statusAR").classList.add("success_pill")
+                        } else {
+                            document.getElementById("statusAR").textContent = `${Math.round(res.statusAR*1000)/10}% paid`
+                            document.getElementById("statusAR").classList.add("fail_pill")
+                        }
+
+                        //  TESTS Block
+                        function markTest (test) {
+                            document.getElementById(test).textContent = res[test]
+                            if (res[test] === "passed") {
+                                document.getElementById(test).classList.add("success_pill")
+                            } else {
+                                if (res[test] === "failed") {
+                                    document.getElementById(test).classList.add("fail_pill")
+                                } else {
+                                    document.getElementById(test).textContent = "N/A"
+                                }
+                            }
+                        }
+
+                        markTest("inCabBrakeTEST")
+                        markTest("outsideTEST")
+                        markTest("parallelParkingTEST")
+                        markTest("degrParkingTEST")
+                        markTest("cityDrivingTEST")
+
+
+                        if (res.canDriveatCity === "+") {
+                            document.getElementById("canDriveatCity").textContent = "YES"
+                            document.getElementById("canDriveatCity").classList.add("success_pill")
+                        } else {
+                            document.getElementById("canDriveatCity").textContent = "NO"
+                            document.getElementById("canDriveatCity").classList.add("fail_pill")
+                        }
+
+                        if (res.availableatSkillsScheduling) {
+                            document.getElementById("availableatSkillsScheduling").textContent = "YES"
+                            document.getElementById("availableatSkillsScheduling").classList.add("success_pill")
+                        } else {
+                            document.getElementById("availableatSkillsScheduling").textContent = "NO"
+                            document.getElementById("availableatSkillsScheduling").classList.add("fail_pill")
+                        }
+
+                        markTest("passFail")
+
+                        if (res.clockBlock === "BLOCK") {
+                            // check if student is blocked because of expulsion(block can be put manualy)
+                            document.querySelector("#clocksBox").style.display = "none"
+                            
+                            document.querySelector(".clockBlock").style.display = "block"
+                            document.querySelector(".clockBlock").textContent = "BLOCKED! Due to expulsion"
+                            document.querySelector(".clockBlock").style.animation = "blocked 3s infinite linear"
+
+                            document.querySelector("#male").style.animation = "blocked 3s infinite linear"
+                            document.querySelector("#female").style.animation = "blocked 3s infinite linear"
+                        } else {    // NOT BLOCKED, can work with QR
+                            //  working with Clocks
+                            let html = ""
+                            if (res.todayClocks.length === 0) {
+                                html = "no previous clocks yet..."
+                            } else {    //  there are previous clocks
+                                for (let i=0; i<res.todayClocks.length; i++) {
+                                    let clock = res.todayClocks[i][5]
+                                    let when = new Date(res.todayClocks[i][3]).toLocaleTimeString('en-US', { timeZone: 'America/Los_Angeles' })
+                                    
+                                    let where = res.todayClocks[i][7]
+                                    if (where === "NEW") {      //  new clock, make it RED
+                                        where = `<span class="studentAttr" style="color:var(--bad);">NEW</span>`
+                                    }
+
+                                    let clClass = "in"
+                                    let duration = ""
+
+                                    let diff, hh, mm
+                                    
+                                    if (clock === "Clock OUT") {
+                                        clClass = "out"
+                                        if (res.todayClocks[i][8] != "" && res.todayClocks[i][8] != undefined) {
+
+                                            diff = res.todayClocks[i][7] === "NEW" ? res.todayClocks[i][8] : Math.abs(new Date(res.todayClocks[i][8]) - new Date("1899-12-30T08:00:00.000Z")) / (3600000)
+                                            hh = Math.floor(diff)
+                                            mm = Math.round((diff - hh)*60)
+
+                                            duration = `<span class="out">${hh}h:${mm}m</span>`
+                                        }       //  there is duration
+                                    }       //  (clock === "Clock OUT")
+
+                                    html += `<section class="${clClass}">${clock}: <span class="studentAttr">${when} ${where} </span>${duration}</section>`
+                                }   // clock history FOR
+                            }   // clock history IF
+
+                            document.getElementById("clockHandling").textContent = res.clockHandling
+                            document.getElementById("clockHandling").classList.add(res.status)
+
+                            document.getElementById("clocksList").innerHTML = html
+                        }   //  NOT blocked, can work
+                    }   //  res.fullName != undefined
+                })
+            }, showError)  //  navigator.geolocation.getCurrentPosition
+        } else { main.innerText = "Cannot get your geo location. Clocks are forbiden" }   // if (navigator.geolocation)
+
+
+    </script>
+</body>
+</html>

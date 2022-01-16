@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="shortcut icon" href="./img/thumb/ico.png"/>
+    <title>Instructors Area</title>
+
+</head>
+<body>
+    
+    <div class="header__ico">
+        <div class="ico__item" onclick="document.location='/'">               
+            NSTS
+        </div>
+    </div>
+
+    <section id="singBox" class="singBox"> 
+        <section class="singBox_inner">
+            
+            <form class="singInForm" id="singInForm" method="POST">
+                
+                <h1 class="title signItem">Instructor's Sign In</h1>
+                <label for="signEmail"class="signItem">Login</label>
+                <input type="text" id="instSignEmail" class="signEmail signItem" required>
+                
+                <label for="signPassword" class="signItem">Password</label>
+                <input type="password" id="instSignPassword" class="signPassword signItem" required>
+                
+                <button type="submit" class="signBtn signItem">Sing In</button>
+
+            </form>
+
+        </section>  <!-- class="singBox_inner" -->
+    </section>  <!-- class="singBox" -->
+
+
+
+    <section class="instBlock" id="instBlock">
+
+        <section class="instHeader">
+            <img class="instHeaderImg" src="img/body/inst_header.jpg">
+            <section class="instMenu">
+                <a class="instMenuItem" target="_blank" href="https://script.google.com/macros/s/AKfycbylE_QzxcsQg7H2QVJzzU-rrKKuZuGDDZZIGl2CjaMZHIVrAWZTU7QV-pdAcySrOjsADQ/exec">Scheduling</a>
+                <a class="instMenuItem" target="_blank" href="https://script.google.com/macros/s/AKfycbzBjQxgIgvO4sx3Z5FFupmEwNT9pWjtQQnH-ojxbGc4XEMVo7cu766M0V-9vQbCcrKH/exec">INs</a>
+                <a class="instMenuItem red" href="/inst">Sign Out</a>
+            </section>
+        </section>
+        <section class="instInner">
+            <section class="instName" id="instName">instr Name</section>
+            <section id="instSchedileOf">using schedule of...</section>
+            <ul> Useful Links
+                <li><a class="usfulLinks" target="_blank" href="https://docs.google.com/spreadsheets/d/1DlO3k-DODpbnCOXNT8quv0ywOMLOO1EhMPC5ys1E7og">Student List</a></li>
+                <li><a class="usfulLinks" target="_blank" href="https://docs.google.com/spreadsheets/d/1gPHuDf4iy5SpsUY5Nt4n020eIl-NxsdJChqjQVIFK04">Instructors Area</a></li>
+                <li><a class="usfulLinks" target="_blank" href="https://docs.google.com/spreadsheets/d/1s7ZpMPxNe2IS5bwUgmMdz7okOEdCJZjehQHG1Bgbz90">Driving Schedule</a></li>
+                <li><a class="usfulLinks" target="_blank" href="https://docs.google.com/spreadsheets/d/12LZKed9iebFl5kK3S3h26jXDdpyAA-Vge0_ZAUc_Yuo">Skills Test</a></li>
+
+                <li><a class="usfulLinks" target="_blank" href="https://docs.google.com/spreadsheets/d/1vRjgS0y9m9w5gDG62HKOwjRe-v_Crmm5arGSpD0yQ28">Postman: Expulsion Work</a></li>
+                <li><a class="usfulLinks" target="_blank" href="https://docs.google.com/spreadsheets/d/1l0ekPug4OWvNgXBwYtMjceKC-_PuAfpoFyOrvzQ7xr4">Postman: 10K SMS Campaign</a></li>
+                
+                <li><a class="usfulLinks" target="_blank" href="https://docs.google.com/spreadsheets/d/1sTB5MLzb8h6fji0gNslTCtQh8iyTS65P0uEZfbZ0jGw">Student Area</a></li>
+                <li><a class="usfulLinks" target="_blank" href="https://docs.google.com/spreadsheets/d/1AHXRCrlWIkBakQhmhk3zE5G5AuFDa4TJRYd8RSI2TSo">Student Analitics</a></li>
+                <li><a class="usfulLinks" target="_blank" href="https://docs.google.com/spreadsheets/d/1NNJg2lMM-9LqpNlZrMeO6dJgJWcP4zwSRAsMsxyhVMU">Marketing Area</a></li>
+                <li><a class="usfulLinks" target="_blank" href="https://docs.google.com/spreadsheets/d/19fSPcemiEYWLAKf8YNhouJU6tE30cdpm7Me84cMU6h8">Survey</a></li>
+
+                <li><a class="usfulLinks" target="_blank" href="https://docs.google.com/spreadsheets/d/1EfR5QuUYMblhIAMhNNQgcz9_UXgXQ7zOfTNv0chFPiM">Archive</a></li>
+                <li><a class="usfulLinks" target="_blank" href="https://docs.google.com/forms/d/1PVylrIBd-jE0Vg7-ACNTkj-KtpoNg5P9NBnxUK98uVw">Vehicle Inspection Form</a></li>
+
+            </ul>
+        </section>
+
+        
+    </section><!-- class="instBlock" -->
+
+
+
+    <script src="doGetPost.js" defer></script>
+    <script src="instructors.js" defer></script>
+
+</body>
+</html>

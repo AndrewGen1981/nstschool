@@ -1,0 +1,439 @@
+/* ROOT constants */
+:root {
+    --activeRowFontSize: 18px;
+    --activeRowHeight: 28px;
+    
+    --inactiveRowFontSize: 14px;
+    --inactiveRowHeight: 16px;
+}
+
+
+/* STYLES */
+
+/* Navigation */
+.cal_links {
+    width: 100%;
+    height: 35px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f9b631;
+}
+
+@keyframes attention {
+    90% {color: #272727}
+    95% {color: #ff620c}
+    100% {color: #272727}
+}
+
+.cal_link {
+    --anim_order_id: 3s;
+
+    flex-basis: 20%;
+    flex-wrap: nowrap;
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    font-family: "Montserrat", Verdana, Tahoma, sans-serif;
+    font-size: 12px;
+    line-height: 33px;
+    
+    color: #272727;
+
+    cursor: pointer;
+}
+
+.cal_link:not(#refresh-all):not(.-active_sch_link) {
+    -webkit-animation: 10s ease-in var(--anim_order_id) infinite attention;
+       -moz-animation: 10s ease-in var(--anim_order_id) infinite attention;
+         -o-animation: 10s ease-in var(--anim_order_id) infinite attention;
+            animation: 10s ease-in var(--anim_order_id) infinite attention;
+}
+
+.-active_sch_link {
+    font-weight: 700;
+
+    background-color: #ff620c;
+    border-radius: 17px;
+
+    transition: background-color .3s ease-in;
+}
+
+#refresh-all.cal_link {
+    background-color: #272727;
+    color:wheat;
+}
+
+.cal_link:hover:not(.-active_sch_link) {
+    background-color: #ff610c96;
+    border-radius: 17px;
+    transition: background-color .3s ease-in;
+}
+
+
+
+/* CALENDAR */
+.calendar_main {
+    margin: 0 auto 35px auto;
+    width: 100%;
+}
+.calendar {
+    margin-top: 3px;
+    width: 100%;
+    min-width: 300px;
+    display: block
+}
+
+
+/* Skeleton */
+@keyframes pulsing-for-skeleton{
+    0% {
+        background-color:  hsl(200, 20%, 70%);
+        transform: scale(0.5) translateX(-10px)
+    }
+    100% {
+        background-color:  hsl(200, 20%, 95%);
+        transform: scale(1.1) translateX(10px)
+    }
+}
+
+.skeleton-radio {
+    --delay: 1s;
+
+    background-color:  hsl(200, 20%, 70%);
+    width: 18px;
+    height: 18px;
+    
+    border-radius: 9px;
+    margin: 18px 3px;
+
+    animation: pulsing-for-skeleton var(--delay) ease-in-out infinite alternate;
+    -moz-animation: pulsing-for-skeleton var(--delay) ease-in-out infinite alternate;
+    -webkit-animation: pulsing-for-skeleton var(--delay) ease-in-out infinite alternate;
+    -o-animation: pulsing-for-skeleton var(--delay) ease-in-out infinite alternate;
+}
+[data-delay="speed2"] {
+    --delay: 1.25s;
+}
+[data-delay="speed3"] {
+    --delay: 1.5s;
+}
+
+
+.infoPrompt {
+    margin: 70px 0;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: "Gotham Medium", Verdana, Tahoma, sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #333;
+}
+.hide-prompt {
+    display: none;
+}
+
+
+/* calendar info-head styles */
+.cal_info {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 1st line of head */
+.cal_info #info0, .cal_info #info1 {
+    font-family: 'Montserrat', "Gotham Medium", sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    
+    letter-spacing: -0.7px;
+    text-transform: uppercase;
+
+    color: #366dbb;
+}
+.cal_info #info1 {
+    font-family: "Gotham Light", Verdana, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+
+/* 2nd line of head */
+.cal_info #info2, .cal_info #info3 {
+    font-family: 'Montserrat', "Gotham Medium", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 700;
+    font-style: italic;
+
+    letter-spacing: -0.6px;
+    text-transform: capitalize;
+    color: #272727;
+}
+
+/* 3rd line of head */
+.cal_info #info4 {
+    font-family: 'Montserrat', "Gotham Medium", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #272727;
+
+    margin-bottom: 12px;
+}
+
+/* flex-basis */
+.cal_info #info0, .cal_info #info2 {
+    flex-basis: 55%;
+}
+.cal_info #info1, .cal_info #info3 {
+    flex-basis: 45%;
+}
+.cal_info #info4 {
+    flex-basis: 100%;
+}
+
+/* before sudo */
+.cal_info #info0::before,
+.cal_info #info1::before,
+.cal_info #info2::before,
+.cal_info #info3::before,
+.cal_info #info4::before {
+    content: "Course title";
+
+    padding: 0 10px 0 5px;
+
+    font-family: 'Montserrat', "Gotham Book", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+
+    text-transform: capitalize;
+    color: #777777;
+}
+
+.cal_info #info1::before {
+    content: "location"
+}
+.cal_info #info2::before {
+    content: "this week"
+}
+.cal_info #info3::before {
+    content: "next week"
+}
+.cal_info #info4::before {
+    content: "instructor";
+}
+
+
+/* Calendar Days of Week & Dates*/
+.cal_day {
+    background-color: #e9e9e9;
+    
+    font-family: "Gotham Medium", Verdana, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #272727;
+}
+.cal_date, #date0 {
+    background-color: #e9e9e9;
+    
+    font-family: "Gotham Book", Verdana, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: #8b8b8b;
+    /* border-bottom: 1px solid #333; */
+
+    margin-bottom: 10px;
+}
+.cal_timeStamp {
+    font-family: "Gotham Light", Verdana, Tahoma, sans-serif;
+    font-size: var(--activeRowFontSize);
+    line-height: var(--activeRowHeight);
+    
+    text-align: right;
+    color: black;
+
+    padding-right: 5px;
+}
+.cal_timeStamp.entireRowIsClosed {
+    font-size: var(--inactiveRowFontSize);
+    line-height: var(--inactiveRowHeight);
+    text-align: right;
+    color: #434343;
+}
+
+
+/* Calendar Events */
+
+.cal_event.cal_event-closed {
+    background: -webkit-linear-gradient(135deg, #7e7e7e, #535353);
+    background: -moz-linear-gradient(135deg, #7e7e7e, #535353);
+    background: linear-gradient(135deg, #7e7e7e, #535353);
+    cursor: not-allowed;
+}
+.cal_event.cal_event-busy {
+    background: -webkit-linear-gradient(135deg, #74b4e4, #366dbb);
+    background: -moz-linear-gradient(135deg, #74b4e4, #366dbb);
+    background: linear-gradient(135deg, #74b4e4, #366dbb);
+    cursor: not-allowed;
+}
+
+.cal_event.cal_event-free {
+    background-color: white;
+    cursor: pointer;
+}
+.cal_event.cal_event-free:hover {
+    z-index: 1;
+    box-shadow: 0px 0px 10px #e63668;
+    transition: box-shadow .15s linear;
+}
+
+.cal_event.cal_event-you {
+    background: -webkit-linear-gradient(135deg, #e47494, #49a8ec);
+    background: -moz-linear-gradient(135deg, #e47494, #49a8ec);
+    background: linear-gradient(135deg, #e47494, #49a8ec);
+    cursor: pointer;
+}
+.cal_event.cal_event-you:hover {
+    z-index: 1;
+    box-shadow: 0px 0px 10px #e63668;
+    transition: box-shadow .15s linear;
+}
+
+
+.cal_timeLine {
+    display: none;
+}
+
+
+
+/* MEDIA */
+@media (max-width: 950px) {
+    .cal_info #info0 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 900px) {
+    .cal_info #info0 {
+        font-size: 22px;
+    }
+}
+@media (max-width: 850px) {
+    .cal_info #info0 {
+        font-size: 19px;
+    }
+    .cal_info #info1,
+    .cal_info #info2,
+    .cal_info #info3 {
+        font-size: 16px;
+    }
+}
+@media (max-width: 750px) {
+    .cal_info {
+        flex-direction: column;
+    }
+    .cal_info #info0,
+    .cal_info #info1,
+    .cal_info #info2,
+    .cal_info #info3,
+    .cal_info #info4 {
+        line-height: 1.3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cal_info #info0::before,
+    .cal_info #info1::before,
+    .cal_info #info2::before,
+    .cal_info #info3::before,
+    .cal_info #info4::before {
+        text-transform: uppercase;
+        font-style: normal;
+    }
+    .cal_link {
+        font-size: 11px;
+    }
+}
+@media (max-width: 600px) {
+    .cal_links {
+        flex-wrap: wrap;
+        white-space: nowrap;
+        height: auto;
+    }
+    .cal_link {
+        line-height: 2.2;
+        padding: 0 10px;
+    }
+    .cal_day {
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .cal_date {
+        font-size: 10px;
+    }
+    .cal_info #info4 {
+        margin-bottom: 12px;
+    }
+}
+@media (max-width: 500px) {
+    :root {
+        --activeRowFontSize: 15px;
+        --activeRowHeight: 23px;
+        
+        --inactiveRowFontSize: 11px;
+        --inactiveRowHeight: 12px;
+    }
+    .cal_info #info0,
+    .cal_info #info1,
+    .cal_info #info2,
+    .cal_info #info3,
+    .cal_info #info4,
+    .cal_info #info5 {
+        font-size: 14px;
+    }
+    .cal_info #info0::before,
+    .cal_info #info1::before,
+    .cal_info #info2::before,
+    .cal_info #info3::before,
+    .cal_info #info4::before,
+    .cal_info #info5::before {
+        font-size: 10px;
+    }
+    .cal_info #info4 {
+        margin-bottom: 5px;
+    }
+    .cal_link {
+        padding: 0 7px;
+    }
+    .cal_day {
+        font-size: 11px;
+    }
+    .cal_date {
+        font-size: 10px;
+        /* writing-mode: vertical-lr;
+        text-orientation: use-glyph-orientation; */
+    }
+    .cal_timeStamp {
+        letter-spacing: -0.6px;
+    }
+}
+@media (max-width: 400px) {
+    .cal_day {
+        font-size: 9px;
+        line-height: 1.7;
+    }
+    .cal_date {
+        font-size: 9px;
+    }
+}

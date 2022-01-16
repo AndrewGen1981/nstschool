@@ -1,0 +1,562 @@
+[
+    {
+        "question":"Driver must be able to see a low air pressure warning which comes on before pressure in the service air tanks falls below ___psi",
+        "answers":[
+            "40",
+            "60(TRUE)",
+            "80"
+        ]
+    },
+    {
+        "question":"Why do you need to drain water from compressed air tanks?",
+        "answers":[
+            "Water low boiling point reduces braking power",
+            "Water can freeze in cold weather and cause brake failure(TRUE)",
+            "Water cools the compressor too much"
+        ]
+    },
+    {
+        "question":"How should you check that your service brakes are working properly?",
+        "answers":[
+            "Park on slight grade, drain off pressure, set parking brake and check to the movement",
+            "Park on a level ground, chock the wheels, engage the parking brakes when you have the correct amount of air pressure to do so and shut the engine off",
+            "Park on level ground, wait until normal air pressure is reached, release the parking brake and move forward slowly at about 5 mph. Then apply the brakes firmly(TRUE)"
+        ]
+    },
+    {
+        "question":"What should you do every day during cold weather if your vehicle has an alcohol evaporator?",
+        "answers":[
+            "Check and fill the alcohol level(TRUE)",
+            "Change the alcohol from a new bottle",
+            "Check the oil for alcohol content"
+        ]
+    },
+    {
+        "question":"The safety valve is set automatically when pressure is:",
+        "answers":[
+            "50",
+            "100",
+            "150(TRUE)"
+        ]
+    },
+    {
+        "question":"The brake pedal in an air brake system:",
+        "answers":[
+            "Control the speed of the air compressor",
+            "Control the air pressure applied to put on the brakes(TRUE)",
+            "Is connected to slack adjusters by a series of roads and linkages"
+        ]
+    },
+    {
+        "question":"Under normal conditions in order to engage the parking brakes the driver:",
+        "answers":[
+            "Turn off the engine",
+            "Let the air out of air brake system(TRUE)",
+            "Be sure air brakes system is fully pressurized"
+        ]
+    },
+    {
+        "question":"A straight truck or bus air brake system should not leak at the rate of more than ____ psi per minute with the engine off and the brakes released.",
+        "answers":[
+            "1",
+            "2(TRUE)",
+            "3"
+        ]
+    },
+    {
+        "question":"The braking power of the spring brakes:",
+        "answers":[
+            "Is not affected by the condition of the service brakes",
+            "Depends on the service brakes being in adjustment(TRUE)",
+            "Increases when the service brakes are hot"
+        ]
+    },
+    {
+        "question":"If your truck or bus has dual parking control valves, you can use pressure from a separate tank to:",
+        "answers":[
+            "Balance the service brake system when you are parked",
+            "Stay parked twice as long without using service air pressure",
+            "Release the spring emergency/parking brakes to move a short distance(TRUE)"
+        ]
+    },
+    {
+        "question":"If you truck has a properly functioning dual air brake system and minimum size air tanks the air pressure should build up from 85 to 100 psi within how may seconds?",
+        "answers":[
+            "30",
+            "60",
+            "45(TRUE)"
+        ]
+    },
+    {
+        "question":"Total stopping distance for air brakes is longer than for hydraulic brakes due to ___ distance",
+        "answers":[
+            "Brake lag(TRUE)",
+            "Reaction",
+            "Effective braking"
+        ]
+    },
+    {
+        "question":"The spring brakes used on the chambers in a straight truck will bring you to a stop when air pressure drops below ____ psi.",
+        "answers":[
+            "20(TRUE)",
+            "60",
+            "100"
+        ]
+    },
+    {
+        "question":"What is the most common type of foundation found on heavy vehicles?",
+        "answers":[
+            "Wedge drum",
+            "S-cam drum(TRUE)",
+            "Disc"
+        ]
+    },
+    {
+        "question":"The S-cam:",
+        "answers":[
+            "Controls the flow air to each of the rake chambers",
+            "Pulls the brake shoes away from the drum and allow the wheels to roll freely",
+            "Forces the brake shoes against the inside of the brake drum(TRUE)"
+        ]
+    },
+    {
+        "question":"The air loss rate for a straight truck or bus with the engine off and the brakes on should not be more than:",
+        "answers":[
+            "1 psi in 30 seconds",
+            "2 psi in 45 seconds",
+            "3 psi in one minute(TRUE)"
+        ]
+    },
+    {
+        "question":"A slack adjuster’s free play needs to be adjusted if it is more than about ____how many inches when you pull hard on it?",
+        "answers":[
+            "1/4 inch",
+            "1/2 inch",
+            "1 inch(TRUE)"
+        ]
+    },
+    {
+        "question":"What should you do if your truck or bus has a dual air brake system and a low air pressure warning comes on for only one system?",
+        "answers":[
+            "Reduce you speed and drive to the nearest garage for repairs",
+            "Reduce you speed and test the remaining system while under way",
+            "Stop right away and safely park. Continue only after the system fixed(TRUE)"
+        ]
+    },
+    {
+        "question":"It is accepted that too much heat caused by using your brakes too often also cause:",
+        "answers":[
+            "Modulated control valve to wear out",
+            "Brake listings to split up",
+            "Brake to fade or fail(TRUE)"
+        ]
+    },
+    {
+        "question":"Some air brake systems have an alcohol evaporator. What may happen if you don’t keep the proper level of an alcohol?",
+        "answers":[
+            "The S-cam may not take back when you release the brake pedal",
+            "Ice may form in the air storage tank and cause a brake failure(TRUE)",
+            "Ice may form on the brake drums and wear them out"
+        ]
+    },
+    {
+        "question":"The air brake lag distance at 55 mph on dry pavement adds about ____ feet.",
+        "answers":[
+            "12 feet",
+            "32 feet(TRUE)",
+            "52 feet"
+        ]
+    },
+    {
+        "question":"Repeatedly partially releasing and pressing the brake pedal may result in:",
+        "answers":[
+            "A loss of brake air pressure(TRUE)",
+            "A build up of brake air pressure",
+            "No change of brake air pressure"
+        ]
+    },
+    {
+        "question":"The air compressor stops pumping air at what psi?",
+        "answers":[
+            "100",
+            "125(TRUE)",
+            "150"
+        ]
+    },
+    {
+        "question":"If you must make an emergency stop, you should brake so you:",
+        "answers":[
+            "Use the hand brake before the pedal brake",
+            "Can steer and so your vehicle stays in a straight line(TRUE)",
+            "Use the full power of the brakes to lock them"
+        ]
+    },
+    {
+        "question":"What do all air equipped vehicles have?",
+        "answers":[
+            "A supply pressure gauge(TRUE)",
+            "An air usage gauge",
+            "A backup hydraulic system"
+        ]
+    },
+    {
+        "question":"Excessive use of the service brakes result in overheating which can lead to:",
+        "answers":[
+            "Proper adjustment of S-cam",
+            "Increase contact between the brake drums and linings",
+            "Expansion of the brake drums(TRUE)"
+        ]
+    },
+    {
+        "question":"The brake system that applies and releases the brakes when the driver uses the brake pedal is the ____ brake system Emergency",
+        "answers":[
+            "Emergency",
+            "Service(TRUE)",
+            "Parking"
+        ]
+    },
+    {
+        "question":"With air brakes vehicles, the parking brakes should be used:",
+        "answers":[
+            "Whenever you leave the vehicle unattached(TRUE)",
+            "As little as possible",
+            "Only during pre-and post-trip inspections"
+        ]
+    },
+    {
+        "question":"Your truck or bus has a dual air brake system. If a low air pressure warning comes on for only one system, what should you do?",
+        "answers":[
+            "Bring your vehicle to a complete stop right away and safety park. Continue only after the system is fixed(TRUE)",
+            "Reduce you speed and test the remaining system while under way",
+            "Reduce you speed and drive to the nearest garage for repairs"
+        ]
+    },
+    {
+        "question":"What will happen if your truck has a dual air system and one of the systems loses its pressure?",
+        "answers":[
+            "Brake drums will not be fully pressurized?",
+            "The manual slack adjusters of the S-cam will not be set properly",
+            "Wither the front or back brake will not be fully operational(TRUE)"
+        ]
+    },
+    {
+        "question":"The application pressure gauge shows how much air pressure you:",
+        "answers":[
+            "Have in the air brakes",
+            "Are applying to the brakes(TRUE)",
+            "Have in a modulating control valve"
+        ]
+    },
+    {
+        "question":"During normal driving, spring brakes are usually held back by:",
+        "answers":[
+            "Bolts or clamps",
+            "Air pressure(TRUE)",
+            "Spring pressure"
+        ]
+    },
+    {
+        "question":"The driver must be able to see a low air pressure warning which comes on before pressure in the service air tanks bellow ____ psi",
+        "answers":[
+            "50",
+            "60(TRUE)",
+            "80"
+        ]
+    },
+    {
+        "question":"Parking or emergency brakes of trucks and buses can be legally held on by ___ pressure.",
+        "answers":[
+            "Spring(TRUE)",
+            "Air",
+            "Fluid"
+        ]
+    },
+    {
+        "question":"At what psi an air brake system is fully charged?",
+        "answers":[
+            "75",
+            "100",
+            "125(TRUE)"
+        ]
+    },
+    {
+        "question":"The stop light switch:",
+        "answers":[
+            "Tells you when the air brake system is low pressure",
+            "Tells you when you need to use your emergency brakes",
+            "Turns on your brake lights to warn drivers behind you(TRUE)"
+        ]
+    },
+    {
+        "question":"To check the free play of manual slack adjusters of S-cam brakes, you should park on:",
+        "answers":[
+            "Lever ground, chock the wheels and release the parking brakes(TRUE)",
+            "Level ground and apply the parking brakes, then apply service brakes",
+            "Level ground and drain off air pressure before checking the adjustment"
+        ]
+    },
+    {
+        "question":"The application pressure gauge shows how much air pressure you:",
+        "answers":[
+            "Have in the air brakes",
+            "Are applying to the brakes(TRUE)",
+            "Have in a modulating control valve"
+        ]
+    },
+    {
+        "question":"Your brakes are fading when:",
+        "answers":[
+            "You have to push harder on a brake pedal to control you speed on a downgrade(TRUE)",
+            "Less pressure is needed on the brake pedal for each stop",
+            "The brake pedal feels spongy when you apply pressure"
+        ]
+    },
+    {
+        "question":"Emergency stab braking is:",
+        "answers":[
+            "When you press hard on a brake pedal and apply hand valve",
+            "Use light steady pressure on the brake pedal",
+            "Press on the brake pedal as hard as you can, release the brakes when the wheels locked, put on the brakes again when the wheels start rolling(TRUE)"
+        ]
+    },
+    {
+        "question":"If the spring brakes are on, when should you push the brake pedal?",
+        "answers":[
+            "Only when driving downhill",
+            "Only on the slippery road",
+            "Never(TRUE)"
+        ]
+    },
+    {
+        "question":"If you must make an emergency stop, you should brake so you:",
+        "answers":[
+            "Can steer hard while braking hard",
+            "Can steer and so you vehicle stays in a straight line(TRUE)",
+            "Use the hand brake first"
+        ]
+    },
+    {
+        "question":"At what psi does the safety valve reduce pressure?",
+        "answers":[
+            "50",
+            "100",
+            "150(TRUE)"
+        ]
+    },
+    {
+        "question":"Why should you drain water from compressed air tanks?",
+        "answers":[
+            "Water low boiling point reduces braking power",
+            "Water can freeze in cold weather and cause brake failure(TRUE)",
+            "To keep from fowling the air compressor oil"
+        ]
+    },
+    {
+        "question":"Some air brake systems have an alcohol evaporator. What may happen if you don’t keep the proper level of an alcohol?",
+        "answers":[
+            "The S-cam may not take back when you release the brake pedal",
+            "Ice may form in the air storage tank and cause a brake failure(TRUE)",
+            "Ice may form on the brake drums and wear them out"
+        ]
+    },
+    {
+        "question":"With air brake vehicles, the parking brakes should be used:",
+        "answers":[
+            "As little as possible",
+            "Any time when vehicle is parked(TRUE)",
+            "To hold your speed when going downhill"
+        ]
+    },
+    {
+        "question":"The braking power of the spring brakes:",
+        "answers":[
+            "Depends on the service brakes being in adjustment(TRUE)",
+            "Is not affected by the condition of the service brakes",
+            "Can only be tested by high-trained brake service people"
+        ]
+    },
+    {
+        "question":"To test air service brakes you should:",
+        "answers":[
+            "Stop the vehicle, brake in a low gear, depress the service brakes, and then gently pull against the brakes",
+            "Brake firmly while slowly moving forward(TRUE)",
+            "Brake slowly while moving backwards"
+        ]
+    },
+    {
+        "question":"The use of brakes on a long and steep downgrade under normal conditions is only a supplement to:",
+        "answers":[
+            "Use of spring brakes",
+            "The use of the front brakes limiting valve",
+            "The braking effect on the engine(TRUE)"
+        ]
+    },
+    {
+        "question":"At what pressure does the safety valve automatically discharge?",
+        "answers":[
+            "50",
+            "100",
+            "150(TRUE)"
+        ]
+    },
+    {
+        "question":"Which of these in NOT a proper time to apply the parking brakes?",
+        "answers":[
+            "To brake vehicle very hard, in other words when coming down the steep grade(TRUE)",
+            "To use parking brakes of you park for less than 1 hour",
+            "If you are going to use the parking brakes you need to make sure that they will hold the vehicle"
+        ]
+    },
+    {
+        "question":"A slack adjuster’s free play needs to be adjusted if it is more than about ____how many inches when you pull hard on it?",
+        "answers":[
+            "1/4 inch",
+            "1/2 inch",
+            "1 inch(TRUE)"
+        ]
+    },
+    {
+        "question":"A straight truck or bus air brakes system should not leak at the rate of more than ___ psi per minute with the engine off and the brakes released.",
+        "answers":[
+            "1",
+            "3",
+            "2(TRUE)"
+        ]
+    },
+    {
+        "question":"The supply pressure gauge shows how much pressure:",
+        "answers":[
+            "Is in the air tanks(TRUE)",
+            "You have used in this trip",
+            "Is going to the brake chamber"
+        ]
+    },
+    {
+        "question":"It is not safe to drive a vehicle that has brake drums with cracks that are longer than ____of the width of the friction area.",
+        "answers":[
+            "1/2(TRUE)",
+            "1/4",
+            "1/8"
+        ]
+    },
+    {
+        "question":"Air braking takes more time than hydraulic braking because air:",
+        "answers":[
+            "Air brakes use different brake drums",
+            "Takes more time to flow through the lines than hydraulic fluid(TRUE)",
+            "Brakes require heavier return springs"
+        ]
+    },
+    {
+        "question":"The supply pressure gauge shows how much pressure:",
+        "answers":[
+            "Is in the air tanks(TRUE)",
+            "Tractor brake lines",
+            "Trailer brake lines"
+        ]
+    },
+    {
+        "question":"Modern air brakes system combines three different systems. They are the service, the parking and the ____ brakes",
+        "answers":[
+            "Emergency(TRUE)",
+            "Foot",
+            "Drum"
+        ]
+    },
+    {
+        "question":"If you do not have automatic tank drains, how often should you drain the oil and water from the bottom of the compressed air storage tanks?",
+        "answers":[
+            "After every four hours of service",
+            "At the end of each day of driving(TRUE)",
+            "Once a week"
+        ]
+    },
+    {
+        "question":"The most important thing to do when a low air pressure warning comes on is",
+        "answers":[
+            "Upshift",
+            "Downshift",
+            "Stop and safely park as soon as possible(TRUE)"
+        ]
+    },
+    {
+        "question":"When brakes are applied the brake shoes will align to press against the:",
+        "answers":[
+            "Brake drum or disc(TRUE)",
+            "Slack adjusters",
+            "S-cam"
+        ]
+    },
+    {
+        "question":"When is it OK to leave your truck unattended without applying the parking brakes and choking the wheels?",
+        "answers":[
+            "Never(TRUE)",
+            "If you are only away for a few minutes",
+            "If you are conducting a pre-trip inspection"
+        ]
+    },
+    {
+        "question":"When brakes are applied the brake shoes will press against the:",
+        "answers":[
+            "Brake drum or disc(TRUE)",
+            "Slack adjuster",
+            "S-cam"
+        ]
+    },
+    {
+        "question":"The parking or emergency brake on a heavy vehicle can only be held in position be something that cannot leak away like:",
+        "answers":[
+            "Spring pressure(TRUE)",
+            "Air pressure",
+            "Hydraulic pressure"
+        ]
+    },
+    {
+        "question":"If your vehicle has an alcohol evaporator, it is there to:",
+        "answers":[
+            "Eliminate the need for daily tank draining",
+            "Boost tank pressure the same way that turbochargers boost engine",
+            "Reduce the risk of icing in air brake valves in cold weather(TRUE)"
+        ]
+    },
+    {
+        "question":"Excessive heat caused by using your brakes too often can also cause:",
+        "answers":[
+            "Modulated control valve to wear out",
+            "Brake linings to split up",
+            "Brake to fade or fail(TRUE)"
+        ]
+    },
+    {
+        "question":"If you are driving down the steep downgrade and you have reached the speed of 40 mph, you would apply the service brake until your speed dropped to below ____ mph.",
+        "answers":[
+            "25",
+            "30",
+            "35(TRUE)"
+        ]
+    },
+    {
+        "question":"If air pressure is not built up within the correct amount of time, then:",
+        "answers":[
+            "You should be ready to use you parking brakes to stop",
+            "The alcohol container may be low",
+            "Your air pressure may drop to a low point while driving, requiring an emergency stop(TRUE)"
+        ]
+    },
+    {
+        "question":"The air compressor governor controls:",
+        "answers":[
+            "The speed of the air compressor",
+            "Air pressure applied to the brakes",
+            "When air is pumped into the air tanks(TRUE)"
+        ]
+    },
+    {
+        "question":"In ideal conditions a truck or bus with an air brake going at 55 mph would require stopping distance of how many feet?",
+        "answers":[
+            "Less than 100 feet",
+            "More than 300 feet(TRUE)",
+            "From 100 to 300 feet"
+        ]
+    }
+]

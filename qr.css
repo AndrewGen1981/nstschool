@@ -1,0 +1,122 @@
+.inner {
+    padding: 10px 25px;
+}
+.geoBlock {
+    font-size: 20px;
+    font-family: "Gotham Book", system, sans-serif, Arial;
+    color: rgb(23, 26, 32);
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+.success {
+    background-color: hsla(101, 50%, 56%, 0.7);
+}
+.fail {
+    background-color: hsla(0, 50%, 56%, 0.7);
+}
+.success_pill, .fail_pill {
+    padding: 0 5px;
+    border-radius: 5px;
+}
+.success_pill {
+    background-color: hsla(101, 50%, 56%, 0.7);
+}
+.fail_pill {
+    background-color: hsla(0, 50%, 56%, 0.7);
+}
+
+
+/* Student Info Block */
+.studentInfo {
+    width: 100%;
+    display: flex;
+    margin-top: 7px;
+    background-color: hsla(0, 0%, 94%, 0.7);
+    border-radius: 5px;
+}
+.info {
+    flex: 85%;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 0 5px 5px 0;
+    padding: 3px;
+}
+.studentSvg {
+    flex: 15%;
+    display: flex;
+    padding: 3px;
+    max-width: 150px;
+    min-width: 130px;
+    justify-content: center;
+    margin: 0 auto;
+    fill: #333;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.movingSvg{
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+}
+.studentAttr {
+    font-family: "Gotham Book", system, sans-serif, Arial;
+    color: rgb(23, 26, 32);
+    line-height: 1.33rem;
+}
+.equalBlock {
+    flex: 50%;
+    display: block;
+    padding: 10px 5px;
+}
+.borders {
+    border: 1px solid var(--NA);
+    border-radius: 5px;
+}
+
+/* Clocks In & OUT */
+.in {
+    color: var(--good);
+}
+.out {
+    color: var(--calm);
+}
+
+
+/* CLOCK BLOCK */
+@keyframes blocked {
+    0% {fill: white; transform: scale(0.9);}
+    25% {fill: orangered}
+    50% {fill: crimson; transform: scale(1.1);}
+    75% {fill: gray}
+    100% {fill: black; transform: scale(1);}
+}
+.clockBlock {
+    width: 100%;
+    margin: 35px 0;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    
+    color: crimson;
+}
+
+
+
+/*  Media requests  */
+
+@media (max-width: 650px) {
+
+    .studentInfo {
+        display: block;
+    }
+
+}

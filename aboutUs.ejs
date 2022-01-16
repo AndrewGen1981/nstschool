@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="aboutUs.css">
+    <link rel="stylesheet" href="video.css">
+
+    <link rel="shortcut icon" href="./img/thumb/ico.png"/>
+    <title>About Us</title>
+
+</head>
+<body>    
+
+    <!-- Sprite -->
+    <svg class='my-sprite'>
+
+        <symbol id="facebook" viewBox="0 0 310 310">   
+            <path d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+                c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+                V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+                C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+            c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"/>
+        </symbol>
+
+        <symbol id="twitter" viewBox="0 0 24 24">
+            <path d="m21.534 7.113c.976-.693 1.797-1.558 2.466-2.554v-.001c-.893.391-1.843.651-2.835.777 1.02-.609 1.799-1.566 2.165-2.719-.951.567-2.001.967-3.12 1.191-.903-.962-2.19-1.557-3.594-1.557-2.724 0-4.917 2.211-4.917 4.921 0 .39.033.765.114 1.122-4.09-.2-7.71-2.16-10.142-5.147-.424.737-.674 1.58-.674 2.487 0 1.704.877 3.214 2.186 4.089-.791-.015-1.566-.245-2.223-.606v.054c0 2.391 1.705 4.377 3.942 4.835-.401.11-.837.162-1.29.162-.315 0-.633-.018-.931-.084.637 1.948 2.447 3.381 4.597 3.428-1.674 1.309-3.8 2.098-6.101 2.098-.403 0-.79-.018-1.177-.067 2.18 1.405 4.762 2.208 7.548 2.208 8.683 0 14.342-7.244 13.986-14.637z"/>
+        </symbol>
+
+        <symbol id="linkedIn" viewBox="0 0 24 24">
+            <path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/>
+        </symbol>
+
+        <symbol id="insta" viewBox="0 0 169.063 169.063">
+            <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
+                c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
+                c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
+                c17.455,0,31.656,14.201,31.656,31.655V122.407z"/>
+            <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
+                C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
+                c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"/>
+            <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
+                c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
+                C135.661,29.421,132.821,28.251,129.921,28.251z"/>
+        </symbol>
+
+    </svg>
+
+    <section class="innerBox">
+        <!-- Header -->
+        <nav class="headerContainer">
+            <section class="headerItem" onclick="document.location='/'">NSTS</section>
+        </nav>      <!-- nav class="blogHeader" -->
+        <section class="titleContainer">
+            <section class="titleText">
+                NEW SOUND TRUCKING SCHOOL
+            </section>
+            <section class="titleText">
+                ADMINISTRATION & FACULTY
+            </section>
+        </section>          <!-- titleContainer -->
+        <sectio class="subTitleContainer">
+            <section class="subTitleText">
+                New Sound Trucking School, LLC is established to assist adult students in obtaining the educa-tion and behind the wheel training needed to obtain Commercial Driving Licenses from the State of Washington’s Department of Licensing
+            </section>
+        </sectio>           <!-- subTitleContainer -->
+        <section class="videoContainerBox">
+            <section class="videoPlaceHolder">
+                <svg class="vPlay" viewBox="0 0 64 64">
+                    <g>
+                        <g id="Icon-Play" transform="translate(128.000000, 278.000000)">
+                            <path class="st0" d="M-95.9-222c-13.2,0-23.9-10.7-23.9-23.9s10.7-23.9,23.9-23.9S-72-259.1-72-245.9     S-82.7-222-95.9-222L-95.9-222z M-95.9-267.2c-11.7,0-21.3,9.6-21.3,21.3c0,11.7,9.6,21.3,21.3,21.3s21.3-9.6,21.3-21.3     C-74.6-257.7-84.2-267.2-95.9-267.2L-95.9-267.2z" id="Fill-124"/>
+                            <path class="st0" d="M-103-233.6v-24.7l21.2,12.4L-103-233.6L-103-233.6z M-100.2-253.4v14.9l12.7-7.4     L-100.2-253.4L-100.2-253.4z" id="Fill-125"/>
+                        </g>
+                    </g>
+                </svg>
+            </section>        <!-- videoPlaceHolder -->
+            <video class="aboutNSTSvideo" onclick="videoClick(this)">
+                <source src='./img/adv/about.mp4' type="video/mp4">
+            </video>          <!-- videoItem -->
+        </section>        <!-- videoContainerBox -->
+        <section class="aboutNSTSvideoDesc">
+            Click to learn more about New Sound Trucking School
+        </section>        <!-- aboutNSTSvideoDesc -->
+
+        <section class="advContainer">
+            <section class="advContainerInner">
+                <section class="advText">
+                    <section class="advTextGradient">
+                        GET FREE 2021 IMAC 24 WITH NSTS
+                    </section>
+                    <section class="advTextOrdinary">
+                        Watch to know how<span class="_arrows">»</span> 
+                    </section>
+                </section>            <!-- advText -->
+                <section class="advPicBox">
+                    <img class="advPic" src="./img/adv/imac-segment.png">
+                    <section class="_click">click</section>
+                    <section class="_afterLine"></section>
+                </section>
+            </section>            <!-- advContainerInner -->
+        </section>         <!-- advContainer -->
+
+        <section class="crew">
+            <section class="crewInfo">
+                Michael Svoboda and Valeriy Karcha are the owners of New Sound Trucking School, LLC and have over 25 years combined experience in the trucking industry
+            </section>            <!-- crewInfo -->
+            <section class="_owners">
+                <% emps.officeStuff.forEach( (officer, index) => { %>
+                    <% if (officer.owner) { %>
+                        <section class="ownerCard">
+                            <section class="ownerInfo">
+                                <% if (index % 2 === 0) { %>
+                                    <img class="ownerPhoto" src='<%= officer.photo %>' alt="">
+                                    <section class="positionInfo _itemsLeft">
+                                        <section class="ownerName _textLeft"><%= officer.name %></section>
+                                        <section class="ownerPosition _textLeft"><%= officer.title %></section>
+                                    </section>
+                                <% } else { %>
+                                    <section class="positionInfo _itemsRight">
+                                        <section class="ownerName _textRight"><%= officer.name %></section>
+                                        <section class="ownerPosition _textRight"><%= officer.title %></section>
+                                    </section>
+                                    <img class="ownerPhoto" src='<%= officer.photo %>' alt="">
+                                <% } %>
+                            </section>        <!-- ownerInfo -->
+                        
+                            <% let type = index % 2 === 0 ? '_socialLeft' : '_socialRight' %>
+                            <section class="social <%= type %>">
+                                <a class="social_item" href='<%= officer.facebook %>' target="_blank">
+                                    <svg class="social_icon">
+                                    <use xlink:href="#facebook"></use> 
+                                    </svg>
+                                </a>
+                                <a class="social_item" href='<%= officer.twitter %>' target="_blank">
+                                    <svg class="social_icon">
+                                    <use xlink:href="#twitter"></use> 
+                                    </svg>
+                                </a>
+                                <a class="social_item" href='<%= officer.linkedIn %>' target="_blank">
+                                    <svg class="social_icon">
+                                    <use xlink:href="#linkedIn"></use> 
+                                    </svg>
+                                </a>
+                                <a class="social_item" href='<%= officer.insta %>' target="_blank">
+                                    <svg class="social_icon">
+                                    <use xlink:href="#insta"></use> 
+                                    </svg>
+                                </a>
+                            </section>        <!-- social -->
+                        
+                        </section>      <!-- ownerCard -->  
+                    <% } %>           <!-- if owner END -->
+                <% }) %>    <!-- emps.officeStuff.forEach -->
+            </section>            <!-- _owners -->
+
+            <section class="_office">
+                <% emps.officeStuff.forEach( (officer, index) => { %>
+                    <% if (!officer.owner) { %>
+                        <section class="empCard">
+                            <section class="empInfo">
+                                <img class="empPhoto" src='<%= officer.photo %>' alt="">
+                                <section class="positionInfo _itemsCenter">
+                                    <section class="empName _textCenter"><%= officer.name %></section>
+                                    <section class="empPosition _textCenter"><%= officer.title %></section>
+                                </section>
+                                
+                            </section>        <!-- empInfo -->
+                        
+                            <section class="social _socialCenter">
+                                <a class="social_item" href='<%= officer.facebook %>' target="_blank">
+                                    <svg class="social_icon">
+                                    <use xlink:href="#facebook"></use> 
+                                    </svg>
+                                </a>
+                                <a class="social_item" href='<%= officer.twitter %>' target="_blank">
+                                    <svg class="social_icon">
+                                    <use xlink:href="#twitter"></use> 
+                                    </svg>
+                                </a>
+                                <a class="social_item" href='<%= officer.linkedIn %>' target="_blank">
+                                    <svg class="social_icon">
+                                    <use xlink:href="#linkedIn"></use> 
+                                    </svg>
+                                </a>
+                                <a class="social_item" href='<%= officer.insta %>' target="_blank">
+                                    <svg class="social_icon">
+                                    <use xlink:href="#insta"></use> 
+                                    </svg>
+                                </a>
+                            </section>        <!-- social -->
+                        
+                        </section>      <!-- empCard -->  
+                    <% } %>           <!-- if NOT an Owner END -->
+                <% }) %>    <!-- emps.officeStuff.forEach -->
+            </section>            <!-- _office -->
+
+            <section class="_instuctors">
+                <% emps.instStuff.forEach( (inst) => { %>
+                    <section class="instCard">
+                        <img class="instPhoto" src='<%= inst.photo %>' alt="">   
+                        <section class="instName _textCenter"><%= inst.name %></section>
+                        <section class="instPosition _textCenter"><%= inst.title %></section>
+                        <section class="instLang"><%= inst.language %></section>
+                        <section class="instQual-title">Qualifications</section>
+                        <% inst.qualifications.forEach ((qual) => { %>
+                            <section class="instQual-info"><%= qual %></section>
+                        <% }) %>
+                        
+                        <section class="social _socialCenter">
+                            <a class="social_item" href='<%= inst.facebook %>' target="_blank">
+                                <svg class="social_icon">
+                                <use xlink:href="#facebook"></use> 
+                                </svg>
+                            </a>
+                            <a class="social_item" href='<%= inst.twitter %>' target="_blank">
+                                <svg class="social_icon">
+                                <use xlink:href="#twitter"></use> 
+                                </svg>
+                            </a>
+                            <a class="social_item" href='<%= inst.linkedIn %>' target="_blank">
+                                <svg class="social_icon">
+                                <use xlink:href="#linkedIn"></use> 
+                                </svg>
+                            </a>
+                            <a class="social_item" href='<%= inst.insta %>' target="_blank">
+                                <svg class="social_icon">
+                                <use xlink:href="#insta"></use> 
+                                </svg>
+                            </a>
+                        </section>  
+                    </section>      <!-- instCard -->
+                <% }) %>    <!-- emps.instStuff.forEach -->
+            </section>
+        </section>        <!-- crew -->
+    </section>    <!-- innerBox -->
+
+
+    <!-- MODAL -->
+    <section class="modal_mask">
+        <section class="modalContainer">
+
+            <section class="modal_window">
+                <video class="aboutMACvideo" onclick="videoClick(this)">
+                    <source src='./img/adv/iMac.mp4' type="video/mp4">
+                </video>          <!-- videoItem -->
+            </section>      <!-- modal_window -->  
+            <section class="modalClose">
+                close
+            </section>
+
+        </section>      <!-- modalContainer -->
+    </section>      <!-- modal -->
+
+
+    <!-- FOOTER -->
+    <section class="_footer">
+        <section class="footerContainer">
+            <section class="addrBox">
+                <section class="locationPhone _textLeft">253.210.0505</section>
+                <a class="locationAddr _textLeft" href="http://maps.google.com/?q=7495 26TH ST E, FIFE, WA 98424" target="_blank">7495 26TH ST E,<br>FIFE, WA 98424</a>
+            </section>
+            <section class="callUsBox">Call Us</section>
+            <section class="addrBox">
+                <section class="locationPhone _textRight">253.210.0505</section>
+                <a class="locationAddr _textRight" href="http://maps.google.com/?q=1920 Merrill Creek Pkwy, Everett, WA 98203" target="_blank">1920 Merrill Creek Pkwy,<br>Everett, WA 98203</a>
+            </section>
+        </section>     <!-- footerInner -->
+    </section>    <!-- _footer -->
+
+    <section class="emailContainer">
+        <a class='_email'href="mailto:info@nstschool.com" target="_top">INFO@NSTSCHOOL.COM</a>
+    </section>
+
+
+    <!-- Scripts for video -->
+    <script>
+        function videoClick(player) {
+            player.paused ? player.play() : player.pause()
+        }
+        const videoPlaceHolder = document.querySelector(".videoPlaceHolder")
+        const aboutNSTSvideo = document.querySelector(".aboutNSTSvideo")
+        const aboutMACvideo =document.querySelector(".aboutMACvideo")
+        // about NSTS container click
+        videoPlaceHolder.addEventListener("click", (e) => {
+            videoPlaceHolder.style = "display: none"
+            aboutNSTSvideo.style = "display: block"
+            aboutNSTSvideo.click()
+        })
+        // ADV container click
+        document.querySelector(".advContainerInner").addEventListener("click", (e) => {
+            if (!aboutNSTSvideo.paused) { aboutNSTSvideo.pause() }
+            document.querySelector("body").classList.add("no-scroll_body")
+            document.querySelector("html").classList.add("no-scroll_body")
+            document.querySelector(".modal_mask").classList.add("show_modal")
+            if (aboutMACvideo.paused) { aboutMACvideo.play() }
+        })
+        // closing modal by clicking on "close"
+        document.querySelector(".modalClose").addEventListener("click", (e) => {
+            if (!aboutMACvideo.paused) { aboutMACvideo.pause() }
+            document.querySelector("body").classList.remove("no-scroll_body")
+            document.querySelector("html").classList.remove("no-scroll_body")
+            document.querySelector(".modal_mask").classList.remove("show_modal")
+        })
+        // closing modal by clicking on mask
+        document.querySelector(".modal_mask").addEventListener("click", (e) => {
+            e.stopPropagation()
+            if (!aboutMACvideo.paused) { aboutMACvideo.pause() }
+            document.querySelector("body").classList.remove("no-scroll_body")
+            document.querySelector("html").classList.remove("no-scroll_body")
+            document.querySelector(".modal_mask").classList.remove("show_modal")
+        })
+        document.querySelector(".modal_window").addEventListener("click", (e) => {
+            e.stopPropagation()
+        })
+        
+        // comment next line and add video thumb, if autoplay is not needed
+        // videoPlaceHolder.click()
+    </script>
+
+ 
+    
+ 
+    
+</body>
+</html>

@@ -1,0 +1,436 @@
+@font-face {
+    font-family: 'NSTS';
+    src: url('/font/NSTS.ttf');
+}
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('/font/Gotham\ Book\ Regular.otf');
+}
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('/font/Gotham\ Medium.otf');
+}
+
+
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: 'Gotham Book', Tahoma, Verdana;
+    font-size: 15px;
+}
+
+.pageBox {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* top-intro-box */
+.top-intro-box {
+    width: 95%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: nowrap;
+
+    margin: 3.65rem auto;
+}
+.top-intro-envelope {
+    width: 100%;
+    max-width: 14.3rem;
+}
+.top-intro-title {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Montserrat";
+    font-size: 2.33rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    color: #0b0b0b;
+}
+
+
+/* inner-box */
+.inner-box, .stay-connected-box {
+    width: 95%;
+    max-width: 76.563%;
+    margin: 0 auto;
+}
+.inner-box-title {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Gotham Medium";
+    font-size: 1.333rem;
+    line-height: 5rem;
+
+    color: #2b2b2b;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    border-bottom: 2px solid #e9e9e9;
+}
+.inner-box-text {
+    font-family: "Gotham Book";
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: center;
+
+    color: #2b2b2b;
+}
+
+
+/* Form styles */
+.contact-form {
+    width: 100%;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-left-side, .form-right-side {
+    width: 50%;
+
+    box-sizing: border-box;
+    padding: 0 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.form-item-label {
+    width: 45%;
+    padding: 3px 0;
+
+    font-family: "Gotham Medium";
+    font-size: 1rem;
+    color: #2b2b2b;
+}
+.form-item,
+.form-item-area,
+.-empty {
+    box-sizing: border-box;
+
+    width: 55%;
+    margin: 3px 0;
+    padding: 0 5px;
+
+    font-family: "Gotham Book";
+    font-weight: bolder;
+    font-size: .90rem;
+    letter-spacing: -0.5px;
+    color: #2b2b2b;
+
+    height: 2.6rem;
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid #d1d1d1;
+}
+
+
+.form-item:required {
+    background-color: rgba(0,0,0, .07);
+}
+.form-item:focus-within,
+.form-item-area:focus-within {
+    outline: none;
+    border-bottom: 1px solid #00debe;
+}
+
+.-bg {
+    width: 70%;
+}
+.-sm {
+    width: 30%;
+}
+.-empty {
+    width: 100%;
+    border: none;
+}
+
+/* question-box */
+.question-box {
+    width: 100%;
+    margin: 1rem 0;
+    
+    display: flex;
+}
+.form-item-area {
+    padding: 5px;
+    resize: none;
+}
+
+.-qsm {
+    width: 23%;
+
+    box-sizing: border-box;
+    
+    margin: auto 0;
+    padding: 0 5%;
+}
+.-qbg {
+    width: 77%;
+    height: calc(7*0.9rem + 18px);
+}
+
+.small {
+    margin-bottom: 1.9rem;
+    font-family: "Gotham Book";
+    font-size: .8667rem;
+    line-height: 1.2rem;
+    color: #727272;
+
+    text-align: center;
+}
+
+.controll-box {
+    width: 100%;
+    text-align: center;
+}
+
+.-btn {
+    --direction: 45deg;
+
+    display: inline;
+    margin: 0 5%;
+
+    width: 100%;
+    min-width: 100px;
+    max-width: 200px;
+    height: fit-content;
+
+    font-family: "Gotham Book";
+    font-size: 1rem;
+    line-height: 3.2rem;
+    letter-spacing: normal;
+    text-transform: uppercase;
+
+    color: white;
+    
+    background: -webkit-linear-gradient(var(--direction), #00debe, #00bba0);
+    background: -moz-linear-gradient(var(--direction), #00debe, #00bba0);
+    background: linear-gradient(var(--direction), #00debe, #00bba0);
+
+    cursor: pointer;
+    border: none;
+}
+.-btn:hover {
+    opacity: .85;
+    transition: opacity .2s linear;
+}
+.-gr135 {
+    --direction: 135deg;
+}
+.-gr225 {
+    --direction: 225deg;
+}
+
+
+
+/* Stay Connected */
+.ouline-box {
+    margin: 2.5rem calc(-100vw*0.12);
+    width: 100vw;
+    max-width: none;
+
+    background-color: #f3f3f3;
+    background-image: url('/contact/contact-mail.png');
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-size: contain;
+}
+.stay-connected-title {
+    border: none;
+}
+.stay-connected-subtitle {
+    margin: 0;
+}
+.stay-connected-text {
+    font-family: "Gotham Medium";
+    font-weight: bold;
+    line-height: 1.2rem;
+}
+
+.stay-connected-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 2rem;
+}
+.-even {
+    width: 50%;
+}
+
+
+.form-check-box {
+    --color: #e2e2e2;
+
+    font-family: "Gotham Medium";
+    font-size: 1rem;
+    line-height: 2.4rem;
+    color: #2b2b2b;
+
+
+    cursor: pointer;
+}
+.form-check-box::before {
+    content: '0';
+
+    padding: .1rem .333rem;
+    margin-right: .5rem;
+
+    background: -webkit-radial-gradient(circle, var(--color), 77%, white);
+    background: -moz-radial-gradient(circle, var(--color), 77%, white);
+    background: radial-gradient(circle, var(--color), 77%, white);
+    
+    color: var(--color);
+    
+    border-radius: 4px;
+    border: 1px solid #cecece;
+
+    cursor: pointer;
+}
+.-checked {
+    --color: #00debe;
+}
+
+/* Footer */
+.footer-img {
+    margin-top: 85px;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* Media requests */
+@media (max-width: 915px) {
+
+    .inner-box {
+        max-width: 980px;
+    }
+    .ouline-box {
+        margin: 2.5rem calc(-4.5vw);
+    }
+    .stay-connected-box {
+        width: 100%;
+        max-width: none;
+        padding-left: 5%;
+    }
+    .-qsm {
+        padding: 0;
+        text-align: center;
+    }
+}
+@media (max-width: 815px) {
+    :root {
+        font-size: 14.5px;
+    }
+}
+@media (max-width: 715px) {
+    :root {
+        font-size: 14px;
+    }
+    .stay-connected-subtitle {
+        font-size: .9rem;
+        line-height: 2em;
+    }
+    .form-check-box {
+        letter-spacing: -0.5px;
+    }
+    .controll-box {
+        width: 110%;
+        margin-left: -5%;
+        margin-right: -5%;
+    }
+}
+@media (max-width: 645px) {
+    :root {
+        font-size: 13.5px;
+    }
+}
+@media (max-width: 545px) {
+    :root {
+        font-size: 13px;
+    }
+}
+@media (max-width: 515px) {
+    :root {
+        font-size: 13px;
+    }
+    .form-left-side,
+    .form-right-side {
+        width: 100%;
+    }
+    .-empty {
+        display: none;
+    }
+    .ouline-box {
+        background-position-x: 115%;
+    }
+    .stay-connected-subtitle {
+        max-width: 60%;
+        margin: 0 auto;
+        line-height: 1rem;
+    }
+    .-even {
+        width: 100%;
+        margin-left: 20%;
+    }
+    .controll-box {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .-btn {
+        font-size: 1.3rem;
+    }
+    .-gr135 {
+        --direction: 180deg;
+        margin-bottom: 1rem;
+    }
+    .-gr225 {
+        --direction: 0deg;
+    }
+}
+@media (max-width: 400px) {
+    :root {
+        font-size: 12.5px;
+    }
+    .top-intro-box {
+        flex-direction: column-reverse;
+    }
+    .inner-box-title {
+        line-height: 1.5rem;
+        padding-bottom: 15px;
+    }
+    .top-intro-title {
+        padding-bottom: 5px;
+    }
+    .ouline-box {
+        background-position-x: 120%;
+    }
+    .stay-connected-subtitle {
+        max-width: 85%;
+        font-family: "gotham Medium";
+        text-transform: uppercase;
+        color: rgb(29, 29, 29);
+        mix-blend-mode: multiply;
+    }
+    .-even {
+        margin-left: 7%;
+    }
+}

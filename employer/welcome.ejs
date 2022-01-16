@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Employer</title>
+</head>
+<body>
+    
+    <h1>Welcome Employer!</h1>
+    
+    <% if (sess.userId) { %>
+        <a href="/employer/home">Home</a>
+        <form action="/employer/logout" method="POST">
+            <button type="submit">Logout</button>
+        </form>
+    <% } else { %>
+        <a href="/employer/login">Login</a>
+        <a href="/employer/register">Register</a>
+    <% } %>
+    
+</body>
+</html>

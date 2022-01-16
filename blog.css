@@ -1,0 +1,359 @@
+@font-face {
+    font-family: "Gotham Medium";
+    src: url("font/Gotham Medium.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham Light";
+    src: url("font/Gotham Light.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham Book";
+    src: url("font/Gotham Book Regular.otf");
+    font-display: swap;
+}
+
+
+
+/*
+    ========= Global =========
+*/
+
+:root {     
+    --good: hsl(101, 50%, 56%);
+    --bad: hsl(0, 78%, 59%);
+    --NA: hsl(0, 0%, 83%);
+    --calm: hsl(216, 68%, 46%);
+
+    --gray60: hsl(0, 0%, 93%);
+}
+
+*{
+    font-family: "Gotham Medium", -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "NSTS";
+    src: url("font/NSTS.ttf");
+}
+
+
+
+/***   Blog   ***/
+
+.blogBody {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.blogHeader {
+    position: sticky;
+    top: 0;
+    height:54px;
+    width:100%;
+    display: flex;
+    background-color: hsla(0, 0%, 100%, .96);
+}
+.blogHeader_item {
+    flex: 33%;
+    text-align: right;
+
+    font-family: 'NSTS', Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    letter-spacing: 16px;
+
+    height:min-content;
+    margin: auto 16px;
+    
+    color: hsla(218, 7%, 24%, .9);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.blogHeader_item:first-child {
+    text-align: left;
+}
+.blogHeader_item:not(:first-child), .blog_enroll {
+    margin-right: 10%;
+
+    font-family: "Gotham Light", system, sans-serif;
+    color: hsla(218, 7%, 24%, .9);
+    font-weight: bold;
+    
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.blogInner {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.blogItem {
+    width: 100%;
+    border-bottom: 1px solid var(--gray60);
+    padding: 25px 0;
+}
+.blogTitle {
+    color: rgb(23, 26, 32);
+    font-family: "Gotham Light", system, sans-serif;
+    font-size: 30px;
+    letter-spacing: -.6px;
+}
+.blogArticle {
+    display: flex;
+}
+.artMonth {
+    flex: 35%;
+    color: rgb(208, 209, 210);
+    font-size: 30px;
+    letter-spacing: -0.6px;
+    margin-top: 35px;
+}
+.artRight {
+    flex: 65%;
+    margin-top: 35px;
+}
+
+.artTitle {
+    background-color: #fff;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 17px;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: justify;
+}
+@keyframes blink {
+    0% {color: #faa455}
+    25% {color: #fae155}
+    50% {color: #f2162f}
+    75% {color: #1079ba}
+    100% {color: #f3d6bb}
+}
+.blogItem:nth-child(2) .artTitle::after {
+    content: " NEW!";
+    animation: blink ease-in 2s infinite;
+}
+
+.artAuthor {
+    color: rgb(57, 60, 65);
+    font-size: 13px;
+    margin: 15px 0 3px 0;
+}
+.artDate {
+    color: rgb(57, 60, 65);
+    font-size: 13px;
+    margin: 3px 0 15px 0;
+}
+.artText {
+    font-family: "Gotham Book", system, sans-serif, Arial;
+    color: rgb(92, 94, 98);
+    font-size: 15px;
+    text-align: justify;
+    line-height: 20px;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+.artHTML {
+    display: none;
+}
+.artLink {
+    background-color: #fff;
+    border: none;
+    color: rgb(52, 87, 177);
+    cursor: pointer;
+    font-family: "Gotham Book", system, sans-serif, Arial;
+    font-size: 15px;
+    text-decoration: none;
+}
+.showMore {
+    text-align: center;
+    color: rgb(52, 87, 177);
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 40px 0;
+}
+
+
+
+/* ** Article ** */
+.articleTitle {
+    margin: 0;
+    color: rgb(23, 26, 32);
+    text-transform: capitalize;
+    font-family: "Gotham Book", system, sans-serif, Arial;
+    font-size: 28px;
+    letter-spacing: -0.5px;
+    padding: 32px 0 8px 0;
+}
+.articleSubmited {
+    margin-bottom: 40px;
+}
+.articleAuthor {
+    color: rgb(92, 94, 98);
+    font-family: "Gotham Book", system, sans-serif, Arial;
+    font-size: 13px;
+}
+.articleDelimiter::after {
+    content: "•";
+}
+.articleDate {
+    color: rgb(92, 94, 98);
+    font-family: "Gotham Book", system, sans-serif, Arial;
+    font-size: 13px;
+}
+.articleTextBlock {
+    /* max-width: 1000px; */
+    width: 100%;
+}
+p, li, a {
+    color: rgb(117, 117, 117);
+    text-align: justify;
+    font-family: "Gotham Book", system, sans-serif, Arial;
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+h2 {
+    /* font-family: "Gotham Book", system, sans-serif, Arial; */
+    color: rgb(23, 26, 32);
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+ul {
+    margin-bottom: 20px;
+}
+li {
+    margin-left: 20px;
+    margin-bottom: 7px;
+}
+a {
+    color: rgb(57, 60, 65);
+}
+.center {
+    text-align: center;
+}
+.mb0 {
+    margin-bottom: 0;
+}
+img {
+    justify-content: center;
+    text-align: center;
+    background-color: var(--gray60);
+    width:90%;
+    margin: 25px 5%;
+}
+
+
+
+/* MEDIA */
+@media (max-width: 850px) {
+    img {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+@media (max-width: 650px) {
+    .blogInner {
+        width: 95%;
+    }
+    .artMonth {
+        flex: 27%;
+        font-size: 23px
+    }
+    .artRight {
+        flex: 73%;
+    }
+    img {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .blogArticle {
+        flex-direction: column;
+    }
+    .artMonth {
+        margin-top: 7px;
+        margin-left: -7px;
+        
+        font-size: 26px
+    }
+    .artTitle, .artLink {
+        width: 100%;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .blogItem {
+        padding: 0;
+    }
+    .articleTitle {
+        padding-top: 22px;
+
+        font-size: 22px;
+        text-align: center;
+    }
+    p, li, a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+    .blogHeader {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .blog_enroll {
+        margin: 0;
+    }
+    .blogHeader_item:not(:first-child) {
+        margin: 0 10px 0 0;
+    }
+    p, li, a {
+        font-size: 13px;
+    }
+}
+
+
+/* BIG Screen */
+@media (min-width: 1400px) {
+    :root {
+        font-size: 17px;
+    }
+    p, li, a {
+        font-size: 0.94rem;
+    }
+}
+@media (min-width: 1700px) {
+    :root {
+        font-size: 18px;
+    }
+    .blogInner {
+        width: 75%;
+        max-width: none;
+    }   
+}
+@media (min-width: 2000px) {
+    :root {
+        font-size: 19px;
+    } 
+}
+

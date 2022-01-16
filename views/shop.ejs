@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./../views/shop.css">
+
+    <link rel="shortcut icon" type="image/jpg" href="./../img/thumb/ico.png"/>
+
+    <title>New Sound Trucking School Online Store | Main Enrollment Options</title>
+
+    <meta name="title" content="New Sound Trucking School Online Store | Main Enrollment Options">
+    <meta name="description" content="NSTS online store contains detailed information about course duration and per week breakdown. Both classroom and range sections are described here too.">
+    <meta name="keywords" content="nsts school, newsound trucking school, nsts trucking school, cld school near me">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="NSTS Team">
+
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch" defer></script>
+    <script src="https://js.stripe.com/v3/" defer></script>
+
+    <!-- Facebook Pixel Code -->
+    <script defer>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '574241437102683');
+        fbq('track', 'PageView');
+    </script>
+    <!-- End Facebook Pixel Code -->
+    
+</head>
+<body onload='infoText.innerHTML = "<%= aItem.html %>"'>    <!-- Not puts as HTML when doing the same from script or directly in tag, puts like text only -->
+    
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=574241437102683&ev=PageView&noscript=1"/>
+    <section class="shopMain">
+
+        <nav class="shopHeader">
+            <section class="shopHeader_item" onclick="document.location='/'">NSTS</section>
+        </nav>      <!-- nav class="blogHeader" -->
+
+        <section class="shopInner">
+            <section class="shopSlider">
+
+                <svg class="sliderPrev" viewBox="0 0 512 512">
+                    <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M313.749,347.584
+                    c8.341,8.341,8.341,21.824,0,30.165c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251L176.917,271.083
+                    c-8.341-8.341-8.341-21.824,0-30.165l106.667-106.667c8.341-8.341,21.824-8.341,30.165,0s8.341,21.824,0,30.165L222.165,256
+                    L313.749,347.584z"/>
+                    
+                    <path d="M313.752,134.248c-8.331-8.331-21.839-8.331-30.17,0L176.915,240.915c-8.331,8.331-8.331,21.839,0,30.17l106.667,106.667
+                    c8.331,8.331,21.839,8.331,30.17,0c8.331-8.331,8.331-21.839,0-30.17L222.17,256l91.582-91.582
+                    C322.083,156.087,322.083,142.58,313.752,134.248z" fill="white" stroke="white"/>
+                </svg>
+                <svg class="sliderNext" viewBox="0 0 512 512">
+                    
+                    <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M335.083,271.083
+                    L228.416,377.749c-4.16,4.16-9.621,6.251-15.083,6.251c-5.461,0-10.923-2.091-15.083-6.251c-8.341-8.341-8.341-21.824,0-30.165
+                    L289.835,256l-91.584-91.584c-8.341-8.341-8.341-21.824,0-30.165s21.824-8.341,30.165,0l106.667,106.667
+                    C343.424,249.259,343.424,262.741,335.083,271.083z"/>
+                    
+                    <path d="M228.418,134.248c-8.331-8.331-21.839-8.331-30.17,0c-8.331,8.331-8.331,21.839,0,30.17L289.83,256l-91.582,91.582
+                    c-8.331,8.331-8.331,21.839,0,30.17c8.331,8.331,21.839,8.331,30.17,0l106.667-106.667c8.331-8.331,8.331-21.839,0-30.17
+                    L228.418,134.248z" fill="white" stroke="white"/>
+                </svg>
+
+                <% let firstImg = "" %>
+                <% if (aItem.slider.length > 0) { firstImg = "./../views/slider/"+aItem.slider[0] }%>
+
+                <img class="sliderImg" id="sliderImg" src="<%= firstImg %>">
+      
+            </section>      <!-- class="shopSlider" -->
+
+
+            <section class="shopLeft">
+                <section class="shopItem">
+                    <svg class="itemInfo" viewBox="0 0 20 20">
+                        <circle cx="10" cy="10" fill="#3E6AE1" r="10"></circle>
+                        <path d="M10 15.5c-.6 0-1.2-.5-1.2-1.2V9.6a1.2 1.2 0 112.4 0v4.7c0 .7-.5 1.2-1.2 1.2zM10 7.3a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8z" fill="#FFF"></path>
+                    </svg>Course Details
+                </section>
+                <section class="itemInfoName"> <%= aItem.name %> </section>
+                <section class="infoDurations">
+                    <section class="infoDigit"> <%= aItem.hours %>h
+                        <section class="infoDigitDescr">Total Course Duration</section>
+                    </section>
+                    
+                    <section class="infoDigit"> <%= aItem.online %>h
+                        <section class="infoDigitDescr">Online Tuition</section>
+                    </section>
+                    
+                    <section class="infoDigit"> <%= aItem.driving %>h
+                        <section class="infoDigitDescr">Range City Driving</section>
+                    </section>
+                </section>
+
+                <% aItem.subCourse.map((subItem,index) => { %>
+
+                    <form class="formBuy" action="/create-checkout-session?id=<%= aItem.id %>&sub=<%= index %>" method="POST">
+                        <section class="infoAmmount"> <%= subItem.subTitle %>
+                            <%= new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", minimumFractionDigits: 2 })
+                                .format(subItem.subPrice / 100)%>
+                        </section>
+
+                        <% let title = subItem.subTitle != "" ? subItem.subTitle : aItem.name%>
+
+                        <button class="itemBuy" id="itemBuy" type="submit">
+                            Checkout <span class="buttonTitleBuy"><%= title %></span>Course
+                        </button>
+                    </form>
+
+                <% }) %>
+
+                
+                <section class="infoText" id="infoText"></section>
+
+            </section>      <!-- class="shopLeft" -->
+
+        </section>      <!-- class="shopInner" -->
+    
+
+    </section>      <!-- class="shopMain" -->
+
+
+    <script>
+
+        document.getElementById("itemBuy").addEventListener("click", (e) => {
+            fbq('track', 'InitiateCheckout')
+        })
+
+        // document.getElementById("infoText").innerHTML = "<%= aItem.html %>"
+
+        const sliderImg = document.getElementById("sliderImg")
+        let images = '<%= aItem.slider %>'.split(",")
+
+        console.log(images[0])
+
+        let index = 0
+
+        function scrollSlider(direction) {
+            index += direction
+            if (index < 0) { index = images.length - 1 }
+            if (index === images.length) { index = 0 }
+            sliderImg.src="./../views/slider/"+images[index]
+        }
+
+        document.getElementsByClassName("sliderPrev")[0].addEventListener("click", () => {
+            scrollSlider(-1)
+        })
+        document.getElementsByClassName("sliderNext")[0].addEventListener("click", () => {
+            scrollSlider(1)
+        })
+
+    </script>
+
+
+</body>
+</html>

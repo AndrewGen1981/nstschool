@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>New Sound Trucking School – CDL Trucking School, FIFE, EVERETT, TACOMA</title>
+
+    <meta name="title" content="New Sound Trucking School – CDL Trucking School, FIFE, EVERETT, TACOMA">
+    <meta name="description" content="Class A CDL (Manual & Automatic), Class B CDL. Compact, understandable, multilanguage CDL tuition courses. Passengers, Tanker, Hazmat Endorsements.">
+    <meta name="keywords" content="nsts, nsts school, nst, nst school, new sound trucking school, nsts trucking school, cdl, cdl school, cdl school near me, cdl truck school, cdl training, cdl school tacoma, cdl license, tacoma truck driving school, fife cdl school, everett cdl school, driving training, truck driver job, truck driver salary">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="NSTS Team">
+
+    <link rel="shortcut icon" href="/img/thumb/ico.png"> 
+    <link rel="stylesheet" href="/index.css">
+
+
+    <!--  Essential META Tags Facebook Opeg Graph -->
+
+    <meta property="og:title" content="The Nearest CDL Trucking School">
+    <meta property="og:description" content="New Sound Trucking School – CDL Trucking School, FIFE, EVERETT, TACOMA">
+    <meta property="og:image" content="https://www.nstschool.com/assetes/fb-meta.jpg">
+    <meta property="og:url" content="https://www.nstschool.com/index.ejs">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <!--  Non-Essential, But Recommended -->
+
+    <meta property="og:site_name" content="New Sound Trucking School, LLC">
+    <meta name="twitter:image:alt" content="CDL A Truck on the highway">
+
+
+    <!--  Non-Essential, But Required for Analytics -->
+
+    <meta property="fb:app_id" content="574241437102683">
+    <meta name="twitter:site" content="@cdl_wa">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script defer src=https://www.googletagmanager.com/gtag/js?id=UA-157386160-1></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-157386160-1');
+    </script>
+</head>
+
+<body>
+
+    <svg class='-hidden'>
+        <symbol id="close" viewBox="0 0 311 311.07733">
+            <path d="m16.035156 311.078125c-4.097656 0-8.195312-1.558594-11.308594-4.695313-6.25-6.25-6.25-16.382812 0-22.632812l279.0625-279.0625c6.25-6.25 16.382813-6.25 22.632813 0s6.25 16.382812 0 22.636719l-279.058594 279.058593c-3.136719 3.117188-7.234375 4.695313-11.328125 4.695313zm0 0"/>
+            <path d="m295.117188 311.078125c-4.097657 0-8.191407-1.558594-11.308594-4.695313l-279.082032-279.058593c-6.25-6.253907-6.25-16.386719 0-22.636719s16.382813-6.25 22.636719 0l279.058594 279.0625c6.25 6.25 6.25 16.382812 0 22.632812-3.136719 3.117188-7.230469 4.695313-11.304687 4.695313zm0 0"/>
+        </symbol>
+    </svg>
+
+    <nav class="header">
+        <div class="header__ico">
+            <div class="ico__item" onclick="document.location='/'">             
+                NSTS
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="menu__item _shown"></div>     <!-- Empty for GAP -->
+
+            <% items.tuition.forEach( (item) => { %>
+                <div class="menu__item _shown">
+                    <a class="itemRef" href=""><%= item.shortCut %></a>
+                </div>
+            <% }) %>      <!-- items.tuition.forEach -->
+
+            <div class="menu__item _shown"></div>     <!-- Empty for GAP -->
+        </div>
+        
+        <div class="header__menu1">
+            <div class="menu__item1 _shown"></div>     <!-- Empty for GAP -->
+            <div class="menu__item1 _shown">
+                <a class="itemRef" href="account">Account</a>
+            </div>
+            <div class="menu__item1" onclick="showHideBlock(side__MenuInner)">
+                <a class="itemRef">Menu</a>
+            </div>
+            
+            <section class="side__Menu">
+                <section class="side__MenuInner" id="side__MenuInner">
+
+                    <svg class="side__close" onclick="showHideBlock(side__MenuInner)">
+                        <use xlink:href="#close"></use> 
+                    </svg>
+                    <section class="side__MenuItem"></section> <!-- GAP -->
+     
+                    <!-- Shown on Media Request Only BEGIN -->
+                    <a class="side__MenuItem _hidden" href="account">Account</a>
+                    <section class="side__MenuItem _hidden"></section> <!-- GAP -->
+
+                    <% items.tuition.forEach( (item) => { %>
+                        <a class="side__MenuItem _hidden itemRef_side" href=""><%= item.shortCut %></a>
+                    <% }) %>      <!-- items.tuition.forEach -->
+
+                    <section class="side__MenuItem _hidden"></section> <!-- GAP -->
+                    <!-- Shown on Media Request Only END -->
+
+                    <a class="side__MenuItem" href="about">About Us</a>
+                    <a class="side__MenuItem" href="clp">Commercial Learner Permit</a>
+                    <section class="side__MenuItem"></section> <!-- GAP -->
+                    
+                    <a class="side__MenuItem" href="blog">Blog</a>
+                    <a class="side__MenuItem" href="top-rank-article">Top Ranked Article</a>
+                    <section class="side__MenuItem"></section> <!-- GAP -->
+                    
+                    <a class="side__MenuItem" href="giveaway">Giveaway MAC Pro</a>
+                    <a class="side__MenuItem" href="contact">Contact Us</a>
+                    <a class="side__MenuItem" href="faq">F.A.Q.</a>
+                    <section class="side__MenuItem"></section> <!-- GAP -->
+
+                    <a class="side__MenuItem" href="sitemap">Site Map</a>
+                    <a class="side__MenuItem" href="inst">Instructors Area</a>
+
+                    
+                </section>                <!-- side__MenuInner -->
+            </section>            <!-- side__Menu -->
+        </div>        <!-- header__menu1 -->
+    </nav>         <!-- header -->
+
+
+    <div class="container">
+
+        <% items.tuition.forEach( (item, index) => { %>
+            <div class="item">
+
+                <% if (index === 0) { %>
+                    <section class="about-line"></section>
+                    <section class="about-box">
+                        <h1 class="about-header">WASHINGTON TRUCK DRIVING SCHOOL IN THE TACOMA/SEATTLE AREA</h1>
+                        <p class="about-text">Many are not aware <a class='about-text -link' href='/blog/10-highest-truck-driver-salaries-by-state-in-2020'>how much do CDL truck drivers make</a>, by making the investment in yourself today, new student graduates could start making as much as $61,000 and more.</p>
+                        <p class="about-text">New Sound Trucking School’s comprehensive CDL school, thoroughly prepares our students for the road no matter what lies ahead. The Commercial Driver’s License Class A or Class B Programs includes online classroom training, mastering the pre-trip inspection, driving, backing maneuvers , and endorsements. Our truck driver school near you in Tacoma is regarded as the top-rated trucking school in Washington for our emphasis on education, hands-on training, and job placement. We take pride in our proficient teaching methods and are even more proud of our accomplished students. Our Tacoma truck driver training is designed to help you become a safe, knowledgeable, professional truck driver. Upon completion, students are tested for their CDL skills exam and receive their commercial driver’s license.</p>
+                        
+                        <p class="about-text -optional2">At this moment, around the clock, and coast-to-coast, truck drivers are on the road transporting the essentials—everything America needs, from food and clothing to automobiles and medical supplies.  The demand for professional truck drivers is growing faster than the number of new drivers entering the field. The trucking industry is desperate for new drivers. By receiving your commercial driver’s license today, it’s almost certain there would be a job available to you tomorrow.</p>
+                        <p class="about-text">If you are considering a Washington truck driving program near Fife or Tacoma, request info and learn more about New Sound Truck Driving School’s CDL training programs.</p>
+                    </section>
+                    <button class="about-toggle" name="toggle-hidden">About School</button>
+                <% } %>
+
+                <h2 class="item__title" id='title<%= index %>'><%= item.name %></h1>
+                <h3 class="item__subtitle" id='subtitle<%= index %>'>Course <%= item.hours %>hours</h2>
+                
+                <form class="button_box" action="/shop?id=<%= item.id %>" method="POST">
+                    <button type="submit" class="item__button">Enroll Now</button>
+                    <section class="item__button--white" onclick="document.location='/about' ">
+                        Learn More
+                    </section>
+                </form>
+                
+                <% if (index < (items.tuition.length-1)) { %>
+                    <svg class="arrow__next" viewBox="0 0 100 100">
+                        <path d="M100 5.5c0 1.3-.5 2.6-1.5 3.5L50 57.5 1.5 9c-2-2-2-5.1 0-7.1s5.1-2 7.1 0L50 43.4 91.5 1.9c2-2 5.1-2 7.1 0 .9 1 1.4 2.3 1.4 3.6z"/>
+                    </svg>
+                <% } %>
+                
+                <% if (item.image != "none") { %>
+                    <!-- As AVIF is still a relatively new technology and is not yet fully supported in all browsers,
+                    the best way to implement it is using content negotiation, which in this case is the HTML 5
+                    <picture> and <source> tags. -->
+
+                    <picture>
+                        <source srcset="img/body/<%= item.imageAVIF %>" type="image/avif">
+                        <source srcset="img/body/<%= item.image600 %>" media="(max-width: 768px)">
+                        <img class="image" srcset="img/body/<%= item.image %>" alt="Equipment for <%= item.name %> CDL">
+                    </picture>
+                    
+                <% } %>
+            </div>         <!-- item -->
+        <% }) %>      <!-- items.tuition.forEach -->
+   
+
+        <footer class="main-page-footer">
+
+            <section class="footer-info-box">
+                <h3 class="footer-info-title">Services we provide</h3>
+                <p class="footer-info-text">
+                    New Sound Trucking School offers CDL Class A, Class B courses, refresh course and some CDL upgrades. Commercial driver’s license <strong class="info-bold">Class A (Manual and Automatic Transmission)</strong> course consists of theoretical (40 hours) and practical (120 hours) parts. <strong class="info-bold">Class B</strong> course requires 80 hours<span class="footer-info-text -optional"> of practical tuition, that is why it is almost twice cheaper (actual prices in Enrollment sections)</span>.
+                </p>
+                <p class="footer-info-text">
+                    Theoretical part is the same for all the courses. Personal online tuition portal will be available to you after enrollment. There are 35 online lessons represented here along with online tests respectively added to each lesson. <span class="footer-info-text -optional">Your personal progress is available to you and to NST School managers, so we’ll be on the same page. NSTS also provides you with a classroom instruction if needed. Topics covered are trucking basics, vehicle safety, vehicle control systems, pre-trip inspections, log books, weights and measures, bridge formula, hours of service, DOL regulations, etc.</span>
+                </p>
+                <p class="footer-info-text">
+                    Practical part, as mentioned, is different for each course. CDL Class A requires approximately 3 weeks of practical tuition and CDL Class B requires 2 weeks. This part consists of range driving and city driving. In respect to your progress, you’ll be passed for stage to stage, from beginner level to advanced level.
+                </p>
+                <p class="footer-info-text">
+                    Range driving provides core basics such as pre-trip inspection (both in-cab and out-side types of inspection), shifting, coupling and backing maneuvers, such as parallel backing and 90-degree backing<span class="footer-info-text -optional1">, also you can practice in combination backing maneuvers. Range located at the School’s yard</span>. City driving provides speed management, city shifting, braking, turns, railroad crossing, laning and freeway driving.
+                </p>
+                <p class="footer-info-text">
+                    Refresh course is also available and you can obtain <strong class="info-bold">Passengers Endorsement, Tanker or Hazmat Endorsement</strong> in addition (80 total hours).
+                </p>
+                <p class="footer-info-text">
+                    <strong class="info-bold">NSTS is the nearest full stuck driving school, covers Tacoma region.</strong> Come and get your CDL.
+                </p>
+            </section>      <!-- footer-info-box -->
+
+            <section class="footer-social-box">
+                <h4 class="footer-social-title">NSTS Social Links</h3>
+                <a href="https://youtube.com/channel/UC8fP3HPTCMkGYU3SDPpn1lA?sub_confirmation=1" target="_blank" class="footer-item">
+                    <svg class="footer-svg" viewBox="0 0 512 512">
+                        <path d="M256 0c141.39,0 256,114.61 256,256 0,141.39 -114.61,256 -256,256 -141.39,0 -256,-114.61 -256,-256 0,-141.39 114.61,-256 256,-256zm36.09 259.35l-56.53 31c-2.45,1.33 -4.66,-0.45 -4.66,-3.24l0 -63.64c0,-2.83 2.28,-4.61 4.74,-3.21l56.91 32.64c2.52,1.43 2.09,5.07 -0.46,6.45zm89.43 -36.56c0,-30.19 -24.47,-54.65 -54.65,-54.65l-141.74 0c-30.18,0 -54.65,24.46 -54.65,54.65l0 66.42c0,30.19 24.47,54.65 54.65,54.65l141.75 0c30.17,0 54.64,-24.46 54.64,-54.65l0 -66.42z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/cdl_wa/" target="_blank" class="footer-item">
+                    <svg class="footer-svg" viewBox="0 0 512 512">
+                        <path d="M256 0c141.39,0 256,114.61 256,256 0,141.39 -114.61,256 -256,256 -141.39,0 -256,-114.61 -256,-256 0,-141.39 114.61,-256 256,-256zm-53.56 126.87c-48.16,2.2 -73.46,29.3 -75.56,75.57 -1.6,35.03 -1.6,72.09 0,107.12 2.1,46.27 27.4,73.37 75.56,75.57 35.04,1.59 72.09,1.59 107.13,0 46.27,-2.12 73.36,-27.38 75.56,-75.57 1.59,-35.04 1.59,-72.07 0,-107.12 -2.16,-47.16 -28.4,-73.41 -75.56,-75.57 -35.04,-1.59 -72.09,-1.59 -107.13,0zm106.06 23.39c34.99,1.59 51.66,18.25 53.24,53.25 1.58,34.3 1.58,70.68 0,104.98 -1.63,36.01 -19.16,51.7 -53.24,53.25 -34.32,1.57 -70.67,1.57 -104.99,0 -34.09,-1.55 -51.61,-17.24 -53.25,-53.25 -1.57,-34.3 -1.57,-70.68 0,-104.98 1.55,-34.1 17.25,-51.61 53.25,-53.25 34.32,-1.57 70.67,-1.57 104.99,0zm-52.5 149.04c-23.91,0 -43.3,-19.38 -43.3,-43.3 0.01,-23.92 19.39,-43.3 43.3,-43.3 23.92,0 43.31,19.38 43.31,43.3 0,23.91 -19.39,43.3 -43.31,43.3l0 0zm0 -110.01c-36.83,0 -66.71,29.87 -66.71,66.71 0,36.84 29.87,66.71 66.71,66.71 36.85,0 66.71,-29.87 66.71,-66.71 0,-36.84 -29.86,-66.71 -66.71,-66.71zm84.94 -2.64c0,8.61 -6.98,15.6 -15.59,15.6 -8.62,0 -15.59,-6.98 -15.59,-15.59 0,-8.61 6.97,-15.59 15.59,-15.59 8.61,0 15.59,6.98 15.59,15.58z"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com/CDL.WA/" target="_blank" class="footer-item">
+                    <svg class="footer-svg" viewBox="0 0 512 512">
+                        <path d="M256 0c141.39,0 256,114.61 256,256 0,141.39 -114.61,256 -256,256 -141.39,0 -256,-114.61 -256,-256 0,-141.39 114.61,-256 256,-256zm-33.14 380.34c0,1.77 1.44,3.21 3.21,3.21l45.8 0c1.78,0 3.21,-1.44 3.21,-3.21l0 -125.35 33.21 0c1.67,0 3.06,-1.27 3.2,-2.94l3.19 -37.76c0.16,-1.88 -1.31,-3.49 -3.2,-3.49l-36.4 0 0 -26.79c0,-6.28 5.09,-11.37 11.37,-11.37l25.6 0c1.77,0 3.21,-1.44 3.21,-3.22l0 -37.76c0,-1.77 -1.44,-3.21 -3.22,-3.21l-43.23 0c-25.38,0 -45.95,20.57 -45.95,45.94l0 36.41 -22.9 0c-1.78,0 -3.22,1.44 -3.22,3.22l0 37.76c0,1.78 1.44,3.21 3.22,3.21l22.9 0 0 125.35z"/>
+                    </svg>
+                </a>
+                <a href="https://vm.tiktok.com/ZMRxM61yK/" target="_blank" class="footer-item">
+                    <svg class="footer-svg" viewBox="0 0 512 512">
+                        <path d="M256,0C114.615,0,0,114.615,0,256S114.615,512,256,512,512,397.385,512,256,397.385,0,256,0ZM385.62,232.382c-27.184,0-53.634-8.822-74-23.75l-.162,101.5a92.457,92.457,0,1,1-80.178-91.721v49.845a43.657,43.657,0,1,0,31.288,41.876V109.333h51.275a71.773,71.773,0,0,0,71.774,71.773Z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/company/cdlwa" target="_blank" class="footer-item">
+                    <svg class="footer-svg" viewBox="0 0 512 512">
+                        <path d="M256 0c141.39,0 256,114.61 256,256 0,141.39 -114.61,256 -256,256 -141.39,0 -256,-114.61 -256,-256 0,-141.39 114.61,-256 256,-256zm-114.04 374.81l49.03 0 0 -158.41 -49.03 0 0 158.41zm24.28 -179.15c16.02,0 29,-13.1 29,-29.24 0,-16.14 -12.98,-29.23 -29,-29.23 -16.02,0 -28.99,13.09 -28.99,29.23 0,16.14 12.97,29.24 28.99,29.24zm103.13 96c0,-22.27 10.26,-35.55 29.89,-35.55 18.02,0 26.69,12.74 26.69,35.55 0,22.81 0,83.15 0,83.15l48.8 0c0,0 0,-57.87 0,-100.3 0,-42.43 -24.05,-62.95 -57.64,-62.95 -33.6,0 -47.74,26.18 -47.74,26.18l0 -21.34 -47.03 0 0 158.41 47.03 0c0,0 0,-58.75 0,-83.15z"/>
+                    </svg>
+                </a>
+                <a href="https://goo.gl/maps/zzb89jHL1bxxd4Xu5" target="_blank" class="footer-item">
+                    <svg class="footer-svg" viewBox="0 0 48 48">
+                        <path d="M24 48C10.7452 48 0 37.2548 0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48ZM15.3043 23.4077C17.5849 28.7646 24.0276 38.4 24.0276 38.4C24.0276 38.4 31.4927 26.7108 33.0209 22.6466H33.0107C33.3919 21.602 33.6 20.4729 33.6 19.2947C33.6 13.9405 29.3019 9.6 24 9.6C18.6981 9.6 14.4 13.9405 14.4 19.2947C14.4 20.7651 14.7242 22.1591 15.3043 23.4077Z"/>
+                        <path d="M24 24.8C27.0928 24.8 29.6 22.2928 29.6 19.2C29.6 16.1072 27.0928 13.6 24 13.6C20.9072 13.6 18.4 16.1072 18.4 19.2C18.4 22.2928 20.9072 24.8 24 24.8Z"/>
+                    </svg>
+                </a>
+                <a href="https://medium.com/@newsoundtruckingschool" target="_blank" class="footer-item">
+                    <svg class="footer-svg" viewBox="0 0 512 512">
+                        <path d="M511.2,256C511.2,115.155 396.851,0.806 256.006,0.806L255.994,0.806C115.149,0.806 0.8,115.155 0.8,256C0.8,396.845 115.149,511.194 255.994,511.194L256.006,511.194C396.851,511.194 511.2,396.845 511.2,256ZM281.624,256.002C281.624,318.733 231.116,369.586 168.814,369.586C106.512,369.586 56,318.721 56,256.002C56,193.282 106.508,142.414 168.814,142.414C231.12,142.414 281.624,193.271 281.624,256.002ZM405.381,256.002C405.381,315.05 380.126,362.936 348.974,362.936C317.821,362.936 292.567,315.05 292.567,256.002C292.567,196.954 317.817,149.067 348.97,149.067C380.123,149.067 405.377,196.939 405.377,256.002L405.381,256.002ZM456,256.002C456,308.894 447.119,351.798 436.162,351.798C425.204,351.798 416.327,308.906 416.327,256.002C416.327,203.098 425.207,160.206 436.162,160.206C447.116,160.206 456,203.094 456,256.002Z"/>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/cdl_wa" target="_blank" class="footer-item">
+                    <svg class="footer-svg" viewBox="0 0 24 24">
+                        ><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/>
+                    </svg>
+                </a>
+                <a href="https://www.waze.com/af/live-map/directions/united-states/washington/fife/tacoma-truck-driving-school-or-cdl-or-nsts?to=place.ChIJe-X9Ciz5kFQR9Tf5yyYK0l4" target="_blank" class="footer-item">
+                    <svg class="footer-svg" viewBox="0 0 24 24">
+                        <path d="M13.314 1.59c-.225.003-.45.013-.675.03-2.165.155-4.295.924-6.069 2.327-2.194 1.732-3.296 4.325-3.496 7.05h.002c-.093 1.22-.23 2.15-.469 2.63-.238.479-.42.638-1.24.639C.27 14.259-.4 15.612.266 16.482c1.248 1.657 2.902 2.705 4.72 3.364a2.198 2.198 0 00-.033.367 2.198 2.198 0 002.2 2.197 2.198 2.198 0 002.128-1.668c1.307.12 2.607.14 3.824.1.364-.012.73-.045 1.094-.092a2.198 2.198 0 002.127 1.66 2.198 2.198 0 002.2-2.197 2.198 2.198 0 00-.151-.797 12.155 12.155 0 002.303-1.549c2.094-1.807 3.511-4.399 3.302-7.404-.112-1.723-.761-3.298-1.748-4.608-2.143-2.86-5.53-4.309-8.918-4.265zm.366 1.54c.312.008.623.027.933.063 2.48.288 4.842 1.496 6.4 3.577v.001c.829 1.1 1.355 2.386 1.446 3.792v.003c.173 2.477-.965 4.583-2.777 6.147a10.66 10.66 0 01-2.375 1.535 2.198 2.198 0 00-.98-.234 2.198 2.198 0 00-1.934 1.158 9.894 9.894 0 01-1.338.146 27.323 27.323 0 01-3.971-.148 2.198 2.198 0 00-1.932-1.156 2.198 2.198 0 00-1.347.463c-1.626-.553-3.078-1.422-4.155-2.762 1.052-.096 1.916-.6 2.319-1.408.443-.889.53-1.947.625-3.198v-.002c.175-2.391 1.11-4.536 2.92-5.964h.002c1.77-1.402 3.978-2.061 6.164-2.012zm-3.157 4.638c-.688 0-1.252.579-1.252 1.298 0 .72.564 1.297 1.252 1.297.689 0 1.252-.577 1.252-1.297 0-.711-.563-1.298-1.252-1.298zm5.514 0c-.688 0-1.25.579-1.25 1.298-.008.72.554 1.297 1.25 1.297.688 0 1.252-.577 1.252-1.297 0-.711-.564-1.298-1.252-1.298zM9.641 11.78a.72.72 0 00-.588.32.692.692 0 00-.11.54c.345 1.783 2.175 3.129 4.264 3.129h.125c1.056-.032 2.026-.343 2.816-.922.767-.556 1.29-1.316 1.477-2.137a.746.746 0 00-.094-.547.69.69 0 00-.445-.32.714.714 0 00-.867.539c-.22.93-1.299 1.9-2.934 1.94-1.572.046-2.738-.986-2.926-1.956a.72.72 0 00-.718-.586Z"/>
+                    </svg>
+                </a>
+                <a href="https://linktr.ee/CDLWA" target="_blank" class="footer-item">
+                    <svg class="footer-svg" viewBox="0 0 48 48">
+                        <path d="M18.89,32H21v8c0,1.1-0.9,2-2,2h-4c-1.1,0-2-0.9-2-2v-8H4.89c-1.52,0-2.48-1.64-1.75-2.97 L15.25,7.16c0.76-1.37,2.74-1.37,3.5,0l4.85,9.74l-6.46,12.13C16.41,30.36,17.37,32,18.89,32z"/>
+                        <path d="M43.11,32H35v8c0,1.1-0.9,2-2,2h-4c-1.1,0-2-0.9-2-2v-8h2.11c1.52,0,2.48-1.64,1.75-2.97L24.3,16.9 l4.95-9.74c0.76-1.37,2.74-1.37,3.5,0l12.11,21.87C45.59,30.36,44.63,32,43.11,32z"/>
+                    </svg>
+                </a>
+                
+            </section>      <!-- footer-social-box -->
+
+            <section class="footer-useful-links-box">
+                <h5 class="useful-links-title">Useful Links</h3>
+                <a href="https://wsdot.wa.gov/" target="_blank" class="useful_link">Washington State Department of Transportation</a><br>
+                <a href="https://www.dol.wa.gov" target="_blank" class="useful_link">Washington State Department of Licensing</a>
+            </section>      <!-- footer-useful-links-box -->
+
+            <section class="footer-signature">New Sound Trucking School Team</section>
+
+        </footer>
+
+    </div>      <!-- class="container" -->
+
+    <script src="index.js" defer></script>
+    <script src="doGetPost.js" defer></script>
+
+    <script defer>
+        // for accordion
+        const toggle = document.querySelector(".about-toggle")
+        const aboutBox = document.querySelector(".about-box")
+
+        function switchToggle() {
+            if (toggle.name === 'toggle-hidden') {
+                aboutBox.style.maxHeight = 'none'
+                toggle.style.top = `${56+aboutBox.scrollHeight}px`
+                toggle.textContent = 'close'
+                toggle.name = 'toggle-shown'
+            } else {
+                aboutBox.style.maxHeight = '0px'
+                toggle.style.top = '56px'
+                toggle.textContent = 'About School'
+                toggle.name = 'toggle-hidden'
+            }
+        }
+
+        toggle.addEventListener('click', (e)=>{
+            switchToggle()
+        })
+        aboutBox.addEventListener('click', (e)=>{
+            switchToggle()
+        })
+
+        window.addEventListener('resize', (e)=>{
+            if (toggle.name === 'toggle-shown') {
+                toggle.style.top = `${56+aboutBox.scrollHeight}px`
+            }
+        })
+
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script defer>
+        setTimeout(function(){
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '574241437102683');
+            fbq('track', 'PageView');
+        }, 3500)
+    </script>
+    <noscript><img height="1" width="1" class='-hidden'
+        src="https://www.facebook.com/tr?id=574241437102683&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- jivo chat -->
+    <script src="//code-ya.jivosite.com/widget/EV8y4UhGE8" defer></script>  
+    <!-- jivo chat -->
+
+</body>
+</html>

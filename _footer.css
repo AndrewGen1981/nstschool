@@ -1,0 +1,12 @@
+._footer {
+    width: 100%;
+
+    height: calc(2.2*264*100vw/2400);
+    max-height: 264px;
+
+    background: url('/assetes/_footer-min.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}

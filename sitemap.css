@@ -1,0 +1,220 @@
+/* FONTS */
+@font-face {
+    font-family: "Gotham Medium";
+    src: url("../font/Gotham Medium.otf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Gotham Light";
+    src: url("../font/Gotham Light.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gotham Book";
+    src: url("../font/Gotham Book Regular.otf");
+    font-display: swap;
+}
+
+
+* {
+    font-family: "Gotham Medium", Verdana, Sans-Serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100wv;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.35;
+}
+
+
+/* PAGE Styles */
+.sitemapContainer {
+    width: 100%;
+    display: block;
+
+    padding: 2.2rem 0;
+}
+
+.sitemapHeader {
+    font-size: 2.5rem;
+    font-family: 'Gotham Book', sans-serif;
+    letter-spacing: -0.5px;
+    color: #333;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+h3.sitemapHeader {
+    font-size: 1.65rem;
+    font-family: 'Gotham Light', sans-serif;
+    letter-spacing: -0.6px;
+    color: hsl(233, 12%, 31%);
+    
+    margin: 1rem 0;
+}
+
+.sitemapBox {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+.sitemapGroup {
+    width: 100%;
+
+    background-color: hsl(210, 10%, 80%);
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+
+.groupe-title {
+    font-size: 1.4rem;
+    font-family: 'Gotham Light', sans-serif;
+    line-height: 2rem;
+    letter-spacing: -0.6px;
+    color: hsl(220, 93%, 45%);
+}
+
+.sitemapItem {
+    width: 100%;
+
+    margin: 7px 0;
+    padding: 3px 5px;
+
+    background-color: rgb(231, 243, 253);
+    border-radius: 3px;
+}
+.route-link {
+    font-size: 1.1rem;
+    font-family: 'Gotham Book', sans-serif;
+    font-weight: bold;
+    line-height: 1.4rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.route-details {
+    width: 90%;
+    display: flex;
+    align-items:baseline;
+
+}
+
+.route-date {
+    font-size: 0.7rem;
+    letter-spacing: -0.4px;
+    background-color: rgb(197, 218, 235);
+    border-radius: 2px;
+    padding: 0 3px;
+}
+.route-get-link {
+    font-size: 0.73rem;
+    letter-spacing: -0.3px;
+    color: hsl(234, 38%, 48%);
+    margin-left: 0.25rem;
+}
+.route-copy {
+    font-family: 'Gotham Light', sans-serif;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    
+    color: white;
+    
+    background-color: hsl(234, 51%, 43%);
+    border-radius: 0.5rem;
+    
+    margin-left: 1rem;
+    padding: 0.25rem;
+
+    cursor: pointer;
+}
+
+.show-xml-label {
+    font-family: 'Gotham Light', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 20px auto;
+    color: #333;
+}
+
+
+/* MEDIA RUQUESTS */
+
+@media (max-width: 700px) {
+    * {
+        font-size: 14px;
+    }
+    .sitemapHeader {
+        font-size: 2rem;
+    }
+    h3.sitemapHeader {
+        font-size: 1.35rem;
+    }
+}
+@media (max-width: 550px) {
+    .sitemapHeader {
+        font-size: 1.8rem;
+    }
+    h3.sitemapHeader {
+        font-size: 1.15rem;
+    }
+    .route-details {
+        flex-wrap: wrap;
+    }
+    .route-date {
+        flex: 33%;
+    } 
+    .route-get-link {
+        flex: 75%
+    }
+    .show-xml-label {
+        font-family: 'Gotham Medium', sans-serif;
+        font-size: 1rem;
+        margin: 40px auto;
+        color: crimson;
+    }
+}
+@media (max-width: 450px) {
+    * {
+        font-size: 13px;
+    }
+    h3.sitemapHeader {
+        font-size: 1rem;
+        color:crimson;
+    }
+    .route-details {
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+        text-align: right;
+    }
+    .route-copy {
+        text-align: center;
+        max-width: 50px;
+        margin: 0 auto;
+    }
+    .show-xml-label {
+        display: none;
+    }
+}
+@media (max-width: 350px) {
+    * {
+        font-size: 12.5px;
+    }
+    .sitemapHeader {
+        font-size: 1.4rem;
+    }
+    h3.sitemapHeader {
+        font-family: 'Gotham Medium', sans-serif;
+        font-size: 0.9rem;
+    }
+}

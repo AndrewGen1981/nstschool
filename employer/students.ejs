@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+
+    <style>
+        .row {
+            width: 150%;
+            /* width:min-content; */
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .cell {
+            box-sizing: border-box;
+            width: 100%;
+            overflow-x: hidden;
+            border: 1px solid gray;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <a href="/employer/home">Home</a>
+
+    <% for (let i=0; i < data.length; i++) { %>
+        <div class="row">
+            <% for (let j=0; j < data[i].length; j++) { %>
+                <div class="cell" data-row="<%= i %>" data-col="<%= j %>"><%= data[i][j] %></div>
+            <% } %>
+        </div>
+    <% } %>
+
+</body>
+</html>

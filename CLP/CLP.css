@@ -1,0 +1,734 @@
+/* FONTS */
+@font-face {
+    font-family: "Gotham Medium";
+    src: url("../font/Gotham Medium.otf");
+}
+@font-face {
+    font-family: "Gotham Light";
+    src: url("../font/Gotham Light.otf");
+}
+
+@font-face {
+    font-family: "Gotham Extra Light";
+    src: url("../font/Gotham Extra Light.otf");
+}
+
+@font-face {
+    font-family: "Gotham Book";
+    src: url("../font/Gotham Book Regular.otf");
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url("../font/Lobster-Regular.ttf");
+}
+
+
+
+/* GENERAL */
+:root {
+    --true: hsl(110, 50%, 42%);
+    --false: hsl(349, 79%, 50%);
+}
+
+* {
+    font-family: "Gotham Medium", Verdana, Sans-Serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100wv;
+    height: 100wh
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.35;
+}
+
+
+/* CLP MAIN Page*/
+.header {
+    width: 90%;
+
+    margin: 0 auto;
+    padding: 25px 0;
+    
+    text-align: center;
+
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+.header_info {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+.header_paragraph {
+    padding: 0 20%;
+
+    font-family: "Gotham Book", Verdana, Sans-Serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    
+    letter-spacing: -0.5px;
+}
+
+.clp_topics, .clp_languages, .clp_email {
+    background-color: hsla(0, 0%, 63%, 0.3);
+    margin: 10px 0;
+    padding: 25px 5%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main_prompt {
+    width: 100%;
+
+    text-align: left;
+    margin-bottom: 20px;
+}
+.topic_label {
+    flex: 27%;
+    min-width: 205px;
+    
+    text-align: center;
+    text-transform: capitalize;
+    color: #333;
+    
+    border: 1px solid #333;
+    border-radius: 30px;
+    
+    margin: 0 15px;
+    padding: 10px 0;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+.topic_label:hover {
+    opacity: 0.75;
+    transition: opacity 0.2s linear;
+}
+
+.lang_label {
+    width: 18%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.lang_flag {
+    width: 100px;
+    height: 100px;
+
+}
+.lang_flag:hover {
+    transform: translateY(-10px) scale(1.1);
+    transition: transform 0.3s linear;
+}
+.lang_info {
+    font-family: "Lobster", Verdana, Sans-Serif;
+    font-size: 17px;
+    color: #333;
+    line-height: 2;
+}
+
+.clp_email {
+    display: flex;
+    flex-direction: column;
+}
+.email_prompt {
+    width: 100%;
+
+    font-family: "Gotham Book", Verdana, Sans-Serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.email_input {
+    width: 50%;
+    min-width: 250px;
+
+    border: 1px lightskyblue solid;
+    margin-top: 7px;
+    padding: 3px 5px;
+    text-align: center;
+
+    font-family: "Gotham Light", Verdana, Sans-Serif;
+    font-size: 16px;
+}
+
+.clp_buttons {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clp_submit,
+.control_mode,
+.control_submit,
+.control_next,
+.control_send {
+    align-items: center;
+
+    background-color: rgb(8, 78, 219);
+
+    border-radius: 20px;
+    border: none;
+
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-flex;
+
+    font-family: "Gotham Medium", "Montserrat";
+    font-size: 12px;
+    inline-size: 256px;
+
+    justify-content: center;
+    margin: 0 calc(100vh / 50);
+    margin-bottom: 10px;
+
+    max-inline-size: 400px;
+    min-block-size: 40px;
+    min-inline-size: 256px;
+    min-width: 256px;
+
+    opacity: 0.8;
+
+    padding: 5px 40px; 
+
+    text-align: center;
+    text-transform: uppercase;
+
+    transition: display .2s linear;
+}
+
+.clp_submit:hover,
+.control_mode:hover,
+.control_submit:hover,
+.control_next:hover,
+.control_send:hover {
+    opacity: 0.65;
+    transition: opacity .2s linear;
+}
+
+
+
+/* CLP TEST Page */
+.test_header {
+    width: 100%;
+    display: block;
+
+    background-color: rgb(245, 245, 245);
+}
+.test_header_text {
+    margin: 0 5%;
+    padding: 15px 20px 5px 20px;
+
+    font-family: "Gotham Light", Verdana, Sans-Serif;
+    font-size: 18px;
+
+    text-align: right;
+    text-transform: uppercase;
+}
+.test_header_info {
+    background-color: rgb(216, 223, 245);
+
+    margin: 0 5%;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    
+    font-family: "Gotham Extra Light", Verdana, Sans-Serif;
+    font-size: 13px;
+    letter-spacing: -0.5px;
+
+    text-align: right;
+    text-transform: uppercase;
+}
+.test_exam_mode {
+    width: 50%;
+    margin-left: 50%;
+    text-align: center;
+}
+.header_email {
+    font-family: "Gotham Book", Verdana, Sans-Serif;
+    font-size: 13px;
+    text-transform: lowercase;
+}
+._ok_email {
+    font-weight: bolder;
+    color: #333;
+}
+@keyframes moving {
+    0% {letter-spacing: normal;}
+    15% {transform: translateX(-12%); letter-spacing: -1.2px; color: white}
+    50% {letter-spacing: 1px;}
+    85% {transform: translateX(12%); letter-spacing: -1.2px; color: coral}
+    100% {transform: translateX(0)}
+}
+._no_email {
+    color:rgb(18, 91, 236);
+    animation: moving 15s infinite alternate;
+}
+
+.course_info {
+    width: 100%;
+    display: block;
+
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+}
+
+.header_topic {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    color: #333;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.header_lang {
+    font-family: 'Lobster';
+    font-size: 13px;
+    color:rgb(18, 91, 236);
+
+    text-align: center;
+}
+
+.test_box {
+    width: 90%;
+    margin: 5px auto;
+}
+.test_counter, .test_current {
+    max-width: 1024px;
+    
+    text-align: right;
+    font-family: "Gotham Book", Verdana, Sans-Serif;
+    font-size: 13px;
+    
+    margin: 0 auto 1em auto;
+}
+
+.test_current-res,
+.test_current-ratio {
+    font-family: "Gotham Medium", Verdana, Sans-Serif;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.test_norm {
+    font-family: "Gotham Book", Verdana, Sans-Serif;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.question {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+
+    max-width: 1024px;
+    padding: 0 1em .3em 1em;
+    margin: 0 auto 1em auto;
+
+    border-left-width: 3px;
+    border-right-width: 0px;
+    border-style: solid;
+    border-image: 
+        linear-gradient(
+        to bottom, 
+        rgb(18, 91, 236), 
+        rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+
+.answers_box {
+    max-width: 1024px;
+    margin: 0 auto 1.2em auto;
+    border-bottom: 1px solid lightgray;
+}
+.answer_label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 0.5em;
+}
+.control_box {
+    text-align: center;
+}
+.control_submit {
+    background-color: #333;
+}
+
+
+.answers_box {
+    display: flex;
+    flex-wrap: wrap
+}
+.answer_label {
+    width: 100%
+}
+.correct {
+    color: var(--true);
+    font-weight: bolder;
+    transition: color .2s linear;
+}
+.incorrect {
+    color: var(--false);
+    transition: color .2s linear;
+}
+
+
+/* EXAM MODE */
+._exam_mode {
+    margin: 0
+}
+.clock {
+    --more90: red;
+    --more75: rgb(231, 169, 0);
+    --more50: rgb(142, 231, 0);
+    --less50: rgb(0, 231, 58);
+
+    --range: var(--less50);
+    --time: 0%;
+
+    width: 100%;
+    padding: 0 20px;
+
+    font-size: 20px;
+    line-height: 1.35;
+
+    color: white;
+    text-align: right;
+    
+    background: -webkit-linear-gradient(90deg, var(--range), rgb(0, 0, 0) var(--time));
+    background: -moz-linear-gradient(90deg, var(--range), rgb(0, 0, 0) var(--time));
+    background: linear-gradient(90deg, var(--range), rgb(0, 0, 0) var(--time));
+    
+}
+
+
+
+/* RESULTS */
+.__exam_passed {
+    color: var(--true)
+}
+.__exam_failed {
+    color: var(--false)
+}
+.result_topic {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color:rgb(8, 78, 219);
+
+    margin-bottom: 0.5em;
+}
+.result_date {
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.result_qtyOfQTY,
+.result_timeSEC,
+.result_timeGONE,
+.result_timeLEFT {
+    font-family: 'Gotham Book', sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+.result_qtyOfQTY {
+    font-family: 'Gotham Medium', sans-serif;
+}
+
+.resultDetails_QuestionBlock {
+    width: 100%;
+    background: -webkit-linear-gradient(45deg, #fff1eb, #ace0f9);
+    background: -moz-linear-gradient(45deg, #fff1eb, #ace0f9);
+    background: linear-gradient(45deg, #fff1eb, #ace0f9);
+    
+    border-radius: 5px;
+
+    display: block;
+
+    margin: 5px 0;
+    padding: 5px 10px;
+}
+
+.resultDetails_Question {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    color: #333;
+
+    width: 95%;
+    padding: 0 1em .3em 1em;
+    margin: 0 auto 1em auto;
+
+    border-left-width: 3px;
+    border-right-width: 0px;
+    border-style: solid;
+    border-image: 
+        linear-gradient(
+        to bottom, 
+        rgb(18, 91, 236), 
+        rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+.resultDetails_When, .resultDetails_Attempts {
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 25px;
+}
+
+.resultDetails_AnswerBlock {
+    width: 95%;
+
+    background: -webkit-linear-gradient(45deg, #fff1eb, #94d5f3);
+    background: -moz-linear-gradient(45deg, #fff1eb, #94d5f3);
+    background: linear-gradient(45deg, #fff1eb, #94d5f3);
+    
+    border-radius: 5px;
+    margin: 1.5px auto;
+}
+.resultDetails_Answer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+.resultDetails_When {
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 13px;
+    color: #333;
+    text-align: right;
+    margin-right: 25px;
+}
+
+/* EMAIL SENDING */
+.control_box_send {
+    width: 100%;
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #333;
+    margin: 30px 0;
+    
+}
+.control_send {
+    display: none;
+    margin: 30px auto;
+}
+.msg, .html {
+    display: none
+}
+
+
+
+/* MEDIA */
+@media (max-width: 1000px) {
+    .header_info {
+        font-size: 18px;
+    }
+}
+@media (max-width: 800px) {
+    .header_info {
+        font-size: 16px;
+    }
+    .header_paragraph {
+        font-size: 13px;
+    }
+    .info_line2 {
+        color: rgb(18, 91, 236);
+    }
+    .clp_topics, .clp_languages, .clp_email {
+        margin: 10px 0;
+        padding: 25px 5px;
+    }
+    .main_prompt {
+        text-align: center;
+    }
+    .topic_label {
+        width: 33.3%;
+        margin: 3px;
+    }
+    .topic_label, .email_prompt{
+        font-size: 14px;
+    }
+    /* CLP Test */
+    .question {
+        font-size: 22px;
+        text-align: justify;
+    }
+    .answer_label {
+        text-align: justify;
+    }
+}
+@media (max-width: 700px) {
+    .header_info {
+        font-size: 14px;
+    }
+    .header_paragraph {
+        font-size: 12px;
+    }
+    .topic_label {
+        font-size: 13px;
+    }
+    .email_prompt{
+        font-size: 12px;
+        letter-spacing: -0.7px;
+    }
+}
+@media (max-width: 650px) {
+    .header_info {
+        width: 100%;
+    }
+    .header_paragraph {
+        width: 100%;
+        padding: 0 7%;
+    }
+    .clp_topics {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .topic_label {
+        width: 60%;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 600px) {
+    .header_info {
+        font-size: 16px;
+    }
+    .email_prompt{
+        font-size: 10.5px;
+    }
+    /* CLP Test */
+    .test_header_text {
+        font-size: 14px;
+        line-height: 1;
+        padding: 10px 7px 2px 7px;
+        margin: 0;
+    }
+    .test_header_info {
+        padding: 1px 7px 1px 7px;
+        margin: 0 0 15px 0;
+
+        font-size: 11px;
+        line-height: 1;
+    }
+    .test_exam_mode {
+        width: 100%;
+        margin: 5px auto;
+    }
+    .test_box {
+        width: 95%;
+    }
+    .question {
+        font-size: 17px;
+    }
+    .answer_label {
+        font-size: 15px;
+    }
+}
+@media (max-width: 500px) {
+
+    .email_prompt{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 450px) {
+    .header_info {
+        font-size: 14px;
+    }
+    /* CLP Test */
+    .question {
+        font-size: 15px;
+    }
+    .answer_label {
+        font-size: 13px;
+    }
+}
+@media (max-width: 420px) {
+    .lang_label {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .lang_flag {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (max-width: 400px) {
+    .header_info {
+        font-size: 13px;
+    }
+    .header_paragraph {
+        font-size: 10px;
+    }
+    .main_prompt {
+        font-family: "Gotham Book", Verdana, Sans-Serif;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    .topic_label {
+        width: 90%;
+    }
+    /* CLP Test */
+    .test_header_text {
+        font-size: 13px;
+        text-align: center;
+    }
+    .test_header_info {
+        font-size: 12px;
+        text-align: center;
+    }
+    .header_topic {
+        font-size: 25px;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+    .question {
+        font-size: 15px;
+    }
+    .answer_label {
+        font-size: 13px;
+    }
+}
+@media (max-width: 325px) {
+    .lang_flag {
+        width: 100px;
+        height: 100px;
+    }
+    .email_prompt{
+        width: 100%;
+    }
+    /* CLP Test */
+    .test_header_text {
+        font-size: 12px;
+    }
+    /* .test_header_info {
+        font-size: 9.5px;
+    } */
+    .question {
+        font-size: 11px;
+    }
+    .answer_label {
+        font-size: 10px;
+    }
+}

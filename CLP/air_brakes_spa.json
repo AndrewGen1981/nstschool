@@ -1,0 +1,562 @@
+[
+    {
+        "question":"Has empujado la válvula de suministro de aire del remolque. No debes atrasar un tractor debajo del remolque hasta que todo el sistema neumático sea:",
+        "answers":[
+            "Vacío",
+            "Bajo la presión normal(TRUE)",
+            "Entre 60 y 80 psi"
+        ]
+    },
+    {
+        "question":"¿Dónde debe estar el camión cuando estás inspeccionando el tren de aterrizaje al desacoplar el remolque?",
+        "answers":[
+            "Con el chasis del tractor debajo del remolque(TRUE)",
+            "Completamente fuera del remolque",
+            "Con la quinta rueda directamente debajo del pivote"
+        ]
+    },
+    {
+        "question":"Estás acoplando el tractor con el semirremolque. Has conectado las líneas neumáticas. Antes de retroceder debajo del remolque debes:",
+        "answers":[
+            "Suministrar el aire al sistema del remolque, luego extraer el suministro del aire(TRUE)",
+            "Avanzar para comprobar las conexiones de los glad hands",
+            "Asegurarte que los frenos del remolque no están activados"
+        ]
+    },
+    {
+        "question":"La forma más segura de realizar un giro sin otro carril es:",
+        "answers":[
+            "Debes dar la vuelta antes de empezar la carrera",
+            "Debes dar vuelta amplia a medida que completas el giro(TRUE)",
+            "No debes dar la vuelta y ir a buscar otro lugar donde podrás realizar la vuelta sin cruzar otro carril"
+        ]
+    },
+    {
+        "question":"¿Por qué debes estar seguro de que la placa de la quinta rueda está engrasada según requisitos?",
+        "answers":[
+            "Para asegurar la conexión eléctrica adecuada",
+            "Para prevenir los problemas de dirección(TRUE)",
+            "Para reducir el calentamiento y ruido"
+        ]
+    },
+    {
+        "question":"¿Qué va a pasar si la línea de servicio se separa mientras estás conduciendo un autotrén pero la línea de emergencia está bien?",
+        "answers":[
+            "El tanque de remolque se agotará a través de la línea abierta",
+            "La activación de los frenos de emergencia del remolque",
+            "Es probable que ocurra nada hasta que se intentas aplicar los frenos(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué va a pasar si el conductor cruza la línea neumática cuando conecta el remolque viejo?",
+        "answers":[
+            "La válvula manual aplicará los frenos del tractor en vez de los frenos del remolque",
+            "Si el remolque no tiene los frenos de resorte, puedes seguir conduciendo, pero los frenos del remolque no funcionarán(TRUE)",
+            "Las luzes del freno se encienden cuando el pedal del frenado está presionado"
+        ]
+    },
+    {
+        "question":"¿Qué va a pasar si la línea de servicio se separa mientras estás conduciendo un autotrén pero la línea de emergencia está bien?",
+        "answers":[
+            "El tanque de remolque se agotará a través de la línea abierta",
+            "Es probable que ocurra nada hasta que se intentas aplicar los frenos(TRUE)",
+            "La activación de los frenos de emergencia del remolque"
+        ]
+    },
+    {
+        "question":"¿En qué posición debe ser puesta la válvula protectora de control del tractor al acoplar el remolque?",
+        "answers":[
+            "Baja",
+            "Alta",
+            "Normal(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Por qué debes bloquear los glad hands entre sí (o acoplador de vacío) cuando no arrastras un remolque?",
+        "answers":[
+            "El circuito de los frenos conectado se convierte en el tanque de aire de reserva",
+            "Se ensucia o el agua sale de las líneas(TRUE)",
+            "Si no lo hiciste nunca podrías aumentar la presión del sistema"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer si los frenos no están liberados cuando accionaste la válvula del suministro del aire del remolque?",
+        "answers":[
+            "Comprobar la conexión de la línea neumática(TRUE)",
+            "Cruzar las líneas neumáticas",
+            "Chequear el cable eléctrico"
+        ]
+    },
+    {
+        "question":"Al acoplar el remolque tu debes subir el tren de aterrizaje mediante:",
+        "answers":[
+            "Marcha baja",
+            "Intermedio(TRUE)",
+            "Marcha alta"
+        ]
+    },
+    {
+        "question":"Al conducir un conjunto doble es necesario cerrar la válvula que se cierre en el último remolque",
+        "answers":[
+            "Delantera",
+            "Sección media",
+            "Trasera(TRUE)"
+        ]
+    },
+    {
+        "question":"Los camiones equipados de freno neumático fabricados antes del 1975:",
+        "answers":[
+            "Muy a menudo no tienen los frenos de resorte(TRUE)",
+            "Normalmente necesitan un conversor de glad hand",
+            "No pueden ser dirigidos legalmente en las carreteras interestatales"
+        ]
+    },
+    {
+        "question":"Tu línea neumática de emergencia falla o se separa mientras estás conduciendo. La pérdida de presión va a causar:",
+        "answers":[
+            "La descarga del compresor de aire en lugar de bombeado del aire",
+            "Apertura de la válvula de suministro del remolque",
+            "Activación de los frenos de emergencia del remolque(TRUE)"
+        ]
+    },
+    {
+        "question":"Conduciendo detrás de otro vehículo tu debes dejar por lo menos un segundo entre tu vehículo y el vehículo adelante de unos ___ (cuanto) pies de la longitud de tu vehículo.",
+        "answers":[
+            "10(TRUE)",
+            "20",
+            "30"
+        ]
+    },
+    {
+        "question":"Cuando retrocedes el tractor debajo del remolque debes:",
+        "answers":[
+            "Siempre usar la marcha atrás más baja(TRUE)",
+            "Siempre acercar el remolque bajo el ángulo ligero",
+            "Hazlo rápido para asegurarte que el pivote está bloqueado dentro de la quinta rueda"
+        ]
+    },
+    {
+        "question":"Hay dos cosas que un conductor puede hacer para prevenir un volteo. La primera es mantener el cargo lo más cerca posible del suelo; y la otra es:",
+        "answers":[
+            "Asegurarse que los frenos ajustados adecuadamente",
+            "Mantener ambas manos en el volante",
+            "Ir lento alrededor de vueltas(TRUE)"
+        ]
+    },
+    {
+        "question":"Un tractor con remolque ___ requiere la distancia de parada más corta",
+        "answers":[
+            "Vacío",
+            "Cargado parcialente",
+            "Cargado por completo(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Con qué grado hay que presionar dos sellos con acoplador durante la conexión de glad hand?",
+        "answers":[
+            "45 grados",
+            "90 grados(TRUE)",
+            "180 grados"
+        ]
+    },
+    {
+        "question":"¿Qué normalmente conecta un conector glad hands?",
+        "answers":[
+            "Líneas eléctricas del camión al remolque",
+            "El pivote del remolque a la muela de cierre de la quinta rueda",
+            "Línea neumática de servicio y emergencia del vehículo al remolque(TRUE)"
+        ]
+    },
+    {
+        "question":"Hay dos cosas que un conductor puede hacer para prevenir un volteo. 1. Ir lento alrededor de vueltas; 2:",
+        "answers":[
+            "Mantener ambas manos en el volante",
+            "Mantener la carga lo más cerca posible del suelo(TRUE)",
+            "Asegurarse que los frenos ajustados adecuadamente"
+        ]
+    },
+    {
+        "question":"¿Qué distancia debe estar entre la quinta rueda superior e inferior después del acoplado?",
+        "answers":[
+            "Вј pulgada",
+            "Sólo la suficiente para ser adecuada",
+            "Nada(TRUE)"
+        ]
+    },
+    {
+        "question":"Tu línea neumática de emergencia falla o se separa mientras estás conduciendo. La pérdida de presión va a causar:",
+        "answers":[
+            "La descarga del compresor de aire en lugar de bombeado del aire",
+            "Activación de los frenos de emergencia del remolque(TRUE)",
+            "Apertura de la válvula de suministro del remolque"
+        ]
+    },
+    {
+        "question":"Mientras más alto está el centro de gravedad del camión,",
+        "answers":[
+            "Está más fácil doblar la esquina",
+            "Está más seguro dar la vuelta",
+            "Está más fácil volcarse(TRUE)"
+        ]
+    },
+    {
+        "question":"Tu suministras el aire al tanque del remolque mediante:",
+        "answers":[
+            "Empujando al remolque la válvula de suministro del aire(TRUE)",
+            "Sacando del remolque la válvula de suministro del aire",
+            "Conectando los glad hands de la línea de servicio"
+        ]
+    },
+    {
+        "question":"La tasa de escape del freno neumático para un autotrén (motor apagado, frenos desactivados) debe estar menos de ___ psi por minuto",
+        "answers":[
+            "1/2",
+            "2",
+            "3(TRUE)"
+        ]
+    },
+    {
+        "question":"Vas a respaldar tu tractor debajo del semirremolque. El remolque está en la altura adecuada cuando:",
+        "answers":[
+            "El pivote está en aproximadamente 1 Вј pulgadas por encima de la quinta rueda",
+            "El extremo del pivote está incluso con la parte superior de la quinta rueda",
+            "Remolque se levantará ligeramente cuando el tractor retrocede debajo de el(TRUE)"
+        ]
+    },
+    {
+        "question":"Hay dos cosas que puede hacer un conductor para prevenir un volteo. 1. Mantener la carga lo más cerca posible del suelo; 2:",
+        "answers":[
+            "Asegurarse que los frenos ajustados adecuadamente",
+            "Mantener ambas manos en el volante",
+            "Ir lento alrededor de vueltas(TRUE)"
+        ]
+    },
+    {
+        "question":"La válvula manual debe usarse:",
+        "answers":[
+            "Sólo con freno de pie",
+            "Para comprobar los frenos del remolque(TRUE)",
+            "Como el freno de estacionamiento"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer después de conectar las líneas neumáticas pero antes de retroceder debajo del remolque?",
+        "answers":[
+            "Suministrar el aire al sistema del remolque y luego tirar la manivela del suministro del aire(TRUE)",
+            "Asegurarte que los frenos del remolque no están activados",
+            "Caminar alrededor del autotrén para ver si está limpio"
+        ]
+    },
+    {
+        "question":"¿Qué significa cuando la palanca de bloqueo de la quinta rueda no está bloqueada después de que la muela se cerro alrededor del pivote?",
+        "answers":[
+            "El remolque no va a girar en la quinta rueda",
+            "El bloqueo de estacionamiento está apagado y tu puedes seguir",
+            "El acoplamiento no está correcto y debe ser corregido antes de bajar la unidad de acoplamiento(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué sentencia es verdadera?",
+        "answers":[
+            "Los sistemas de frenos y de suspensión de los autotrenes funcionan mejor con la carga ligera",
+            "Un vehículo ligero necesita la potencia de frenado mayor para detenerse que los pesados",
+            "Los camiones bobtail necesitan más tiempo para detenerse que los autotrenes cargados hasta el máximo peso bruto(TRUE)"
+        ]
+    },
+    {
+        "question":"Estás acoplando un tractor al semirremolque y retrocediste el tractor pero no debajo de el. ¿Qué debes conectar antes de retroceder el tractor debajo?",
+        "answers":[
+            "Las líneas neumáticas de servicio y de emergencia(TRUE)",
+            "El cable eléctrico de servicio",
+            "Nada. Retrocede y mira a la quinta rueda"
+        ]
+    },
+    {
+        "question":"¿Qué parte del pivote debe cerrar alrededor la muela de cierre?",
+        "answers":[
+            "La caña(TRUE)",
+            "La cabeza",
+            "La base"
+        ]
+    },
+    {
+        "question":"¿Qué marcha del motor debes elegir después de acoplar el remolque y estás comprobando el soporte del remolque?",
+        "answers":[
+            "Neutral(TRUE)",
+            "Baja inversa",
+            "Alta inversa"
+        ]
+    },
+    {
+        "question":"Cuando estás listo a retroceder debajo del semirremolque debes alinear:",
+        "answers":[
+            "El pivote para acoplar primero la muela de cierre desde la parte del conductor",
+            "Directamente enfrente del remolque(TRUE)",
+            "La rueda izquierda exterior doble con el pivote"
+        ]
+    },
+    {
+        "question":"En la línea del servicio hay una fuga bastante y tu echaste los frenos. El aire del servicio va a escapar y causar:",
+        "answers":[
+            "La activación de los frenos de emergencia(TRUE)",
+            "La pérdida de la presión del tanque",
+            "El bloqueo de los frenos del resorte"
+        ]
+    },
+    {
+        "question":"Los semirremolques fabricados antes del 1975 y equipados del sistema de frenos neumáticos:",
+        "answers":[
+            "Normalmente necesitan un conversor de glad hand",
+            "Muy a menudo no tienen los frenos de resorte(TRUE)",
+            "No pueden ser dirigidos legalmente en las carreteras interestatales"
+        ]
+    },
+    {
+        "question":"Al retroceder el tractor debajo del remolque tu debes:",
+        "answers":[
+            "Utilizar la marcha atrás más baja(TRUE)",
+            "Siempre acercar el remolque bajo el ángulo ligero",
+            "Hacerlo rápido para asegurarte que el pivote está bloqueado dentro de la quinta rueda"
+        ]
+    },
+    {
+        "question":"Al suministrar el aire al remolque asegúrate que las líneas neumáticas no se cruzan y los frenos del remolque funcionan. Esto se hace mediante:",
+        "answers":[
+            "La elevación del pedal de freno",
+            "La inspección de tus espejos para ver si funcionan las luzes",
+            "Aplicación y liberación de los frenos del remolque y inspección del sonido del freno(TRUE)"
+        ]
+    },
+    {
+        "question":"Durante la inspección de los frenos de emergencia del remolque ¿en qué posición debe ser colocada la válvula protectora de control del tractor?",
+        "answers":[
+            "Normal",
+            "De emergencia(TRUE)",
+            "Neutral"
+        ]
+    },
+    {
+        "question":"Durante la inspección del acoplamiento seguro del remolque al remolque el tren de aterrizaje debe estar:",
+        "answers":[
+            "Totalmente subido",
+            "Ligeramente subido(TRUE)",
+            "Totalmente bajado"
+        ]
+    },
+    {
+        "question":"Un tractor con los remolques ___ requiere la distancia más corta de parada.",
+        "answers":[
+            "Vacíos",
+            "Ligeramente cargados",
+            "Totalmente cargados(TRUE)"
+        ]
+    },
+    {
+        "question":"En comparación con el camión sencillo o autobús los autotrenes tienen ___ cosas a inspeccionar.",
+        "answers":[
+            "Menos",
+            "La misma cantidad",
+            "Más(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué significa cuando palanca de bloqueo de la quinta rueda no está bloqueada después de que la muela se cerro alrededor del pivote?",
+        "answers":[
+            "El remolque no va a girar en la quinta rueda",
+            "El bloqueo de estacionamiento está apagado y tu puedes seguir",
+            "El acoplamiento no está correcto y debe ser corregido antes de bajar la unidad de acoplamiento(TRUE)"
+        ]
+    },
+    {
+        "question":"Durante el desacoplamiento del remolque, después de apagar el suministro del aire al remolque y bloquear los frenos del remolque, tu debes:",
+        "answers":[
+            "Retroceder ligeramente para aliviar la presión a la quinta rueda(TRUE)",
+            "Accionar los frenos de estacionamiento del tractor",
+            "Bajar el tren de aterrizaje del remolque"
+        ]
+    },
+    {
+        "question":"Para desbloquear la quinta rueda la palanca de bloqueo debe ser colocada en la posición ____.",
+        "answers":[
+            "Neutral",
+            "Cerrada",
+            "Abierta(TRUE)"
+        ]
+    },
+    {
+        "question":"¿En qué posición debe ser puesta la válvula protectora de control del tractor al acoplar el remolque?",
+        "answers":[
+            "Baja",
+            "Alta",
+            "Normal(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cómo debes inspeccionar la seguridad del tractor-semirremolque?",
+        "answers":[
+            "Revisarlo con cuidado",
+            "Tirar el remolque atrás y adelante con los frenos del remolque bloqueados",
+            "Suavemente tirar hacia adelante en la marcha baja con los frenos del remolque bloqueados y luego revisarlo con cuidado(TRUE)"
+        ]
+    },
+    {
+        "question":"Qué debes hacer para detener el resbalamiento del remolque?",
+        "answers":[
+            "Usar el freno manual del remolque",
+            "Liberar los frenos de servicio(TRUE)",
+            "Maniobras de reacción"
+        ]
+    },
+    {
+        "question":"Antes de retroceder debajo del remolque, debes asegurarte que:",
+        "answers":[
+            "Los frenos del remolque están bloqueados(TRUE)",
+            "La válvula de protección del tractor está normal",
+            "La manivela del suministro del aire está activada"
+        ]
+    },
+    {
+        "question":"La válvula protectora del tractor se va a cerrar y los frenos de emergencia se activarán cuando el escape mayor está en la línea de frenos de____.",
+        "answers":[
+            "Servicio",
+            "Estacionamiento",
+            "Emergencia(TRUE)"
+        ]
+    },
+    {
+        "question":"El gancho de seguridad para la manivela de bloqueo de la quinta rueda debe estar ___ para completar el acoplamiento.",
+        "answers":[
+            "Sobre la manivela de bloqueo(TRUE)",
+            "Debajo de la manivela de bloqueo",
+            "Directamente arriba"
+        ]
+    },
+    {
+        "question":"Conduciendo normal unos conductores usan la válvula de mano antes del pedal de freno para prevenir el accidente. ¿Cuál de las sentencias es verdadera?",
+        "answers":[
+            "No se debe hacerlo(TRUE)",
+            "Esto da menor patinaje que por el uso del un solo pedal del freno",
+            "Es la forma mejor para frenar y mantener el camión en la línea recta"
+        ]
+    },
+    {
+        "question":"Cuando estás desacoplando el remolque cargado debes bajar el tren de aterrizaje hasta que él:",
+        "answers":[
+            "Tenga el contacto firme con el suelo y luego realizar algunos revoluciones adicionales con la marcha baja(TRUE)",
+            "Tenga el contacto firme con el suelo y dejar el remolque fuera de la quinta rueda",
+            "Alcance el suelo"
+        ]
+    },
+    {
+        "question":"¿Cuál de éstas dará la vuelva más amplia por causas del movimiento fuera de su carril o por una trampa?",
+        "answers":[
+            "Tractor arrastrando el remolque de 45 pies(TRUE)",
+            "Tractor con dos remolques de 27 pies",
+            "Bobtail de 53 pies"
+        ]
+    },
+    {
+        "question":"Las líneas eléctricas y neumáticas del tractor al remolque deben estar:",
+        "answers":[
+            "Totalmente ajustados pero con un bucle un poquito flojo",
+            "Fijados pero con bucle bastante para girar(TRUE)",
+            "Apoyados sobre el chasis del tractor"
+        ]
+    },
+    {
+        "question":"Estás conduciendo un autotrén cuando el remolque se rompe separando las dos líneas neumáticas. Tu esperas que los frenos del remolque se activen y:",
+        "answers":[
+            "La válvula de suministro del remolque quede abierta",
+            "El tractor pierde la presión del aire",
+            "La válvula protectora del tractor se cierre(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué va a pasar si tu cruzas la línea neumática cuando conectas el remolque viejo?",
+        "answers":[
+            "La válvula manual aplicará los frenos del tractor en vez de los frenos del remolque",
+            "Si el remolque no tiene los frenos de resorte, puedes seguir conduciendo, pero los frenos del remolque no funcionarán(TRUE)",
+            "Las luzes del freno se encienden cuando el pedal del frenado está presionado"
+        ]
+    },
+    {
+        "question":"El soporte delantero del remolque está elevado y el remolque está apoyado en el tractor. Debes asegurarte en que:",
+        "answers":[
+            "Hay un espacio bastante entre la parte superior de los neumáticos del tractor y la nariz del remolque",
+            "Hay un espacio bastante entre el tractor y el tren de aterrizaje",
+            "Las dos variantes correctas(TRUE)"
+        ]
+    },
+    {
+        "question":"La tasa de escape del freno neumático para un autotrén (motor apagado, frenos desactivados) debe estar menos de ___ psi por minuto",
+        "answers":[
+            "2",
+            "3",
+            "4(TRUE)"
+        ]
+    },
+    {
+        "question":"Si tu no puedes dar la vuelta sin entrar al otro carril del tráfico:",
+        "answers":[
+            "Debes dar la vuelta antes de empezar la carrera",
+            "Debes dar vuelta amplia a medida que completas el giro(TRUE)",
+            "No debes dar la vuelta y ir a buscar otro lugar donde podrás realizar la vuelta sin cruzar otro carril"
+        ]
+    },
+    {
+        "question":"Durante el acoplamiento la posición adecuada de la quinta rueda es:",
+        "answers":[
+            "El nivel del suelo",
+            "Inclinado hacia abajo, hacia el final del remolque(TRUE)",
+            "Inclinado hacia arriba hacia el final del remolque"
+        ]
+    },
+    {
+        "question":"Después de bloquear el pivote dentro de la quinta rueda debes inspeccionar la conexión:",
+        "answers":[
+            "Tirar hacia adelante 50 pies, girar a la derecha y luego a la izquierda",
+            "Retroceder con los soportes del remolque liberados",
+            "Tirar el tractor suavemente hacia adelante con los soportes del remolque bloqueados(TRUE)"
+        ]
+    },
+    {
+        "question":"Las líneas neumáticas del autotrén normalmente se pintan para prevenirlas del mezclado. La línea de emergencia es de color ___, la línea de servicio es de color ___.",
+        "answers":[
+            "Rojo, azul(TRUE)",
+            "Negro, amarillo",
+            "Azul, rojo"
+        ]
+    },
+    {
+        "question":"Los soportes metálicos están elevados y el remolque está apoyado en el tractor. Debes asegurarte:",
+        "answers":[
+            "Hay un espacio bastante entre la quinta rueda superior e inferior",
+            "El gancho de seguridad está en la posición abierta",
+            "Hay un espacio bastante entre el tractor y el tren de aterrizaje(TRUE)"
+        ]
+    },
+    {
+        "question":"Has acoplado un semirremolque. ¿Donde debes sacar los soportes metálicos del remolque antes de realizar un viaje?",
+        "answers":[
+            "Elevado en ВЅ veces con la manivela fijada en su soporte",
+            "Totalmente elevada con la manivela fijada en su soporte(TRUE)",
+            "3 vueltas de la parte superior con la manivela fijada en su soporte"
+        ]
+    },
+    {
+        "question":"No debes retroceder el tractor debajo del remolque hasta que el sistema del aire sea totalmente:",
+        "answers":[
+            "Vacía",
+            "Bajo la presión normal(TRUE)",
+            "Entre 60 y 80 psi"
+        ]
+    },
+    {
+        "question":"¿Cuando debes usar la válvula para estacionar el autotrén?",
+        "answers":[
+            "Para estacionar en los muelles de carga",
+            "Para estacionar en una pendiente",
+            "Nunca(TRUE)"
+        ]
+    }
+]

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>New Sound Trucking School | Site Map Page</title>
+    <meta name="description" content="Site Map Page contains structured links that are contained on the NSTS website for fast navigation">
+    
+    <meta name="keywords" content="cdl truck driver salary, how much do truck drivers make, cdl license, woman driver, driving, articles about driving, nsts team, tuition discounts, giveaway programs">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="NSTS Team">
+
+    <link rel="shortcut icon" href="/img/thumb/ico.png">
+    <link rel="stylesheet" href="/sitemap.css">
+</head>
+
+<body>
+
+    <section class="sitemapContainer">
+        <h1 class="sitemapHeader">List of all our public routes</h1>
+        <h3 class="sitemapHeader">use one to get directly to the end point</h3>
+        <section class="sitemapBox">
+            <% let subIndex %>
+
+            <% if (routes.length > 0) { %>
+                <% routes.forEach(route => { %>
+                    <% if (route.category != undefined) { %>
+                        <section class="sitemapGroup">
+                            <h1 class="groupe-title"><%= route.category %></h1>
+                        </section>
+                    <% } else { %>
+                        <section class="sitemapItem">
+                            <% subIndex = (route.subid != undefined ) ? `${route.subid+1}.` : "" %>
+                            <a class="route-link" href='<%= route.link %>'> <%= subIndex %><%= route.title %> </a>
+                            <section class="route-details">
+                                <p class="route-date">updated <%= route.date %> • </p>
+                                <p class="route-get-link"> https://www.nstschool.com<%= route.link %> </p>
+                                <p class="route-copy">copy</p>
+                            </section>
+                        </section>
+                    <% } %>
+                <% }) %>
+            <% } else { %>
+                <p class="no-routes">There are no routes...</p>
+            <% } %>
+
+            <label class="show-xml-label">
+                <input type="checkbox" class="show-xml">
+                Generate and Copy XML to the clipboard
+            </label> 
+
+        </section>        <!-- sitemapBox -->
+
+        
+    </section>    <!-- sitemapContainer -->
+
+    <script>
+
+        // adding copy eventlisteners
+        document.querySelectorAll(".route-copy").forEach(copy_btn => {
+            copy_btn.addEventListener("click", (e) => {
+                let link = copy_btn.previousSibling.previousSibling
+                navigator.clipboard.writeText(link.textContent)
+                alert(`Link ${link.textContent} copied to the clipboard`)
+            })
+        })
+
+        // show xml events
+        document.querySelector(".show-xml").addEventListener("change", (e) => {
+            if (e.target.checked) {
+                let xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+                let date, link
+
+                document.querySelectorAll(".route-details").forEach(route => {
+                    date = ""
+                    link = ""
+                    route.childNodes.forEach(child => {
+                        if (child.className === "route-date") {
+                            date = `<lastmod>${child.textContent.replace("updated ","").replace(" •", "")}</lastmod>`.replace(/ +/g,"")
+                        }
+                        if (child.className === "route-get-link") {
+                            link = `<loc>${child.textContent}</loc>`.replace(/ +/g,"")
+                        }
+                    })
+
+                    if (link != "") {
+                        xml += `\n  <url>${link}${date}</url>`
+                    }
+
+                })      // document.querySelectorAll(".route-details"
+
+                xml += "\n</urlset>"
+
+                // console.log(xml)
+
+                navigator.clipboard.writeText(xml)
+                // alert(`XML code copied to the clipboard`)
+
+            }
+        })
+
+
+    </script>
+
+</body>
+</html>

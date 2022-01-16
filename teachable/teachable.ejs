@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../teachable/teachable.css">
+    <link rel="shortcut icon" href="../img/thumb/ico.png"/>
+
+    <title>NSTS | Online Course</title>
+</head>
+<body>
+
+  <svg style="display: none;">
+    <symbol viewBox="0 0 405.272 405.272" id="done">
+      <path d="M393.401,124.425L179.603,338.208c-15.832,15.835-41.514,15.835-57.361,0L11.878,227.836
+      c-15.838-15.835-15.838-41.52,0-57.358c15.841-15.841,41.521-15.841,57.355-0.006l81.698,81.699L336.037,67.064
+      c15.841-15.841,41.523-15.829,57.358,0C409.23,82.902,409.23,108.578,393.401,124.425z"/>
+    </symbol>
+  </svg>
+
+  <a id="player" href="../teachable/playerPage.html" style="display: none">playerPage</a>
+
+  <section class="studentInfo" id="studentInfo">
+    <span class="infoPrompt" id="infoPrompt">Checking your progress...</span>
+    <span class="skeleton-radio" id="infoProgress"></span>
+  </section> <!-- studentInfo -->
+
+  <section class="videoListInner" id="videoListInner">
+
+    <% videoDataObj.videos.forEach( (video, index) => { %>
+
+      <section class="videoItem">
+
+        <section class='videoSection' id='<%= video.videoId %>'>
+          
+          <img class='videoThumb' id='<%= index %>' src='//img.youtube.com/vi/<%= video.videoId %>/0.jpg'>
+          
+          <section class='videoSection_info'>
+            <span class='videoWatching'>Watching: 
+              <span class='videoWatching_info' id='watch<%= video.videoId %>'>0%</span>
+            </span>
+            <span class='videoTests'>Tests: 
+              <span class="videoTests_info" id='test<%= video.videoId %>'>-</span>
+            </span>
+          </section><!-- videoSection -->
+
+        </section>  <!-- videoSection_info -->
+
+      <section class="afterLine"></section>
+
+    </section>  <!-- videoItem -->
+      
+
+    <% }) %> <!-- forEach -->
+
+  </section>    <!-- videoListInner -->
+   
+  <script>
+    
+    const teachAreaURL = "<%= teachAreaURL %>"
+    const videoListInner = document.getElementById("videoListInner")
+
+    let allVideoData = {
+      videos: []
+    }
+
+
+    let tmp
+
+    "<% videoDataObj.videos.forEach( (video, index) => { %>"
+      allVideoData.videos.push({
+        lesson: "<%= video.lesson %>",
+        lessonTitle: "<%= video.lessonTitle %>",
+        videoId: "<%= video.videoId %>",
+        height: "<%= video.height %>",
+        width: "<%= video.width %>",
+        questions: []
+      })
+
+      "<% video.questions.forEach( (que) => { %>"
+
+        tmp = "<%= que.answers.join('@') %>"
+        allVideoData.videos["<%= index %>"].questions.push({
+          id: "<%= que.id %>",
+          question: "<%= que.question %>",
+          correctAnswer: "<%= que.correctAnswer %>",
+          answers: tmp.split("@")
+        })
+      "<% }) %>"    //  questions forEach
+      
+    "<% }) %>"    //  videos forEach
+
+
+    let URI_teachArea = `<%= teachAreaURL %>?action=teachArea`
+    URI_teachArea += `&email=${sessionStorage.getItem("StudentServerLoggedIn")}`
+
+
+  </script>
+
+
+  <script src="../teachable/teachable.js" defer></script>
+
+</body>
+</html>

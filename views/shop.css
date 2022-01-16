@@ -1,0 +1,496 @@
+@font-face {
+    font-family: "Gotham Medium";
+    src: url("../font/Gotham\ Medium.otf");
+}
+
+@font-face {
+    font-family: "Gotham Medium Regular";
+    src: url("../font/Gotham\ Book\ Regular.otf");
+}
+
+@font-face {
+    font-family: "Gotham Light";
+    src: url("../font/Gotham\ Light.otf");
+}
+
+@font-face {
+    font-family: "Gotham Extra Light";
+    src: url("../font/Gotham\ Extra\ Light.otf");
+}
+
+@font-face {
+    font-family: "Gotham Book";
+    src: url("../font/Gotham\ Book\ Regular.otf");
+}
+
+@font-face {
+    font-family: "NSTS";
+    src: url("../font/NSTS.ttf");
+}
+
+
+
+/*
+    ========= Global =========
+*/
+
+:root {     
+    --good: hsl(101, 50%, 56%);
+    --bad: hsl(0, 78%, 59%);
+    --NA: hsl(0, 0%, 83%);
+    --calm: hsl(216, 68%, 46%);
+
+    --gray60: hsl(0, 0%, 93%);
+    --blue60: hsl(224, 73%, 56%);
+}
+
+*{
+    font-family: "Gotham Book", -apple-system, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/***   Shop   ***/
+.shopMain {
+    position: relative;
+}
+.shopHeader {
+    position: sticky;
+    top: 0;
+    height:54px;
+    width:100%;
+    display: flex;
+    background-color: hsla(0, 0%, 100%, .96);
+    z-index: 1;
+}
+.shopHeader_item {
+    font-family: "NSTS";
+    font-size: 16px;
+    letter-spacing: 16px;
+
+    height:min-content;
+    margin: auto 16px;
+    
+    color: hsla(218, 7%, 24%, .9);
+    cursor: pointer;
+}
+.lang_item {
+    flex: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    letter-spacing: -1px;
+    justify-content:flex-end;
+    
+    margin: auto 15px;
+}
+.langSVG {
+    width: 16px;
+    /* height: 18px; */
+}
+.shopInner {
+    margin: 0 15px;
+    display: flex;
+    min-inline-size: 325px;
+}
+.shopSlider {
+    flex: 70%;
+}
+.shopLeft {
+    flex: 30%;
+    padding: 5px;
+    height: 85vh;
+
+    overflow-y: scroll;
+    /* Hide Scrollbars But Keep Functionality */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.shopLeft::-webkit-scrollbar {
+    /* Hide Scrollbars But Keep Functionality */
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    display: none;
+  }
+
+.shopItem {
+    background-color: var(--gray60);
+    color: hsl(220, 6%, 19%);
+    border-radius: 6px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    cursor:pointer;
+    display: flex;
+    justify-content:space-between;
+}
+.shopItem:hover{
+    background-color: var(--NA);
+    transition: background-color .3s ease-in;
+}
+.activeItem {
+    /* background-color: var(--NA); */
+    background-color: hsla(220, 16%, 11%, .7);
+    color: white;
+}
+
+.itemDescr {
+    flex: 50%;
+    line-height: 100%;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    padding: 5px 0 0 5px;
+}
+.itemThumb {
+    flex: 50%;
+    right: 0px;
+    text-align: center;
+    margin-top: 10px;
+}
+.itemThumbPic {
+    max-width: 100px;
+    /* transform: scale(.7); */
+}
+.shopItem:hover .itemThumbPic{
+    transform: scale(1.05);
+    transition: transform .3s ease-in;
+}
+.itemName {
+    font-family: "Gotham Medium", -apple-system, sans-serif;
+    font-size: 16px;
+}
+.itemTTT {
+    font-family: "Gotham Light", -apple-system, sans-serif;
+}
+.itemInfo {
+    height: 20px;
+    width: 20px;
+}
+.itemInfoName {
+    margin-top: 60px;
+    font-family: "Gotham Medium", -apple-system, sans-serif;
+    font-size: 40px;
+    color: rgb(23, 26, 32);
+    text-align: center;
+}
+.infoDurations {
+    margin: 30px 0;
+    display: flex;
+    text-align: center;
+}
+.infoDigit {
+    flex: 30%;
+    font-size: 24px;
+    color: black;
+    font-family: "Gotham Medium", -apple-system, sans-serif;
+    letter-spacing: -0.6px;
+    line-height: 48px;
+}
+.infoDigitDescr {
+    font-family: "Gotham Book", -apple-system, sans-serif;
+    text-transform: uppercase;
+    color: rgb(92, 94, 98);
+    font-size: 12px;
+    line-height: 18px;
+}
+.infoAmmount {
+    display: flex;
+    width: 85%;
+    height: 50px;
+    margin: 0 auto;
+    
+    justify-content: center;
+    text-align: center;
+
+    border: 3px solid  rgb(62, 106, 225);
+    border-radius: 30px;
+
+    color: rgb(92, 94, 98);
+    font-family: "Gotham Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 50px;
+
+    max-inline-size: 400px;
+    min-inline-size: 256px;
+}
+.itemBuy {
+    background-color: hsl(220, 16%, 11%);
+    opacity: 0.7;
+
+    border-radius: 30px;
+    border: none;
+
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+
+    font-size: 12px;
+    width: 90%;
+    height: 50px;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    max-inline-size: 400px;
+    min-block-size: 40px;
+    min-inline-size: 256px;
+    min-width: 256px;
+
+    padding: 5px 40px; 
+    margin: 10px auto;
+}
+.itemBuy:hover {
+    background-color: var(--NA);
+    color: rgba(23, 26, 32);
+    transform: scale(1.05);
+    transition: .4s ease-in-out;
+}
+.buttonTitleBuy {
+    font-size: 12px;
+    color: wheat;
+}
+.buttonTitleBuy::before, .buttonTitleBuy::after {
+    content: " ";
+    white-space: pre;   /* otherwise spaces will be removed automatically */
+}
+.formBuy {
+    border-bottom: 1px solid var(--NA);
+    margin-bottom: 15px;
+}
+
+
+/* *** Descr.text styles *** */
+
+.header, .header1 {
+    color: rgb(23, 26, 32);
+    font-family: "Gotham Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 22px;
+    letter-spacing: -0.5px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.header1 {
+    color: rgb(62, 106, 225);
+    font-size: 28px;
+}
+.bold {
+    color: rgb(92, 94, 98);
+    font-family: "Gotham Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.6;
+    line-height: 21px;
+    text-align: center;
+}
+.text1 {
+    color: rgb(92, 94, 98);
+    font-family: "Gotham Book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 3px;
+}
+.text {
+    color: rgb(92, 94, 98);
+    font-family: "Gotham Book", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+
+/*** Success & Cancel ***/
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(360deg); }
+}
+
+.inner {
+    margin: 0 25px;
+    text-align: justify;
+    border-bottom: 1px solid var(--gray60);
+}
+.text16 {
+    font-size: 16px;
+    line-height: 2em;
+}
+.text18 {
+    font-size: 18px;
+    line-height: 2em;
+}
+.center {
+    text-align: center;
+}
+.cart {
+    display: flex;
+    width: calc( 100vw /  10);
+    fill: hsl(224, 73%, 56%);
+    margin: 20px auto;
+    cursor: pointer;
+}
+.cart:hover {
+    transform: scale(1.02);
+    transition: .3s ease-in-out;
+}
+.tnx {
+    display: flex;
+    width: calc( 100vw /  10);
+    margin: 20px auto;
+
+    /* The animation part: */
+    animation-name: spin;
+    animation-duration: 6000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+/*   Slider   */
+:root {
+    --sliderHeight: calc(100vh * .85);
+    --arrowHeight: 32px;
+    --arrowFill: hsl(0, 0%, 35%);
+    --arrowMargin: calc( var(--arrowHeight) * 0.4 );
+}
+.shopSlider {
+    display: flex;
+    position: relative;
+
+    padding: 0 10px;
+    margin: 0 25px;
+
+    justify-content: center;
+    text-align: center;
+    height: var(--sliderHeight);
+    
+    align-items: center;
+    overflow: hidden;
+    
+    /* Disable DIV selection when clicking */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: 0;
+}
+
+@keyframes showUp {
+    /* y = 0,0142ln(x) + 0,0451 */
+    1% {  --arrowMargin: -2.029% }
+    5% {  --arrowMargin: 0.256% }
+    10% {  --arrowMargin: 1.24% }
+    15% {  --arrowMargin: 1.816% }
+    20% {  --arrowMargin: 2.225% }
+    25% {  --arrowMargin: 2.541% }
+    30% {  --arrowMargin: 2.8% }
+    35% {  --arrowMargin: 3.019% }
+    40% {  --arrowMargin: 3.209% }
+    45% {  --arrowMargin: 3.376% }
+    50% {  --arrowMargin: 3.526% }
+    55% {  --arrowMargin: 3.661% }
+    60% {  --arrowMargin: 3.785% }
+    65% {  --arrowMargin: 3.898% }
+    70% {  --arrowMargin: 4.004% }
+    75% {  --arrowMargin: 4.101% }
+    80% {  --arrowMargin: 4.193% }
+    85% {  --arrowMargin: 4.279% }
+    90% {  --arrowMargin: 4.36% }
+    95% {  --arrowMargin: 4.437% }
+    100% {  --arrowMargin: 4.51% }
+}
+
+.shopSlider:hover {
+    --arrowFill: hsl(0, 0%, 25%);
+
+    /* The animation part: */
+    animation-name: showUp;
+    animation-duration: 1s;
+    animation-timing-function:ease-in;
+
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+}
+
+.sliderPrev, .sliderNext {
+    height: var(--arrowHeight);
+    fill: var(--arrowFill);
+
+    cursor: pointer;
+    position: absolute;
+
+    top: calc((var(--sliderHeight) - var(--arrowHeight))/2);
+}
+
+.sliderPrev {
+    left: var(--arrowMargin);
+}
+.sliderNext {
+    right: var(--arrowMargin);
+}
+
+.sliderPrev:hover, .sliderNext:hover {
+    fill: hsl(0, 0%, 15%);
+    transition: fill .2s ease-in;
+}
+
+.sliderImg {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+
+    min-width: 300px;
+    
+    border-radius: 7px;
+}
+
+
+
+/*  Media requests  */
+
+@media (max-width: 1050px) {
+
+    .shopInner {
+        flex-direction: column;
+    }
+    .shopSlider {
+        margin: 0;
+    }
+    .sliderPrev, .sliderNext {
+        top: auto;
+    }
+    :root {
+        --sliderHeight: calc(100vh * .55);
+    }
+    .itemInfoName {
+        margin-top: 0;
+    }
+    .infoDurations {
+        margin: 0 0 10px 0;
+    }
+    .itemBuy {
+        margin: 3px auto;
+    }
+    .infoDigitDescr {
+        font-size: 10px;
+        line-height: 14px;
+    }
+}
+

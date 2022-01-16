@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>NSTS | Blog</title>
+
+    <meta name="title" content="New Sound Trucking School Blog">
+    <meta name="description" content="NSTS Blog, contains school’s articles">
+    <meta name="keywords" content="school blog, trucking blog, truck articles">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="NSTS Team">
+
+    <link rel="shortcut icon" href="/img/thumb/ico.png">
+    <link rel="stylesheet" href="/blog.css">
+
+</head>
+
+<body>
+
+    <section class="blogBody">
+
+        <nav class="blogHeader">
+            <section class="blogHeader_item" onclick="document.location='/'">NSTS</section>
+        </nav>      <!-- nav class="blogHeader" -->
+
+        <section class="blogInner">
+
+            <section class="blogItem">
+                <section class="blogTitle">
+                    Blog (<%= qty %>)
+                </section>      <!-- section class="blogTitle" -->
+            </section>      <!-- section class="blogItem" -->
+
+            <% const month= ["January","February","March","April","May","June","July","August","September","October","November","December"] %>
+            <% for (let i=0; i < articles.length; i++) { %>
+
+                <section class="blogItem">
+                    <section class="blogArticle">
+                        <section class="artMonth">
+                            <%= month[new Date(articles[i].artPublished).getMonth()] %>
+                        </section>
+                        <form class="artRight" action='/article' method="POST">
+
+                            <!-- Title -->
+                            <button class="artTitle" type="submit"><%= articles[i].artTitle %></button>
+                            <textarea class="artHTML" name="artTitle"><%= articles[i].artTitle %></textarea>
+
+                            <!-- Author -->
+                            <section class="artAuthor">
+                                <%= articles[i].artAuth %>
+                            </section>
+                            <textarea class="artHTML" name="artAuthor"><%= articles[i].artAuth %></textarea>
+
+                            <!-- Date Published -->
+                            <section class="artDate">
+                                <%= articles[i].artPublished %>
+                            </section>
+                            <textarea class="artHTML" name="artPublished"><%= articles[i].artPublished %></textarea>
+
+                            <!-- brief WILL BE NOT PASSED!!! HTML will be passed instead-->
+                            <section class="artText">
+                                <%= articles[i].artBrief %>
+                            </section>
+                            <textarea class="artHTML" name="artHTML"><%= articles[i].htmlResult %></textarea>
+
+                            <button class="artLink" type="submit">Continue reading</button>
+
+                        </form>      <!-- form class="artRight" -->
+                    </section>      <!-- class="blogArticle" -->
+                </section>      <!-- class="blogItem" -->
+
+            <% } %>
+
+
+            <section class="showMore"><a class="showMore" href="showMore">Show more posts</a></section>
+        
+        </section>      <!-- section class="blogInner" -->
+
+    </section>      <!-- section class="blogBody" -->
+
+
+</body>

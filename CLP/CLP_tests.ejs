@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="COMMERCIAL LEARNER PERMIT TEST SIMULATION. English, Spanish, Ukrainian and Russian language versions of WA CLP Exam. Try it for free and you’ll know if you are ready to pass the real thing.">
+
+    <link rel="stylesheet" href="../CLP/CLP.css">
+    <link rel="shortcut icon" href="../img/thumb/ico.png"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+
+    <title>NSTS | CLP Test</title>
+    
+</head>
+<body>
+
+    <section class="test_header">
+        <h1 class="test_header_text">This is a training mode, no time limits</h1>
+        <section class="clock"></section>
+        <section class="notifications">
+            <h3 class="test_header_info">Once you'll be ready just click on <strong>"Exam Mode"</strong> button below</h3>
+            <section class="test_exam_mode">
+                <button class="control_mode">Exam Mode</button>
+                <p class="header_email"> <%= email %> </p>
+            </section>
+        </section>        <!-- notifications -->
+        <section class="course_info">
+            <h2 class="header_topic"> <%= topic %> </h2>
+            <p class="header_lang"> <%= lang %> </p>
+        </section>        <!-- course_info -->
+    </section>      <!-- test_header -->
+    
+    <section class="test_box">
+
+        <section class="test_counter"></section>
+        <section class="test_current">
+            <span class="test_current-res"></span>
+            <span class="test_current-ratio"></span>
+            <section class="test_norm"></section>
+        </section>
+
+        <h1 class="question"></h1>
+        <section class="answers_box"></section>
+
+        <section class="control_box">
+            <button class="control_submit">Submit</button>
+        </section>
+
+    </section>      <!-- class="test_box" -->
+
+    <section class="test_result_form">
+        <section class="test_results">
+            <h2 class="result_topic"></h2>
+            <p class="result_date"></p>
+            <p class="result_qtyOfQTY"></p>
+            <p class="result_timeSEC"></p>
+            <p class="result_timeGONE"></p>
+            <p class="result_timeLEFT"></p>
+            <p class="result_timePerc"></p>
+            <section class="results"></section>
+        </section>    <!-- test_results -->
+        <section class="control_box_send">
+            <button class="control_send">Send as Email</button>
+        </section>
+    </section>
+
+
+    <script>
+
+        // Global const and vars
+        let testObj = []    //  shuffled tests array
+        let current = 0     //  current question
+        
+        const howManyCorrectShouldBe = 0.8      // 80% of all FIRST answers should be CORRECT to pass
+
+        // topics
+        const topics = {
+            eng: {
+                general: "General knowledge",
+                air_brakes: "Air Brakes",
+                comb_vehicle: "Combination Vehicle"
+            },
+            spa: {
+                general: "Conocimientos generales",
+                air_brakes: "Freno de aire",
+                comb_vehicle: "Vehículo de combinación"
+            },
+            ukr: {
+                general: "Загальні поняття",
+                air_brakes: "Пневматичні гальма",
+                comb_vehicle: "Комбіновані транспортні засоби"
+            },
+            rus: {
+                general: "Общие знания",
+                air_brakes: "Пневматические тормоза",
+                comb_vehicle: "Комбинированный автомобиль"
+            }
+        }
+
+        // langs
+        const languages = {
+            eng: "English",
+            spa: "Español",
+            ukr: "Українська",
+            rus: "Русский"
+        }
+
+        // Buttons
+        const submites = {
+            eng: "Submit",
+            spa: "Enviar",
+            ukr: "Надіслати",
+            rus: "Отправить"
+        }
+        const nexts = {
+            eng: "Yes! Next",
+            spa: "¡Sí! Próximo",
+            ukr: "Так! Далі",
+            rus: "Да! Следующий"
+        }
+
+        // exam params
+        const exams = {
+            general: {
+                qty: 50,
+                mins: 60
+            },
+            air_brakes: {
+                qty: 20,    //  20
+                mins: 20
+            },
+            comb_vehicle: {
+                qty: 20,
+                mins: 30
+            }
+        }
+
+        // params for setInterval func
+        const qty = exams['<%= topic %>'].qty
+        const mins = exams['<%= topic %>'].mins
+        const time_sec = mins * 60  //  time for test in seconds
+        let time_left, time_gone = 0
+        
+
+        // MODES
+        const test = false
+        const exam = true
+        let mode = test     //  test mode on start
+
+        // RESULTS
+        let resultObj = {}
+
+        function initResultsObj() {
+            resultObj.examDate = new Date()
+            resultObj.topicEng = topics.eng['<%= topic %>']
+            resultObj.topicNative = topics['<%= lang %>']['<%= topic %>']
+            resultObj.language = languages['<%= lang %>']
+            resultObj.email = '<%= email %>'
+            resultObj.timeframe = `${mins} minutes`
+            resultObj.exalQty = `${qty} questions`
+            resultObj.totalQty = '<%= testDataObj.length %>' + ' total questions in block'
+            resultObj.results = []
+        }
+
+        function addQuestionToResults(question) {
+            resultObj.results.push({
+                "question": question,
+                "when": time_gone,
+                "answers": []
+            })
+        }
+
+        function addAnotherAnswer(answer, isCorrect) {
+            let question = resultObj.results[resultObj.results.length-1]
+            question.answers.push({
+                "_id": question.answers.length+1,
+                "answer": answer,
+                "isCorrect": isCorrect,
+                "when": `${time_gone}`,
+                "time_str": `${Math.floor(time_gone / 60)}M:${time_gone % 60}s`
+            })
+        }
+
+
+        function passedFirstAttemptRate() {
+            // calculating how many correct  answers given  with 1st attempt
+            if (resultObj === undefined) { return 0 }
+            if (resultObj.results === undefined) { return 0 }
+            
+            let passedFirstCount = 0
+
+            resultObj.results.map((item, index) => {
+                if (item.answers[0] != undefined) {
+                    if (item.answers[0].isCorrect) {
+                        passedFirstCount += 1
+                    }
+                }
+            })
+            
+            return passedFirstCount/qty
+        }
+
+
+
+        function checkCurrentStatus() {
+            // verifies current status when going through exam
+
+            if (mode != exam) { return }
+
+            let perc = passedFirstAttemptRate()
+            document.querySelector('.test_current-ratio').textContent = `(${Math.round(perc*1000)/10}%)`
+
+            if (perc <  howManyCorrectShouldBe) {
+                document.querySelector('.test_current-res').textContent = `NOT PASSED YET`
+                document.querySelector('.test_current-ratio').classList.add("__exam_failed")
+            } else {
+                document.querySelector('.test_current-res').textContent = `PASSED`
+                document.querySelector('.test_current-ratio').classList.add("__exam_passed")
+            }
+        }
+
+
+
+        function ifTestPassed() {
+            // checking if passed exam or not
+            
+            let perc = passedFirstAttemptRate()
+            if (perc <  howManyCorrectShouldBe) {
+                document.querySelector('.test_header_text').classList.add("__exam_failed")
+                return `NOT PASSED(${Math.round(perc*1000)/10}%)`
+            } else {
+                document.querySelector('.test_header_text').classList.add("__exam_passed")
+                return `PASSED(${Math.round(perc*1000)/10}%)`
+            }
+        }
+
+
+        
+        function postingResults() {
+            // lets user know about results, sends email if provided
+
+            if (resultObj.generalResult != undefined) { return }    //  not a first time
+
+            clearInterval(interval)
+            if (document.querySelector('.control_submit') != undefined) {
+                document.querySelector('.control_submit').style.display = "none"
+            }
+                
+            resultObj.generalResult = ifTestPassed()
+            resultObj.generalTime = `${time_gone} seconds`
+            resultObj.generalTime_str = `${Math.floor(time_gone / 60)}M : ${time_gone % 60}s`
+
+            document.querySelector('.test_header_text').textContent = `RESULT: ${resultObj.generalResult}`
+            document.querySelector('.notifications').innerHTML = ''
+            document.querySelector('.test_box').innerHTML = ''
+            document.querySelector('.course_info').innerHTML = ''
+
+            document.querySelector('.result_topic').textContent = `${resultObj.topicEng}/${resultObj.topicNative}/${resultObj.language}`
+            document.querySelector('.result_date').textContent = `${new Date(resultObj.examDate).toLocaleDateString()}/${new Date(resultObj.examDate).toLocaleTimeString()}`
+            document.querySelector('.result_qtyOfQTY').textContent = `${resultObj.exalQty} selected of ${resultObj.totalQty}`
+
+            document.querySelector('.result_timeSEC').textContent = `GIVEN TIME: ${resultObj.generalTime}/${resultObj.generalTime_str}`
+            document.querySelector('.result_timeGONE').textContent = `USED TIME: ${time_gone} seconds/${Math.round(time_gone*100/time_sec)}%`
+            document.querySelector('.result_timeLEFT').textContent = `TIME LEFT: ${time_left} seconds/${Math.round(time_left*100/time_sec)}%`
+
+            let html = ''
+            let isCorrect
+
+            resultObj.results.map((item, index) => {
+                html += `<section class='resultDetails_QuestionBlock' id='Q${index+1}'>`
+                html += `<h2 class='resultDetails_Question'>Q#${index+1}: ${item.question}</h2>`
+                html += `<p class='resultDetails_When'>timeline: ${item.when} seconds after test began</p>`
+                html += `<p class='resultDetails_Attempts'>answers given: ${item.answers.length}</p>`
+                item.answers.map ((answer_item, j) => {
+                    isCorrect = answer_item.isCorrect ? "correct" : "incorrect"
+                    html += `<section class='resultDetails_AnswerBlock' id='A${j+1}'>`
+                        html += `<h3 class='resultDetails_Answer ${isCorrect} __${answer_item.isCorrect}'>A#${j+1}(${isCorrect}): ${answer_item.answer}</h3>`
+                        html += `<p class='resultDetails_When __answerWhen'>timeline: ${answer_item.when} seconds after test began [${answer_item.time_str}]/ ${answer_item.when-item.when} seconds after asked</p>`
+                    html += `</section>`
+                })
+                html += `</section>`
+            })
+
+            document.querySelector('.results').innerHTML = html //  showing exam results
+
+            // checking if can send email
+            clock.style = "background-color: black;"
+            if ('<%= email %>' === "") {
+                clock.textContent = "no email..."
+            } else {
+                document.querySelector(".control_send").style.display = "inline-flex"
+            }
+
+            // saving datato CLP database
+            fetch('<%= CLP %>', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                redirect: 'follow',
+                body: JSON.stringify({
+                    action: "addCLPExamResult",
+                    date: resultObj.examDate,
+                    email: resultObj.email,
+                    exam: `${resultObj.topicEng}/${resultObj.topicNative}/${resultObj.language}[${resultObj.generalTime_str}]`,
+                    result: resultObj.generalResult
+                })
+            })  //  fetch end
+
+
+        }
+
+
+        // PREPARE SECTION
+        function printTopicAndLang() {
+
+            document.querySelector(".header_topic").textContent = topics['<%= lang %>']['<%= topic %>']
+            document.querySelector(".header_lang").textContent = languages['<%= lang %>']
+            if ('<%= email %>' === "") {
+                document.querySelector(".header_email").textContent = "Email was not provided"
+                document.querySelector(".header_email").classList.add("_no_email")
+            } else {
+                document.querySelector(".header_email").classList.add("_ok_email")
+            }
+            document.querySelector(".control_submit").textContent = submites['<%= lang %>']
+            
+        }
+
+
+        function initTest() {
+            let answers_tmp, correct_answer
+
+            '<% testDataObj.map((test, i) => { %>'
+                
+                answers_tmp = []
+                xx = ""
+
+                '<% test.answers.map((answer, j) => { %>'
+                    if ('<%- answer.indexOf("(TRUE)") %>' > -1) {
+                        answers_tmp.push('<%- answer.replace("(TRUE)","") %>')
+                        xx = answers_tmp[answers_tmp.length-1]
+                    } else {
+                        answers_tmp.push('<%- answer %>')
+                    }
+                '<% }) %>'
+
+                testObj.push({
+                    id: '<%- i %>',
+                    question: '<%- test.question %>',
+                    answers: answers_tmp,
+                    x: xx
+                })
+
+            '<% }) %>'
+            
+            testObj = testObj.sort(() => Math.random() - 0.5)   // shuffling questions
+            printTopicAndLang()     // printing topic and language choosen
+
+        }   // initTest
+
+
+        function printTest(i) {
+            // printing out the next question
+            
+            if (i>-1 && i<testObj.length) {
+                document.querySelector(".test_counter").textContent = `${i+1} / ${testObj.length}`
+                document.querySelector(".question").textContent = testObj[i].question
+                document.querySelector(".answers_box").textContent = ""
+
+                let answers = testObj[i].answers.sort(() => Math.random() - 0.5);   // shuffling answers
+                let label
+                let input
+                answers.map((answer, i) => {
+                    label = document.createElement("label")
+                    label.classList.add("answer_label")
+                    label.htmlFor = `answer${i}`
+                    label.id = `answer_label${i}`
+                    
+                    input = document.createElement("input")
+                    input.classList.add("answer_radio")
+                    input.type = "radio"
+                    input.id = `answer${i}`
+                    input.name="answers_group"
+
+                    label.appendChild(input)
+                    label.innerHTML += answer
+                    
+                    document.querySelector(".answers_box").appendChild(label)
+                })  // answers.map
+
+                if (mode === exam) {    //  adding next question if in exam mode
+                    addQuestionToResults(testObj[i].question)
+                }
+
+            }   //  if 'i' is ok
+        }   //  printTest
+
+
+        function checkIfCorrect(i) {
+            let result = false
+            testObj[i].answers.map((answer, j) => {
+                if (document.getElementById(`answer${j}`).checked) {    //  checking input
+                    result = answer === testObj[i].x
+                    result ? document.getElementById(`answer_label${j}`).classList.add('correct')
+                    : document.getElementById(`answer_label${j}`).classList.add('incorrect')
+                    if (mode === exam) {    //  adding attempt if in exam mode
+                        addAnotherAnswer(answer, result)
+                    }
+                }
+            })
+
+            checkCurrentStatus()    // printing out a current result
+            return result
+        }
+        
+
+        // Entry point
+        initTest()  //  preparing tests
+        printTest(current)  //  showing 1st question
+
+        document.querySelector(".control_submit").addEventListener("click", (e)=>{
+
+            if (document.querySelector(".control_next") != undefined) { return }
+
+            if (checkIfCorrect(current)) {
+                // answer is correct, adding next
+                let btn = document.createElement("button")
+                btn.classList.add("control_next")
+                btn.textContent = nexts['<%= lang %>']
+                btn.addEventListener("click", (e)=>{
+                    document.querySelector(".control_box").removeChild(btn)
+                    // document.querySelector(".control_submit").style.display = "inline-flex"
+                    current += 1
+                    if (current < testObj.length) {
+                        printTest(current)
+                    } else {
+                        // TEST PASSED!!!
+                        if (mode === test) {    //  in test mode
+                            document.querySelector(".test_box").innerHTML = "You've passed the test in training mode!!! Now it is time to switch into exam mode..."
+                        } else {    //  in exam mode
+                            document.querySelector(".test_box").innerHTML = "You've passed the test in exam mode! Congratulations!!"
+                            postingResults()
+                        }
+                    }
+                })  //  NEXT click listener
+                // document.querySelector(".control_submit").style.display = "none"
+                document.querySelector(".control_box").appendChild(btn)
+            }
+        })  //  control_submit "click"
+
+
+        // EXAM MODE
+        const clock = document.querySelector('.clock')
+        let interval
+
+        function onInterval() {
+            time_gone += 1
+
+            time_left = time_sec - time_gone
+            const m = Math.floor(time_left / 60)  //  round to lower
+            const s = time_left % 60
+
+            if (s < 10) {
+                clock.textContent = `${m}M : 0${s}s`
+            } else {
+                clock.textContent = `${m}M : ${s}s`
+            }
+
+            // clock - green-blue-yellow-orange-red dou to %% left 0-20,20-40,40-60 etc
+            let range = Math.round(time_gone*100 / time_sec)
+            clock.style.setProperty("--time", `${range}%`)  //  gradient line
+            if (range > 90) {
+                clock.style.setProperty("--range", `var(--more90)`)
+            } else {
+                if (range > 75) {
+                    clock.style.setProperty("--range", `var(--more75)`)
+                } else {
+                    if (range > 50) {
+                        clock.style.setProperty("--range", `var(--more50)`)
+                    }
+                }   // >75
+            }   //  >90
+            
+
+            if (time_left <= 0) {
+                // time is out
+                alert("Time is out")
+                postingResults()
+                // calc.results
+            }
+   
+        }
+
+
+
+        document.querySelector('.control_mode').addEventListener('click', (e) => {
+            
+            if (!confirm("This will activate an EXAM MODE, you'll be given timeframe and a set of questions for topic you've just covered in TEST MODE. Result will be sent to EMAL, which you provided us with. If you didn't, then go back and put one. So, are you sure you'd like to launch exam mode?")) { return }
+
+            // hidding exam mode info
+            document.querySelector('.test_header_text').textContent = "EXAM MODE"
+            document.querySelector('.test_header_text').classList.add("_exam_mode")
+            document.querySelector('.notifications').style.display = "none"
+
+            mode = exam     // switching mode to EXAM
+            initResultsObj()
+            
+            // printing quote info
+            document.querySelector(".test_current-res").textContent = "Let's go..."
+            document.querySelector(".test_norm").textContent = `*should be ${howManyCorrectShouldBe*100}% of correct answers`
+
+            testObj = testObj.sort(() => Math.random() - 0.5).slice(0, qty)   // slicing shuffled questions
+            current = 0     //  start from beginning
+
+            clock.textContent = `${mins}M : 00s`
+            alert(`Due to topic chosen, your time is ${mins} minutes for ${qty} questions. Your time will start after you'll click OK. Good Luck...`)
+
+            printTest(current)
+
+            interval = setInterval(onInterval, 1000)
+
+        })
+
+
+
+        document.querySelector(".control_send").addEventListener("click", (e) => {
+            // sending email when button clicked
+            
+            let html_to_send = document.querySelector(".test_header").innerHTML
+                html_to_send += document.querySelector(".test_results").innerHTML
+
+            let MAIL_SERVER_URI = '<%- URI %>'
+
+            if (MAIL_SERVER_URI == "") { return }   // EMAIL validation here!!!
+
+            fetch(MAIL_SERVER_URI, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                redirect: 'follow',
+                body: JSON.stringify({
+                    action: "emailCLP",
+                    email: '<%= email %>',
+                    msg: `RESULT: ${resultObj.generalResult}`,
+                    html: html_to_send
+                })
+            })  //  fetch end
+
+            document.querySelector(".control_send").style.display = "none"
+            document.querySelector(".control_box_send").textContent = "email with you results sent"
+
+        })  //  .control_send.addEventListener
+
+
+
+    </script>
+
+</body>
+</html>

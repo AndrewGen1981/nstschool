@@ -1,0 +1,174 @@
+{
+    "tuition": [
+        {
+            "id": 0,
+            "name": "Class A Manual",
+            "hours": 160,
+            "online": 40,
+            "driving": 120,
+            "subCourse" : [
+                {
+                    "subTitle": "",
+                    "subPrice": 450000
+                }
+            ],
+            "currency": "usd",
+            "image": "body1_desktop.jpg",
+            "image600": "body1_desktop_600.jpg",
+            "imageAVIF": "body1_desktop.avif",
+            "cart": "cart1.png",
+            "shortCut": "CDL-A M",
+            "weeksLong": "4 weeks",
+            "html": [
+                "<section class='text1'><strong class='bold'>Week 1: </strong>40 Hours Total</section>",
+                "<section class='text'>Classroom Instruction / Online tuition.</section>",
+
+                "<section class='text1'><strong class='bold'>Week 2: </strong>40 Hours Total</section>",
+                "<section class='text'>Lab/Range/Observation: Pre-Trip inspection, familiarization of the equipment, shifting, backing, coupling, speed management. Backing Combination Vehicle: Parallel line backing, Straight backing, and 90 degree backing. Proficiency (behind the wheel): Coupling and uncoupling. Mirrors, braking, shifting (up and down).</section>",
+
+                "<section class='text1'><strong class='bold'>Week 3: </strong>40 Hours Total</section>",
+                "<section class='text'>Lab/Range/Observation: Pre-trip inspection, shifting, mapping, log books, parking, axle weights, bridge weights.</section>",
+                "<section class='text'>Backing Combination Vehicle: Parallel line backing, Straight backing, and 90 degree backing. Street Driving: Flat land driving, starting on grade, extreme right turns, use of mirrors.</section>",
+
+                "<section class='text1'><strong class='bold'>Week 4: </strong>40 Hours Total</section>",
+                "<section class='text'>Street Driving: Flat land and grade driving.</section>",
+                "<section class='text'>Lab/Range/Observation: Pre-trip inspection, left turns, intersections, mirrors, chaining up tractor and drag chain.</section>",
+                "<section class='text'>Backing Combination Vehicle: Parallel line backing, Straight backing, and 90 degree backing. Proficiency (behind the wheel): Road driving, highway, intersections, and railroad crossings. Docking.</section>",
+
+                "<section class='text'>Washington State requires a total of 160 hours of instruction and practical driving to take the Class A CDL test. The instruction is broken down as follows:</section>",
+
+                "<section class='text1'><strong class='bold'>Classroom/Online: </strong>40 Hours</section>",
+                "<section class='text1'><strong class='bold'>Range/Road: </strong>120 Hours</section>"
+            ],
+            "slider": [
+                "am1.jpg", "am2.jpg"
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Class A Automatic",
+            "hours": 160,
+            "online": 40,
+            "driving": 120,
+            "subCourse" : [
+                {
+                    "subTitle": "",
+                    "subPrice": 400000
+                }
+            ],
+            "currency": "usd",
+            "image": "body2_desktop.jpeg",
+            "image600": "body2_desktop_600.jpeg",
+            "imageAVIF": "body2_desktop.avif",
+            "cart": "cart2.png",
+            "shortCut": "CDL-A A",
+            "weeksLong": "4 weeks",
+            "html": [
+                "<section class='text1'><strong class='bold'>Week 1: </strong>40 Hours Total</section>",
+                "<section class='text'>Classroom Instruction / Online tuition.</section>",
+
+                "<section class='text1'><strong class='bold'>Week 2: </strong>40 Hours Total</section>",
+                "<section class='text'>Lab/Range/Observation: Pre-Trip inspection, familiarization of the equipment, shifting, backing, coupling, speed management. Backing Combination Vehicle: Parallel line backing, Straight backing, and 90 degree backing. Proficiency (behind the wheel): Coupling and uncoupling. Mirrors, braking, shifting (up and down).</section>",
+
+                "<section class='text1'><strong class='bold'>Week 3: </strong>40 Hours Total</section>",
+                "<section class='text'>Lab/Range/Observation: Pre-trip inspection, shifting, mapping, log books, parking, axle weights, bridge weights.</section>",
+                "<section class='text'>Backing Combination Vehicle: Parallel line backing, Straight backing, and 90 degree backing. Street Driving: Flat land driving, starting on grade, extreme right turns, use of mirrors.</section>",
+
+                "<section class='text1'><strong class='bold'>Week 4: </strong>40 Hours Total</section>",
+                "<section class='text'>Street Driving: Flat land and grade driving.</section>",
+                "<section class='text'>Lab/Range/Observation: Pre-trip inspection, left turns, intersections, mirrors, chaining up tractor and drag chain.</section>",
+                "<section class='text'>Backing Combination Vehicle: Parallel line backing, Straight backing, and 90 degree backing. Proficiency (behind the wheel): Road driving, highway, intersections, and railroad crossings. Docking.</section>",
+
+                "<section class='text'>Washington State requires a total of 160 hours of instruction and practical driving to take the Class A CDL test. The instruction is broken down as follows:</section>",
+
+                "<section class='text1'><strong class='bold'>Classroom/Online: </strong>40 Hours</section>",
+                "<section class='text1'><strong class='bold'>Range/Road: </strong>120 Hours</section>"
+            ],
+            "slider": [
+                "aa1.jpg", "aa2.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Class B",
+            "hours": 80,
+            "online": 40,
+            "driving": 40,
+            "subCourse" : [
+                {
+                    "subTitle": "",
+                    "subPrice": 300000
+                }
+            ],
+            "currency": "usd",
+            "image": "body3_desktop.jpg",
+            "image600": "body3_desktop_600.jpg",
+            "imageAVIF": "body3_desktop.avif",
+            "cart": "cart3.png",
+            "shortCut": "CDL-B",
+            "weeksLong": "2 weeks",
+            "html": [
+                "<section class='text1'><strong class='bold'>Week 1: </strong>40 Hours Total</section>",
+                "<section class='text'>Classroom Instruction / Online tuition.</section>",
+
+                "<section class='text'>Lab/Range/Observation: Pre-Trip inspection, familiarization of the equipment, shifting, backing, coupling, speed management.</section>",
+                "<section class='text'>Backing Combination Vehicle: Parallel line backing, Straight backing, and 90 degree backing. Proficiency (behind the wheel): Mirrors, braking, shifting (up and down).</section>",
+
+                "<section class='text1'><strong class='bold'>Week 2: </strong>40 Hours Total</section>",
+                "<section class='text'>Classroom Instruction: Washington State Commercial Driving Handbook, vehicle safety, vehicle control systems, Pre-trip inspections, log books. Weights and measures, hours of service, and DOL regulations. CDL knowledge & preparation/ testing.</section>",
+                "<section class='text'>Street Driving: Street driving, highway, and intersections.</section>",
+                "<section class='text'>Lab/Range/Observation: Pre-Trip inspection, familiarization of the equipment, shifting, backing, coupling, speed management.</section>",
+                "<section class='text'>Backing Combination Vehicle: Parallel line backing, Straight backing, and 90 degree backing. 8 Hours Proficiency (behind the wheel): Road driving, highway, intersections, and railroad crossings. Proper use of mirrors</section>",
+
+                "<section class='text'>Washington State requires a total of 80 hours of instruction and practical driving to take the Class B CDL test. The instruction is broken down as follows:</section>",
+
+                "<section class='text1'><strong class='bold'>Classroom/Online: </strong>40 Hours</section>",
+                "<section class='text1'><strong class='bold'>Range/Road: </strong>40 Hours</section>"
+            ],
+            "slider": [
+                "b1.jpg", "b2.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Upgrades",
+            "hours": 80,
+            "online": 40,
+            "driving": 40,
+            "subCourse" : [
+                {
+                    "subTitle": "Passengers Endorsement",
+                    "subPrice": 100000
+                },
+                {
+                    "subTitle": "Tanker Endorsement",
+                    "subPrice": 100000
+                },
+                {
+                    "subTitle": "Hazmat Endorsement",
+                    "subPrice": 100000
+                }
+            ],
+            "currency": "usd",
+            "image": "body4_desktop.jpg",
+            "image600": "body4_desktop_600.jpg",
+            "imageAVIF": "body4_desktop.avif",
+            "cart": "cart4.png",
+            "shortCut": "UPGRADE",
+            "weeksLong": "2 weeks",
+            "html": [
+                "<section class='text1'><strong class='bold'>Training Content: </strong>80 total hours of commercial truck driver training; 30 hours of combined lab training, range training and observation with the applicable vehicle, truck or bus, including 16 hours of street driving training, 16 hours training in backing maneuvers, and 16 hours proficiency development.</section>",
+                "<section class='text'>Graduates receive a Commercial Driver Training Certification making them eligible to obtain their Class A CDL upon successfully passing the CDL skills tests.</section>",
+
+                "<section class='text1'><strong class='bold'>Requirements: </strong>Must pass a Department of Transportation (DOT) Physical, have a Class A Driver License or a Class A Instruction Permit, and pass a required Drug Screen. Must be at least 18 years old to enroll.</section>",
+                "<section class='text'>This training program is designed for those who have no prior experience or training as a truck driver or has been out of the trucking industry for several years. The Class A CDL training program prepares students for truck driving careers in both over-the-road (OTR) and local driving jobs. The certificate of completion from a CDL Program qualifies a graduate as an entry-level CDL driver. Utilizing a balance of classroom instruction and hands-on, behind-the-wheel training, students will be prepared to pass both the written CDL exams and skills test.</section>",
+
+                "<section class='text1'><strong class='bold'>Classroom/Online: </strong>40 Hours</section>",
+                "<section class='text1'><strong class='bold'>Range/Road: </strong>40 Hours</section>"
+            ],
+            "slider": [
+                "up1.jpg", "up2.jpg", "up3.jpg", "up4.jpg"
+            ]
+        }
+    ]
+}

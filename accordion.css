@@ -1,0 +1,126 @@
+/* Monserat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.about-line {
+    position: absolute;
+    top: 55px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+    background-color: #a6bccf;
+    
+    z-index: 1;
+}
+
+.about-box {
+    position: absolute;
+    top: 56px;
+    left: 0;
+
+    width: 100%;
+    
+    max-height: 0px;
+    transition: max-height .3s ease-in-out;
+    overflow-y: hidden;
+
+    background-color: rgba(183,207,226, .85);
+
+    -webkit-box-shadow: 0px -10px 10px -3px rgba(255, 255, 255, .75) inset;
+    -moz-box-shadow: 0px -10px 10px -3px rgba(255, 255, 255, .75) inset;
+    box-shadow: 0px -10px 10px -3px rgba(255, 255, 255, .75) inset;
+
+    z-index: 1;
+}
+
+.about-toggle {
+    position: absolute;
+    top: 56px;
+    left: 50%;
+
+    width: 137px;
+    height: 28px;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    background-color: #a6bccf;
+
+    font-size: 13px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+:root{
+    --accordionREM: 14px;
+}
+
+.about-header {
+    width: 95%;
+    max-width: 922px;
+    margin: calc(1.429*var(--accordionREM)) auto;
+
+    font-size: calc(1.857*var(--accordionREM));
+    color: #476579;
+    font-family: "Gotham Medium";
+    text-align: left;
+}
+
+.about-text {
+    width: 95%;
+    max-width: 922px;
+    margin: 0 auto calc(1.5*var(--accordionREM)) auto;
+
+    font-family: "Gotham Book";
+    font-size: var(--accordionREM);
+    line-height: calc(1.356*var(--accordionREM));
+    letter-spacing: -0.5px;
+    color: #476579;
+    
+    text-align: justify;
+    text-align-last: center;
+}
+
+.-link {
+    margin: 0;
+    padding: 0;
+    color: #24516e;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 575px) {
+    :root{
+        --accordionREM: 13px;
+    }
+}
+@media (max-width: 475px) {
+    .about-text {
+        width: 97%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 425px) {
+    .about-box {
+        background-color: rgba(183,207,226, .95);
+    }
+    .about-text {
+        letter-spacing: -0.6px;
+        color: #2b475a;
+    }
+}
+@media (max-width: 375px) {
+    :root{
+        --accordionREM: 12.5px;
+    }
+    .about-text {
+        margin-bottom: 7px;
+        color: black;
+    }
+}

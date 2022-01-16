@@ -1,0 +1,1922 @@
+[
+    {
+        "question":"¿Acorde el manual del conductor, por qué debes limitar el uso de tu bocina?",
+        "answers":[
+            "Esto puede asustar a los otros conductores(TRUE)",
+            "Tocar la bocina no es una forma adecuada para notificar a los otros que estás aquí",
+            "Tu debes mantener un control firme del volante con ambas manos todo el tiempo"
+        ]
+    },
+    {
+        "question":"¿Cuál de estas cosas NO es un consejo del manual de conductores para adelantar un vehículo?",
+        "answers":[
+            "Tocar la bocina ligeramente",
+            "En la noche tu enciendes las luces altas antes de adelantar y las dejas hasta finalizar el adelantamiento por completo(TRUE)",
+            "Tener en cuenta que otros conductores no te ven"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer cuando viajas de noche?",
+        "answers":[
+            "Debes mantener la velocidad bastante baja para que puedas detenerte dentro de la luz de tus faros(TRUE)",
+            "Debes mirar directamente a los faros del tráfico que viene sólo por períodos cortos",
+            "Mantener las luces de instrumentos encendidas"
+        ]
+    },
+    {
+        "question":"¿Cuál es el objeto de los retardadores?",
+        "answers":[
+            "Para retardar el vehículo durante la conducción y reducir el desgaste de los frenos(TRUE)",
+            "Para aplicar la potencia de frenado extra a los ejes no direccionales",
+            "Para prevenir el patinaje"
+        ]
+    },
+    {
+        "question":"¿Qué pasa cuando el nivel de alcohol en la sangre se aumenta?",
+        "answers":[
+            "El borracho puede ver todo más claro por los efectos del alcohol",
+            "Los efetos del alcohol se disminuyen",
+            "Se afectan el juicio y autocontrol (TRUE)"
+        ]
+    },
+    {
+        "question":"Estás conduciendo por la carretera llana a la velocidad de 50 mph. Enfrente de tí no hay ningún vehículo. De repente un neumático en tu vehículo se explotó. ¿Qué debes hacer primero?",
+        "answers":[
+            "No frenas hasta que el vehículo se detenga(TRUE)",
+            "Encender tus luces de parada",
+            "Encender tus luces de emergencia"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre la conducción alerta es verdadera?",
+        "answers":[
+            "Un descanso de media hora para tomar café va a hacer más para mantenerte alerto que una siesta de media hora",
+            "Si te ves obligado a detenerte para una siesta, debes hacerlo en una parada de camiones u otra zona de descanso y nunca en el arcén.",
+            "El sueño es la única cosa que puede superar la fatiga (TRUE)"
+        ]
+    },
+    {
+        "question":"Para tu seguridad, cuando estás instalando los triángulos reflexivos debes:",
+        "answers":[
+            "Mantener los triángulos entre tu y el tráfico que viene(TRUE)",
+            "Mantenerlos fuera de mirada mientras vas a instalarlos",
+            "Apagar las luces"
+        ]
+    },
+    {
+        "question":"¿Qué tipo de incendios puedes ahogar con agua?",
+        "answers":[
+            "Incendios de ruedas(TRUE)",
+            "Incendios de gasolina",
+            "Incendios eléctricos"
+        ]
+    },
+    {
+        "question":"Tu vehículo tiene frenos hidráulicos. Conduciendo por una carretera plana presionas el pedal de freno y ves que el pedal de freno se va hasta el piso. ¿Cuál de las sentencias es verdadera?",
+        "answers":[
+            "Bombear el pedal del freno puede elevar la presión para que puedes detener el vehículo(TRUE)",
+            "El freno de estacionamiento no va a funcionar por que es una parte del mismo sistema hidráulico",
+            "La marcha neutral te va a ayudar de retardar el vehículo"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre los frenos es verdadera?",
+        "answers":[
+            "Con más pesado que es un vehículo o con velocidad más rápida que se mueve, tanto más calor deben absorber los frenos para detenerse(TRUE)",
+            "Los tambores de freno se enfrían muy rápido cuando el vehículo mueve con la velocidad grande",
+            "El calor no causa la eficacia reducida de los frenos"
+        ]
+    },
+    {
+        "question":"¿A qué distancia debes mirar adelante cuando vienes con la velocidad de carretera normal?",
+        "answers":[
+            "1/8",
+            "1/4(TRUE)",
+            "1/2"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre la conducción durante el tiempo frío es verdadera?",
+        "answers":[
+            "El motor no se recalenta durante el tiempo frío",
+            "Debe usarse limpiador de parabrisas anticongelante",
+            "Los escapes del sistema de evacuación son menos peligrosos durante el tiempo frío (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre la conducción por las áreas con un viento muy fuerte es verdadera?",
+        "answers":[
+            "Debes conducir al lado de otros vehículos para romper el viento",
+            "Con más ligero que está tu vehículo, tanto menos problemas vas a tener con el viento",
+            "El viento será un problema especial al salir del túnel (TRUE)"
+        ]
+    },
+    {
+        "question":"El frenado controlado:",
+        "answers":[
+            "Puede usarse cundo giras con fuerza",
+            "Bloquea las ruedas por un rato",
+            "Se usa para mantener un vehículo recto durante el frenado (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué debes recordar acerca del uso de los espejos?",
+        "answers":[
+            "Debes mirar en el espejo durante unos segundos a la vez",
+            "Los espejos convexos hacen cosas verse más grandes y cercanas que éstas son de verdad",
+            "Hay ‘puntos ciegos’ que no se ven en tu espejo (TRUE)"
+        ]
+    },
+    {
+        "question":"Tu vehículo está en una emergencia de tráfico y puede colisionar con otro vehículo si tu no tomas medidas. ¿Qué cosa útil debes recordar en tal situación?",
+        "answers":[
+            "Casi siempre puedes girar para pasar alrededor del obstáculo más rápido que detenerte.(TRUE)",
+            "Una parada siempre es una forma más segura en la situación de emergencia del tráfico",
+            "Dejar la carretera siempre causa más riesgo que chocar contra otro vehículo"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias es falsa sobre la inspección de los frenos y sistema de suspensión antes del viaje?",
+        "answers":[
+            "Las zapatas de freno deben tener líquido de freno adentro(TRUE)",
+            "La falta de una hoja en una muella de hojas puede ser peligrosa",
+            "El tambor roto puede ser sustituido"
+        ]
+    },
+    {
+        "question":"Para ayudarte estar alerto durante la conducción tu debes:",
+        "answers":[
+            "Planificar los viajes para horas cuando estás normalmente dormido",
+            "Hacer unos descansos pequeños antes de llegar a ser somnoliento(TRUE)",
+            "Tomar las medicinas contra la gripe si estás resfriado"
+        ]
+    },
+    {
+        "question":"¿Cuál es la cosa más importante a recordar sobre los frenos de emergencia?",
+        "answers":[
+            "Interrumpiendo los frenos del eje de dirección mantendrá tu vehículo en la línea recta durante el frenado de emergencia",
+            "Si las ruedas se patinan tu no puedes controlar tu vehículo(TRUE)",
+            "Nunca hazlo sin reducir la marcha primeramente"
+        ]
+    },
+    {
+        "question":"¿A qué distancia adelante debe mirar un conductor mientras está conduciendo?",
+        "answers":[
+            "5-8 segundos",
+            "12-15 segundos(TRUE)",
+            "18-21 segundos"
+        ]
+    },
+    {
+        "question":"Tu empiezas el movimiento del vehículo después de una parada. Al aplicar la fuerza a las ruedas motrizes, éstos empiezan a girar. Tu debes:",
+        "answers":[
+            "Retirar tu pie del acelerador(TRUE)",
+            "Retirar tu pie del acelerador y suavemente presionar el freno",
+            "Tratar de usar una marcha baja"
+        ]
+    },
+    {
+        "question":"¿Cómo vas a corregir el patinaje de aceleración de la rueda trasera?",
+        "answers":[
+            "Aplicando la fuerza mayor a las ruedas",
+            "Parando la aceleración(TRUE)",
+            "Reduciendo la marcha"
+        ]
+    },
+    {
+        "question":"Un principio clave para recordar acerca de la carga es mantenerla:",
+        "answers":[
+            "En la parte delantera",
+            "En la parte trasera",
+            "Balanceada en la zona para cargas (TRUE)"
+        ]
+    },
+    {
+        "question":"Estás conduciendo el vehículo a la velocidad de 55 mph por un pavimento seco. ¿Cuál es la distancia de parada aproximada que tu necesitas para detener el vehículo?",
+        "answers":[
+            "La longitud doble de tu vehículo",
+            "La mitad de la longitud de la cancha de fútbol",
+            "La longitud de la cancha de fútbol (TRUE)"
+        ]
+    },
+    {
+        "question":"Para evitar un accidente te viste obligado a dirigirte hacia el arcén derecho. Ahora estás conduciendo por el arcén a la velocidad de 40 mph. ¿Cómo debes regresar al pavimento?",
+        "answers":[
+            "Si el arcén está libre, quédate en el lado derecho hasta que tu vehículo se pare y luego regresa al pavimento si no hay peligro(TRUE)",
+            "Frena con fuerza para retardar el vehículo, luego dirige el vehículo con fuerza al pavimento",
+            "Dirige el vehículo con fuerza al pavimento, luego frena con fuerza realizando las maniobras contrarias"
+        ]
+    },
+    {
+        "question":"Si un vehículo te sigue sin guardar la distancia tu debes:",
+        "answers":[
+            "Aumentar la distancia de seguimiento(TRUE)",
+            "Parpadear con luz de parada",
+            "Señalizar al vehículo que te siga cuando está seguro adelantarte"
+        ]
+    },
+    {
+        "question":"Tu no tienes la certificación para materiales peligrosos en tu licencia de conducir comercial. Te piden transportar los materiales peligrosos en tu vehículo rotulado. Tu debes:",
+        "answers":[
+            "Rechazarte de transportar la carga(TRUE)",
+            "Transportar la carga pero solo hasta un lugar cercano donde un conductor con la certificación para los materiales peligrosos, que puede retirar la carga",
+            "Transportar la carga pero presentar un informe al Departamento de las transportaciones después del viaje"
+        ]
+    },
+    {
+        "question":"Estás revisando los neumáticos durante una inspección antes del viaje. ¿Cuál de las siguientes sentencias es verdadera?",
+        "answers":[
+            "Los neumáticos del tamaño desigual no deben usarse juntos en el mismo vehículo(TRUE)",
+            "Los neumáticos radiales y diagonales pueden usarse juntos en el mismo vehículo",
+            "2/32 pulgadas de la profundidad del dibujo está seguro para los neumáticos delanteros"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer cuando estás realizando las maniobras para evitar un accidente?",
+        "answers":[
+            "Usar los frenos realizando la vuelta",
+            "Dirigir con una mano para poder girar más rápido",
+            "No gire más que sea necesario para pasar alrededor de lo que está en tu camino (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer cuando las carreteras están resbaladizas?",
+        "answers":[
+            "Realizar las curvas lo más suave posible(TRUE)",
+            "Detenerte y chequear la tracción mientas vas cuesta arriba",
+            "Disminuir la distancia que ves adelante de tu vehículo"
+        ]
+    },
+    {
+        "question":"Estás chequeando tus ruedas y rines para una inspección antes del viaje. ¿Cuál de las sentencias es verdadera?",
+        "answers":[
+            "El óxido alrededor de las tuercas de rueda puede significar que están aflojados(TRUE)",
+            "El vehículo se le puede conducir seguro con una tuerca faltante de la rueda",
+            "Los anillos de cerradura desiguales pueden usarse en un solo vehículo"
+        ]
+    },
+    {
+        "question":"Si necesitas dejar la carretera durante la situación de emergencia, debes:",
+        "answers":[
+            "Tratar de salir del pavimento con todas las ruedas",
+            "Evitar de frenar hasta que tu velocidad se baje a 20 mph aproximadamente(TRUE)",
+            "Evitar el arcén porque la mayoría de los arcenes no pueden soportar los vehículos grandes"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre los neumáticos y la conducción durante el tiempo cálido es verdadera?",
+        "answers":[
+            "Tu debes inspeccionar tus neumáticos cada dos horas o cada 100 millas durante la conducción en tiempo cálido(TRUE)",
+            "La presión del aire del neumático se decrementa en cuanto se incrementa la temperatura de los neumáticos",
+            "Si los neumáticos están muy calientes para tocarlos desinflar cinco o diez libras de la presión les enfriará"
+        ]
+    },
+    {
+        "question":"¿Cuál de estas sentencias sobre algunos tipos de cargas es verdadera?",
+        "answers":[
+            "La carga inestable como carne colgado o ganado requieren más cuidado en las curvas(TRUE)",
+            "Carga de gran tamaño puede ser transportada sin permiso especial en momentos cuando las carreteras no están ocupados",
+            "Cuando se transportan líquidos, el tanque siempre debe ser cargado por completo"
+        ]
+    },
+    {
+        "question":"Conduciendo por la noche debes:",
+        "answers":[
+            "Mirar al lado izquierdo de la carretera cuando un vehículo viene hacia ti",
+            "Ajustar tu velocidad para mantener tu distancia de parada dentro de tu alcance visual(TRUE)",
+            "Cambiar la luz dentro de 300 pies del vehículo que viene"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre la reducción de la marcha es verdadera?",
+        "answers":[
+            "Cuando reduces la marcha para hacer un giro, debes hacerlo antes de entrar en la curva(TRUE)",
+            "Cuando reduces la marcha antes de la colina, debes hacerlo después de empezar una bajada de la colina",
+            "Haciendo doble embrague, debes dejar que los rines se retarden liberando el embrague y la palanca de cambio está en la posición neutral"
+        ]
+    },
+    {
+        "question":"Estás conduciendo un camión nuevo con la transmisión manual. ¿Qué marcha debes elegir para realizar una bajada cuesta abajo empinada?",
+        "answers":[
+            "La misma marcha que usarías para subir en una colina",
+            "La marcha más baja de la que usarías para subir en una colina(TRUE)",
+            "La marcha más alta de la que usarías para subir en una colina"
+        ]
+    },
+    {
+        "question":"Si un vehículo sencillo (sin remolque o articulación) viene dentro del patinaje de las ruedas delanteras, el va a:",
+        "answers":[
+            "Deslizar hacia un lado y patinar",
+            "Ir directamente aunque el volante esté girado(TRUE)",
+            "Ir directamente pero va a girar si vas a girar el volante"
+        ]
+    },
+    {
+        "question":"El hidroplaneo:",
+        "answers":[
+            "Pasa sólo cuando hay mucha agua",
+            "No puede pasar conduciendo a través del charco de agua",
+            "Pasa con mayor probabilidad si la presión de los neumáticos es baja (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Durante la inspección preliminar dónde debe estar la llave de contacto?",
+        "answers":[
+            "En tu bolsillo(TRUE)",
+            "En el encendido",
+            "En el asiento del conductor"
+        ]
+    },
+    {
+        "question":"¿Qué es corrección de la dirección?",
+        "answers":[
+            "Girar el volante en el sentido antihorario",
+            "Uso del freno de los ejes de dirección para prevenir sobreviraje",
+            "Girar el volante en la dirección contraria después de la corrección de dirección para evitar la emergencia del tráfico (TRUE)"
+        ]
+    },
+    {
+        "question":"Los retardadores:",
+        "answers":[
+            "Pueden causar el patinaje de las ruedas direccionales cuando tienen la tracción baja(TRUE)",
+            "Causan el desgaste de los frenos",
+            "Funcionan al aplicar el pedal de freno"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el doble embrague y cambio de marchas es verdadera?",
+        "answers":[
+            "Puedes usar el tacómetro para saber sonde cambiar la marcha(TRUE)",
+            "No se debe usar el doble embrague cuando la carretera está resbaladiza",
+            "El doble embrague debe ser usado solo con las cargas pesadas"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el control de velocidad es verdadera?",
+        "answers":[
+            "Si tu dobles tu velocidad (vas dos veces más rápido) necesitas la distancia de parada doble",
+            "Los camiones vacíos necesitan la distancia menor de parada que los cargados por completo",
+            "Si tu dobles tu velocidad, la distancia de parada se incrementa en 4 veces (TRUE)"
+        ]
+    },
+    {
+        "question":"Necesitas estacionar tu vehículo en el lado de la carretera dividida de cuatro carriles del nivel llano. Donde debes ubicar los triángulos reflexivos?",
+        "answers":[
+            "Uno a 10 pies de la parte trasera del vehículo, uno en unos 100 pies hasta la parte trasera, y uno en unos 200 pies hasta la parte trasera(TRUE)",
+            "Uno a 10 pies de la parte trasera del vehículo, uno en unos 100 pies hasta la parte trasera, y uno en unos 100 pies hasta la parte delantera del vehículo",
+            "Uno a 10 pies de la parte delantera del vehículo, uno en unos 100 pies hasta la parte trasera, y uno en unos 200 pies hasta la parte trasera"
+        ]
+    },
+    {
+        "question":"El ‘debilitamiento’ de los frenos:",
+        "answers":[
+            "Puede ser causado por el calentamiento de los frenos(TRUE)",
+            "Puede ser corregido mediante liberación de los frenos para 1-2 segundos y luego aplicarlos de nuevo",
+            "Este problema pasa solo con los tambores de frenos"
+        ]
+    },
+    {
+        "question":"¿Cuantos triángulos rojos reflexivos debes tener?",
+        "answers":[
+            "5",
+            "3(TRUE)",
+            "4"
+        ]
+    },
+    {
+        "question":"Debes dejar de conducir:",
+        "answers":[
+            "Al pasar 5 horas",
+            "Al pasar 9 horas",
+            "Cada vez que quieres dormir (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre la marcación del vehículo parado es verdadera?",
+        "answers":[
+            "Los faros traseros del vehículo deben estar encendidas para advertir a otros conductores",
+            "Si una colina o la curva no permite a otros conductores verte desde la distancia de 500 pies, el triángulo trasero reflexivo debe ser movido abajo por el camino para dar la advertencia adecuada(TRUE)",
+            "Los faros traseros del vehículo deben estar encendidas para advertir a otros conductores"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el uso de las luces intermitente es verdadera?",
+        "answers":[
+            "No necesitas usar las luces intermitentes durante el cambio de los carriles conduciendo por una autopista de cuatro vías",
+            "Señalizar antes de girar(TRUE)",
+            "Debes usar las luces intermitentes para marcar tu vehículo cuando éste sale al lado de la carretera"
+        ]
+    },
+    {
+        "question":"¿Con qué nuevo nivel de alcohol en la sangre para conductores comerciales éstos se consideren intoxicados mientras conducen un vehículo comercial?",
+        "answers":[
+            "0.04(TRUE)",
+            "0.01",
+            "0.10"
+        ]
+    },
+    {
+        "question":"¿Qué son los tipos de tijera?",
+        "answers":[
+            "Remolque",
+            "Tractor",
+            "Remolque y tractor (TRUE)"
+        ]
+    },
+    {
+        "question":"Si estás cargando tu remolque y la carga se encuentra en su parte trasera esto puede causar:",
+        "answers":[
+            "El bloqueo de las ruedas",
+            "Daños de los ejes de dirección",
+            "La tracción baja de la rueda de dirección (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre las drogas es verdadera?",
+        "answers":[
+            "Un conductor puede usar cualquier droga recetada mientras está conduciendo",
+            "Anfetamina, (‘pep pills’ o ‘bennies’) pueden usarse para ayudar al conductor en estar alerto",
+            "Uso de drogas puede causar un accidente y/o arresto (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Después de cuántas millas desde el comienzo del viaje debes realizar la inspección?",
+        "answers":[
+            "100",
+            "150",
+            "25 (TRUE)"
+        ]
+    },
+    {
+        "question":"Si te paran en la zona de descanso de la carretera con un nivel de alcohol en la sangre de 0.02:",
+        "answers":[
+            "Tu serás apartado del trabajo por 72 horas",
+            "Tendrás un problema muy grande con tu dispatcher",
+            "Tu serás apartado del trabajo por 24 horas (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cual de estas sentencias sobre la separación superior (clearance) es verdadera?",
+        "answers":[
+            "Debes presuponer que la señal de clearance está correcta",
+            "El peso del vehículo cambia su altura(TRUE)",
+            "El pavimento de la carretera no afecta la altura de la separación debajo de los puentes o pasos elevados"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre la marcación del vehículo parado es verdadera?",
+        "answers":[
+            "Los faros traseros del vehículo deben estar encendidas para advertir a otros conductores",
+            "Si una colina o la curva no permite a otros conductores verte desde la distancia de 500 pies, el triángulo trasero reflexivo debe ser movido abajo por el camino para dar la advertencia adecuada(TRUE)",
+            "Los faros traseros del vehículo deben estar encendidas para advertir a otros conductores"
+        ]
+    },
+    {
+        "question":"¿Qué es lo mejor que puedes hacer cuando vienes por una carretera resbaladiza?",
+        "answers":[
+            "Usar la distancia del seguimiento pequeña",
+            "Aplicar los frenos durante las curvas",
+            "Reducir la velocidad gradualmente (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál es la mejor descripción de cómo debes usar el pedal de freno durante la bajada de la colina empinada?",
+        "answers":[
+            "Suavemente con acciones de bombeo",
+            "Suavemente con la presión constante(TRUE)",
+            "La presión fuerte y liberación repetidas"
+        ]
+    },
+    {
+        "question":"Debes evitar el conducir a través de los charcos profundos o el agua que fluye. Pero si te ves obligado, ¿qué de los pasos te va ayudar de mantener el funcionamiento de tus frenos?",
+        "answers":[
+            "Suavemente accionar los frenos conduciendo a través del agua(TRUE)",
+            "Aplicar la presión fuerte al pedal de frenos y el acelerador al salir del agua",
+            "Accionar el calentador de frenos"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre la aceleración es verdadera?",
+        "answers":[
+            "Si la tracción es baja, hace falta aplicar más fuerza al acelerador",
+            "La aceleración dura puede causar los daños mecánicos(TRUE)",
+            "Si aceleras tu vehículo de manera adecuada, debes sentir el movimiento de sacudidas"
+        ]
+    },
+    {
+        "question":"¿Cuál de estas NO es una buena regla a seguir durante el cuidado de la persona lesionada en el lugar de un accidente?",
+        "answers":[
+            "Si la persona calificada le está ayudando, no debes molestarle a menos que te pida tu ayuda",
+            "Mantener la persona calificada en el frío(TRUE)",
+            "Mueve a la persona gravemente lesionada si hay un peligro debido a un incendio o el paso del tráfico"
+        ]
+    },
+    {
+        "question":"¿Qué significa la comunicación?",
+        "answers":[
+            "Conversación con un oficial de policía",
+            "Comunicar tus intentos a otros conductores(TRUE)",
+            "Hablar por la radio CB"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer para corregir el movimiento pasando por el patinaje del frenado de las ruedas?",
+        "answers":[
+            "Dejar de frenar, girar rápidamente y luegorealizar las maniobras contrarias(TRUE)",
+            "Incrementar el frenado",
+            "Incrementar el frenado, girar rápidamente y luegorealizar las maniobras contrarias"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el retroceso del vehículo pesado es verdadera?",
+        "answers":[
+            "Debes evitar el retroceso cuando sea posible(TRUE)",
+            "Los ayudantes deben estar fuera de la vista de los conductores y usar sólo las señales de la voz para la comunicación con ellos",
+            "Es más seguro retroceder hacia el lado derecho que el vehículo que retrocede hacia el lado del conductor"
+        ]
+    },
+    {
+        "question":"¿Cual de estas sentencias sobre la separación superior (clearance) es verdadera?",
+        "answers":[
+            "Debes presuponer que la señal de clearance está correcta",
+            "El peso del vehículo cambia su altura(TRUE)",
+            "El pavimento de la carretera no afecta la altura de la separación debajo de los puentes o pasos elevados"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre los incendios en el vehículo es verdadera?",
+        "answers":[
+            "Si la carga en una camioneta o en la caja del remolque se incendia, debes abrir la puerta de carga lo más pronto posible",
+            "Si tu motor se incendia, tu debes abrir el capo lo más pronto posible",
+            "El neumático encendido debe estar enfriado con el agua (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué con más probabilidad vas a obtener si te están acusado de la conducción del vehículo comercial bajo la influencia y esta es tu primera acusación?",
+        "answers":[
+            "Un período de prueba por 1 año",
+            "Por lo menos un año de suspensión de tu CDL(TRUE)",
+            "Multa por el valor de 500 $"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el centro de gravedad de la carga es verdadera?",
+        "answers":[
+            "Debe encontrarse lo más alto posible",
+            "Si se encuentra alto puede causar el volteo de vehículo(TRUE)",
+            "Es un problema sólo cuando el vehículo está sobrecargado"
+        ]
+    },
+    {
+        "question":"Estás conduciendo un vehículo pesado. Debes salir de la autopista usando la vía de salida que se curva hacia abajo. Tu debes:",
+        "answers":[
+            "Reducir la velocidad hasta que sea segura antes de la curva(TRUE)",
+            "Reducir la velocidad hasta la velocidad permitida para la vía de salida",
+            "Esperar hasta entrar en la curva y luego reducir la marcha"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el sobrecalentamiento del motor es verdadera?",
+        "answers":[
+            "Nunca debes apagar el motor sobrecalentado hasta que se enfría",
+            "Nunca debes quitar la tapa del radiador en un sistema presurizado hasta que se enfría el sistema(TRUE)",
+            "El anticongelante no es necesario cuando el clima es cálido"
+        ]
+    },
+    {
+        "question":"Para prevenir el desplazamiento de la carga, ¿por cuántas pies de carga debe haber por lo menos un amarre?",
+        "answers":[
+            "10(TRUE)",
+            "15",
+            "20"
+        ]
+    },
+    {
+        "question":"¿Qué debes recordar cruzando o entrando en tráfico con un vehículo pesado?",
+        "answers":[
+            "Los vehículos pesados necesitan las brechas en tráfico más grandes que otros vehículos",
+            "La mejor manera de cruzar el tráfico es tirar el vehículo hasta la mitad de la carretera para bloquear un carril esperando hasta que se libere el otro(TRUE)",
+            "Ya que los vehículos pesados son fáciles de ver, tu puedes contar con lo que otros conductores se vayan de tu camino o se detengan para darte el paso"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer si estás bajando por una colina larga empinada y tus frenos se recalientan hasta que se rompen?",
+        "answers":[
+            "Bajar la marcha y presionar el pedal de freno",
+            "Buscar una rampa de salida o la ruta de salida",
+            "Las dos opciones son correctas (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer saliendo de o entrando a la rampa curvada de la autopista?",
+        "answers":[
+            "Mantener la velocidad de 5-10 mph menos que el límite de la velocidad indicado en la señal(TRUE)",
+            "Mantener el límite de la velocidad indicado",
+            "Reducir la velocidad hasta por lo menos 50% del límite de la velocidad indicado"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el control de velocidad es verdadera?",
+        "answers":[
+            "Los camiones vacíos necesitan la distancia menor de parada que los cargados por completo",
+            "Si tu dobles tu velocidad (vas dos veces más rápido) necesitas la distancia de parada doble",
+            "Debes elegir la velocidad que te permite hacer una parada dentro de la distancia que puedes ver adelante (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué vehículo tiene la distancia de parada mayor?",
+        "answers":[
+            "Un camión vacío",
+            "Un camión cargado",
+            "Un tractor bobtail (TRUE)"
+        ]
+    },
+    {
+        "question":"Usted está conduciendo por una carretera de dos carriles y un conductor que se aproxima deriva a tu carril y se dirige directamente a tí. ¿Qué debes hacer?",
+        "answers":[
+            "Frenar con fuerza",
+            "Dirigirte hacia el lado derecho(TRUE)",
+            "Dirigirte hacia el arcén izquierdo"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer para prevenir la debilitación de los frenos?",
+        "answers":[
+            "Descenderte cuesta abajo que no sea muy empinada",
+            "Aplicar la presión constante dura sobre los frenos mientras conduces cuesta abajo",
+            "Seleccionar la marcha que mantendrá la velocidad segura de tu vehículo mientras conduces cuesta abajo(TRUE)"
+        ]
+    },
+    {
+        "question":"¿ En cuáles vehículos no debe usarse el frenado a golpes?",
+        "answers":[
+            "Remolques",
+            "Frenos antibloqueo(TRUE)",
+            "Materiales peligrosos"
+        ]
+    },
+    {
+        "question":"¿Qué es típico para mayoría de los patinajes?",
+        "answers":[
+            "Se ocurren por el hielo",
+            "No se ocurren con los neumáticos radiales",
+            "Se ocurren por conducir muy rápido o por tratar de pararse con demasiada rapidez(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál sentencia sobre el retroceso del vehículo comercial es verdadera?",
+        "answers":[
+            "Siempre está peligroso(TRUE)",
+            "No hay ningún peligro si no debes girar",
+            "No hay ningún peligro si no tienes un ayudante"
+        ]
+    },
+    {
+        "question":"¿Cuál de estos no es un peligro de la aceleración brusca?",
+        "answers":[
+            "Daño mecánico",
+            "Daño del neumático(TRUE)",
+            "Daño del acoplamiento"
+        ]
+    },
+    {
+        "question":"¿Cuál es la manera adecuada de tener un volante?",
+        "answers":[
+            "Con ambas manos juntas, cerca de la parte superior del volante",
+            "Con ambas manos juntas, cerca de la parte inferior del volante",
+            "Con ambas manos en lados opuestos del volante(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer si mientras estás conduciendo el hielo se acumula en tus limpiaparabrisas y éstos ya no limpian el vidrio?",
+        "answers":[
+            "Seguir conduciendo y accionar tu sistema de deshielo",
+            "Seguir conduciendo y rociar las parabrisas con el fuido",
+            "Estacionar el vehículo de manera segura y solucionar el problema(TRUE)"
+        ]
+    },
+    {
+        "question":"Estás conduciendo un vehículo de 40 pies a la velocidad de 35 mph. ¿Qué distancia mínima debes mantener delante de tu vehículo para conducir con seguridad?",
+        "answers":[
+            "3 segundos",
+            "4 segundos(TRUE)",
+            "5 segundos"
+        ]
+    },
+    {
+        "question":"Tu puedes ver las marcas en un vehículo delante de ti. La marcación es un triángulo rojo con un centro anaranjado. ¿Qué significado tiene?",
+        "answers":[
+            "El vehículo lo conduce un conductor estudiante",
+            "El vehículo transporta los materiales peligrosos",
+            "Puede ser un vehículo que viene con la velocidad lenta(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué del abajo mencionado NO es una indicación del fallo del neumático frontal?",
+        "answers":[
+            "Patinazo del vehículo(TRUE)",
+            "Torsión del volante",
+            "Dirección fría"
+        ]
+    },
+    {
+        "question":"¿Qué del siguiente no forma parte de la inspección preliminar del compartimiento del motor?",
+        "answers":[
+            "Juego de válvula(TRUE)",
+            "El nivel del aceite del motor",
+            "Cableado eléctrico desgastado"
+        ]
+    },
+    {
+        "question":"¿Cuál sistema debe recibir la atención especial durante la inspección en el invierno?",
+        "answers":[
+            "Suspensión",
+            "Escape(TRUE)",
+            "Dirección"
+        ]
+    },
+    {
+        "question":"Conduciendo por las montañas debes usar la marcha más baja para conducir con la seguridad en una pendiente. ¿Cuál de estas NO afecta tu elección de la marcha?",
+        "answers":[
+            "La longitud de la pendiente",
+            "El peso de la carga",
+            "La profundidad de rosca de los neumáticos(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Dentro de cuántas millas desde el comienzo del viaje los conductores de los camiones y tractores de remolques con la carga deben revisar que el cargo está bien asegurado?",
+        "answers":[
+            "25(TRUE)",
+            "10",
+            "50"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el uso del calentador es verdadera?",
+        "answers":[
+            "Debes tener por lo menos un calentador, como por ejemplo calentador del espejo, calentador de batería o del tanque de combustible cuando la temperatura cae por debajo del punto de congelación",
+            "Si te sientas somnoliento, el calentamiento de la cabina con calefacción ayudará a mantenerte alerta",
+            "Conduciendo en el invierno, debes chequear que el calentador funciona de manera adecuada antes de emprender el viaje(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál de estos NO es un peligro cuando la transmisión automática está forzada en la marcha baja a la velocidad alta?",
+        "answers":[
+            "Pérdida del efecto de frenado del motor(TRUE)",
+            "Daño de la transmisión",
+            "Pérdida de control de la dirección"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre la notificación de las autoridades del accidente ocurrido es verdadero?",
+        "answers":[
+            "Lugar exacto no es necesario; solo la identificación de la carretera y un vehículo involucrado",
+            "Debes notificar a las autoridades sobre el accidente antes de hacer algo más",
+            "Si tu tienes un celular o la radio CB debes notificar a las autoridades antes del salir del vehículo(TRUE)"
+        ]
+    },
+    {
+        "question":"¿En qué distancia debes ubicar los triángulos reflexivos si necesitas hacer una parada en la colina de la carretera de dos carriles y de dos vías?",
+        "answers":[
+            "Tan lejos como sea necesario para que otros conductores te puedan ver",
+            "Dentro de 200 pies detrás de tí",
+            "Dentro de 500 pies detrás de tí(TRUE)"
+        ]
+    },
+    {
+        "question":"Las rampas de escape:",
+        "answers":[
+            "Deben ser usadas por cualquier conductor que pierda potencia de frenos(TRUE)",
+            "No están destinadas para los tractores- remolques dobles",
+            "Están destinadas para retardar a los vehículos para que pueden regresar a la carretera a la velocidad segura"
+        ]
+    },
+    {
+        "question":"¿Qué debes tener en cuenta cuando necesitas dejar la carretera para evitar un peligro o emergencia?",
+        "answers":[
+            "La mayoría de los arcenes no tienen la resistenca bastante para soportar a un vehículo pesado",
+            "Es posible que no puedas reentrar en la carretera por la grava usada en los arcenes",
+            "Es menos peligroso conducir por el arcén que hacer una colisión(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué pasa con el tarmacadam de la carretera en el clima caliente?",
+        "answers":[
+            "Nada",
+            "Se deforma y hace los neumáticos adherirse a la carretera",
+            "Se derrame haciendo la carretera resbaladiza(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer si estás conduciendo por una carretera que se hace resbaladiza por causa de la escarcha?",
+        "answers":[
+            "Detenerte cuando puedas hacerlo seguro(TRUE)",
+            "Reducir la marcha para detenerte",
+            "Mantener variando tu velocidad mediante la aceleración y frenado"
+        ]
+    },
+    {
+        "question":"¿Cuál es la mejor cosa a hacer cuando estás conduciendo en una niebla densa?",
+        "answers":[
+            "Incrementar la velocidad para que los conductores no chocan contra ti",
+            "Estacionar el camión hasta que la niebla desaparece(TRUE)",
+            "Alternar tus luces altas para mejorar la visión"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer conduciendo a través de la zona de trabajos?",
+        "answers":[
+            "Reducir la velocidad sólo si los trabajadores se encuentran cerca de la carretera",
+            "Encender las luces de estacionamiento",
+            "Tener cuidado con las abolladuras bruscas en el pavimento(TRUE)"
+        ]
+    },
+    {
+        "question":"Bajo las malas condiciones climáticas los conductores de los vehículos no cumplen la distancia detrás de los vehículos pesados. ¿Cuál es la cosa mejor para hacer?",
+        "answers":[
+            "Incrementar la distancia de seguimiento(TRUE)",
+            "Suavemente puntear los frenos para advertir al vehículo que te sigue para que el retroceda",
+            "Acelere para distanciarte del vehículo que te sigue"
+        ]
+    },
+    {
+        "question":"Las luces altas:",
+        "answers":[
+            "Deben usarse cuando está seguro y legal(TRUE)",
+            "Deben ser encendidas cuando los conductores del tráfico opuesto no parpadean con luces",
+            "Hace falta parpadear con luces altas cuando estás dentro de 100 pies del otro vehículo"
+        ]
+    },
+    {
+        "question":"Cuando pones en marcha un autobús en la superficie plana con buena tracción muy a menudo no hay necesidad en ____.",
+        "answers":[
+            "Frenos de estacionamiento(TRUE)",
+            "Inspección de los neumáticos",
+            "Aceleración lenta"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer antes de conducir por las montañas?",
+        "answers":[
+            "Saber la ubicación de las rampas para salida en tu ruta(TRUE)",
+            "Desbloquear tus frenos del eje direccional",
+            "Llevar las cadenas para los neumáticos"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer si los frenos hidráulicos se fallan mientras estás conduciendo, y el sistema no sube la presión lo que causa que el pedal de freno se siente floja y se va hasta el piso?",
+        "answers":[
+            "Bombear el pedal de freno para generar la presión(TRUE)",
+            "Presionar abajo el pedal de freno con más fuerza posible",
+            "Meter neutral y accionar el freno de estacionamiento"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer cuando empiezas a subir una colina desde una parada?",
+        "answers":[
+            "Liberar los frenos de estacionamiento al aplicar la fuerza del motor(TRUE)",
+            "Conectar el embrague y acelerar el vehículo rápidamente",
+            "Mantener la válvula del freno del remolque aplicada hasta conseguir las 20 mph"
+        ]
+    },
+    {
+        "question":"Estás inspeccionando los frenos hidráulicos. Debes bombear el pedal de freno tres veces y luegoaplicar una presión firme al pedal durante cinco segundos. El pedal debe:",
+        "answers":[
+            "Presionarse ligeramente",
+            "Hundirse en el suelo",
+            "No moverse(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cómo el peso de un vehículo afecta a la distancia de parada?",
+        "answers":[
+            "Un camión cargado por completo necesita una distancia de parada más grande o los autobuses cargados de pasajero necesita la distancia menor que los vacíos",
+            "Si los frenos funcionan de modo semejante el peso de los camiones y autobuses significa nada",
+            "Los camiones vacíos necesitan la distancia de parada menor que los cargados, pero esto no es una cosa normal para los autobuses (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué puede ser una señal del fallo del neumático?",
+        "answers":[
+            "El patinaje de las ruedas(TRUE)",
+            "Un ruido fuerte silbido",
+            "Vibraciones"
+        ]
+    },
+    {
+        "question":"¿Dentro de cuántas pies del vehículo que viene debes usar tus luces de cruce conduciendo por la noche?",
+        "answers":[
+            "400",
+            "500(TRUE)",
+            "300"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer si no estás seguro de qué debes usar para extinguir un incendio de los materiales peligrosos?",
+        "answers":[
+            "Esperar a los bomberos(TRUE)",
+            "Usar el agua",
+            "Usar el lodo"
+        ]
+    },
+    {
+        "question":"¿Por qué el daño del sistema de escape está peligroso?",
+        "answers":[
+            "El ruido puede dañar el oído del conductor",
+            "Humos venenosos entrar en la cabina o compartimiento para dormir(TRUE)",
+            "Puedes contaminar el aire con el fumo de escape"
+        ]
+    },
+    {
+        "question":"¿Cuáles son las luces que no pueden ser comprobadas a la vez?",
+        "answers":[
+            "Luces intermitentes, luz trasero, luces de posición",
+            "Luces intermitentes, luces de estacionamiento y luces de emergencia(TRUE)",
+            "Luces delanteros, luces de estacionamiento y luces de posición"
+        ]
+    },
+    {
+        "question":"Distancia de percepción es la distancia que viaja tu vehículo desde el tiempo cuando:",
+        "answers":[
+            "Tus ojos ven un peligro hasta el tiempo cuando tu pie presiona el pedal de freno",
+            "Tu cerebro da la señal a tus pies de presionar el pedal hasta el tiempo cuando los pies lo hacen",
+            "Tus ojos ven un peligro hasta el tiempo cuando tu cerebro entienda que esto es un peligro(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer al estacionar tu vehículo al lado de la carretera en la noche?",
+        "answers":[
+            "Encender las luces de emergencia para advertir a otros(TRUE)",
+            "Apagar tus luces de emergencia dentro de 30 minutos",
+            "Usar las luces traseras para advertir a otros conductores"
+        ]
+    },
+    {
+        "question":"¿Cuándo al cruzar las vías ferroviarias se requiere la parada total?",
+        "answers":[
+            "Cuando no hay guardavía, los señales de advertencia o un portón en la intersección",
+            "Cuando la naturaleza de la carga te hace hacer una parada por el código de regulaciones federales(TRUE)",
+            "Cuando una intersección se ubica en un pueblo o ciudad con el tráfico férreo frecuente"
+        ]
+    },
+    {
+        "question":"¿Si pueden los inspectores estatales inspeccionar tu camión o autobús?",
+        "answers":[
+            "No",
+            "Si, pero no pueden ponerte fuera del servicio",
+            "Si y pueden ponerte fuera del servicio (TRUE)"
+        ]
+    },
+    {
+        "question":"El efecto del frenado de motor es mejor cuando las revoluciones por minuto del motor son___ y la transmisión está en la marcha ___.",
+        "answers":[
+            "Menores, más alta",
+            "Aproximadas, más baja(TRUE)",
+            "Mayores, más baja"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer cuando estás conduciendo en la noche y un vehículo que se aproxima tiene sus luces altas encendidas?",
+        "answers":[
+            "Parpadear rápidamente con tus luces altas al otro conductor",
+            "Mirar al carril derecho o las marcas externas de la carretera(TRUE)",
+            "Reducir la velocidad y mirar adelante de tu carril"
+        ]
+    },
+    {
+        "question":"Estás conduciendo un vehículo de 40 pies a la velocidad de 55 mph. La carretera está seca y la visibilidad es buena. ¿Qué distancia mínima debes mantener adelante de tu vehículo?",
+        "answers":[
+            "4 segundos",
+            "5 segundos(TRUE)",
+            "6 segundos"
+        ]
+    },
+    {
+        "question":"¿Por qué la velocidad de tu vehículo se incrementa de manera naturas en cuesta abajo?",
+        "answers":[
+            "Gravedad(TRUE)",
+            "El motor funciona más suave",
+            "Falta de tracción"
+        ]
+    },
+    {
+        "question":"¿Cuál de los siguientes es una manera adecuada de dar la señal antes de cambiar del carril?",
+        "answers":[
+            "Señalizar de antemano y cambiar de carril lento y suave(TRUE)",
+            "Señalizar antes de cambiar de carril y hacerlo rápido",
+            "Señalizar después de empezar la maniobra y cruzar el carril lento"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el peligro del incendio de un vehículo es verdadera?",
+        "answers":[
+            "La ventilación escasa de la carga puede causar su inflamación(TRUE)",
+            "Llevar un extintor cargado por completo puede prevenir un incendio",
+            "Los neumáticos que les faltan la presión no pueden causar el incendio del vehículo"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre la inspección preliminar es verdadera?",
+        "answers":[
+            "Cuando estacionas tu vehículo en la calle siempre debe caminar de manera que tu cara no mira al tráfico que viene",
+            "Deja las llaves en el encendido para no perderlas cunado estás debajo del camión",
+            "Si necesitas levantar la cabina, sujeta las cosas sueltas para que no puedan caer o romper algo (TRUE)"
+        ]
+    },
+    {
+        "question":"Cuando estás adelantando a un peatón, bicicleta u otro vehículo debes asumir que:",
+        "answers":[
+            "Ellos pueden dirigirse hacia tu carril(TRUE)",
+            "Ellos saben que estás adelantando",
+            "Ellos ven tu vehículo"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre la emergencia y acciones del desvío es verdadera?",
+        "answers":[
+            "Con el fin de girar rápidamente debes tener un firme control sobre el volante(TRUE)",
+            "Puedes frenar más rápido que girar para desviarte del obstáculo",
+            "La parada siempre es la forma más segura que puedes usar en la situación de emergencia del tráfico"
+        ]
+    },
+    {
+        "question":"Consentimiento implícito significa:",
+        "answers":[
+            "Das tu consentimiento para inspeccionar tu vehículo para el alcohol",
+            "Significa que tu puedes consumir el alcohol de vez en cuando",
+            "Das tu consentimiento para hacerte la prueba de alcohol en la sangre (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre otros conductores es verdadera?",
+        "answers":[
+            "Los conductores de los camiones de reparto o de correo son profesionales y no suponen una amenaza",
+            "Los conductores que utilizan señales de giro siempre son ser de confianza para girar en la dirección que indican",
+            "Los conductores de los camiones de corto plazo o de alquiler diario muy a menudo no están acostumbrados a la visión limitada y suponen un peligro (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuándo es más seguro incorporarte a la carretera?",
+        "answers":[
+            "Al esperar un espacio grande dentro del tráfico para entrar en la carretera(TRUE)",
+            "Al inclinarte en el carril cercano para que otros vehículos te den el espacio",
+            "Al acelerarte en el arcén"
+        ]
+    },
+    {
+        "question":"Si estás conduciendo por el área con la iluminación pública mala y no ves nada con tus luces delanteras ¿qué acciones te pueden ayudar?",
+        "answers":[
+            "Buscar otro camino iluminado mejor, incluso si está fuera de tu ruta",
+            "Encender las luces interiores y ajustar las luces de instrumentos",
+            "Usar las luces altas cuando está legal y mantener las luces interiores apagadas (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuáles son las tres distancias que forman parte de la distancia de parada total de tu vehículo o autobús?",
+        "answers":[
+            "Distancia de atención, distancia de reacción y la distancia de reducción de velocidad",
+            "Distancia de responde, distancia de observación, distancia de frenado",
+            "Distancia de percepción, distancia de reacción y distancia de la parada (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué es más importante para cambiar las marchas de manera adecuada?",
+        "answers":[
+            "Mantener el control sobre el vehículo(TRUE)",
+            "Mantener el motor caliente",
+            "Mantener el flujo del aceite del motor"
+        ]
+    },
+    {
+        "question":"En tu espejo ves a un coche que se acerca por detrás. La próxima vez que chequeas el espejo no lo ves. Si deseas cambiar de carril debes:",
+        "answers":[
+            "Esperar de cambiar antes de que estés seguro que este coche no está dentro de tu punto ciego(TRUE)",
+            "Moverte al otro carril suavemente para que los coches detrás de ti pueden salir de tu camino",
+            "Asumir que un coche ha salido de la carretera y cambiar de carril"
+        ]
+    },
+    {
+        "question":"¿Cuál sentencia sobre el retroceso del vehículo pesado NO es verdadera?",
+        "answers":[
+            "Debes retroceder y girar hacia el lado del conductor siempre que sea posible",
+            "Debes hacer esto con un ayudante y comunicarte con el mediante las señales manuales",
+            "Ya que no puedes ver debed retroceder lentamente hasta chocarte suavemente con una plataforma (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál es la razón más importante para inspeccionar tu vehículo o autobús?",
+        "answers":[
+            "Seguridad(TRUE)",
+            "Para evitar recibir las multas del tráfico",
+            "Esto es una ley"
+        ]
+    },
+    {
+        "question":"¿Cuál de las cosas siguientes NO se recomendan para un giro a la izquierda?",
+        "answers":[
+            "Empezar en el carril interior y desviar a la derecha mientras girar(TRUE)",
+            "Usar el carril de cruce derecho en caso de que hay dos carriles de cruce",
+            "Empezar el giro en el centro de la intersección"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer si tus luces delanteras no funcionan de manera adecuada?",
+        "answers":[
+            "Encender las luces altas(TRUE)",
+            "Limpiar las luces delanteras",
+            "Ajustar las luces delanteras"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre las cargas es verdadera?",
+        "answers":[
+            "Las leyes estatales indican el límite legal del peso(TRUE)",
+            "Si la carga está montada por su remitente el conductor no es responsable por el proceso de carga",
+            "El peso máximo legal permitido por el estado se considera seguro para todas las condiciones de viaje"
+        ]
+    },
+    {
+        "question":"Conduciendo en tiempo frío las huellas de los neumáticos deben:",
+        "answers":[
+            "Proporcionar un tacto bastante a la dirección y empujar el vehículo a través de la nieve(TRUE)",
+            "Ser dobles de la profundidad requerida en tiempo normal",
+            "Ser revisados cada cien millas o cada dos horas"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer si te ves obligado a parar en el carril opuesto al realizar un giro?",
+        "answers":[
+            "Estar pendiente del tráfico opuesto(TRUE)",
+            "Completar tu giro sin parada",
+            "Retroceder para permitir que el tráfico opuesto pase"
+        ]
+    },
+    {
+        "question":"¿Qué provoca el derrape más resinoso?",
+        "answers":[
+            "Conducir demasiado rápido para las condiciones(TRUE)",
+            "Girar demasiado brusco",
+            "Una carga desigual"
+        ]
+    },
+    {
+        "question":"La distancia que debes ver adelante de tu vehículo mientras estás conduciendo a la velocidad baja es de ___.",
+        "answers":[
+            "1 bloque(TRUE)",
+            "2 bloques",
+            "1/2 del bloque"
+        ]
+    },
+    {
+        "question":"¿Cuál de los siguientes no es un conocimiento requerido para un conductor que necesita la certificación para materiales peligrosos?",
+        "answers":[
+            "La química básica(TRUE)",
+            "Qué productos se puede cargar juntos",
+            "Cuándo utilizar los carteles"
+        ]
+    },
+    {
+        "question":"¿Cuál de los siguientes problemas encontrados durante la inspección preliminar debe ser corregida antes de que el vehículo será puesto en marcha?",
+        "answers":[
+            "El juego del volante de más de 10 В° (2 pulgadas de 20 pulgadas del volante)(TRUE)",
+            "El aceite en la varilla del neumático",
+            "El humo gris sale del tubo de escape"
+        ]
+    },
+    {
+        "question":"Durante un fuerte viento ¿para cuál de los vehículos será más difícil permanecer en su carril?",
+        "answers":[
+            "Los vehículos dobles con remolque vacío(TRUE)",
+            "Un tractor del remolque de la cama plana cargado",
+            "Vehículo cargado de tres ejes"
+        ]
+    },
+    {
+        "question":"La revisión de ___ durante la inspección del vehículo NO ayuda en prevenir los incendios.",
+        "answers":[
+            "Ventilación de la carga",
+            "Nivel del fluido de batería(TRUE)",
+            "Aislamiento del sistema eléctrico"
+        ]
+    },
+    {
+        "question":"¿Qué influye en el nivel de alcohol en la sangre?",
+        "answers":[
+            "El peso de la persona(TRUE)",
+            "Con que frecuencia una persona consume el alcohol",
+            "La edad de la persona"
+        ]
+    },
+    {
+        "question":"¿Cuándo debes aplicar el pedal de freno ligeramente para parpadear con tus luces de freno?",
+        "answers":[
+            "Cuando estás a punto de salir de la carretera y necesitas reducir la velocidad(TRUE)",
+            "Cuando un coche de policía está aproximándote de otra dirección",
+            "Cuando un conductor detrás de ti no guarda la distancia siguiéndote"
+        ]
+    },
+    {
+        "question":"¿Qué significa el frenado de emergencia?",
+        "answers":[
+            "Empujar hacia abajo el pedal del freno tan duro como puedas",
+            "Responder al peligro reduciendo el vehículo(TRUE)",
+            "Usar los frenos de emergencia del vehículo"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre un mal tiempo y las condiciones de conducción es verdadera?",
+        "answers":[
+            "Cuando cae la temperatura, los puentes antes de la carretera se cubren de hielo(TRUE)",
+            "La carretera está más deslizante durante la llueve que continua que en su principio",
+            "Las condiciones de conducción se hacen más peligrosas cuando la temperatura sube por encima del punto de congelación"
+        ]
+    },
+    {
+        "question":"¿Cuál de estas cosas NO se verifica para la inspección preliminar?",
+        "answers":[
+            "Si todas las luces funcionan de manera adecuada",
+            "Cantidad de combustible en el vehículo(TRUE)",
+            "Seguridad de la carga"
+        ]
+    },
+    {
+        "question":"Para mantener tu vehículo en el centro del carril se necesita extra atención porque los vehículos comerciales:",
+        "answers":[
+            "Requieren un gran espacio para cambiar de carriles",
+            "Muy a menudo son más anchos que los vehículos(TRUE)",
+            "Tienden a oscilar de vez en cuando"
+        ]
+    },
+    {
+        "question":"¿Cuándo debes usar los cinturones de seguridad en el vehículo que se mueve?",
+        "answers":[
+            "Sólo cuando estás conduciendo",
+            "Siempre(TRUE)",
+            "Sólo cuando estás en la autopista"
+        ]
+    },
+    {
+        "question":"El espejo convex (encorvado):",
+        "answers":[
+            "Hacen cosas verse más cerca que están de verdad",
+            "Hacen cosas verse más grande que son de verdad",
+            "Muestran el área más ancha que lo hacen espejos más planos (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuándo es necesario saber cómo funcionan los extintores?",
+        "answers":[
+            "Antes de que pasa un incendio(TRUE)",
+            "Sólo cuando pasa un incendio",
+            "Sólo cuando transportas los materiales inflamables"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el transporte de los materiales peligrosos es verdadera?",
+        "answers":[
+            "Los cilindros con gases comprimidos deben ser transportados con cubiertas si no tienen etiquetas",
+            "Tales cargas deben estar marcadas con la etiqueta en forma del diamante de ocho pulgadas ubicada en los containers(TRUE)",
+            "Tales cargas deben estar marcadas con una etiqueta del circulo rojo de cuatro pulgadas ubicada en los containers"
+        ]
+    },
+    {
+        "question":"Tu vehículo será sacado de servicio si faltan ___ o más hojas en un muelle de hojas.",
+        "answers":[
+            "1/4",
+            "1/3",
+            "1/2(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre las horas deltrabajo es verdadera?",
+        "answers":[
+            "Al haber llegado a un mil de horas de servicio serás liberado de la regulación del servicio",
+            "Debes tener bastante horas de descanso(TRUE)",
+            "Debes hacer una parada después de dos horas de conducción"
+        ]
+    },
+    {
+        "question":"Cuando un vehículo está cargado del peso muy pequeño sobre el eje direccional esto puede causar:",
+        "answers":[
+            "La tracción poca(TRUE)",
+            "Daño del puente motriz",
+            "Mejor manejo"
+        ]
+    },
+    {
+        "question":"¿Cuándo siempre debes encender tus luces intermitentes de emergencia?",
+        "answers":[
+            "Al conducir a través de las montañas",
+            "Al estacionar el vehículo en el lado de la carretera(TRUE)",
+            "Al cruzar un paso a nivel"
+        ]
+    },
+    {
+        "question":"¿Por qué los turistas pueden suponer una amenaza?",
+        "answers":[
+            "Conducen los coches alquilados",
+            "Pueden conducir lento, cambiar de carril inesperadamente o pararse(TRUE)",
+            "La policía no les multa"
+        ]
+    },
+    {
+        "question":"¿Qué espacio necesitas tener adelante de ti conduciendo por una autopista?",
+        "answers":[
+            "1 segundo para cada 10 pies de la longitud del vehículo(TRUE)",
+            "1 segundo para cada 20 pies de la longitud del vehículo",
+            "1 segundo para cada 30 pies de la longitud del vehículo"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el uso adecuado del volante es verdadera?",
+        "answers":[
+            "Si no mantienes el volante con ambas manos puedes perder el mando(TRUE)",
+            "Al alcanzar una velocidad del crucero en la autopista puedes conducir con una mano",
+            "Sólo durante los giros difíciles debes usar ambas manos en el volante"
+        ]
+    },
+    {
+        "question":"¿Cuál de estos no es un chequeo de los frenos que normalmente haces durante la inspección visual?",
+        "answers":[
+            "Ajustado de los frenos(TRUE)",
+            "Condición de las mangueras",
+            "Fugas de los cilindros de los frenos hidráulicos"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer cuando tu vehículo se inflama mientas estás conduciendo?",
+        "answers":[
+            "Detenerse en un área abierta(TRUE)",
+            "Detenerse en un área donde los árboles o arbustos de ocultan del viento",
+            "Aumentar la velocidad hasta que las llamas se apaguen"
+        ]
+    },
+    {
+        "question":"Los tambores (o discos) de freno no deben tener grietas que sean más grandes de ____ de la anchura del área de fricción.",
+        "answers":[
+            "1/2(TRUE)",
+            "1/3",
+            "1/10"
+        ]
+    },
+    {
+        "question":"¿Cuál de estos autotrenes con más probabilidad puede salir de la ruta realizando un giro?",
+        "answers":[
+            "Un tractor con remolque de 45 pies(TRUE)",
+            "Un tractor con dos remolques de 27 pies",
+            "Un camión sencillo de 53 pies"
+        ]
+    },
+    {
+        "question":"¿Cuándo necesitas que alguien te ayude a retroceder en tu vehículo?",
+        "answers":[
+            "Sólo si quieres estacionar el vehículo",
+            "Cada vez que necesites retroceder(TRUE)",
+            "Sólo si tu vehículo tiene un remolque"
+        ]
+    },
+    {
+        "question":"¿Qué mantiene el motor frío durande la conducción en el tiempo cálido?",
+        "answers":[
+            "El nivel del aceite de motor bastante(TRUE)",
+            "El uso del aire acondicionado",
+            "La conducción a la velocidad alta de modo que más aire penetre al radiador"
+        ]
+    },
+    {
+        "question":"¿Cuándo debes comprobar tus frenos de estacionamiento?",
+        "answers":[
+            "Moviéndote a la velocidad muy baja",
+            "Cundo el vehículo está aparcado(TRUE)",
+            "Durante el frenado"
+        ]
+    },
+    {
+        "question":"Los vehículos pesados muy a menudo se mueven más lento que otros. ¿Cuál de estas NO es una regla buena a seguir conduciendo un vehículo pesado?",
+        "answers":[
+            "Estar en el lado derecho de la carretera",
+            "Usar las luces intermitentes si esto es legal en tu estado",
+            "Dar la señal a otros conductores de cuando está seguro adelantar (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el ajuste de los espejos es verdadera?",
+        "answers":[
+            "Debes ajustar tus espejos antes de emprender el vieje(TRUE)",
+            "Debes ajustar tus espejos mientras estás conduciendo",
+            "Los espejos pueden ser ajustados adecuadamente incluso si el remolque no es recto"
+        ]
+    },
+    {
+        "question":"Para evitar un peligro te mudaste al arcén. Para regresar a la carretera:",
+        "answers":[
+            "Debes seguir conduciendo hasta la salida siguiente y luego regresar en la carretera",
+            "Usando los espejos y señales del intermitente girar de manera brusca para regresar en la carretera(TRUE)",
+            "Usando los espejos y señales del intermitente regresar cuando el camino sea libre"
+        ]
+    },
+    {
+        "question":"¿Cómo debes reducir tu velocidad cuando estás conduciendo por la carretera cubierta de la nieve?",
+        "answers":[
+            "1/3(TRUE)",
+            "1/4",
+            "1/2"
+        ]
+    },
+    {
+        "question":"La causa principal de accidentes fatales es:",
+        "answers":[
+            "Conducir por la noche",
+            "Conducir mientras se come",
+            "Conducir demasiado rápido (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre la conducción en un túnel es verdadera?",
+        "answers":[
+            "Las luces de emergencia se requieren por la ley",
+            "Los faros de requieren por la ley",
+            "En la salida del túnel puede haber un viento muy fuerte (TRUE)"
+        ]
+    },
+    {
+        "question":"Inspección de la carga:",
+        "answers":[
+            "Con más frecuencia no es una responsabilidad del conductor",
+            "Debe realizarse después de cada frenado mientras estás conduciendo(TRUE)",
+            "Se necesita sólo en caso del transporte de los materiales peligrosos"
+        ]
+    },
+    {
+        "question":"Uno puede reconocer materiales peligrosos al ver en un contenedor:",
+        "answers":[
+            "Etiquetas(TRUE)",
+            "Formas",
+            "Cubiertas"
+        ]
+    },
+    {
+        "question":"¿Cuándo debes usar ti bocina?",
+        "answers":[
+            "Cuando este ayuda de evitar un choque",
+            "Cuando un coche está en tu camino",
+            "Cuando quieres cambiar de carril(TRUE)"
+        ]
+    },
+    {
+        "question":"Cargas en contenedores:",
+        "answers":[
+            "No deben ser inspeccionadas por el conductor",
+            "Deben ser suministradas con sus propios amarres o dispositivos de bloqueo",
+            "Normalmente se usan cuando una parte del camino la carga se transporta mediante el tren o barco (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuándo se debe usar las señales de intermitente?",
+        "answers":[
+            "Por lo menos 100 pies antes de doblar o cambiar del carril(TRUE)",
+            "Por lo menos 150 pies antes de doblar o cambiar del carril",
+            "Por lo menos 200 pies antes de doblar o cambiar del carril"
+        ]
+    },
+    {
+        "question":"Conduciendo un vehículo comercial con la altura que supera 13 pies tu debes:",
+        "answers":[
+            "No preocuparte por la altura de separación mientras estás en la carretera estatal o federal",
+            "Asumir que la separación es bastante alta",
+            "Hacer una parada y asegurarte que la separación es bastante alta (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer cuando estás conduciendo un vehículo pesado y necesitas salir de la autopista usando una rampa de salida que curva hacia abajo?",
+        "answers":[
+            "Reducir la velocidad hasta el límite indicado para las rampas de salida",
+            "Reducir la velocidad hasta las 5 mph menos que el límite indicado(TRUE)",
+            "Reducir la velocidad hasta las 15 mph menos que el límite indicado"
+        ]
+    },
+    {
+        "question":"Un peligro:",
+        "answers":[
+            "Es sólo la condición de la carretera u otros usuarios de la carretera que posiblemente están peligrosos(TRUE)",
+            "No puede convertirse en una emergencia",
+            "No debe ser vista"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el consumo de drogas durante la conducción es verdadera?",
+        "answers":[
+            "Los medicamentos recetados o no recetados pueden usarse en cualquier momento de la conducción",
+            "Uso de las anfetaminas está permitido si usted está usando este medicamento para mantenerse alerta",
+            "Los medicamentos recetados están permitidos si el doctor dice que no afectarán tus habilidades de conducción(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué debe ser la profundidad de rosca en las ruedas frontales de dirección?",
+        "answers":[
+            "No menos de 4/32 pulgadas(TRUE)",
+            "Más de 6/32 pulgadas",
+            "No menos de 2/32 pulgadas"
+        ]
+    },
+    {
+        "question":"¿Con qué frecuencia se debe revisar el ajuste de los frenos?",
+        "answers":[
+            "Esto depende del grado de novedad de los frenos",
+            "No es frecuente ya que otros frenos funcionarán en vez de los neumáticos en caso de que les falta el ajuste",
+            "Muy frecuente ya que los frenos pueden perder su ajuste cuando se utilizan con frecuencia (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué hace la formula del puente?",
+        "answers":[
+            "El peso máximo axial menor afecta a los ejes ubicados cerca uno de otro(TRUE)",
+            "El peso máximo axial menor afecta a los ejes ubicados lejos uno del otro",
+            "El peso máximo axial igual afecta cada eje"
+        ]
+    },
+    {
+        "question":"El frenado controlado es:",
+        "answers":[
+            "Frenar con fuerza y bloquear las ruedas",
+            "Presionar los frenos con firmeza sin bloquearlos",
+            "Presionar los frenos hasta que se ocurra el bloqueo de la rueda, liberarlos y presionar de nuevo (TRUE)"
+        ]
+    },
+    {
+        "question":"¿ Cuál de estos NO ayudaría si tus parabrisas están cubiertas de hielo?",
+        "answers":[
+            "Un cepillo(TRUE)",
+            "Rascador",
+            "Anticongelante"
+        ]
+    },
+    {
+        "question":"Medicamento utilizado para tratar el resfriado común:",
+        "answers":[
+            "Debe usarse sólo cuando conduces durante el día",
+            "Siempre te hacen somnoliento y no deben ser usadas cuando estás conduciendo(TRUE)",
+            "Pueden calmar durante la conducción si tu usas la mitad de la dosis habitual"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer cuando ves un peligro adelante en la carretera?",
+        "answers":[
+            "Desviar alrededor del peligro y volver en tu carril",
+            "Pararte rápido y tirar tu vehículo hacia el lado de la carretera",
+            "Usar las luces intermitentes o luces de freno para advertir a otros(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué de esto NO debes hacer en una situación de emergencia?",
+        "answers":[
+            "Debes frenar de modo que tu vehículo se quede en la línea recta",
+            "No importa cómo frenas en una situación de emergencia(TRUE)",
+            "Debes evitar el uso de los frenos hasta que tu velocidad se baje al 40 mph"
+        ]
+    },
+    {
+        "question":"¿Cuál de las acciones siguientes NO debes hacer si un coche adelante cruza tu camino creando la situación peligrosa?",
+        "answers":[
+            "Tocar la bocina y estar cerca detrás del coche(TRUE)",
+            "Dar la señal y cambiar de carril para evitar un peligro",
+            "Reducir la velocidad para prevenir un choque"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer si tus frenos fallan en una rebaja?",
+        "answers":[
+            "Mirar fuera de su vehículo para buscar otros medios para retardarte(TRUE)",
+            "Chocar contra algún objeto para detener tu vehículo",
+            "Buscar la rampa de escape para salir de la carretera"
+        ]
+    },
+    {
+        "question":"Cuando estás bajando por una escarpa larga debes:",
+        "answers":[
+            "Usar el efecto de frenado del motor(TRUE)",
+            "Usar el frenado controlado",
+            "Frenar el exceder ‘la velocidad segura’ en 5 mph"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre la presión de neumáticos es verdadera?",
+        "answers":[
+            "La presión del aire en los neumáticos se aumenta con la temperatura(TRUE)",
+            "No tienes que comprobar los neumáticos calientes, porque el neumático no se desinfla",
+            "La presión no debe ser verificada durante el viaje si se pasó la inspección previa al viaje"
+        ]
+    },
+    {
+        "question":"Debes estacionar el vehículo de modo que:",
+        "answers":[
+            "Puedas tirar adelante cuando salgas(TRUE)",
+            "Tu vehículo se encuentre al lado de la acera cerca del otro vehículo",
+            "Tu vehículo esté cerca del árbol"
+        ]
+    },
+    {
+        "question":"¿Cuál de estás cosas del equipo de emergencia siempre debes tener en tu vehículo?",
+        "answers":[
+            "Kit de reparación de neumáticos",
+            "Kit de primeros auxilios",
+            "Los accesorios de advertencia para vehículo estacionado (TRUE)"
+        ]
+    },
+    {
+        "question":"Los camiones y autobuses están sujetas a algunas regulaciones legislativas e inspecciones. ¿Cuál de estás es verdadera?",
+        "answers":[
+            "Las leyes municipales y de condado no se aplican a los camiones y autobuses que participan en el comercio interestatal",
+            "Las regulaciones federales se aplican sólo a los camiones y autobuses conducidos a la velocidad de por lo menos 50 mph",
+            "Las leyes y restricciones pueden variarse de un lugar a otro (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre los materiales peligrosos es verdadera?",
+        "answers":[
+            "Todos los materiales peligrosos presentan un peligro para salud y seguridad(TRUE)",
+            "Cualquier camión que transporta cualquier cantidad de materiales peligrosos debe tener carteles",
+            "Cualquier carretera pública permite a los camiones transportar materiales peligrosos si se cargan correctamente"
+        ]
+    },
+    {
+        "question":"¿Qué tipo del equipo opcional (excepto llave de neumático) debes tener en tu vehículo?",
+        "answers":[
+            "Extintor completamente cargado",
+            "Conjunto de dispositivos de advertencia",
+            "argador de batería (TRUE)"
+        ]
+    },
+    {
+        "question":"Tus papeles sobre el transporte de los materiales peligrosos deben estar:",
+        "answers":[
+            "Debajo del asiento del conductor",
+            "En la bolsa de la puerta del conductor(TRUE)",
+            "En la guantera del vehículo que debe estar funcionando"
+        ]
+    },
+    {
+        "question":"¿Cuál de estas sentencias sobre el frenado es verdadera?",
+        "answers":[
+            "En cuanto más rápido se mueve el camión o en cuanto más pesado es tanto más calor deben absorber los frenos para una parada(TRUE)",
+            "El responde de los frenos es muy rápido cuando el vehículo marcha muy rápido",
+            "La debilitación de los frenos no está causada por el calor"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el patinaje de frenado de la rueda trasera es verdadera?",
+        "answers":[
+            "Ruedas bloqueadas por lo general tienen más tracción que las ruedas rodantes",
+            "La oscilación lateral de las ruedas delanteras trata de afectar las ruedas traseras",
+            "En el vehículo con un remolque el remolque puede empujar el vehículo tractor desde el lado(TRUE)"
+        ]
+    },
+    {
+        "question":"¿Qué debe ser comprobado durante la parada del vehículo?",
+        "answers":[
+            "Los frenos de servicio(TRUE)",
+            "Los frenos de estacionamiento",
+            "Los frenos hidráulicos"
+        ]
+    },
+    {
+        "question":"¿Cuál de estas sentencias es verdadera?",
+        "answers":[
+            "La mayoría de la gente está más alerta en la noche que durante el día",
+            "La mayoría de los peligros están más fáciles para verlos durante la noche que durante el día",
+            "La mayoría de los accidentes con vehículos pesados se ocurren entre la medianoche y 6 de la madrugada (TRUE)"
+        ]
+    },
+    {
+        "question":"No tienes la certificación de transporte de los materiales peligrosos en tu licencia de conducir comercial. Puedes conducir el vehículo transportando los materiales peligrosos cuando:",
+        "answers":[
+            "La carga de materiales peligrosos es de 26 libras o menos",
+            "El vehículo no requiere letreros(TRUE)",
+            "La persona que posee la certificación de transporte de los materiales peligrosos viene contigo"
+        ]
+    },
+    {
+        "question":"Cada vez que duplicas tu velocidad ¿en cuántas veces sube la poder de destrucción en caso del choque?",
+        "answers":[
+            "2",
+            "3",
+            "4 (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el uso del freno del motor es verdadera?",
+        "answers":[
+            "Debes utilizar el freno del motor como una forma principal de controlar tu velocidad",
+            "El aumento del uso del freno del motor evita la fricción adicional entre las zapatas de freno aparte del tambor",
+            "El uso del freno del motor durante una bajada se añade al efecto del frenado del motor(TRUE)"
+        ]
+    },
+    {
+        "question":"Estás conduciendo un camión nuevo con la transmisión manual. ¿Qué marcha probablemente debes usar para bajar de una colina larga empinada?",
+        "answers":[
+            "La misma marcha que se usa para subir la colina",
+            "La marcha más baja que se usa para subir la colina(TRUE)",
+            "La marcha más alta que se usa para subir la colina"
+        ]
+    },
+    {
+        "question":"¿Si tu no tienes la radio CB qué debes hacer en el lugar del accidente?",
+        "answers":[
+            "Proteger el área(TRUE)",
+            "Notificar a las autoridades",
+            "Cuidar las personas lesionadas"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer cuando tu vehículo hidroplanea?",
+        "answers":[
+            "Empezar el frenado discontinuo",
+            "Liberar el acelerador",
+            "Acelerar ligeramente (TRUE)"
+        ]
+    },
+    {
+        "question":"Si has sido condenado por conducir un vehículo comercial bajo la influencia de alcohol o drogas, perderás tu licencia de conducir comercial para:",
+        "answers":[
+            "6 meses",
+            "1 año(TRUE)",
+            "2 años"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre los desvíos amplios de los camiones comerciales durante el giro es verdadera?",
+        "answers":[
+            "Salida fuera del carril(TRUE)",
+            "Redondeo ancho",
+            "Movimiento sinuoso"
+        ]
+    },
+    {
+        "question":"Si llevas una carga pesada que te retarda durante la subida debes:",
+        "answers":[
+            "Meter la marcha más baja(TRUE)",
+            "Salir de la carretera hasta que el tráfico se disminuya",
+            "Conducir por el arcén para que otros conductores te adelanten"
+        ]
+    },
+    {
+        "question":"Serás apartado del trabajo para 24 horas en caso de que el nivel del alcohol en tu sangre es al menos:",
+        "answers":[
+            "0.02",
+            "0.04",
+            "Cualquiera cantidad detectable (TRUE)"
+        ]
+    },
+    {
+        "question":"Cargas de sobrepeso, demasiado grandes:",
+        "answers":[
+            "Requieren el permiso especial(TRUE)",
+            "Pueden transportarse sólo durante el día",
+            "Deben ser acompañadas por la policía"
+        ]
+    },
+    {
+        "question":"¿Cuál de estos no es un tipo de retardadores?",
+        "answers":[
+            "Eléctrico",
+            "Hidráulico",
+            "Robótico (TRUE)"
+        ]
+    },
+    {
+        "question":"La distancia hasta la parte ___ detu vehículo es la más importante para manejar",
+        "answers":[
+            "Trasera",
+            "Delantera(TRUE)",
+            "Lateral"
+        ]
+    },
+    {
+        "question":"¿Cuál de estos no proporciona engranajes adicionales en un vehículo?",
+        "answers":[
+            "Transmisión automática(TRUE)",
+            "Transmisión auxiliar",
+            "Los ejes traseros de velocidades múltiples"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer si te acercas al puente por una carretera de dos carriles?",
+        "answers":[
+            "Ir en el centro del puente",
+            "Chequear el límite del peso del puente(TRUE)",
+            "Reducir la velocidad hasta las 25 mph en el puente"
+        ]
+    },
+    {
+        "question":"Conduciendo por las montañas debes hacerlo lento para tu seguridad. ¿Cuál de estás cosas es la más importante?",
+        "answers":[
+            "El peso del vehículo(TRUE)",
+            "Tipo de rosca del neumático",
+            "La profundidad de la rosca"
+        ]
+    },
+    {
+        "question":"Estás conduciendo a la velocidad de 50 mph por una carretera plana. Adelante no hay vehículos. De repente un neumático de tu vehículo se explotó . ¿Qué debes hacer primero?",
+        "answers":[
+            "No accionas los frenos hasta que se reduzca la velocidad del vehículo(TRUE)",
+            "Empieza a frenar suavemente",
+            "Empieza el frenado de emergencia"
+        ]
+    },
+    {
+        "question":"Debes dar la señal continua mientras estás girando debido a que:",
+        "answers":[
+            "Necesitas ambas manos para completar el giro con seguridad(TRUE)",
+            "Es ilegal apagar la señal antes de completar el giro",
+            "La mayoría de los vehículos tienen las señales de desactivación automática"
+        ]
+    },
+    {
+        "question":"Puedes estancarte en las vías férreas si:",
+        "answers":[
+            "Si cruzas la vía doble demasiado lento",
+            "Si las vías tienen una aproximación del descenso pronunciado(TRUE)",
+            "Tratas de cambiar las marchas durante el cruce"
+        ]
+    },
+    {
+        "question":"El conductor mejor es el que esté pendiente y preparado para los peligros. Esto se llama la conducción ___.",
+        "answers":[
+            "Ofensiva",
+            "Defensiva(TRUE)",
+            "Objetiva"
+        ]
+    },
+    {
+        "question":"Tus frenos pueden mojarse cuando conduces a través de la llueve incesante. ¿Qué puede pasar si aplicas los frenos?",
+        "answers":[
+            "Hidroplaneo",
+            "Amplio desgaste de los frenos",
+            "El volteo del remolque (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre la inspección de los componentes de la suspensión es verdadera?",
+        "answers":[
+            "Los resortes distorsionados son seguros siempre y cuando no estén rotos",
+            "Soportes de los ejes deben ser revisados en cada punto de fijación al marco y ejes de vehículo(TRUE)",
+            "Componentes de la suspensión se debe comprobar en todos los ejes a excepción de la siguiente unidad"
+        ]
+    },
+    {
+        "question":"¿Qué debes hacer si no estás seguro de que tengas la separación bastante?",
+        "answers":[
+            "Reducir la velocidad un poco y tratar de conducir bajo el objeto",
+            "Buscar otra ruta que no requiere la conducción debajo del objeto(TRUE)",
+            "Estimar la altura del objeto cubierto por encima si se indica"
+        ]
+    },
+    {
+        "question":"¿Qué significa el frenado de emergencia?",
+        "answers":[
+            "Empujar el pedal del freno hacia abajo tan duro como puedas",
+            "Responder al peligro reduciendo la velocidad del vehículo",
+            "El uso de los frenos de emergencia del vehículo (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre las persianas del radiador y winterfront durante la conducción en el invierno es verdadera?",
+        "answers":[
+            "El winterfront debe estar cerrado herméticamente",
+            "Hace falta quitar el hielo de las persianas del radiador(TRUE)",
+            "El motor puede sobrecalentarse si dejar el winterfront abierto"
+        ]
+    },
+    {
+        "question":"Estás revisando tus frenos y sistema de suspensión durante la inspección previa del viaje. ¿Cuál de las sentencias es verdadera?",
+        "answers":[
+            "Falta de una sola hoja del muelle de hojas no está peligrosa",
+            "El soporte de ballesta que tiene grietas pero todavía está apretado no representa un peligro",
+            "Las zapatas de freno no deben tener adentro el aceite, lubricante o fluido de freno (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre el alcohol NO es verdadera?",
+        "answers":[
+            "El alcohol penetra en la sangre directamente del estómago",
+            "El que consuma puede controlar la velocidad con que su cuerpo absorbe el alcohol tomado",
+            "El nivel del alcohol en la sangre se determina de la velocidad con que consumes, la cantidad que consumes y cuanto comes (TRUE)"
+        ]
+    },
+    {
+        "question":"¿Cuál de las sentencias sobre los neumáticos y tiempo cálido es verdadera?",
+        "answers":[
+            "Debes inspeccionar la presión antes de conducir(TRUE)",
+            "Si los neumáticos están muy calientes para tocarlos debes debes seguir conduciendo para enfriarlos",
+            "La poca cantidad del aire puede ser desinflada pero la presión queda la misma"
+        ]
+    },
+    {
+        "question":"Al arrancar el motor:",
+        "answers":[
+            "El indicador de temperatura del líquido refrigerante debe indicar el valornormal(TRUE)",
+            "El indicador de presión de aceite debe tomar 3-5 minutos para subir a la norma",
+            "El indicador de temperatura del motor debe tomar 3-5 minutos para subir a la norma"
+        ]
+    }
+]

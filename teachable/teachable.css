@@ -1,0 +1,536 @@
+/* 
+CSS Circular Progress
+Mattia Astorino
+ */
+
+
+/* FONTS */
+@font-face {
+    font-family: "Gotham Medium";
+    src: url("../font/Gotham Medium.otf");
+}
+@font-face {
+    font-family: "Gotham Light";
+    src: url("../font/Gotham Light.otf");
+}
+
+@font-face {
+    font-family: "Gotham Extra Light";
+    src: url("../font/Gotham Extra Light.otf");
+}
+
+@font-face {
+    font-family: "Gotham Book";
+    src: url("../font/Gotham Book Regular.otf");
+}
+
+
+:root {
+    --minW: 100px;
+    --radialW: calc(100vw * 0.28);
+    --playerW: calc(100vw - var(--radialW));
+    --qHalf: 0.1rem;
+
+    --numInLine: 5.5;
+    --thumbW: calc((100vw - 50px) / var(--numInLine));
+    
+    --true: hsl(110, 50%, 42%);
+    --false: hsl(349, 79%, 50%);
+}
+
+
+/* ---- video List Styles ---- */
+/* prompt bar styles */
+.studentInfo {
+    width: 100%;
+    height: 130px;
+    margin: 0;
+
+    font-family: "Gotham Medium", system, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;   /* for centering when text in 2 lines */
+
+    color: hsl(220, 60%, 1%);
+}
+.infoProgress {
+    --myProgress: 0%;
+
+    margin-left: 10px;
+    padding: 0 5px;
+    background: linear-gradient(to right, hsl(109, 49%, 42%), var(--myProgress), hsl(220, 60%, 1%));
+    color: hsl(240, 33%, 99%);
+}
+
+/* video list styles */
+.videoListInner {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.videoThumb {
+    width: 100%;
+    background-color: #2d2d2d;
+}
+.videoItem {
+    max-width: var(--thumbW);
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.videoSection {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: flex-start;
+
+    background-color: #efefef;
+    margin: 0 15px 10px 0;
+
+    cursor: pointer;
+    position: relative;
+}
+.videoSection:hover {
+    transform: scale(1.01);
+    transition: ease-in-out 0.2s;
+}
+.videoSection::before {
+    content: attr(data-title);
+
+    position: absolute;
+    max-width: var(--thumbW);
+    padding-left: 3px;
+    
+    font-family: "Gotham Light", system, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.videoSection_info {
+    width: 100%;
+    height: 35px;
+
+    display: inline-flex;
+    align-items: center;
+}
+.videoWatching, .videoTests {
+    font-family: "Gotham Book", system, sans-serif;
+    font-size: 14px;
+}
+.videoWatching {
+    width: 55%;
+    justify-content: flex-start;
+}
+.videoTests {
+    width: 45%;
+    justify-content: flex-end;
+    transform: translateY(-2px);
+}
+.videoWatching_info, .videoTests_info {
+    font-family: "Gotham Medium", system, sans-serif;
+    font-size: 14px;
+}
+.test_done {
+    width: 21px;
+    height: 16px;
+    transform: translateY(3px);
+    /* to center it verticaly */
+}
+.afterLine {
+    width: 70%;
+    height: 8px;
+    background: radial-gradient(#efefef, #fff);
+    margin: 0 auto 20px auto;
+}
+
+
+
+
+/* ---- PLAYER Styles ---- */
+
+.lessonInfo {
+    width: 100%;
+    height: 100px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Gotham Medium", system, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.lessonId {
+    white-space: nowrap;
+    margin-right: 20px;
+    padding: 3px 7px;
+    background-color: #2d2d2d;
+    color: #fff;
+}
+
+.playerInner {
+    display: block;
+    margin: 5px;
+}
+.newFlexLine, .newFlexLine-leftSide {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.RadialProgress {
+    --hue: 220;
+    --holesize: 65%;
+    --track-bg: hsl(233 34% 92%);
+
+    width: calc(var(--radialW)*0.85);
+    height: calc(var(--radialW)*0.85);
+    min-width: var(--minW);
+    min-height: var(--minW);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    position: relative;
+    
+    
+    font-family: "Gotham Light", system, sans-serif;
+    font-size: calc(var(--radialW)*0.28);
+    
+    cursor: pointer;
+}
+    
+.RadialProgress::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
+    background: conic-gradient(
+        hsl(var(--hue) 100% 70%),
+        hsl(var(--hue) 100% 40%),
+        hsl(var(--hue) 100% 70%) var(--progress, 0%),
+        var(--track-bg) var(--progress, 0%) 100%
+    );
+
+    -webkit-mask-image: radial-gradient(
+        transparent var(--holesize),
+        black calc(var(--holesize) + 0.5px)
+    );
+
+    mask-image: radial-gradient(
+        transparent var(--holesize),
+        black calc(var(--holesize) + 0.5px)
+    );
+    
+}
+
+/* Radial Progress -> to play Button */
+@keyframes pumping {
+    0% {
+        fill: hsl(200, 20%, 70%)
+    }
+    100% {
+        fill: hsl(200, 20%, 95%)
+    }
+}
+
+.radialInner_icon {
+    width: 90%;
+    height: 90%;
+    animation: pumping 1.2s linear infinite alternate;
+}
+
+.leftSidePlayer {
+    width: var(--radialW);
+    display: block;
+    min-width: var(--minW);
+}
+
+.infoPlayer {
+    margin-bottom: 25px;
+
+    font-family: "Gotham Light", system, sans-serif;
+    font-size: calc(var(--radialW)*0.05);
+}
+
+.player {
+    background-color: #333;
+    width: var(--playerW);
+    /* aspectRatioo 16X9 */
+    height:calc(var(--playerW) *0.560);
+}
+
+.scrollBar {
+    flex: 100%;
+}
+
+
+/* 
+    Quizze Block
+*/
+@keyframes pulsing-for-skeleton{
+    0% {
+        background-color:  hsl(200, 20%, 70%);
+    }
+    100% {
+        background-color:  hsl(200, 20%, 95%);
+    }
+}
+
+.controlQuestions {
+    width: 100%;
+    padding: 0 50px;
+    font-family: "Gotham Light", system, sans-serif;
+    transition: display ease-in-out 0.3s;
+}
+
+.skeleton-question {
+    --myWidth: 90%;
+
+    width: var(--myWidth);
+    height: 1rem;
+    
+    border-radius: 3px;
+    margin: 0.5rem calc(100% - var(--myWidth)) 0.5rem 0;
+    
+    animation: pulsing-for-skeleton 1.2s ease-in-out infinite alternate;
+}
+.skeleton-radio {
+    width: 1rem;
+    height: 1rem;
+    
+    border-radius: 0.5rem;
+    margin: var(--qHalf) 3px;
+    
+    animation: pulsing-for-skeleton 1.2s ease-in-out infinite alternate;
+}
+.skeleton-label {
+    width: 60%;
+    height: 1rem;
+    
+    border-radius: 3px;
+    margin: var(--qHalf) 0;
+    
+    animation: pulsing-for-skeleton 1.2s ease-in-out infinite alternate;
+}
+.skeleton-button {
+    border-radius: 20px;
+    border: none;
+
+    color: rgb(255, 255, 255);
+    cursor:not-allowed;
+    display: flex;
+
+    font-size: 12px;
+    inline-size: 256px;
+
+    max-inline-size: 400px;
+    min-block-size: 40px;
+    min-inline-size: 256px;
+    min-width: 256px;
+
+    opacity: 0.7;
+
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    text-transform: uppercase;
+
+    margin: 0.6rem auto;
+    padding: 0 40px; 
+
+    animation: pulsing-for-skeleton 1.2s ease-in-out infinite alternate;
+}
+
+/* Quiz Block */
+._margin {
+    padding: 40px 0;
+    border-bottom: 1px solid #efefef;
+}
+.questionBlock {
+    width: 50%;
+    display: flex;
+
+    font-family: "Gotham Medium", system, sans-serif;
+    text-transform: uppercase;
+    text-align: justify;
+    font-size: 16px;
+    
+    color: #333;
+}
+.answersBlock {
+    width: 50%;
+    display: block;
+    margin-left: 35px;
+
+    font-family: "Gotham Book", system, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333;
+}
+.answer {
+    width: 100%;
+    /* display: flex; */
+    margin-bottom: 10px;
+}
+
+
+/* for marking Questions after Submit */
+/* marking radio button marker */
+.answerRadio {
+    --radioColor: #333;
+}
+.answerRadio:checked::after {
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    top: -2px;
+    left: -3px;
+    position: relative;
+    background: radial-gradient(#fff, var(--radioColor));
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+/* marking the answer itself */
+.answerLabel {
+    --labelColor: #333;
+
+    color: var(--labelColor);
+    /* next 2 lines will align multiline label for radio */
+    /* margin-left: 13px;
+    display: inline; */
+}
+/* styles to mark true and false answers with */
+.true {
+    color: var(--true);
+    transition: ease-in 0.3s;
+}
+.false {
+    color: var(--false);
+    transition: ease-in 0.3s;
+}
+
+.quizze-btn {
+    background-color: rgba(23, 26, 32);
+
+    border-radius: 20px;
+    border: none;
+
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+
+    font-size: 12px;
+    inline-size: 400px;
+
+    max-inline-size: 400px;
+    min-block-size: 40px;
+    min-inline-size: 256px;
+    min-width: 256px;
+
+    opacity: 0.7;
+
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    text-transform: uppercase;
+
+    margin: 0.6rem auto;
+    padding: 5px 40px; 
+}
+
+.quizze-btn:hover {
+    opacity: 0.8;
+    transition: ease-in-out 0.3s;
+}
+  
+
+
+/*  Media requests  */
+@media (max-width: 1000px) {
+    :root {
+        --numInLine: 3.3
+    }
+    ._margin {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .questionBlock {
+        width: 100%;
+        padding-bottom: 7px;
+    }
+    .answersBlock {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    :root {
+        --numInLine: 2.2
+    }
+    
+    .newFlexLine-leftSide {
+        display: block;
+    }
+    .leftSidePlayer {
+        width: 100%;
+        display: block;
+        text-align: center;
+
+        margin: 10px auto;
+        padding: 0;
+    }
+    .RadialProgress {
+        width: calc(100vw * 0.35);
+        height: calc(100vw * 0.35);
+        margin: 0 auto;
+    }
+    .player {
+        display: block;
+        margin: 5px auto;
+        padding: 0;
+    }
+    .infoPlayer {
+        margin-bottom: 7px;
+        font-size: calc(var(--radialW)*0.1);
+    }
+    .controlQuestions {
+        padding: 0 5px;
+    }
+    .questionBlock {
+        font-size: 14px;
+    }
+    .answersBlock {
+        font-size: 12px;
+    }
+    .quizze-btn {
+        inline-size: 256px;
+        max-inline-size: 256px;
+    }
+    .lessonInfo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .lessonId {
+        margin: 0;
+        padding: 0;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <textarea rows="42" cols="91" id="word"></textarea>
+    <textarea rows="42" cols="91" id="html"></textarea>
+
+    <script>
+        
+        document.querySelector("#word").addEventListener("change", (e) => {
+            
+            let html = ""
+            let firstAnswer
+            
+            e.target.value.split('\n').map ((line, index) => {
+                while (line.indexOf(/\s\s/) > -1) {
+                    line = line.replace(/\s\s/g, " ")
+                }
+
+                if (/^@.*/.test(line)) {    //  New question
+                    if (index === 0) {
+                        html += `{\n    "question":"${line.replace("@","")}",\n`
+                    } else {
+                        html += `,\n{\n    "question":"${line.replace("@","")}",\n`
+                    }
+                    html += '    "answers":['
+                    firstAnswer = true
+                } else {    //  empty string
+                    if (/^$/.test(line)) {
+                        html += '\n    ]\n}'
+                    } else {    //  answers array
+                        if (firstAnswer) {
+                            html += `\n        "${line}"`
+                            firstAnswer = false
+                        } else {
+                            html += `,\n        "${line}"`
+                        }
+                    }
+                }
+                
+            })
+
+            document.querySelector("#html").value = html
+
+        })
+       
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employers List</title>
+    <style>
+        .employersBox {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 0.2fr repeat(8, 1fr);
+            /* grid-column: span; */
+            background: #f3f3f3;
+        }
+        .employersBox div {
+            border: 1px solid #e7e7e7;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employers List</h1>
+    
+    <% if(employers) { %>
+        <div class="employersBox">
+            <div>#</div>
+            <div>Employer</div>
+            <div>Email</div>
+            <div>Date Created</div>
+            <div>Last Session</div>
+            <div>Can See Students?</div>
+            <div>Who Gave Access</div>
+            <div>When Access Changed</div>
+            <div>Notes</div>
+        </div>  <!-- empGrid -->
+        <% employers.map((employer, index) => { %>
+            <div class="employersBox">
+                <div><%= index + 1 %></div>
+                <div><%= employer.name %></div>
+                <div><%= employer.email %></div>
+                <div><%= new Date(employer.created).toLocaleDateString() %> [<%= new Date(employer.created).toLocaleTimeString() %>]</div>
+                <div><%= new Date(employer.lastSESS).toLocaleDateString() %> [<%= new Date(employer.lastSESS).toLocaleTimeString() %>]</div>
+                <div>
+                    <form action="/admin/changeAuth" method="POST">
+                        <input type="hidden" name="id" id="id<%= index %>" value="<%= employer._id %>" required />
+                        <input type="hidden" name="adminName" value="<%= admin.name %>" required />
+                        <select name="auth" id="auth<%= index %>">
+                            <% if (employer.auth.canSee) { %>
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            <% } else { %>
+                                <option value="false">No</option>
+                                <option value="true">Yes</option>
+                            <% } %>
+                        </select>
+                        <input type="text" name="authNote" id="authNote<%= index %>" placeholder="for notes" />
+                        <button type="submit">Update</button>
+                    </form>
+                </div>
+                <div><%= employer.auth.whoGaveAccess %></div>
+                <div><%= new Date(employer.auth.whenAccessChanged).toLocaleDateString() %> [<%= new Date(employer.auth.whenAccessChanged).toLocaleTimeString() %>]</div>
+                <div><%= employer.auth.notes %></div>
+            </div>  <!-- empGrid -->
+
+            
+
+            <section class="paymentsBox">
+                <h3>Payments Info</h3>
+                <% if(employer.payments.length > 0) { %>
+                    <% employer.payments.map((payment, i) => { %>
+                        <div>
+                            <span>#<%= i + 1 %> </span>
+                            <span><%= payment.amount %></span>
+                            <span><%= new Date(payment.date).toLocaleDateString() %>[<%= new Date(payment.date).toLocaleTimeString() %>]</span>
+                            <span><%= payment.note %></span>
+                        </div>
+                    <% }) %>
+                <% } else { %>
+                    <p>No info found...</p>
+                <% } %>
+
+                <% if(queryID === employer._id.toString()) { %>
+                    <% if(queryResult === 'true') { %>
+                        <strong>Last payment added successfuly</strong>
+                    <% } else { %>
+                        <strong>Last payment was not added. Try again...</strong>
+                    <% } %>
+                <% } %>
+
+                <h4>Add a Payment</h4>
+                <form action="/admin/addPayment" method="POST">
+                    <input type="hidden" name="id" id="id<%= index %>" value="<%= employer._id %>" required />
+                    <label for="amount<%= index %>">
+                        $<input type="number" name="amount" id="amount<%= index %>" min="1" placeholder="0.00" required/>
+                    </label>
+                    <input type="date" name="date" id="date<%= index %>" required />
+                    <input type="text" name="note" id="note<%= index %>" placeholder="for notes" />
+                    <button type="submit">Add</button>
+                </form>
+            </section> <br> <!-- paymentsSection -->
+        <% }) %>    <!-- employers.map -->
+    <% } else { %>
+        <div>No records found...</div>
+    <% } %>
+    
+</body>
+</html>

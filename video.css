@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Gotham Book";
+    src: url("font/Gotham Book Regular.otf");
+    font-display: swap;
+}
+
+.videoContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoItem {
+    width: 48%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    padding: 5px;
+}
+.videoItem[data-yt2html5]:hover {
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(54, 138, 202, 0.5);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(54, 138, 202, 0.5);
+    box-shadow: 0px 0px 10px 5px rgba(54, 138, 202, 0.5);
+}
+.textHolder {
+    display: flex;
+    position: relative;
+}
+
+@keyframes move {
+    0% {
+      transform: translate(0%, 0);
+    }
+    50% {
+        transform: translate(5%, 0);
+        fill: rgba(54, 138, 202, 0.5);
+    }
+    100% {
+      transform: translate(0%, 0);
+    }
+  }
+
+.videoIcon {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    animation: move 2s ease-in-out infinite;
+}
+
+.videoDescribeText {
+    width: 100%;
+    
+    font-family: "Gotham Book", system, sans-serif;
+    font-size: 24px;
+    
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (max-width: 1025px) {
+
+    .videoContainer {
+        display: block;
+    }
+    .videoItem {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+}

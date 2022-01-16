@@ -1,0 +1,1130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('/font/Gotham\ Medium.otf');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('/font/Gotham\ Book\ Regular.otf');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NSTS';
+    src: url('/font/NSTS.ttf');
+    font-display: swap;
+}
+
+
+/*
+    ========= Global =========
+*/
+
+:root {     
+    --good: hsl(101, 50%, 56%);
+    --bad: hsl(0, 78%, 59%);
+    --NA: hsl(0, 0%, 83%);
+    --calm: rgb(38, 101, 197);
+
+    /* new design */
+    --main-blue: #366dbb;
+    --main-green: #4eb61f;
+    --hgh-blue: #2a5898;
+}
+
+*{
+    font-family: 'Gotham Medium', sans-serif;
+    font-size: 15px;
+}
+
+html,body, 
+h1,h2,h3,h4,h5,h6,
+p,li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+    ========= Sign In Page =========
+*/
+
+.singBox{
+    display: flex;
+    justify-content: center;
+}
+.singBox_inner{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.singInForm{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.title{
+    font-size:34px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    color: rgb(23, 26, 32);
+    margin: 20px 0;
+    cursor: default;
+}
+
+.signItem{
+    flex:100%;
+    padding: 8px 0;
+}
+
+label.signItem{
+    color: rgb(92, 94, 98);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 20px;
+}
+
+.signEmail, .signPassword, .signBtn{
+    
+    line-height:24px;
+
+    background-color: rgb(57, 60, 65, .05);
+    border: none;
+
+    margin-bottom: 15px;
+    border-radius: 25px;
+
+    font-size: 14px;
+    font-weight: 500;
+    text-indent: 17px;
+    color: rgb(57, 60, 65);
+}
+.signEmail:focus,.signPassword:focus,.signBtn:focus{
+    outline: none;
+    box-shadow: 0px 0px 2px rgb(57, 60, 65);
+}
+.signEmail:hover,.signPassword:hover{
+    background-color: rgb(57, 60, 65, .1);
+}
+
+.signBtn{
+    background-color: rgb(62, 106, 225, 0.9);
+    
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+.signBtn:hover{
+    background-color: rgb(62, 106, 225);
+}
+
+.btnWhite{
+    background-color: white;
+    color: black;
+    border: 3px solid rgb(23, 26, 32);
+}
+.btnWhite:hover{
+    background-color: black;
+    color: white;
+    transition: background-color 0.2s linear;
+}
+
+
+/*   ====== Need Help ======   */
+.need-help{
+    margin:0;
+    text-align: center;
+}
+.forgot-email, .forgot-password{
+    line-height: 21px;
+
+    font-size: 12px;
+    font-weight: 400;
+    color:rgb(57, 60, 65);
+    text-decoration: underline rgb(57, 60, 65);
+}
+
+.separator{
+    margin: 0 10px;
+    cursor: default;
+}
+
+.forgot-email:hover, .forgot-password:hover{
+    text-decoration-thickness: 2px;
+}
+
+.break-line{
+    width:100%;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin: 45px 0;
+    
+    color: rgb(92, 94, 98);
+
+    font-size: 14px;
+    font-weight: 500;
+    
+    line-height: 21px;
+    position: relative;
+    cursor: default;
+}
+
+.break-line::before{
+    position: absolute;
+    margin: 0 10px;
+
+    width: 40%;
+    top: 10px;
+    left: 0;
+
+    border-bottom: 1px solid rgb(226, 227, 227);
+    
+    content: '';
+}
+.break-line::after{
+    position: absolute;
+    margin: 0 10px;
+
+    width: 40%;
+    top: 10px;
+    right: 0;
+
+    border-bottom: 1px solid rgb(226, 227, 227);
+    
+    content: '';
+}
+
+
+/* SPINNER */
+.spinnerBox {
+    display: none;
+    width: 65vw;
+    height: calc(95vh - 60px);
+    
+    margin: auto;
+
+    justify-content: center;
+    align-items: center;
+
+    transition: display 1.5s linear;
+}
+.loadSipper {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+    height: 300px;
+}
+.spinner-sector {
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 15px solid transparent;
+    mix-blend-mode: overlay;
+    opacity: 0.75;
+}
+.spinner-text {
+    animation: loading 3s ease-in-out infinite;
+    font-size: 2em;
+}
+.spinner-sector-1 {
+    animation: rotate 2s ease-out infinite;
+    border-top: 15px solid var(--calm);
+}
+.spinner-sector-2 {
+    animation: rotate 2.5s ease-in infinite;
+    border-top: 15px solid var(--bad);
+}
+.spinner-sector-3 {
+    animation: rotate 1.5s ease-in-out infinite;
+    border-top: 15px solid var(--good);
+}
+.spinner-sector-4 {
+    animation: rotate 3s linear infinite;
+    border-top: 15px solid var(--NA);
+}
+
+@keyframes rotate {
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+@keyframes loading {
+    0%, 100% { opacity: 1; color: var(--calm);}
+    25%, 75% { opacity: 0.5; }
+    50% { opacity: 0.2; color: var(--bad);}
+}
+
+
+
+/*
+    ========= Account Page =========
+*/
+.-hidden {
+    display: none;
+}
+.accountBox{
+    display: none;
+    transition: display 2s linear;
+}
+.accountBox_inner {
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.accBoxRow {
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 3px;
+}
+.accGeneralInfo {
+    flex: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+._generalInfo{
+    flex: 50%;
+    display: flex;
+    align-items: center;
+}
+.generalTitle,
+.generalSubTitle,
+.menu__item {
+    margin-left: 25px;
+
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    text-decoration: none;
+
+    color: white;
+}
+.generalSubTitle {
+    margin-left: 5px;
+    font-weight: 700;
+}
+.generalMenu {
+    flex: 50%;
+    height: 100%;
+
+    display: flex;
+}
+.-big {
+    height: 3.333rem;
+    background-color: var(--main-blue);
+}
+.-small {
+    height: auto;
+    background: none;
+}
+
+.menu__item {
+    flex: 100%;
+    min-width: 65px;
+
+    line-height: 3.33rem;
+
+    margin: 0;
+    padding: 0 3px;
+    
+    text-align: center;
+    cursor: pointer;
+}
+.menu__item:hover {
+    background-color: var(--hgh-blue);
+    transition: background-color .2s linear;
+}
+
+.-survey {
+    background-color: var(--main-green);
+}
+
+
+/* no-tab items */
+.-tab, .-no-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.-item_title {
+    font-family:inherit;
+    font-size:inherit;
+    line-height: inherit;
+    font-weight:inherit;
+    letter-spacing:inherit;
+    color:inherit;
+}
+.-item_ico {
+    display: none;
+
+    width: 2.3rem;
+    height: 2.3rem;
+
+    fill: #ffffff;
+}
+
+.selected_arrow_down {
+    width: 17px;
+    height: 17px;
+
+    fill: var(--main-green);
+}
+.-hghLine {
+    height: 7px;
+    opacity: 0;
+    line-height: normal;
+
+    background-color: var(--main-green);
+    margin-bottom: 0.5rem;
+}
+.-hghLine:hover {
+    background-color: var(--main-green);
+}
+.-hghLine-selected {
+    opacity: 1
+}
+
+._selected {
+    background-color: var(--hgh-blue);
+}
+
+
+/* 
+        BLOCKs
+*/
+.accBlock {
+    flex: 100%;
+
+    padding: 0;
+    margin: 0;
+}
+.-block_hidden {
+    display: none;
+}
+
+
+/*--- Enrollment Block ---*/
+.formsTitle {
+    width: 66%;
+    margin: 1.87rem auto 1rem auto;
+
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.53rem;
+    
+    text-align: center;
+    color: #272727;
+}
+.-strong {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 1.73rem;
+    line-height: 2.67rem;
+
+    text-transform: uppercase;
+    color: #272727;
+}
+
+.formsContainer {
+    width: 76.5%;
+    margin: 0 auto;
+
+    display: block;
+}
+.preFill_inputsBox {
+    width: 100%;
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.preFill_leftSide,
+.preFill_rightSide {
+    box-sizing: border-box;
+
+    width: 45%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.preFill_leftSide {
+    margin-right: 1.67rem;
+}
+.preFill_rightSide {
+    margin-left: 1.67rem;
+}
+
+.preFill_label,
+.preFill_textInput {
+    box-sizing: border-box;
+    padding: 0.6rem 5px;
+    margin-bottom: 0.5rem;
+    
+    font-family: "Gotham Medium";
+    font-size: 1rem;
+    color: #2b2b2b;
+}
+.preFill_label {
+    width: 45%;
+}
+.preFill_textInput {
+    width: 55%;
+
+    font-family: "Gotham Book";
+    border-radius: 4px;
+    border: 1px solid #e9e9e9;
+}
+.formsNote, .-note {
+    width: 100%;
+
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 0.87rem;
+}
+.formsNote {
+    color: #a6a6a6;
+    text-align: justify;
+}
+.-note {
+    color: #2b2b2b;
+}
+
+.preFill_buttonsBox {
+    width: 100%;
+    margin: 3rem auto 1.5rem auto;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.preFill_Submit,
+.preFill_Reset {
+    width: 25%;
+    max-width: 27rem;
+    min-width: 17rem;
+
+    padding: 0.7rem 2.67rem;
+
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 0.93rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+
+    opacity: 0.65;
+
+    border-radius: 1.333rem;
+    border: none;
+
+    cursor: pointer;
+}
+.preFill_Submit {
+    background-color: var(--calm);
+}
+.preFill_Reset {
+    background-color: #2b2b2b;
+}
+.preFill_Submit:hover,
+.preFill_Reset:hover {
+    opacity: 0.8;
+    transition: opacity .2s ease-in-out;
+}
+
+
+/* Forms' links Container */
+.formsBox {
+    width: 60%;
+    margin: 6rem auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.forms_info-links_box {
+    box-sizing: border-box;
+    width: 65%;
+}
+.forms_ico {
+    box-sizing: border-box;
+
+    width: 35%;
+    max-width: 128px;
+
+    margin: 0 auto;
+}
+
+.formsInfo, .formsLinks {
+    width: 100%;
+    display: block;
+}
+.formsLinks {
+    display: none;
+}
+
+.step {
+    font-family: "Gotham Book";
+    font-size: 1rem;
+    color: #272727;
+
+    padding: .8rem 0;
+}
+.step:nth-of-type(2n) {
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.-inact_link, .-act_link {
+    box-sizing: content-box;
+
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 1rem;
+    color: #b7b7b7;
+
+    padding: 0 2rem;
+}
+.-act_link {
+    color: #2d2d2d;
+}
+.-act_link:visited {
+    color: #3327a3;
+}
+.-link_activated {
+    text-decoration: none;
+    color: #4eb61f;
+}
+
+#appCapa, #enrCapa, #colCapa {
+    width: 1rem;
+    height: 1rem;
+}
+.-capa_inactive {
+    fill: #e9e9e9;
+}
+.-capa_activated {
+    fill: #4eb61f;
+}
+
+
+
+
+
+
+/*--- Status Block ---*/
+
+.statusFlexBox {
+    width: 60%;
+    margin: 0 auto;
+
+    display: flex;
+}
+.statusLeftSide,
+.statusRightside {
+    box-sizing: border-box;
+    width: 50%;    
+}
+.statusLeftSide {
+    text-align: right;
+    padding-right: 1.5rem;
+    border-right: 1px solid #ececec;
+}
+.statusRightside {
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+.innerTitle {
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-weight: 700;
+
+    line-height: 4.5rem;
+    text-transform: uppercase;
+    
+    color: #272727;
+}
+
+.areaStep {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    color: #8f8f8f;
+    border: 1px solid #ececec;
+    
+    cursor: default;
+
+    margin-bottom: 0.6rem;
+}
+
+.areaStep.passed {
+    border: none;
+
+    background: -webkit-linear-gradient(135deg, var(--good), #1d5c00);
+    background: -moz-linear-gradient(135deg, var(--good), #1d5c00);
+    background: linear-gradient(135deg, var(--good), #1d5c00);
+    color: #ffffff
+}
+.areaStep.failed {
+    border: none;
+
+    background: -webkit-linear-gradient(135deg, var(--bad), #670000);
+    background: -moz-linear-gradient(135deg, var(--bad), #670000);
+    background: linear-gradient(135deg, var(--bad), #670000);
+    color: #ffffff
+}
+.step_id,
+.step_title {
+    font-family: "Montserrat";
+    font-size: 0.87rem;
+    font-weight: 500;
+    line-height: 1.87rem;
+    
+    color: inherit;
+}
+.step_id {
+    margin-left: 1rem;
+    text-align: left;
+}
+.step_check {
+    width: 1.25rem;
+    height: 1.25rem;
+
+    margin-left: 0.6rem;
+
+    text-align: left;
+    fill: #ffffff;
+}
+.step_title {
+    width: 100%;
+    margin-right: 1rem;
+    text-align: right;
+}
+
+
+
+/* --- Details --- */
+.test_eval_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #8f8f8f;
+}
+.-leftSideText {
+    text-align: left;
+}
+.pass_fail {
+    width: 1.7rem;
+    height: 2rem;
+    
+    fill: #f5f5f5;
+}
+.-digit {
+    color: #202020;
+    font-weight: 700;
+}
+
+/* Data Block */
+.mainDataTitle {
+    text-transform: uppercase;
+    text-align: center;
+
+    padding: 0 2rem;
+}
+.-studentID {
+    font-family: "Montserrat";
+    font-size: 2rem;
+    color: #272727;
+    font-weight: 700;
+
+    margin: 1.33rem auto;
+}
+.mainData-box {
+    box-sizing: border-box;
+
+    width: 95%;
+    max-width: 30rem;
+
+    height: 3rem;
+
+    margin: 0 auto;
+
+    border-radius: 21px;
+    background-color: #e9e9e9;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dataBox, .scheduleBox {
+    width: 80%;
+    margin: 0 auto;
+}
+.-calm {
+    color: var(--calm);
+    text-align: center;
+
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 1rem;
+}
+.-widebox {
+    width: 98%;
+}
+
+
+.list_type {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-item,
+.mainDataList,
+.expulWork,
+.limitsList,
+.knowHow {
+    box-sizing: border-box;
+    width: 50%;
+
+    font-family: "Montserrat";
+    font-size: 1rem;
+    line-height: 2rem;
+
+    color: #272727;
+}
+.list-item {
+    font-weight: 500;
+    text-align: left;
+
+    padding-left: 1rem;
+}
+.mainDataList,
+.expulWork,
+.limitsList,
+.knowHow {
+    font-weight: 700;
+    text-align: right;
+
+    padding-right: 1rem;
+}
+.-month, .limitsList {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.-center {
+    text-align: center;
+}
+
+.list_type .list-item:nth-of-type(even),
+.list_type .mainDataList:nth-of-type(even),
+.list_type .expulWork:nth-of-type(even),
+.list_type .limitsList:nth-of-type(even),
+.list_type .knowHow:nth-of-type(even) {
+    background-color: #e9e9e9;
+}
+
+
+/* Scheduled Appointments */
+
+.table_type, .table_type_app {
+    width: 100%;
+    text-align: center;
+}
+.table_type_app {
+    margin-bottom: 2rem;
+}
+._left,
+.table_type_app tr,
+.table_type_app td {
+    font-family: "Montserrat";
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 500;
+
+    color: #272727;
+    text-align: left;
+}
+.table_type_app tr,
+.table_type_app td {
+    text-align: center;
+}
+._head {
+    font-family: "Montserrat";
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 500;
+
+    color: #8c8c8c;
+    text-align: center;
+}
+.table_type tr:nth-of-type(even),
+.table_type_app tr:nth-of-type(even) {
+    background-color: #e9e9e9;
+}
+.table_type tr:last-of-type {
+    font-weight: bolder;
+    background-color: var(--main-green);
+}
+
+.appintQty {
+    font-size: 2.7rem;
+    color: var(--bad);
+}
+
+.account-footer {
+    width: 100%;
+
+    font-family: "Montserrat";
+    font-size: 0.87rem;
+    font-weight: 500;
+    line-height: 3.33rem;
+    
+    color: #8f8f8f;
+    background-color: #e9e9e9;
+
+    text-align: center;
+
+    margin-top: 3.33rem;
+}
+
+
+
+/*  Media requests  */
+@media (max-width: 1200px) {
+    .formsBox {
+        width: 65%;
+    }
+}
+@media (max-width: 1115px) {
+    .formsBox {
+        width: 70%;
+    }
+}
+@media (max-width: 1025px) {
+    .accGeneralInfo {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: unset;
+    }
+    ._generalInfo, .generalMenu {
+        flex: 100%;
+        width: 100%;
+    }
+    ._generalInfo {
+        align-items: baseline;
+        justify-content: center;
+    }
+    .generalSubTitle {
+        font-size: 2rem;
+    }
+    /* enrollment */
+    .formsBox {
+        width: 75%;
+    }
+}
+@media (max-width: 980px) {
+    .statusFlexBox {
+        width: 75%;
+    }
+    .step_title, .-leftSideText {
+        white-space: nowrap;
+    }
+    /* enrollment */
+    .formsTitle {
+        width: 80%;
+    }
+    .formsContainer {
+        width: 85%;
+    }
+    .-strong {
+        font-size: 1.55rem;
+    }
+    .formsBox {
+        width: 85%;
+    }
+}
+@media (max-width: 800px) {
+    .table_type th,
+    .table_type td,
+    .table_type_app th,
+    .table_type_app td {
+        font-size: 0.87rem;
+    }
+}
+@media (max-width: 775px) {
+    /* enrollment */
+    .formsTitle {
+        width: 95%;
+    }
+    .formsContainer {
+        width: 95%;
+    }
+    .formsBox {
+        width: 100%;
+    }
+}
+@media (max-width: 680px) {
+    .statusFlexBox {
+        width: 85%;
+    }
+    /* data */
+    .dataBox, .scheduleBox {
+        width: 95%;
+    }
+    .list-item,
+    .mainDataList,
+    .expulWork,
+    .limitsList,
+    .knowHow {
+        line-height: 1.2rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+}
+@media (max-width: 635px) {
+    /* enrollment */
+    .preFill_inputsBox {
+        flex-direction: column;
+    }
+    .formsTitle {
+        font-size: 1rem;
+    }
+    .-strong {
+        font-size: 1.35rem;
+    }
+    .preFill_leftSide,
+    .preFill_rightSide {
+        width: 65%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 600px) {
+    /* enrollment */
+    .preFill_leftSide,
+    .preFill_rightSide {
+        width: 70%;
+    }
+    .formsBox {
+        flex-direction: column;
+        margin: 3rem auto 1rem auto;
+    }
+    .preFill_buttonsBox {
+        flex-direction: column;
+    }
+    .preFill_Submit {
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 580px) {
+    .statusFlexBox {
+        width: 95%;
+    }
+    /* schedule */
+    .table_type th,
+    .table_type td,
+    .table_type_app th,
+    .table_type_app td {
+        line-height: 1.2rem;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+    }
+    .table_type_app td {
+        text-align: center;
+    }
+}
+@media (max-width: 525px) {
+    * {
+        font-size: 13px;
+    }
+    .menu__item {
+        font-size: 0.95rem;
+        min-width: 55px;
+    }
+    /* enrollment */
+    .preFill_leftSide,
+    .preFill_rightSide {
+        width: 80%;
+    }
+    .-strong {
+        font-size: 1.1rem;
+    }
+    .forms_info-links_box {
+        width: 75%;
+    }
+}
+@media (max-width: 450px) {
+    ._generalInfo.-big {
+        padding-bottom: 1rem;
+    }
+
+    .-item_title {
+        display: none;
+    }
+    .-item_ico {
+        display: block;
+    }
+    .menu__item {
+        font-size: 0.9rem;
+        min-width: 22px;
+    }
+
+    .step_title, .-leftSideText {
+        white-space:normal;
+        line-height: 1.3rem;
+        margin-bottom: .5rem;
+    }
+
+    /* enrollment */
+    .formsTitle {
+        width: 100%;
+    }
+    .preFill_leftSide,
+    .preFill_rightSide {
+        width: 100%;
+    }
+    .-strong {
+        font-size: 1rem;
+    }
+    .forms_info-links_box {
+        width: 85%;
+    }
+}
+@media(max-width: 375px) {
+    /* enrollment */
+    .formsTitle, .-strong {
+        font-size: 0.9rem;
+    }
+    .forms_info-links_box {
+        width: 95%;
+    }
+}
+@media(max-width: 350px) {
+    .-app {
+        line-height: unset;
+    }
+}

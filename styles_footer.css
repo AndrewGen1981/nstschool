@@ -1,0 +1,203 @@
+/* Footer page styles */
+@font-face {
+    font-family: "Gotham Book";
+    src: url("/font/Gotham\ Book\ Regular.otf");
+    font-display: swap;
+}
+@font-face {
+    font-family: "WindSong";
+    src: url("/font/WindSong-Medium.ttf");
+    font-display: swap;
+}
+
+
+/* FOOTER with social links */
+
+.main-page-footer {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+
+    scroll-snap-align: start;
+
+    margin: 0;
+    padding: 10px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+
+    background-color: #c3b9b3;
+
+    font-size: 18px; 
+    /*EMs for media requests */
+}
+
+/* items */
+.footer-item {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.footer-item:hover {
+    background-color: unset;
+    cursor:unset;
+}
+
+/* svg links */
+.footer-svg {
+    width: 30px;
+    padding: 0 2px;
+    fill: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.footer-svg:hover {
+    fill: rgba(0, 0, 0, 0.35);
+    transition: fill 0.2 ease-in;
+}
+
+.footer-info-title,
+.footer-social-title,
+.useful-links-title {
+    margin: 0;
+    padding: 1.43em 0 0.71em 0;
+
+    font-size: 1.15em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white
+}
+
+.footer-info-box {
+    width: 95%;
+    max-width: 980px;
+
+    min-height: 40%;
+
+    display: block;
+    text-align: justify;
+}
+.footer-info-text {
+    font-family: "Gotham Book", sans-serif;
+    font-size: 1em;
+    line-height: 1.15em;
+    letter-spacing: -0.4px;
+    
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.5em;
+}
+.footer-info-text:last-of-type {
+    text-align: center;
+}
+
+.footer-useful-links-box {
+    display: block;
+    text-align: center;
+}
+.useful_link {
+    font-family: "Gotham Book", sans-serif;
+    font-size: 0.93em;
+    line-height: 2em;
+    letter-spacing: -0.5px;
+}
+
+.footer-signature {
+    width: 95%;
+
+    font-family: 'WindSong', cursive;
+    font-size: 1.4em;
+    text-align: right;
+}
+
+
+/* MEDIA REQUESTS */
+@media (max-width: 980px) {
+    .main-page-footer {
+        font-size: 17.5px;
+    }
+}
+@media (max-width: 890px) {
+    .main-page-footer {
+        font-size: 17px;
+    }
+}
+@media (max-width: 800px) {
+    .main-page-footer {
+        font-size: 16.5px;
+    }
+}
+@media (max-width: 750px) {
+    .main-page-footer {
+        font-size: 16px;
+    }
+}
+@media (max-width: 685px) {
+    .footer-info-title,
+    .footer-social-title,
+    .useful-links-title {
+        padding: 1em 0 .5em 0;
+    }
+    .useful_link {
+        padding: 0;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+    .useful_link:hover {
+        background-color: unset;
+    }
+}
+@media (max-width: 615px) {
+    .main-page-footer {
+        font-size: 15.5px;
+    }
+    .footer-signature {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 515px) {
+    .main-page-footer {
+        font-size: 15px;
+    }
+}
+@media (max-width: 490px) {
+    .main-page-footer {
+        font-size: 14.5px;
+    }
+}
+@media (max-width: 450px) {
+    .main-page-footer {
+        font-size: 14px;
+    }
+    .footer-svg {
+        width: 25px;
+        padding: 0 1px;
+    }
+}
+@media (max-width: 425px) {
+    .main-page-footer {
+        font-size: 13.7px;
+    }
+    .-optional { display: none }
+}
+@media (max-width: 385px) {
+    .footer-info-title, .footer-social-title, .useful-links-title {
+        padding: .3em 0;
+    }
+    .main-page-footer {
+        font-size: 13px;
+    }
+    .footer-signature {
+        margin-top: 1.1em;
+    }
+    .-optional1 { display: none }
+}
+
+
+@media (max-height: 615px) {
+    .footer-info-box {
+        overflow-y: scroll;
+        margin-top: 50px;
+    }
+}

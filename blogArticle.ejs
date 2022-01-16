@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Blog |<%=article.artTitle%></title>
+
+    <meta name="title" content="New Sound Trucking School Team Blog Article">
+    <meta name="description" content="<%=article.artTitle%>">
+    <meta name="keywords" content="school blog, article about trucks, truck industry, state cdl rules, cdl training, cdl license, clp, class A cld, class B cld, cld upgrades, cdl school near me, cdl school tacoma, truck driver jobs, instructor, <%=article.artTitle%>">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="author" content="NSTS Team">
+
+    <link rel="shortcut icon" href="/img/thumb/ico.png">
+
+    <link rel="stylesheet" href="/blog.css">
+    <link rel="stylesheet" href="/__nav_header.css">
+
+</head>
+
+<body>
+
+    <section class="pageContainer">
+
+        <nav class="pageHeader header-shadow">
+            <a class="header-item home-item" href="/">NSTS</a>
+
+            <div class="header-left">
+                <!-- Blog item -->
+                <a class="header-item blog-item" href="/blog">
+                    <svg class="header-svg" viewBox="0 0 100 100">
+                        <path class="st0" d="M0.2,0v27.2H100V0H0.2z M0.2,63.5H100V36.3H0.2V63.5z M0.2,99.8H100V72.6H0.2V99.8z"/>
+                    </svg>
+                    Blog
+                </a>
+
+                <!-- Enroll item -->
+                <a class="header-item enroll-item" href="/shop?id=0">
+                    <svg class="header-svg" viewBox="0 0 100 100">
+                        <polygon class="st0" points="100,36.3 63.7,36.3 63.7,0 36.5,0 36.5,36.3 0.2,36.3 0.2,63.5 36.5,63.5 36.5,99.8 63.7,99.8 63.7,63.5 100,63.5"/>
+                    </svg>
+                    Enroll
+                </a>
+            </div>    <!-- header-left -->
+        </nav>    <!-- pageHeader -->
+
+
+        <section class="blogInner">
+
+            <article class="blogItem">
+                
+                    
+                    <h1 class="articleTitle">
+                        <%=article.artTitle%>
+                    </h1>
+                    <section class="articleSubmited">
+                        <span class="articleAuthor"><%=article.artAuthor%></span>
+                        <span class="articleDelimiter"> </span>
+                        
+                        <% const month = ["January","February","March","April","May","June","July","August","September","October","November","December"] %>
+                        <% const m = month[new Date(article.artPublished).getMonth()] %>
+                        <% const d = new Date(article.artPublished).getDate() %>
+                        <% const y = new Date(article.artPublished).getFullYear() %>
+                        <span class="articleDate"><%=`${m} ${d}, ${y}`%></span>
+                    </section>     <!--  class="articleSubmited" -->
+
+                    <section class="articleTextBlock">
+                        <%- article.artHTML %>
+                    </section>     <!-- class="articleTextBlock" -->
+                
+            </article>      <!-- article class="blogItem" -->
+        
+        </section>      <!-- section class="blogInner" -->
+
+    </section>      <!-- section class="blogBody" -->
+
+</body>

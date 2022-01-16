@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'NSTS';
+    src: url('/font/NSTS.ttf');
+}
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('/font/Gotham\ Book\ Regular.otf');
+}
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('/font/Gotham\ Medium.otf');
+}
+
+
+
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: 'Gotham Book', Tahoma, Verdana;
+    font-size: 20px;
+}
+.arrow-sprite {
+    display: none;
+}
+.pageBox {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+
+
+/* top-intro-box */
+.top-intro-box {
+    width: 95%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: nowrap;
+
+    margin: 3.65rem auto 0 auto;
+}
+.top-intro-img {
+    width: 100%;
+    max-width: 14.3rem;
+}
+.top-intro-title, .top-intro-que {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Montserrat";
+    font-size: 2.33rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    color: #0b0b0b;
+}
+.top-intro-que {
+    font-size: 3.33rem;
+    font-weight: 900;
+
+    color: #e12e2e;
+}
+
+
+/* inner-box */
+.inner-box {
+    width: 95%;
+    max-width: 76.563%;
+    margin: 0 auto;
+}
+
+
+/* faq-section */
+.faq-section {
+    width: 100%;
+    margin-bottom: 1.33rem;
+}
+.faq-section-title {
+    width: 100%;
+
+    font-family: "Gotham Medium";
+    font-size: 1.33rem;
+    line-height: 4rem;
+    color: #2b2b2b;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    border-bottom: 2px solid #e9e9e9;
+    margin-bottom: 1.667rem;
+}
+.faq-section-inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.question-box {
+    box-sizing: border-box;
+    width: 50%;
+}
+.question-box:nth-child(odd) {
+    padding-right: 1rem;
+}
+
+.question-arrow {
+    --rotate: 0deg;
+    --fill: #b0b0b0;
+
+    width: .7rem;
+    height: .7rem;
+    
+    fill: var(--fill);
+
+    transform: rotate(var(--rotate));
+    
+    transition: transform .35s linear, fill .35s linear;
+}
+.-opened-arrow {
+    --rotate: 450deg;
+    --fill: #e12e2e;
+}
+
+.section-question, .section-answer {
+    font-family: "Gotham Book";
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #2b2b2b;
+    
+    text-align: justify;
+}
+
+.section-question {
+    font-weight: bold;
+    cursor: pointer;
+}
+.-opened-question {
+    font-family: "Gotham Medium";
+}
+
+.section-answer-box {
+    box-sizing: border-box;
+    display: none;
+    
+    margin: 0;
+    margin-left: 1.1rem;
+    padding: .7rem .5rem;
+
+    transition: display .35s linear;
+
+    background-color: rgba(0, 0, 0, .05);
+    border-radius: 5px;
+}
+.section-answer {
+    line-height: 1.35rem;
+    
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+    
+    list-style-position: inside;
+}
+.section-answer:nth-last-child(1) {
+    margin-bottom: 0px;
+}
+.-italic {
+    font-style: italic;
+}
+
+
+/* Footer */
+.footer-box {
+    width: 100%;
+    max-width: 1280px;
+    margin: 85px auto 0 auto;
+}
+.footer-img { 
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* Media requests */
+@media (max-width: 1580px) {
+    :root {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1450px) {
+    :root {
+        font-size: 17px;
+    }
+}
+@media (max-width: 1350px) {
+    :root {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1280px) {
+    .inner-box {
+        max-width: 980px;
+    }
+    :root {
+        font-size: 15px;
+    }
+}
+@media (max-width: 970px) {
+    .top-intro-img {
+        width: 50%;
+    }
+    .top-intro-title {
+        width: 50%;
+    }
+    :root {
+        font-size: 15px;
+    }
+}
+@media (max-width: 870px) {
+    .question-box {
+        width: 100%;
+        margin: 0;
+        margin-left: 2rem;
+    }
+}
+@media (max-width: 600px) {
+    .top-intro-box {
+        width: 98%;
+    }
+    .top-intro-que {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 570px) {
+    :root {
+        font-size: 14px;
+    }
+    .question-box {
+        margin-left: 1.2rem;
+    }
+}
+@media (max-width: 550px) {
+    .top-intro-box {
+        flex-direction: column;
+    }
+    .top-intro-title {
+        width: 95%;
+        text-align: center;
+    }
+}
+@media (max-width: 470px) {
+    :root {
+        font-size: 13px;
+    }
+    .question-box {
+        margin-left: 1rem;
+    }
+}
+@media (max-width: 400px) {
+    :root {
+        font-size: 12px;
+    }
+}
+@media (max-width: 350px) {
+    :root {
+        font-size: 11.5px;
+    }
+}
