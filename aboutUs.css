@@ -1,13 +1,19 @@
 /* FONTS */
 @font-face {
     font-family: "Gotham Medium";
-    src: url("font/Gotham Medium.otf");
+    src: url("font/Gotham\ Medium.otf");
     font-display: swap;
 }
 
 @font-face {
     font-family: "Gotham Book";
-    src: url("font/Gotham Book Regular.otf");
+    src: url("font/Gotham\ Book\ Regular.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NSTS";
+    src: url("font/NSTS.ttf");
     font-display: swap;
 }
 
@@ -20,6 +26,11 @@
 
     /* for modal */
     --normWidth: 980px;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
 }
 
 .no-scroll_body {
