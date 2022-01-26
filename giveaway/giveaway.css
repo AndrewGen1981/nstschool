@@ -30,7 +30,7 @@
     max-width: 925px;
 
     margin: 0 auto;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +48,6 @@
 .give-Img {
     width: 100%;
     max-width: 750px;
-    margin: 0 auto;
     object-fit: contain;
 }
 .count-down {
