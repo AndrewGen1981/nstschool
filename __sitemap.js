@@ -123,6 +123,11 @@ async function getAllRoutes() {
             title: "Everything You Need to Know About CDL Endorsements",
             date: "2021-10-28",
             link: "/blog/2021-10-28_CDL-Endorsements"
+        },
+        {
+            title: "Truck Driver Salary: Analysis Of COVID Pandemic Impact. Own Companies Experience",
+            date: "2022-01-01",
+            link: "/blog/2022-01-25_Truck-Driver-Salary-in-2021"
         }
     ]
     

@@ -15,10 +15,15 @@ router.get('/how-to-pass-the-cdl-skills-test-on-your-first-try', (req, res) => {
 router.get('/does-a-truck-driving-school-drug-test', (req, res) => {
     res.sendFile(path.join(__dirname+'/blog/2020-09-11_does-a-truck-driving-school-drug-test.html'))
 })
-
 router.get('/2021-10-28_CDL-Endorsements', (req, res) => {
     res.sendFile(path.join(__dirname+'/blog/2021-10-28_CDL-Endorsements.html'))
 })
+
+router.get('/2022-01-25_Truck-Driver-Salary-in-2021', (req, res) => {
+    res.sendFile(path.join(__dirname+'/blog/2022-01-25_Truck Driver Salary in 2021_Analysis Of COVID Pandemic Impact.html'))
+})
+
+
 
 
 
