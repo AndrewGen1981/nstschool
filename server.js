@@ -327,6 +327,7 @@ app.get('/faq', (req, res) => {
 })
 
 
+
 // Employer Route
 const empRouter = require('./employer/employer.js')
 app.use('/employer', empRouter)
@@ -334,6 +335,10 @@ app.use('/employer', empRouter)
 // Admin Route
 const admRouter = require('./admin/admin.js')
 app.use('/admin', admRouter)
+
+// SURVEY Route
+const srvRouter = require('./survey')
+app.use('/survey', srvRouter)
 
 
 // *** Enter point ***

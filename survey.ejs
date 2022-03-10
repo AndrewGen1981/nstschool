@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSTS | Survey</title>
+
+    <link rel="shortcut icon" href="./img/thumb/ico.png"/>
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" href="survey.css">
+
+</head>
+<body>
+    
+    <form id="mainContainer" class="container" action="/survey" method="POST">
+
+        <h1>ANONYMOUS SURVEY</h1>
+        <div class="lineBlue"></div>
+        <p>Dear Students, <br>NSTS is committed to providing you with quality services and facilities. Please take a moment to complete this survey to let us know what you think of our CDL program. Your responses are will be kept strictly confidential and only used to and it will be used to improve our school performance. What you have to say is important to us.</p>
+        
+        <h3>PLEASE FILL IN ONE BOX FOR EACH QUESTION</h3>
+
+        <!-- Main Questions -->
+        <!-- headers -->
+        <div class="row1">
+            <div class="column1"><strong>How would you rate the following?</strong></div>
+            <% headers.forEach(header => { %>
+                <div class="column"><%= header %></div>
+            <% }) %>
+        </div>
+        <!-- questions -->
+        <% generalQuestions.forEach((generalQuestion, index) => { %>
+            <div class="row">
+                <div class="column1"><%= index + 1 %>. <%= generalQuestion %></div>
+                <% headers.forEach(header => { %>
+                    <div class="column">
+                        <input name="s1q<%= index + 1 %>" value="<%= header %>" type="checkbox" onclick="onlyOne(this)">
+                    </div>
+                <% }) %>
+            </div>
+        <% }) %>
+
+        <!-- Managers survey -->
+        <div class="lineGray"></div>
+        <!-- headers -->
+        <div class="row1">
+            <div class="column1"><strong>What overall rating would you give our office staff?</strong></div>
+            <% headers.forEach(header => { %>
+                <div class="column"><%= header %></div>
+            <% }) %>
+        </div>
+        <!-- questions -->
+        <% managers.forEach(manager => { %>
+            <div class="row2">
+                <div class="column1">
+                    <strong><%= manager %></strong>
+                </div>
+            </div>
+            <% managerQuestions.forEach((managerQuestion, index) => { %>
+                <div class="row">
+                    <div class="column1"><%= index + 1 %>. <%= managerQuestion %></div>
+                    <% headers.forEach(header => { %>
+                        <div class="column">
+                            <input name="s2q<%= index + 1 %>" value="<%= header %>" type="checkbox" onclick="onlyOne(this)">
+                        </div>
+                    <% }) %>
+                </div>
+            <% }) %>
+        <% }) %>
+
+        <!-- Instructors -->
+        <div class="lineGray"></div>
+        <!-- headers -->
+        <div class="row1">
+            <div class="column1"><strong>What overall rating would you give each instructor?</strong></div>
+            <% headers.forEach(header => { %>
+                <div class="column"><%= header %></div>
+            <% }) %>
+        </div>
+        <!-- questions -->
+        <% instructors.forEach((instructor, index) => { %>
+            <div class="row">
+                <div class="column1"><%= index + 1 %>. <%= instructor %></div>
+                <% headers.forEach(header => { %>
+                    <div class="column">
+                        <input name="s3q<%= index + 1 %>" value="<%= header %>" type="checkbox" onclick="onlyOne(this)">
+                    </div>
+                <% }) %>
+            </div>
+        <% }) %>
+
+        <!-- Recommendations -->
+        <div class="lineGray"></div>
+        <!-- headers -->
+        <div class="row1">
+            <div class="column1"><strong>Would you recommend this course to other students?</strong></div>
+            <% recommendations.forEach(recommendation => { %>
+                <div class="column"><%= recommendation %></div>
+            <% }) %>
+        </div>
+        <!-- questions -->
+        <div class="row">
+            <div class="column1"></div>
+            <% recommendations.forEach(recommendation => { %>
+                <div class="column">
+                    <input name="s4q1" value="<%= recommendation %>" type="checkbox" onclick="onlyOne(this)">
+                </div>
+            <% }) %>
+        </div>
+
+        <!-- Overall school experience -->
+        <div class="lineGray"></div>
+        <!-- headers -->
+        <div class="row1">
+            <div class="column1"><strong>How would you rate your overall school experience?</strong></div>
+            <% headers.forEach(header => { %>
+                <div class="column"><%= header %></div>
+            <% }) %>
+        </div>
+        <!-- questions -->
+        <div class="row">
+            <div class="column1"></div>
+            <% headers.forEach((header, index) => { %>
+                <div class="column">
+                    <input name="s5q1" value="<%= header %>" type="checkbox" onclick="onlyOne(this)">
+                </div>
+            <% }) %>
+        </div>
+
+        <div class="comments">
+            <label for="comments">Please provide any comments or suggestions that might help improve this course in the future?</label>
+            <br>
+            <br>
+            <textarea class="textArea" name="sur1Comments" placeholder="your comments..." cols="70" rows="5"></textarea>
+        </div>
+
+        <button class="btn" id="Submit">Submit</button>
+        <blockquote>New Sound Trucking School</blockquote>
+    </form>
+
+
+    <script defer>
+        
+        function onlyOne(checkbox) {
+            const checkboxes = document.getElementsByName(checkbox.name)
+            checkboxes.forEach((item) => {
+                if (item !== checkbox) item.checked = false
+            })
+        }
+
+        
+        document.querySelector('#mainContainer').addEventListener('submit', (e) => {
+
+            const haveAlready = localStorage.getItem('haveAlreadySurveyNSTS')
+
+            if (haveAlready === 'true') {
+                alert("We appreciate your time, but we have already a survey submitted from the current device")
+                return e.preventDefault()
+            }
+
+            localStorage.setItem('haveAlreadySurveyNSTS', 'true')
+            alert("Thank you. You'll be redirected to your profile")
+        })
+
+    </script>
+
+</body>
+</html>
