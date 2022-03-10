@@ -18,7 +18,11 @@
 
         <h1>ANONYMOUS SURVEY</h1>
         <div class="lineBlue"></div>
-        <p>Dear Students, <br>NSTS is committed to providing you with quality services and facilities. Please take a moment to complete this survey to let us know what you think of our CDL program. Your responses are will be kept strictly confidential and only used to and it will be used to improve our school performance. What you have to say is important to us.</p>
+        <p class="header-text">
+            <span class="header-prompt">Dear Students,</span>
+            <br>
+            <span>NSTS is committed to providing you with quality services and facilities. Please take a moment to complete this survey to let us know what you think of our CDL program. Your responses are will be kept strictly confidential and only used to and it will be used to improve our school performance. What you have to say is important to us.</span>
+        </p>
         
         <h3>PLEASE FILL IN ONE BOX FOR EACH QUESTION</h3>
 
@@ -27,7 +31,7 @@
         <div class="row1">
             <div class="column1"><strong>How would you rate the following?</strong></div>
             <% headers.forEach(header => { %>
-                <div class="column"><%= header %></div>
+                <div class="column -header"><%= header %></div>
             <% }) %>
         </div>
         <!-- questions -->
@@ -48,7 +52,7 @@
         <div class="row1">
             <div class="column1"><strong>What overall rating would you give our office staff?</strong></div>
             <% headers.forEach(header => { %>
-                <div class="column"><%= header %></div>
+                <div class="column -header"><%= header %></div>
             <% }) %>
         </div>
         <!-- questions -->
@@ -76,7 +80,7 @@
         <div class="row1">
             <div class="column1"><strong>What overall rating would you give each instructor?</strong></div>
             <% headers.forEach(header => { %>
-                <div class="column"><%= header %></div>
+                <div class="column -header"><%= header %></div>
             <% }) %>
         </div>
         <!-- questions -->
@@ -97,7 +101,7 @@
         <div class="row1">
             <div class="column1"><strong>Would you recommend this course to other students?</strong></div>
             <% recommendations.forEach(recommendation => { %>
-                <div class="column"><%= recommendation %></div>
+                <div class="column -header"><%= recommendation %></div>
             <% }) %>
         </div>
         <!-- questions -->
@@ -116,7 +120,7 @@
         <div class="row1">
             <div class="column1"><strong>How would you rate your overall school experience?</strong></div>
             <% headers.forEach(header => { %>
-                <div class="column"><%= header %></div>
+                <div class="column -header"><%= header %></div>
             <% }) %>
         </div>
         <!-- questions -->
