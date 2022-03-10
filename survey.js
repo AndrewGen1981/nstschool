@@ -9,7 +9,7 @@ const generalQuestions = ['Instructional Materials', 'Cost of Tuition', 'School 
 const managers = ['Ivan']
 const managerQuestions = ['Friendliness', 'Proficiency', 'Responsibility']
 // instructors
-const instructors = ['Hardeep', 'Matthew', 'Luis', 'Dadie']
+const instructors = ['Hardeep', 'Matthew', 'Luis', 'Dadie', 'Konstantin']
 // recommendations
 const recommendations = ['Definitely', 'Probably', 'Not Sure', 'Probably Not', 'Definitely Not']
 
