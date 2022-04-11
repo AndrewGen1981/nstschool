@@ -913,6 +913,19 @@ label.signItem{
 }
 
 
+/* Bolt Career */
+.bolt-text {
+    margin: 7px 0;
+    display: block;
+
+    font-family: "Montserrat";
+    font-size: 0.87rem;
+    color: #bf1f1f;
+
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
 
 /*  Media requests  */
 @media (max-width: 1200px) {
