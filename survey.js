@@ -6,10 +6,10 @@ const fetch = require('node-fetch')
 const headers = ['Excellent', 'Very Good', 'Good', 'Fair', 'Poor']
 const generalQuestions = ['Instructional Materials', 'Cost of Tuition', 'School Trucks and Trailers', 'Classroom appearance']
 // managers
-const managers = ['Ivan']
+const managers = ['Ivan', 'Ophelia']
 const managerQuestions = ['Friendliness', 'Proficiency', 'Responsibility']
 // instructors
-const instructors = ['Hardeep', 'Matthew', 'Luis', 'Dadie', 'David']
+const instructors = ['Luis', 'Dadie', 'David', 'Matthew']
 // recommendations
 const recommendations = ['Definitely', 'Probably', 'Not Sure', 'Probably Not', 'Definitely Not']
 
@@ -37,11 +37,17 @@ srvRouter.post('/', async (req, res) => {
 
     // What overall rating would you give our office staff?
     // Ivan - 1. Friendliness
-    const s2q1 = req.body.s2q1 || 'no answer'
+    const s2m1q1 = req.body.s2m1q1 || 'no answer'
     // Ivan - 2. Proficiency
-    const s2q2 = req.body.s2q2 || 'no answer'
+    const s2m1q2 = req.body.s2m1q2 || 'no answer'
     // Ivan - 3. Responsibility
-    const s2q3 = req.body.s2q3 || 'no answer'
+    const s2m1q3 = req.body.s2m1q3 || 'no answer'
+    // Ophelia - 1. Friendliness
+    const s2m2q1 = req.body.s2m2q1 || 'no answer'
+    // Ophelia - 2. Proficiency
+    const s2m2q2 = req.body.s2m2q2 || 'no answer'
+    // Ophelia - 3. Responsibility
+    const s2m2q3 = req.body.s2m2q3 || 'no answer'
 
     // What overall rating would you give each instructor?
     // 1. Hardeep
@@ -62,7 +68,14 @@ srvRouter.post('/', async (req, res) => {
     // comment
     const comments = req.body.sur1Comments
 
-    const newRow = [new Date(), s1q1, s1q2, s1q3, s1q4, s2q1, s2q2, s2q3, s3q1, s3q2, s3q3, s3q4, s4q1, s5q1, comments]
+    const newRow = [
+        new Date(), s1q1, s1q2, s1q3, s1q4,
+        // Ivan
+        s2m1q1, s2m1q2, s2m1q3,
+        // Ophelia
+        s2m2q1, s2m2q2, s2m2q3,
+        // Instructors
+        s3q1, s3q2, s3q3, s3q4, s4q1, s5q1, comments]
     const surveyURL = 'https://script.google.com/macros/s/AKfycbx_5pvrqAF3OZt9HNURWsHc8nZQnmxhZTzCr8eOKqUnqzJB8zFZwjDa-_dZTyyGKbq22Q/exec'
 
     await fetch(surveyURL, {

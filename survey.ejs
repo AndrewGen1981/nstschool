@@ -56,18 +56,18 @@
             <% }) %>
         </div>
         <!-- questions -->
-        <% managers.forEach(manager => { %>
+        <% managers.forEach((manager, i) => { %>
             <div class="row2">
                 <div class="column1">
                     <strong><%= manager %></strong>
                 </div>
             </div>
-            <% managerQuestions.forEach((managerQuestion, index) => { %>
+            <% managerQuestions.forEach((managerQuestion, j) => { %>
                 <div class="row">
-                    <div class="column1"><%= index + 1 %>. <%= managerQuestion %></div>
+                    <div class="column1"><%= j + 1 %>. <%= managerQuestion %></div>
                     <% headers.forEach(header => { %>
                         <div class="column">
-                            <input name="s2q<%= index + 1 %>" value="<%= header %>" type="checkbox" onclick="onlyOne(this)">
+                            <input name="s2m<%= i + 1 %>q<%= j + 1 %>" value="<%= header %>" type="checkbox" onclick="onlyOne(this)">
                         </div>
                     <% }) %>
                 </div>
