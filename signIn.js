@@ -455,6 +455,7 @@ document.getElementById("singInForm").addEventListener("submit", e => {
 document.getElementById("createAccount").addEventListener("click", e => {
     e.preventDefault()
 
+    /*
     if (email.value === "" || passw.value ==="") {
         alert ("Email address and password fields should not be blank")
         return
@@ -468,6 +469,14 @@ document.getElementById("createAccount").addEventListener("click", e => {
     })
 
     alert(`Thank you. We've sent you a confirmation email to ${email.value}. Please check it out.\nIf you'll not receive an email, then maybe you misstype with email or we already have such user, please try again or get in touch with us 253.210.0505`)
+    */
+
+
+    alert(`You'll be transferred to our new system. For signing in, after registration, use the menu item "Bolt" in the top menu of our home page`)
+    const toBoltLink = document.querySelector('#toBoltLink')
+    if (toBoltLink) {
+        toBoltLink.click()
+    }
 
 })
 
